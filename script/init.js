@@ -1,31 +1,30 @@
 var workspace = document.querySelectorAll('#workspace')[0];
 var result = document.querySelectorAll('#result')[0];
 
+
+tempBox = document.createElement('div');
+tempBox.className = 'box';
+tempBox.id = 'selectBox';
+tempTitle = document.createElement('h3');
+tempTitle.className = 'title';
+tempTitle.id = 'selectTitle';
+tempTitle.innerText = 'select';
+tempSelectWrapper = document.createElement('div');
+tempSelectWrapper.className = 'selectWrapper';
+tempSelectWrapper.id = 'selectWrapper';
+
+tempBox.appendChild(tempTitle);
+tempBox.appendChild(tempSelectWrapper);
+workspace.appendChild(tempBox);
+
 var items = ['video', 'audio', 'text']
-items.map((e) => {
-  tempBox = document.createElement('div');
-  tempBox.className = 'box'
-  tempBox.id = e + 'Box'
-  tempTitle = document.createElement('h3');
-  tempTitle.className = 'title';
-  tempTitle.id = e + 'Title'; 
-  tempTitle.innerText = e
-  tempSelectWrapper = document.createElement('div');
-  tempSelectWrapper.className = 'selectWrapper';
-  tempSelectWrapper.id = e + 'SelectWrapper';
-
-  tempBox.appendChild(tempTitle);
-  tempBox.appendChild(tempSelectWrapper);
-  workspace.appendChild(tempBox);
-});
-
 items.map((e) => {
   tempBox = document.createElement('div');
   tempBox.className = 'resultBox'
   tempBox.id = e + 'ResultBox'
   tempTitle = document.createElement('h3');
   tempTitle.className = 'resultTitle';
-  tempTitle.id = e + 'ResultTitle'; 
+  tempTitle.id = e + 'ResultTitle';
   tempTitle.innerText = e
 
   tempBox.appendChild(tempTitle);
