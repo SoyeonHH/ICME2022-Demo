@@ -41,4 +41,16 @@ function clickListener(name) {
   for(var i=0; next[i]; i++) {
     next[i].classList.add('clicked');
   }
+
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', `/data/test${name}.txt`);
+  xhr.onreadystatechange = function() {
+    setText(xhr.responseText);
+  }
+  xhr.send();
+}
+
+function setText(text) {
+  var textView = document.querySelectorAll('#textView')[0];
+  textView.innerText = text;
 }
