@@ -1,0 +1,49 @@
+body {
+  margin: 0 auto;
+  width: 1080px;
+}
+
+.vertical-divider {
+  width: 100%;
+  background-color: lightgrey;
+  height: 2px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#workspace, #Result{
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.box, .resultBox{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.selectWrapper {
+  height: 150px;
+  overflow: scroll;
+}
+
+.selectItem {
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.selectItem.clicked {
+  color: #ffffff;
+  background-color: #000000;
+}
