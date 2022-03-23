@@ -12,11 +12,12 @@ body {
   margin-bottom: 10px;
 }
 
-#workspace {
+#workspace, #Result{
   width: 100%;
+  margin-bottom: 60px;
 }
 
-.box {
+.box, .resultBox{
   width: 80%;
   margin: 0 auto;
 }
