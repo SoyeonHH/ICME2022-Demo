@@ -34,5 +34,19 @@ items.map((e) => {
 
 var textResultBox = document.querySelectorAll('#textResultBox')[0];
 textView = document.createElement('div');
-textView.id = 'textView'
+textView.id = 'textView';
 textResultBox.appendChild(textView);
+
+var audioResultBox = document.querySelectorAll('#audioResultBox')[0];
+audioView = document.createElement('audio');
+audioView.id = 'audioView';
+audioView.style = 'display: none';
+audioView.controls = 'controls';
+audioResultBox.appendChild(audioView);
+
+var videoResultBox = document.querySelectorAll('#videoResultBox')[0];
+videoView = document.createElement('video');
+videoView.id = 'videoView';
+videoView.style = 'display: none';
+videoView.controls = 'controls';
+videoResultBox.appendChild(videoView);
