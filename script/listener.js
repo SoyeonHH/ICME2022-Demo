@@ -1,33 +1,16 @@
 var test = Array.from(Array(30).keys())
-var formatList = ['mp4', 'wav', 'txt']
 
-selectList = document.querySelectorAll('.selectWrapper');
-
-var clickName = '';
+selectWrapper = document.querySelectorAll('.selectWrapper')[0];
 
 test.map((e) => {
   item = document.createElement('div');
   item.className = `selectItem item${e}`;
-  item.innerText = 'testtesttesttest';
-  itemC1 = item.cloneNode(true);
-  itemC2 = item.cloneNode(true);
-  item.innerText = 'testtest' + e + '.' + formatList[0]
-  itemC1.innerText = 'testtesttest' + e + '.' + formatList[1]
-  itemC2.innerText = 'testtesttesttest' + e + '.' + formatList[2]
+  item.innerText = 'testtest' + e;
   let name = e;
   item.addEventListener('click', function() {
     clickListener(name);
   });
-  itemC1.addEventListener('click', function() {
-    clickListener(name);
-  });
-  itemC2.addEventListener('click', function() {
-    clickListener(name);
-  });
-  itemList = [item, itemC1, itemC2];
-  for(var i=0; selectList[i]; i++) {
-    selectList[i].appendChild(itemList[i]);
-  }
+  selectWrapper.appendChild(item);
 });
 
 function clickListener(name) {
