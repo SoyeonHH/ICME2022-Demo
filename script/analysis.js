@@ -29,19 +29,18 @@ const config = {
   },
 };
 
-function Model(classType, modelName, publisher, result) {
-  this.classType = classType //2 or 7 class
+function Model(modelName, publisher, result) {
   this.modelName = modelName
   this.publisher = publisher
   this.result = result //result on every segment
 
-  this.uploadModel = function(classType, modelName, publisher, inputFile) {
+  this.uploadModel = function(modelName, publisher, inputFile) {
     //update attributes
-    this.classType = classType
     this.modelName = modelName
     this.publisher = publisher
 
     //process input file and make this.result
+    this.result = [index_length][]
   }
 
   this.getClassAcc = function() {//return class accuracy from model's result file
@@ -220,11 +219,23 @@ function Analysis(goldModel, model) {
   }
 }
 
-var goldResult
-var ourResult
+var goldTestResult = [[abcd,0,text1,-0.5,'negative','slightly negative',-0.4,"negative",'slightly negative']
+                     ,[abcd,1,text1,-1.5,'negative','negative',-0.3,"negative",'slightly negative']
+                     ,[abcd,2,text1, 2.5,'positive','very positive',0,'positive',"neutral"]
+                     ,[abcd,3,text1, 0.5,'positive','slightly positive',0.7,"positive",'slightly positive']
+                     ,[abcd,4,text1,-2.5,'negative','very negative',-2.4,"negative",'very negative']
+                     ,[abcd,5,text1, 0.3,'positive','neutral',-0.4,"negative",'slightly negative']
+                     ,[abcd,6,text1, 1.0,'positive','positive',1.0,"positive",'positive']];
+var ourTestResult = [[abcd,0,text1,-0.5,'negative','slightly negative',-0.4,"negative",'slightly negative']
+                     ,[abcd,1,text1,-1.5,'negative','negative',-0.3,"negative",'slightly negative']
+                     ,[abcd,2,text1, 2.5,'positive','very positive',-0.3,"negative",'slightly negative']
+                     ,[abcd,3,text1, 0.5,'positive','slightly positive',1.7,"positive",'positive']
+                     ,[abcd,4,text1,-2.5,'negative','very negative',-2.4,"negative",'very negative']
+                     ,[abcd,5,text1, 0.3,'positive','neutral',-0.4,"negative",'slightly negative']
+                     ,[abcd,6,text1, 1.0,'positive','positive',1.0,"positive",'positive']];
 
-var goldModel = new Model(2, "GOLD", "donghoon", goldResult)
-var ourModel = new Model(2, "OUR", "ME", ourResult)
+var goldModel = new Model("GOLD", "donghoon", goldResult)
+var ourModel = new Model("OUR","notDonghoon",ourTestResult)
 var analysis = new Analysis(goldModel, ourModel)
 
-analysis.updateGraph
+analysis.updateGraph()
