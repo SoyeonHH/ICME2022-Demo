@@ -17,6 +17,32 @@ tempBox.appendChild(tempTitle);
 tempBox.appendChild(tempSelectWrapper);
 workspace.appendChild(tempBox);
 
+// draw items for selection
+let fileXHR = new XMLHttpRequest();
+fileXHR.open('GET', 'http://localhost:3000/file');
+fileXHR.onreadystatechange = function() {
+  console.log(JSON.parse(fileXHR.responseText));
+  setItem(JSON.parse(fileXHR.responseText));
+}
+fileXHR.send();
+
+function setItem(fileList) {
+  var selectWrapper = document.querySelectorAll('.selectWrapper')[0];
+  while(selectWrapper.firstChild) {
+    selectWrapper.removeChild(selectWrapper.lastChild);
+  }
+  fileList.map((e) => {
+    var item = document.createElement('div');
+    item.className = `selectItem item${e}`;
+    item.innerText = e;
+    let name = e;
+    item.addEventListener('click', function() {
+      clickListener(name);
+    });
+    selectWrapper.appendChild(item);
+  })
+}
+
 // draw frame for output result
 var items = ['video', 'audio', 'text']
 items.map((e) => {
@@ -50,25 +76,3 @@ videoView.id = 'videoView';
 videoView.style = 'display: none';
 videoView.controls = 'controls';
 videoResultBox.appendChild(videoView);
-
-let fileXHR = new XMLHttpRequest();
-fileXHR.open('GET', 'http://localhost:3000/file');
-fileXHR.onreadystatechange = function() {
-  console.log(JSON.parse(fileXHR.responseText));
-  setItem(JSON.parse(fileXHR.responseText));
-}
-fileXHR.send();
-
-function setItem(fileList) {
-  var selectWrapper = document.querySelectorAll('.selectWrapper')[0];
-  fileList.map((e) => {
-    var item = document.createElement('div');
-    item.className = `selectItem item${e}`;
-    item.innerText = 'testtest' + e;
-    let name = e;
-    item.addEventListener('click', function() {
-      clickListener(name);
-    });
-    selectWrapper.appendChild(item);
-  })
-}

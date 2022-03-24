@@ -1,3 +1,4 @@
+// item select listener
 function clickListener(name) {
   console.log(name);
   let prev = document.querySelectorAll('.selectItem.clicked');
@@ -10,10 +11,10 @@ function clickListener(name) {
   }
 
   let xhr = new XMLHttpRequest();
-  xhr.open('GET', `/data/${name}.txt`);
+  xhr.open('GET', `/data/text/${name}.txt`);
   xhr.onreadystatechange = function() {
     setText(xhr.responseText);
-    setAudioVideo();
+    setAudioVideo(name);
   }
   xhr.send();
 }
@@ -23,19 +24,19 @@ function setText(text) {
   textView.innerText = text;
 }
 
-function setAudioVideo() {
+function setAudioVideo(name) {
   var audioView = document.querySelectorAll('#audioView')[0];
   audioView.replaceWith(audioView.cloneNode(true));
   audioView = document.querySelectorAll('#audioView')[0];
   audioView.style = 'display: block';
-  audioView.src = "/data/test0.wav";
+  audioView.src = `/data/audio/${name}.wav`;
   audioView.load();
 
   var videoView = document.querySelectorAll('#videoView')[0];
   videoView.replaceWith(videoView.cloneNode(true));
   videoView = document.querySelectorAll('#videoView')[0];
   videoView.style = 'display: block';
-  videoView.src = "/data/test0.mp4";
+  videoView.src = `/data/video/${name}.mp4`;
   videoView.load();
 
   audioView.addEventListener('play', function() {
@@ -59,4 +60,21 @@ function setAudioVideo() {
   videoView.addEventListener('ended', function() {
     audioView.ended();
   });
+}
+
+// header select listener
+var headerItemList = document.querySelectorAll('.header-item');
+for(let i=0; headerItemList[i]; i++) {
+  headerItemList[i].addEventListener('click', function() {
+    console.log(i);
+    setHeader(headerItemList[i]);
+  });
+}
+
+function setHeader(headerItem) {
+  let prev = document.querySelectorAll('.header-item.selected');
+  for(var i=0; prev[i]; i++) {
+    prev[i].classList.remove('selected');
+  }
+  headerItem.classList.add('selected');
 }
