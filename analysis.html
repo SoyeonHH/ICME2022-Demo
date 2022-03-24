@@ -14,21 +14,59 @@
       </table>
     </div>
     <div id="barGraph">
-      <div>
+      <h2>Gold vs Our Accuracy</h2>
+      <div id="canvasList">
         <canvas id="myChart"></canvas>
+        <canvas id="graph_class_2"></canvas>
+        <canvas id="graph_class_7"></canvas>
       </div>
-      <h2>barGraph</h2>
-      <div id="graph_class_2"></div>
-      <div id="graph_class_7"></div>
     </div>
     <div id="p-barVideos">
-      <h2>progress bar per video</h2>
+      <h2>Video Accuracy</h2>
+      <table id="videoAcc">
+        <th></th>
+        <th>Video_0</th>
+        <th>Video_1</th>
+        <th>Video_2</th>
+        <tr>
+          <td>2 Class</td>
+          <td><progress value='70' max='100'></progress></td>
+          <td><progress value='50' max='100'></progress></td>
+          <td><progress value='40' max='100'></progress></td>
+        </tr>
+        <tr>
+          <td>7 Class</td>
+          <td><progress value='40' max='100'></progress></td>
+          <td><progress value='70' max='100'></progress></td>
+          <td><progress value='60' max='100'></progress></td>
+        </tr>
+      </table>
     </div>
     <div id="p-barSengment">
-      <h2>progess bar per segment</h2>
+      <h2>Segment Hit</h2>
+      <h3>Video_0<h3>
+      <table id="segmentAcc">
+        <th></th>
+        <th>id_0</th>
+        <th>id_1</th>
+        <th>id_2</th>
+        <tr>
+          <td>2 Class</td>
+          <td><progress value='100' max='100'></progress></td>
+          <td><progress value='0' max='100'></progress></td>
+          <td><progress value='100' max='100'></progress></td>
+        </tr>
+        <tr>
+          <td>7 Class</td>
+          <td><progress value='0' max='100'></progress></td>
+          <td><progress value='0' max='100'></progress></td>
+          <td><progress value='100' max='100'></progress></td>
+        </tr>
+      </table>
     </div>
-    <div id="viewVideo">
-      <h2>view</h2>
+    <div id="viewSegment">
+      <h2>View Segment</h2>
+      <h3>Video_0 id_0</h3>
     </div>
     <script type="module" src="./script/analysis.js"></script>
     <script type="text/javascript" src="./script/chart.js-3.7.1/package/dist/chart.js"></script>
