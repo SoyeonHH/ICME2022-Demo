@@ -1,3 +1,9 @@
+import Chart from './chart.js-3.71/chart.js/auto'
+
+var context=document
+  .getElementByld('graph_class_2')
+  .getContext('2d');
+
 function Model(classType, modelName, publisher, result) {
   this.classType = classType //2 or 7 class
   this.modelName = modelName
@@ -14,13 +20,31 @@ function Model(classType, modelName, publisher, result) {
   }
 }
 
-function Analysis(goldModel, Model, classType) {
+function Analysis(goldModel, model, classType) {
   this.classType = classType
-  this.currentVideo = null
+  this.currentVideo = 0
+  this.goldModel = goldModel
+  this.model = model
 
   this.updateGraph = function(){
     //create class accuracy bar-graph
+    var graph_2class = new Chart(context,{
+      type:bar,
+      data:{labels:['0','1'], datasets:[{
+        lable:'2class',
+        fill:false,
+        data:[80,60],
+        borderColor:['black','black'],
+        borderWidth:1
+      }
 
+    )
+    if(this.model) {//our model is uploaded
+
+    } else {
+
+
+    }
   }
 
   this.updatePbarVideo = function(video_id){//Draw Progress Bar of a single Video
@@ -60,3 +84,5 @@ var ourResult
 var goldModel = new Model(2, "GOLD", "donghoon", goldResult)
 var ourModel = new Model(2, "OUR", "ME", ourResult)
 var analysis = new Analysis(goldModel, ourModel, 2)
+
+analysis.updateGraph
