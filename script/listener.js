@@ -1,18 +1,3 @@
-var test = Array.from(Array(30).keys())
-
-selectWrapper = document.querySelectorAll('.selectWrapper')[0];
-
-test.map((e) => {
-  item = document.createElement('div');
-  item.className = `selectItem item${e}`;
-  item.innerText = 'testtest' + e;
-  let name = e;
-  item.addEventListener('click', function() {
-    clickListener(name);
-  });
-  selectWrapper.appendChild(item);
-});
-
 function clickListener(name) {
   console.log(name);
   let prev = document.querySelectorAll('.selectItem.clicked');
@@ -24,8 +9,8 @@ function clickListener(name) {
     next[i].classList.add('clicked');
   }
 
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', `/data/test${name}.txt`);
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', `/data/${name}.txt`);
   xhr.onreadystatechange = function() {
     setText(xhr.responseText);
     setAudioVideo();

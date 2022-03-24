@@ -22,3 +22,6 @@ app.get('/', function(req, res) {
     res.end(data);
   });
 });
+
+var localFileSystem = require('./routes/localFileSystem')();
+app.use('/file', localFileSystem);
