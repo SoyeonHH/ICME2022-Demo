@@ -11,6 +11,7 @@ app.use(cors());
 app.use('/script', express.static(__dirname + '/script'));
 app.use('/style', express.static(__dirname + '/style'));
 app.use('/data', express.static(__dirname + '/data'));
+app.use('/image', express.static(__dirname + '/image'));
 
 var server = http.createServer(app).listen(port, function() {
   console.log('Server run');
