@@ -24,5 +24,12 @@ app.get('/', function(req, res) {
   });
 });
 
+app.get('/analysis', function(req, res) {
+  fs.readFile('analysis.html', function(error, data) {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.end(data);
+  });
+});
+
 var localFileSystem = require('./routes/localFileSystem')();
 app.use('/file', localFileSystem);
