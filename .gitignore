@@ -3,6 +3,11 @@
 node_modules
 package-lock.json
 
-*.txt
-*.mp4
-*.wav
+data/*.txt
+data/*.mp4
+data/*.wav
+
+*.pyc
+__pycache__
+wandb
+.vscode
