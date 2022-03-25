@@ -1,4 +1,4 @@
-Index,Video_id,Clip_id,Text,Label,Label_binary,Label_7,Pred,Pred_binary,Pred_7
+Index,Video_id,Segment_id,Text,Label,Label_binary,Label_7,Pred,Pred_binary,Pred_7
 0,c7UH_rxdZv4,0,oh my gosh bad movie,-2.8,negative,very negative,-0.97,negative,slightly negative
 1,c7UH_rxdZv4,1,really bad movie,-2.6,negative,very negative,-1.32,negative,negative
 2,c7UH_rxdZv4,2,i wish i werent because,-0.8,negative,slightly negative,-0.99,negative,slightly negative

@@ -4,20 +4,20 @@ import sys
 import re
 import ast
 
-path = '/mnt/soyeon/workspace/multimodal/BERT_multimodal_transformer/'
+path = '/mnt/soyeon/workspace/multimodal/MISA/'
 to_path = '/mnt/soyeon/workspace/multimodal/predection_results/'
-sys.stdout = open(to_path + 'MAG-BERT_MOSI_result.txt', 'w')
+sys.stdout = open(to_path + 'MISA_mosi_result.txt', 'w')
 os.chdir(path)
 
 pred_result = []
 pred_result.append(
-    ['Index', 'Video_id', 'Clip_id', 'Text', 'Label', 'Label_binary', 'Label_7', 'Pred', 'Pred_binary', 'Pred_7']
+    ['Index', 'Video_id', 'Segment_id', 'Text', 'Label', 'Label_binary', 'Label_7', 'Pred', 'Pred_binary', 'Pred_7']
 )
 
 video_ids = set()
-with open('MAG-BERT_mosi.txt', 'r') as f:
+with open('MISA_mosi.txt', 'r') as f:
     lines = f.readlines()
-    for i, line in enumerate(lines[42:]):
+    for i, line in enumerate(lines):
         line = re.sub('\n', '', line)
         if i % 9 == 0:
             pred_row = []
