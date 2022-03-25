@@ -31,6 +31,9 @@
             <td>result cvs file</td>
             <td><input type="file" id="inputModelFile"></input></td>
           </tr>
+          <tr>
+            <td><input type="button" id="uploadButton">upload</input></td>
+          </tr>
         </table>
 
 
@@ -140,6 +143,8 @@
     },
   };
 
+
+
   function Model(modelName, publisher, result) {
     this.modelName = modelName
     this.publisher = publisher
@@ -214,6 +219,9 @@
 
       return [returnAcc2, returnAcc7]
     }
+    //return [returnAcc2, returnAcc7]
+    //returnAcc2, list ofaccuracy of each 2 classes
+    //returnAcc7, list ofaccuracy of each 7 classes
 
     this.getVideoAcc = function() {//return video accuracy from model's result file
       var vidName = []
@@ -267,6 +275,35 @@
 
       return [vidName, accVid2, accVid7]
     }
+    //return [vidName, accVid2, accVid7]
+    //vidName, list of video_id
+    //accVid2, list ofaccuracy of video in 2 class
+    //accVid7, list ofaccuracy of video in 7 class
+
+    this.getSegmentAcc = function(videoId) {//return hit map of single segmentAcc
+      var hitMap2 = []
+      var hitMap7 = []
+
+      if(this.result) {
+        for(var i = 0; i < this.result.length; i++) {
+          console.log(videoId)
+          console.log(this.result[i][0])
+          if(this.result[i][0] == videoId) {//the correct video id
+            if(this.result[i][4] == this.result[i][7]) {//hit in 2 class
+              hitMap2.push(1)
+            } else hitMap2.push(0) //miss in 2 class
+
+            if(this.result[i][5] == this.result[i][8]) {//hit in 7 class
+              hitMap7.push(1)
+            } else hitMap7.push(0) //miss in 7 class
+          }
+        }
+      }
+      return [hitMap2, hitMap7]
+    }
+    //return [hitMap2, hitMap7]
+    //hitMap2, linear Hit map of video in 2 class
+    //hitMap2, linear Hit map of video in 7 class
   }
 
   function Analysis(goldModel, model) {
@@ -399,9 +436,10 @@
 
     }
 
-    this.updatePbarSegment = function(segment_id, model) {//Draw Progress Bar of a single Segment
+    this.updatePbarSegment = function(video_id) {//Draw Progress Bar of a single Segment
       //process this.result via video
-
+      var segHitMap = this.model.getSegmentAcc(video_id)
+      console.log(segHitMap)
       //create per segment progress bar
 
     }
@@ -447,8 +485,18 @@
 
 
   analysis.updateGraph()
-  console.log('update complete')
   analysis.updatePbarVideo()
+  analysis.updatePbarSegment('abcd')
+
+  //interaction
+  function uploadResult() {
+    document.getElementById("inputModelFile")
+
+    var uploadingModel = new Model()
+    console.log()
+    //uploadingModel.uploadModel(document.getElementById("inputModelName").value,document.getElementById("inputModelUrl").value,[]);
+
+  }
 
 
   </script>
