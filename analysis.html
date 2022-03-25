@@ -17,18 +17,30 @@
     <div class="section">
       <h1>Analysis</h1>
       <div id="workspace">
-        <table id="viewMenu">
-          <th>View</th>
-          <th>Analysis</th>
-          <th>Compare</th>
-          <th>Upload</th>
+        <h2>Upload Your Results</h2>
+        <table id = "uploadTable">
+          <tr>
+            <td>Model Name</td>
+            <td><input type="text" id="inputModelName"></input></td>
+          </tr>
+          <tr>
+            <td>Link</td>
+            <td><input type="url"  id="inputModelUrl"></input></td>
+          </tr>
+          <tr>
+            <td>result cvs file</td>
+            <td><input type="file" id="inputModelFile"></input></td>
+          </tr>
         </table>
+
+
+
       </div>
       <div id="barGraph">
         <h2>Gold vs Our Accuracy</h2>
         <div id="canvasList">
-          <canvas id='graph_class_2'  width="400" height="400"></canvas>
-          <canvas id='graph_class_7'  width="400" height="400"></canvas>
+          <canvas class="graph" id='graph_class_2'></canvas>
+          <canvas class="graph" id='graph_class_7'></canvas>
         </div>
       </div>
       <div id="p-barVideos">
@@ -101,7 +113,6 @@
 
     <script type="text/javascript" src="./script/chart.js-3.7.1/package/dist/chart.js"></script>
     <script>
-
   const labels2class = [
     'Negative',
     'Positive'
@@ -118,7 +129,7 @@
 
   const config = {
     options: {
-      responsive: false,
+      responsive: true,
       maintainAspectRatio: false,
       scales: {
         y: {
@@ -140,6 +151,9 @@
       this.publisher = publisher
 
       //process input file and make this.result
+      console.log()
+      this.result = []
+
 
     }
 
@@ -334,21 +348,45 @@
       var chart0 = new Chart(this.graph2, {
         type: 'bar',
         data: analysisDataset2,
-        config}
+        options: {
+          responsive: false,
+          maintainAspectRatio: true,
+          scales: {
+            y: {
+              beginAtZero: true,
+              suggestedMax: 100
+            }
+          }
+        },
+        }
       );
+
+      console.log(chart0)
 
       var chart1 = new Chart(this.graph7, {
         type: 'bar',
         data: analysisDataset7,
-        config}
+        options: {
+          responsive: false,
+          maintainAspectRatio: true,
+          scales: {
+            y: {
+              beginAtZero: true,
+              suggestedMax: 100
+            }
+          }
+        },
+        }
       );
+
+      console.log(chart1)
 
     }
 
     this.updatePbarVideo = function(){//Draw Accuracy Bar of the Videos
       var modelAcc = this.model.getVideoAcc()
-      console.log(this.vidTable.getElementById("vidName_vidAcc"))
-
+      console.log(modelAcc)
+      /*
       for(var i = 0; i < modelAcc.length; i++) {//create per video progress bar
         var newHead = this.vidTable.row[0].insertCell(-1)
         newHead.innerHTML = modelAcc[i][0]
@@ -356,7 +394,7 @@
         new2class.innerHTML = modelAcc[i][1]
         var new7class = this.vidTable.row[2].insertCell(-1)
         new7class.innerHTML = modelAcc[i][2]
-      }
+      }*/
 
 
     }
@@ -406,9 +444,13 @@
   var ourModel = new Model("OUR","notDonghoon",ourTestResult)
   var analysis = new Analysis(goldModel, ourModel)
 
+
+
   analysis.updateGraph()
   console.log('update complete')
   analysis.updatePbarVideo()
+
+
   </script>
   </body>
 </html>
