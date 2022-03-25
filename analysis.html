@@ -1,71 +1,100 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="/style/common.css" type="text/css">
     <link rel="stylesheet" href="./style/analysis.css" type="text/css">
   </head>
   <body>
-    <h1>Analysis</h1>
-    <div id="workspace">
-      <table id="viewMenu">
-        <th>View</th>
-        <th>Analysis</th>
-        <th>Compare</th>
-        <th>Upload</th>
-      </table>
+    <div class="header">
+      <div class="header-leading">
+        <span style="color: green">MM</span><span style="color: red">S</span><span style="color: purple">A</span>
+      </div>
+      <div class="header-github"><img src="./image/github.png" /></div>
+      <div class="header-item">Comparision</div>
+      <div class="header-item selected">Analysis</div>
+      <a href="http://localhost:3000"><div class="header-item">View</div></a>
     </div>
-    <div id="barGraph">
-      <h2>Gold vs Our Accuracy</h2>
-      <div id="canvasList">
-        <canvas id='graph_class_2'  width="400" height="400"></canvas>
-        <canvas id='graph_class_7'  width="400" height="400"></canvas>
+    <div class="section">
+      <h1>Analysis</h1>
+      <div id="workspace">
+        <table id="viewMenu">
+          <th>View</th>
+          <th>Analysis</th>
+          <th>Compare</th>
+          <th>Upload</th>
+        </table>
+      </div>
+      <div id="barGraph">
+        <h2>Gold vs Our Accuracy</h2>
+        <div id="canvasList">
+          <canvas id='graph_class_2'  width="400" height="400"></canvas>
+          <canvas id='graph_class_7'  width="400" height="400"></canvas>
+        </div>
+      </div>
+      <div id="p-barVideos">
+        <h2>Video Accuracy</h2>
+        <table id="videoAcc">
+          <th></th>
+          <th>Video_0</th>
+          <th>Video_1</th>
+          <th>Video_2</th>
+          <tr>
+            <td>2 Class</td>
+            <td><progress value='70' max='100'></progress></td>
+            <td><progress value='50' max='100'></progress></td>
+            <td><progress value='40' max='100'></progress></td>
+          </tr>
+          <tr>
+            <td>7 Class</td>
+            <td><progress value='40' max='100'></progress></td>
+            <td><progress value='70' max='100'></progress></td>
+            <td><progress value='60' max='100'></progress></td>
+          </tr>
+        </table>
+      </div>
+      <div id="p-barSengment">
+        <h2>Segment Hit</h2>
+        <h3>Video_0<h3>
+        <table id="segmentAcc">
+          <th></th>
+          <th>id_0</th>
+          <th>id_1</th>
+          <th>id_2</th>
+          <tr>
+            <td>2 Class</td>
+            <td><progress value='100' max='100'></progress></td>
+            <td><progress value='0' max='100'></progress></td>
+            <td><progress value='100' max='100'></progress></td>
+          </tr>
+          <tr>
+            <td>7 Class</td>
+            <td><progress value='0' max='100'></progress></td>
+            <td><progress value='0' max='100'></progress></td>
+            <td><progress value='100' max='100'></progress></td>
+          </tr>
+        </table>
+      </div>
+      <div id="viewSegment">
+        <h2>View Segment</h2>
+        <h3>Video_0 id_0</h3>
       </div>
     </div>
-    <div id="p-barVideos">
-      <h2>Video Accuracy</h2>
-      <table id="videoAcc">
-        <th></th>
-        <th>Video_0</th>
-        <th>Video_1</th>
-        <th>Video_2</th>
-        <tr>
-          <td>2 Class</td>
-          <td><progress value='70' max='100'></progress></td>
-          <td><progress value='50' max='100'></progress></td>
-          <td><progress value='40' max='100'></progress></td>
-        </tr>
-        <tr>
-          <td>7 Class</td>
-          <td><progress value='40' max='100'></progress></td>
-          <td><progress value='70' max='100'></progress></td>
-          <td><progress value='60' max='100'></progress></td>
-        </tr>
-      </table>
-    </div>
-    <div id="p-barSengment">
-      <h2>Segment Hit</h2>
-      <h3>Video_0<h3>
-      <table id="segmentAcc">
-        <th></th>
-        <th>id_0</th>
-        <th>id_1</th>
-        <th>id_2</th>
-        <tr>
-          <td>2 Class</td>
-          <td><progress value='100' max='100'></progress></td>
-          <td><progress value='0' max='100'></progress></td>
-          <td><progress value='100' max='100'></progress></td>
-        </tr>
-        <tr>
-          <td>7 Class</td>
-          <td><progress value='0' max='100'></progress></td>
-          <td><progress value='0' max='100'></progress></td>
-          <td><progress value='100' max='100'></progress></td>
-        </tr>
-      </table>
-    </div>
-    <div id="viewSegment">
-      <h2>View Segment</h2>
-      <h3>Video_0 id_0</h3>
+    
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-title">
+          <span style="color: green">M</span>ulti<span style="color: green">M</span>odal <span style="color: red">S</span>entiment <span style="color: purple">A</span>nalysis
+        </div>
+        <div class="footer-info">
+          <div><a href="https://sites.google.com/view/iknow-lab">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 9v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9"/><path d="M9 22V12h6v10M2 10.6L12 2l10 8.6"/></svg>
+            iKnow Lab Ajou Univ.</a></div>
+          <div>&copy; Soyeon.H</div>
+          <div><a href="mailto:sodus1102@ajou.ac.kr">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width='10px' height='10px'><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+            sodus1102 at ajou.ac.kr</a></div>
+        </div>
+      </div>
     </div>
 
     <script type="text/javascript" src="./script/chart.js-3.7.1/package/dist/chart.js"></script>
