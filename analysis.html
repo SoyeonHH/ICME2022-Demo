@@ -27,14 +27,12 @@
             <td>Link</td>
             <td><input type="url"  id="inputModelUrl"></input></td>
           </tr>
-          <tr>
-            <td>result cvs file</td>
-            <td><input type="file" id="inputModelFile"></input></td>
-          </tr>
-          <tr>
-            <td><input type="button" id="uploadButton">upload</input></td>
-          </tr>
         </table>
+        <form id="csv-form" enctype="multipart/form-data">
+          result csv file
+          <input type="file" id="inputModelFile" accept=".csv"></input>
+          <button type="button" id="uploadButton">upload</button>
+        </form>
 
 
 
@@ -114,6 +112,7 @@
       </div>
     </div>
 
+    <script type="text/javascript" src="./script/csv.js"></script>
     <script type="text/javascript" src="./script/chart.js-3.7.1/package/dist/chart.js"></script>
     <script>
   const labels2class = [
