@@ -5,6 +5,8 @@ const { resourceLimits } = require('worker_threads');
 module.exports = () => {
   var router = require('express').Router();
   var fs = require('fs');
+  var multer = require('multer');
+  var upload = multer({dest: './userUpload'});
 
   router.get('/', (req, res) => {
     var files = fs.readdirSync('./data/text');
@@ -49,6 +51,15 @@ module.exports = () => {
 
     res.json(csv);
   });
+
+  router.post('/csv', upload.single('file'), (req, res) => {
+    var data = req.file;
+    var name = req.query.name;
+    res.json({
+      'success': true
+    });
+  });
+
 
   return router;
 }

@@ -7,6 +7,7 @@ var fs = require('fs');
 
 const port = 3000;
 
+app.use(express.urlencoded({extended: true}));
 app.use(cors());
 app.use('/script', express.static(__dirname + '/script'));
 app.use('/style', express.static(__dirname + '/style'));
