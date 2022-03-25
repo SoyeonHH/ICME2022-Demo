@@ -1,73 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="/style/common.css" type="text/css">
     <link rel="stylesheet" href="./style/analysis.css" type="text/css">
   </head>
   <body>
-    <h1>Analysis</h1>
-    <div id="workspace">
-      <table id="viewMenu">
-        <th>View</th>
-        <th>Analysis</th>
-        <th>Compare</th>
-        <th>Upload</th>
-      </table>
-    </div>
-<<<<<<< Updated upstream
-    <div id="barGraph">
-      <h2>Gold vs Our Accuracy</h2>
-      <div id="canvasList" display="flex">
-        <canvas id='graph_class_2' position="relative"  width="400px" height="400px"></canvas>
-        <canvas id='graph_class_7' position="relative" width="400px" height="400px"></canvas>
+    <div class="header">
+      <div class="header-leading">
+        <span style="color: green">MM</span><span style="color: red">S</span><span style="color: purple">A</span>
       </div>
+      <div class="header-github"><img src="./image/github.png" /></div>
+      <div class="header-item">Comparision</div>
+      <div class="header-item selected">Analysis</div>
+      <a href="http://localhost:3000"><div class="header-item">View</div></a>
     </div>
-    <div id="p-barVideos">
-      <h2>Video Accuracy</h2>
-      <table id="videoAcc">
-        <th></th>
-        <th>Video_0</th>
-        <th>Video_1</th>
-        <th>Video_2</th>
-        <tr>
-          <td>2 Class</td>
-          <td><progress value='70' max='100'></progress></td>
-          <td><progress value='50' max='100'></progress></td>
-          <td><progress value='40' max='100'></progress></td>
-        </tr>
-        <tr>
-          <td>7 Class</td>
-          <td><progress value='40' max='100'></progress></td>
-          <td><progress value='70' max='100'></progress></td>
-          <td><progress value='60' max='100'></progress></td>
-        </tr>
-      </table>
-    </div>
-    <div id="p-barSengment">
-      <h2>Segment Hit</h2>
-      <h3>Video_0<h3>
-      <table id="segmentAcc">
-        <th></th>
-        <th>id_0</th>
-        <th>id_1</th>
-        <th>id_2</th>
-        <tr>
-          <td>2 Class</td>
-          <td><progress value='100' max='100'></progress></td>
-          <td><progress value='0' max='100'></progress></td>
-          <td><progress value='100' max='100'></progress></td>
-        </tr>
-        <tr>
-          <td>7 Class</td>
-          <td><progress value='0' max='100'></progress></td>
-          <td><progress value='0' max='100'></progress></td>
-          <td><progress value='100' max='100'></progress></td>
-        </tr>
-      </table>
-    </div>
-    <div id="viewSegment">
-      <h2>View Segment</h2>
-      <h3>Video_0 id_0</h3>
-=======
     <div class="section">
       <h1>Analysis</h1>
       <div id="workspace">
@@ -94,13 +40,13 @@
             <td>video1</td>
             <td>video2</td>
           </tr>
-          <tr id="2_class_vidAcc">
+          <tr>
             <td>2 Class</td>
             <td><progress value='70' max='100'></progress></td>
             <td><progress value='50' max='100'></progress></td>
             <td><progress value='40' max='100'></progress></td>
           </tr>
-          <tr id="7_class_vidAcc">
+          <tr>
             <td>7 Class</td>
             <td><progress value='40' max='100'></progress></td>
             <td><progress value='70' max='100'></progress></td>
@@ -151,15 +97,11 @@
             sodus1102 at ajou.ac.kr</a></div>
         </div>
       </div>
->>>>>>> Stashed changes
     </div>
 
     <script type="text/javascript" src="./script/chart.js-3.7.1/package/dist/chart.js"></script>
     <script>
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
   const labels2class = [
     'Negative',
     'Positive'

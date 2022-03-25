@@ -2,3 +2,12 @@
 *.DS_Store*
 node_modules
 package-lock.json
+
+data/*.txt
+data/*.mp4
+data/*.wav
+
+*.pyc
+__pycache__
+wandb
+.vscode
