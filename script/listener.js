@@ -1,11 +1,10 @@
 // item select listener
 function clickListener(name) {
-  console.log(name);
-  let prev = document.querySelectorAll('.selectItem.clicked');
+  let prev = document.querySelectorAll('.selectWrapper .selectItem.clicked');
   for(var i=0; prev[i]; i++) {
     prev[i].classList.remove('clicked');
   }
-  let next = document.querySelectorAll(`.selectItem.item${name}`);
+  let next = document.querySelectorAll(`.selectWrapper .selectItem.item${name}`);
   for(var i=0; next[i]; i++) {
     next[i].classList.add('clicked');
   }
@@ -17,6 +16,19 @@ function clickListener(name) {
     setAudioVideo(name);
   }
   xhr.send();
+
+  setClipItem(name);
+}
+
+function clickClipListener(name) {
+  let prev = document.querySelectorAll('#clipSelectWrapper .selectItem.clicked');
+  for(var i=0; prev[i]; i++) {
+    prev[i].classList.remove('clicked');
+  }
+  let next = document.querySelectorAll(`#clipSelectWrapper .selectItem.item${name}`);
+  for(var i=0; next[i]; i++) {
+    next[i].classList.add('clicked');
+  }
 }
 
 function setText(text) {
@@ -62,19 +74,22 @@ function setAudioVideo(name) {
   });
 }
 
-// header select listener
-var headerItemList = document.querySelectorAll('.header-item');
-for(let i=0; headerItemList[i]; i++) {
-  headerItemList[i].addEventListener('click', function() {
-    console.log(i);
-    setHeader(headerItemList[i]);
-  });
-}
+// select second section
+var workspace = document.querySelectorAll('#workspace')[0]
 
-function setHeader(headerItem) {
-  let prev = document.querySelectorAll('.header-item.selected');
-  for(var i=0; prev[i]; i++) {
-    prev[i].classList.remove('selected');
-  }
-  headerItem.classList.add('selected');
-}
+// header select listener
+// var headerItemList = document.querySelectorAll('.header-item');
+// for(let i=0; headerItemList[i]; i++) {
+//   headerItemList[i].addEventListener('click', function() {
+//     console.log(i);
+//     setHeader(headerItemList[i]);
+//   });
+// }
+
+// function setHeader(headerItem) {
+//   let prev = document.querySelectorAll('.header-item.selected');
+//   for(var i=0; prev[i]; i++) {
+//     prev[i].classList.remove('selected');
+//   }
+//   headerItem.classList.add('selected');
+// }
