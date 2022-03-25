@@ -28,7 +28,7 @@ module.exports = () => {
   });
 
   router.get('/csv', (req, res) => {
-    var data = fs.readFileSync('./prediction/MAG-BERT-MOSI_result.csv', {encoding: 'utf8'});
+    var data = fs.readFileSync('./predict/MAG-BERT-MOSI_result.csv', {encoding: 'utf8'});
     var rows = data.split('\n');
     var csv = [];
 
