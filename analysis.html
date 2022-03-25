@@ -13,6 +13,7 @@
         <th>Upload</th>
       </table>
     </div>
+<<<<<<< Updated upstream
     <div id="barGraph">
       <h2>Gold vs Our Accuracy</h2>
       <div id="canvasList" display="flex">
@@ -66,11 +67,99 @@
     <div id="viewSegment">
       <h2>View Segment</h2>
       <h3>Video_0 id_0</h3>
+=======
+    <div class="section">
+      <h1>Analysis</h1>
+      <div id="workspace">
+        <table id="viewMenu">
+          <th>View</th>
+          <th>Analysis</th>
+          <th>Compare</th>
+          <th>Upload</th>
+        </table>
+      </div>
+      <div id="barGraph">
+        <h2>Gold vs Our Accuracy</h2>
+        <div id="canvasList">
+          <canvas id='graph_class_2'  width="400" height="400"></canvas>
+          <canvas id='graph_class_7'  width="400" height="400"></canvas>
+        </div>
+      </div>
+      <div id="p-barVideos">
+        <h2>Video Accuracy</h2>
+        <table id="videoAcc">
+          <tr id="vidName_vidAcc">
+            <td></td>
+            <td>video0</td>
+            <td>video1</td>
+            <td>video2</td>
+          </tr>
+          <tr id="2_class_vidAcc">
+            <td>2 Class</td>
+            <td><progress value='70' max='100'></progress></td>
+            <td><progress value='50' max='100'></progress></td>
+            <td><progress value='40' max='100'></progress></td>
+          </tr>
+          <tr id="7_class_vidAcc">
+            <td>7 Class</td>
+            <td><progress value='40' max='100'></progress></td>
+            <td><progress value='70' max='100'></progress></td>
+            <td><progress value='60' max='100'></progress></td>
+          </tr>
+        </table>
+      </div>
+      <div id="p-barSengment">
+        <h2>Segment Hit</h2>
+        <h3>Video_0<h3>
+        <table id="segmentAcc">
+          <th></th>
+          <th>id_0</th>
+          <th>id_1</th>
+          <th>id_2</th>
+          <tr>
+            <td>2 Class</td>
+            <td><progress value='100' max='100'></progress></td>
+            <td><progress value='0' max='100'></progress></td>
+            <td><progress value='100' max='100'></progress></td>
+          </tr>
+          <tr>
+            <td>7 Class</td>
+            <td><progress value='0' max='100'></progress></td>
+            <td><progress value='0' max='100'></progress></td>
+            <td><progress value='100' max='100'></progress></td>
+          </tr>
+        </table>
+      </div>
+      <div id="viewSegment">
+        <h2>View Segment</h2>
+        <h3>Video_0 id_0</h3>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-title">
+          <span style="color: green">M</span>ulti<span style="color: green">M</span>odal <span style="color: red">S</span>entiment <span style="color: purple">A</span>nalysis
+        </div>
+        <div class="footer-info">
+          <div><a href="https://sites.google.com/view/iknow-lab">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10px" height="10px" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 9v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V9"/><path d="M9 22V12h6v10M2 10.6L12 2l10 8.6"/></svg>
+            iKnow Lab Ajou Univ.</a></div>
+          <div>&copy; Soyeon.H</div>
+          <div><a href="mailto:sodus1102@ajou.ac.kr">
+            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width='10px' height='10px'><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+            sodus1102 at ajou.ac.kr</a></div>
+        </div>
+      </div>
+>>>>>>> Stashed changes
     </div>
 
     <script type="text/javascript" src="./script/chart.js-3.7.1/package/dist/chart.js"></script>
     <script>
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
   const labels2class = [
     'Negative',
     'Positive'
@@ -169,6 +258,59 @@
 
       return [returnAcc2, returnAcc7]
     }
+
+    this.getVideoAcc = function() {//return video accuracy from model's result file
+      var vidName = []
+
+      var cntVid2 = []
+      var hitVid2 = []
+      var cntVid7 = []
+      var hitVid7 = []
+
+      var accVid2 = []
+      var accVid7 = []
+
+      if(this.result) {//when result exist count cnt and hit via video
+        var tempVidName = ''
+        var index = 0
+        var saveIndex = 0
+
+        tempVidName = this.result[index][0]
+        vidName.push(tempVidName)
+        cntVid2.push(0)
+        hitVid2.push(0)
+        cntVid7.push(0)
+        hitVid7.push(0)
+
+        for(var i = 0; i < this.result.length; i++) {
+          if(vidName[saveIndex] != this.result[i][0]) {//new video name
+            saveIndex = saveIndex + 1
+            vidName.push(this.result[i][0])
+            cntVid2.push(0)
+            hitVid2.push(0)
+            cntVid7.push(0)
+            hitVid7.push(0)
+          }
+
+          cntVid2[saveIndex] = cntVid2[saveIndex] + 1
+          cntVid7[saveIndex] = cntVid7[saveIndex] + 1
+
+          if(this.result[i][4] == this.result[i][7]) {
+            hitVid2[saveIndex] = hitVid2[saveIndex] + 1
+          }
+          if(this.result[i][5] == this.result[i][8]) {
+            hitVid7[saveIndex] = hitVid7[saveIndex] + 1
+          }
+        }
+      }
+
+      for(var i = 0; i < cntVid2.length; i++) {//calculate acc via video with hit and cnt
+        accVid2.push(hitVid2[i]/cntVid2[i]*100)
+        accVid7.push(hitVid7[i]/cntVid7[i]*100)
+      }
+
+      return [vidName, accVid2, accVid7]
+    }
   }
 
   function Analysis(goldModel, model) {
@@ -177,6 +319,8 @@
     this.model = model
     this.graph2 = document.getElementById('graph_class_2').getContext("2d");
     this.graph7 = document.getElementById('graph_class_7').getContext("2d");
+    this.vidTable = document.getElementById('videoAcc');
+    this.segTable = document.getElementById('segmentAcc');
     this.currentVideo = 0
     this.currentClip = 0
 
@@ -259,14 +403,23 @@
 
     }
 
-    this.updatePbarVideo = function(video_id){//Draw Progress Bar of a single Video
-      //process this.result via video
+    this.updatePbarVideo = function(){//Draw Accuracy Bar of the Videos
+      var modelAcc = this.model.getVideoAcc()
+      console.log(this.vidTable.getElementById("vidName_vidAcc"))
 
-      //create per video progress bar
+      for(var i = 0; i < modelAcc.length; i++) {//create per video progress bar
+        var newHead = this.vidTable.row[0].insertCell(-1)
+        newHead.innerHTML = modelAcc[i][0]
+        var new2class = this.vidTable.row[1].insertCell(-1)
+        new2class.innerHTML = modelAcc[i][1]
+        var new7class = this.vidTable.row[2].insertCell(-1)
+        new7class.innerHTML = modelAcc[i][2]
+      }
+
 
     }
 
-    this.updatePbarSegment = function(segment_id) {//Draw Progress Bar of a single Segment
+    this.updatePbarSegment = function(segment_id, model) {//Draw Progress Bar of a single Segment
       //process this.result via video
 
       //create per segment progress bar
@@ -298,6 +451,7 @@
                        ,["abcd",4,"text1",-2.5,'negative','very negative',-2.4,"negative",'very negative']
                        ,["abcd",5,"text1", 0.3,'positive','neutral',-0.4,"negative",'slightly negative']
                        ,["abcd",6,"text1", 1.0,'positive','positive',1.0,"positive",'positive']];
+
   var ourTestResult =  [["abcd",0,"text1",-0.5,'negative','slightly negative',-0.4,"negative",'slightly negative']
                        ,["abcd",1,"text1",-1.5,'negative','negative',-0.3,"negative",'slightly negative']
                        ,["abcd",2,"text1", 2.5,'positive','very positive',-0.3,"negative",'slightly negative']
@@ -311,7 +465,8 @@
   var analysis = new Analysis(goldModel, ourModel)
 
   analysis.updateGraph()
-
+  console.log('update complete')
+  analysis.updatePbarVideo()
   </script>
   </body>
 </html>
