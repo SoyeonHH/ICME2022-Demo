@@ -2,20 +2,35 @@ var workspace = document.querySelectorAll('#workspace')[0];
 var result = document.querySelectorAll('#result')[0];
 
 // draw frame for selection
-var tempBox = document.createElement('div');
-tempBox.className = 'box';
-tempBox.id = 'selectBox';
-var tempTitle = document.createElement('h3');
-tempTitle.className = 'title';
-tempTitle.id = 'selectTitle';
-tempTitle.innerText = 'select';
-var tempSelectWrapper = document.createElement('div');
-tempSelectWrapper.className = 'selectWrapper';
-tempSelectWrapper.id = 'selectWrapper';
+var selectBox = document.createElement('div');
+selectBox.className = 'box';
+selectBox.id = 'selectBox';
+var selectTitle = document.createElement('h3');
+selectTitle.className = 'title';
+selectTitle.id = 'selectTitle';
+selectTitle.innerText = 'select';
+var selectWrapper = document.createElement('div');
+selectWrapper.className = 'selectWrapper';
+selectWrapper.id = 'selectWrapper';
 
-tempBox.appendChild(tempTitle);
-tempBox.appendChild(tempSelectWrapper);
-workspace.appendChild(tempBox);
+selectBox.appendChild(selectTitle);
+selectBox.appendChild(selectWrapper);
+workspace.appendChild(selectBox);
+
+var clipSelectBox = document.createElement('div');
+clipSelectBox.className = 'box';
+clipSelectBox.id = 'clipSelectBox';
+var clipSelectTitle = document.createElement('h3');
+clipSelectTitle.className = 'title';
+clipSelectTitle.id = 'clipSelectTitle';
+clipSelectTitle.innerText = 'select';
+var clipSelectWrapper = document.createElement('div');
+clipSelectWrapper.className = 'selectWrapper';
+clipSelectWrapper.id = 'clipSelectWrapper';
+
+clipSelectBox.appendChild(clipSelectTitle);
+clipSelectBox.appendChild(clipSelectWrapper);
+workspace.appendChild(clipSelectBox);
 
 // draw items for selection
 let fileXHR = new XMLHttpRequest();
@@ -27,7 +42,7 @@ fileXHR.onreadystatechange = function() {
 fileXHR.send();
 
 function setItem(fileList) {
-  var selectWrapper = document.querySelectorAll('.selectWrapper')[0];
+  var selectWrapper = document.querySelectorAll('#selectWrapper')[0];
   while(selectWrapper.firstChild) {
     selectWrapper.removeChild(selectWrapper.lastChild);
   }
@@ -40,7 +55,29 @@ function setItem(fileList) {
       clickListener(name);
     });
     selectWrapper.appendChild(item);
-  })
+  });
+}
+
+function setClipItem(name) {
+  let secondFileXHR = new XMLHttpRequest();
+  secondFileXHR.open('GET', `http://localhost:3000/file/clip?title=${name}`);
+  secondFileXHR.onreadystatechange = function() {
+    responseJson = JSON.parse(fileXHR.responseText);
+    let clipSelectWrapper = document.getElementById('clipSelectWrapper');
+    clipSelectWrapper.replaceWith(clipSelectWrapper.cloneNode());
+    clipSelectWrapper = document.getElementById('clipSelectWrapper');
+    responseJson.map((e) => {
+      var item = document.createElement('div');
+      item.className = `selectItem item${e}`;
+      item.innerText = e;
+      let name = e;
+      item.addEventListener('click', function() {
+        clickClipListener(name);
+      });
+      clipSelectWrapper.appendChild(item);
+    });
+  }
+  secondFileXHR.send();
 }
 
 // draw frame for output result
