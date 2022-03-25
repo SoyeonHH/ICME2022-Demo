@@ -34,10 +34,12 @@
       <div id="p-barVideos">
         <h2>Video Accuracy</h2>
         <table id="videoAcc">
-          <th></th>
-          <th>Video_0</th>
-          <th>Video_1</th>
-          <th>Video_2</th>
+          <tr id="vidName_vidAcc">
+            <td></td>
+            <td>video0</td>
+            <td>video1</td>
+            <td>video2</td>
+          </tr>
           <tr>
             <td>2 Class</td>
             <td><progress value='70' max='100'></progress></td>
@@ -79,7 +81,7 @@
         <h3>Video_0 id_0</h3>
       </div>
     </div>
-    
+
     <div class="footer">
       <div class="footer-content">
         <div class="footer-title">
@@ -99,51 +101,6 @@
 
     <script type="text/javascript" src="./script/chart.js-3.7.1/package/dist/chart.js"></script>
     <script>
-    /*
-  const labels = [
-    '-3',
-    '-2',
-    '-1',
-    '0',
-    '1',
-    '2',
-    '3',
-  ];
-
-
-  const data = {
-    labels: labels,
-    datasets: [{
-      label: 'Gold',
-      backgroundColor: 'rgb(255, 99, 132)',
-      borderColor: 'rgb(255, 99, 132)',
-      data: [80, 70, 50, 60, 30, 30, 45],
-    },
-    {
-      label: 'Our',
-      backgroundColor: 'rgb(122, 99, 132)',
-      borderColor: 'rgb(122, 99, 132)',
-      data: [50, 60, 40, 30, 30, 30, 45],
-    }]
-  };
-
-  const config = {
-    type: 'bar',
-    data: data,
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true,
-          suggestedMax:100
-        }
-      }
-    },
-  };
-  const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-  );*/
-
 
   const labels2class = [
     'Negative',
@@ -162,10 +119,11 @@
   const config = {
     options: {
       responsive: false,
+      maintainAspectRatio: false,
       scales: {
         y: {
           beginAtZero: true,
-          suggestedMax:100
+          suggestedMax: 100
         }
       }
     },
@@ -242,6 +200,59 @@
 
       return [returnAcc2, returnAcc7]
     }
+
+    this.getVideoAcc = function() {//return video accuracy from model's result file
+      var vidName = []
+
+      var cntVid2 = []
+      var hitVid2 = []
+      var cntVid7 = []
+      var hitVid7 = []
+
+      var accVid2 = []
+      var accVid7 = []
+
+      if(this.result) {//when result exist count cnt and hit via video
+        var tempVidName = ''
+        var index = 0
+        var saveIndex = 0
+
+        tempVidName = this.result[index][0]
+        vidName.push(tempVidName)
+        cntVid2.push(0)
+        hitVid2.push(0)
+        cntVid7.push(0)
+        hitVid7.push(0)
+
+        for(var i = 0; i < this.result.length; i++) {
+          if(vidName[saveIndex] != this.result[i][0]) {//new video name
+            saveIndex = saveIndex + 1
+            vidName.push(this.result[i][0])
+            cntVid2.push(0)
+            hitVid2.push(0)
+            cntVid7.push(0)
+            hitVid7.push(0)
+          }
+
+          cntVid2[saveIndex] = cntVid2[saveIndex] + 1
+          cntVid7[saveIndex] = cntVid7[saveIndex] + 1
+
+          if(this.result[i][4] == this.result[i][7]) {
+            hitVid2[saveIndex] = hitVid2[saveIndex] + 1
+          }
+          if(this.result[i][5] == this.result[i][8]) {
+            hitVid7[saveIndex] = hitVid7[saveIndex] + 1
+          }
+        }
+      }
+
+      for(var i = 0; i < cntVid2.length; i++) {//calculate acc via video with hit and cnt
+        accVid2.push(hitVid2[i]/cntVid2[i]*100)
+        accVid7.push(hitVid7[i]/cntVid7[i]*100)
+      }
+
+      return [vidName, accVid2, accVid7]
+    }
   }
 
   function Analysis(goldModel, model) {
@@ -250,6 +261,8 @@
     this.model = model
     this.graph2 = document.getElementById('graph_class_2').getContext("2d");
     this.graph7 = document.getElementById('graph_class_7').getContext("2d");
+    this.vidTable = document.getElementById('videoAcc');
+    this.segTable = document.getElementById('segmentAcc');
     this.currentVideo = 0
     this.currentClip = 0
 
@@ -261,9 +274,6 @@
       if(this.model) {//our model is uploaded
         var goldData = this.goldModel.getClassAcc()
         var ourData = this.model.getClassAcc()
-
-        console.log(goldData[0])
-        console.log(ourData[0])
 
         analysisDataset2 = {
           labels: labels2class,
@@ -335,14 +345,23 @@
 
     }
 
-    this.updatePbarVideo = function(video_id){//Draw Progress Bar of a single Video
-      //process this.result via video
+    this.updatePbarVideo = function(){//Draw Accuracy Bar of the Videos
+      var modelAcc = this.model.getVideoAcc()
+      console.log(this.vidTable.getElementById("vidName_vidAcc"))
 
-      //create per video progress bar
+      for(var i = 0; i < modelAcc.length; i++) {//create per video progress bar
+        var newHead = this.vidTable.row[0].insertCell(-1)
+        newHead.innerHTML = modelAcc[i][0]
+        var new2class = this.vidTable.row[1].insertCell(-1)
+        new2class.innerHTML = modelAcc[i][1]
+        var new7class = this.vidTable.row[2].insertCell(-1)
+        new7class.innerHTML = modelAcc[i][2]
+      }
+
 
     }
 
-    this.updatePbarSegment = function(segment_id) {//Draw Progress Bar of a single Segment
+    this.updatePbarSegment = function(segment_id, model) {//Draw Progress Bar of a single Segment
       //process this.result via video
 
       //create per segment progress bar
@@ -374,6 +393,7 @@
                        ,["abcd",4,"text1",-2.5,'negative','very negative',-2.4,"negative",'very negative']
                        ,["abcd",5,"text1", 0.3,'positive','neutral',-0.4,"negative",'slightly negative']
                        ,["abcd",6,"text1", 1.0,'positive','positive',1.0,"positive",'positive']];
+
   var ourTestResult =  [["abcd",0,"text1",-0.5,'negative','slightly negative',-0.4,"negative",'slightly negative']
                        ,["abcd",1,"text1",-1.5,'negative','negative',-0.3,"negative",'slightly negative']
                        ,["abcd",2,"text1", 2.5,'positive','very positive',-0.3,"negative",'slightly negative']
@@ -387,7 +407,8 @@
   var analysis = new Analysis(goldModel, ourModel)
 
   analysis.updateGraph()
-
+  console.log('update complete')
+  analysis.updatePbarVideo()
   </script>
   </body>
 </html>
