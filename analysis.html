@@ -141,7 +141,18 @@
       }
     },
   };
-
+  /*
+  var reader = new FileReader()
+  reader.onload = function(progressEvent) {
+    var readResult = []
+    var lines = this.result.split(/\r\n|\n/)
+    lines.shift
+    for(var i = 0; i < lines.length; i++) {
+        readResult.push(lines[i].split(','))
+    }
+    return readResult
+  }
+  */
 
 
   function Model(modelName, publisher, result) {
@@ -303,6 +314,100 @@
     //return [hitMap2, hitMap7]
     //hitMap2, linear Hit map of video in 2 class
     //hitMap2, linear Hit map of video in 7 class
+
+    this.calMAE = function() {
+      var sumErr = 0
+
+      for(var i = 0; i< this.result.length; i++) { // | predi - labeli |
+        var err = this.result[i][6] - this.result[i][3]
+        if(err > 0 ) { sumErr = sumErr + err}
+        else {sumErr = sumErr - err}
+      }
+
+      if(this.result.length > 0) {
+        return sumErr / this.result.length
+      } else {
+        return -1
+      }
+    }
+    //return MAE
+
+    this.calCorr = function() {
+      var meanLabel = 0
+      var meanPredi = 0
+
+      var multSum = 0
+      for (var i = 0; i < this.result.length; i++) {
+        multSum = multSum + (this.result[i][3] - meanLabel) * (this.result[i][6] - meanPredi)
+      }
+
+      var labelDivSum = 0
+      for (var i = 0; i < this.result.length; i++) {
+        labelDivSum = labelDivSum + (this.result[i][3] - meanLabel) * (this.result[i][3] - meanLabel)
+      }
+
+      var prediDivSum = 0
+      for (var i = 0; i < this.result.length; i++) {
+        prediDivSum = prediDivSum + (this.result[i][6] - meanPredi) * (this.result[i][6] - meanPredi)
+      }
+
+      return multSum / (labelDivSum^0.5 * prediDivSum^0.5)
+    }
+    //return Corr
+
+    this.calClassAcc = function() {
+
+      var classHits = [0,0]
+
+      for(var i = 0; i < this.result.length; i++) {
+        if(this.result[i][4] == this.result[i][7]) {classHits[0] = classHits[0] + 1}
+        if(this.result[i][5] == this.result[i][8]) {classHits[1] = classHits[1] + 1}
+      }
+
+      return [100 * classHits[0]/this.result.length, 100 * classHits[1]/this.result.length]
+    }
+    //return [2classAcc, 7classAcc]
+
+    this.calF1 = function() {
+      var truePositive = 0
+      var flasePositive = 0
+      var falseNegative = 0
+
+      for(var i = 0; i < this.result.length; i++) {
+        if(this.result[i][7] == 'positive') {
+          if(this.result[i][4] == 'positive') {
+            truePositive = truePositive + 1
+          } else if(this.result[i][4] == 'negative') {
+            flasePositive = flasePositive + 1
+          }
+        } else if (this.result[i][7] == 'negative' && this.result[i][4] == 'positive') {
+          falseNegative = falseNegative + 1
+        }
+      }
+
+      var precision = truePositive / (truePositive + falsePositive)
+      var recall = truePositive / (truePostivie + falseNegative)
+
+      var f1 = 2 * precision * recall / (precision + recall)
+
+      return f1
+    }
+    //return F1
+
+    this.getScores = function() {//return Scores
+
+      var scores = ['', 0.0, 0.0, 0.0, 0.0, 0.0]
+
+      if(this.result) {
+        accArray = this.calClassAcc()
+        scores = [this.modelName, this.calMAE(), this.calCorr(), accArray[0], accArray[1], this.calF1()]
+      }
+
+      return scores
+
+
+    }
+    //return scores[ModelName, MAE, Corr, Acc-2, Acc-7, F1,]
   }
 
   function Analysis(goldModel, model) {
