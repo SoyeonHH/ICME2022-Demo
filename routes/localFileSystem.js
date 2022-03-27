@@ -36,8 +36,8 @@ module.exports = () => {
     var files = fs.readdirSync('./data/text');
     var fileList = [];
     for(var i = 0; files[i]; i++) {
-      if(files[i].includes('0')) {
-        fileList.push(files[i]);
+      if(files[i].includes(title)) {
+        fileList.push(files[i].split('.')[0]);
       }
     }
     res.json(fileList);
