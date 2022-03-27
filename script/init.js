@@ -36,8 +36,10 @@ workspace.appendChild(clipSelectBox);
 let fileXHR = new XMLHttpRequest();
 fileXHR.open('GET', 'http://localhost:3000/file');
 fileXHR.onreadystatechange = function() {
-  console.log(JSON.parse(fileXHR.responseText));
-  setItem(JSON.parse(fileXHR.responseText));
+  if(this.readyState == 4) {
+    // console.log(JSON.parse(fileXHR.responseText));
+    setItem(JSON.parse(fileXHR.responseText));  
+  }
 }
 fileXHR.send();
 
@@ -62,20 +64,22 @@ function setClipItem(name) {
   let secondFileXHR = new XMLHttpRequest();
   secondFileXHR.open('GET', `http://localhost:3000/file/clip?title=${name}`);
   secondFileXHR.onreadystatechange = function() {
-    responseJson = JSON.parse(fileXHR.responseText);
-    let clipSelectWrapper = document.getElementById('clipSelectWrapper');
-    clipSelectWrapper.replaceWith(clipSelectWrapper.cloneNode());
-    clipSelectWrapper = document.getElementById('clipSelectWrapper');
-    responseJson.map((e) => {
-      var item = document.createElement('div');
-      item.className = `selectItem item${e}`;
-      item.innerText = e;
-      let name = e;
-      item.addEventListener('click', function() {
-        clickClipListener(name);
+    if(this.readyState == 4) {
+      responseJson = JSON.parse(secondFileXHR.responseText);
+      let clipSelectWrapper = document.getElementById('clipSelectWrapper');
+      clipSelectWrapper.replaceWith(clipSelectWrapper.cloneNode());
+      clipSelectWrapper = document.getElementById('clipSelectWrapper');
+      responseJson.map((e) => {
+        var item = document.createElement('div');
+        item.className = `selectItem item${e}`;
+        item.innerText = e;
+        let name = e;
+        item.addEventListener('click', function() {
+          clickClipListener(name);
+        });
+        clipSelectWrapper.appendChild(item);
       });
-      clipSelectWrapper.appendChild(item);
-    });
+    }
   }
   secondFileXHR.send();
 }

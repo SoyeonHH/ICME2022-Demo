@@ -20,7 +20,10 @@ function postCsv() {
   var xhr = new XMLHttpRequest();
   xhr.open('POST', `http://localhost:3000/file/csv?name=${fileName}`);
   xhr.onreadystatechange = function() {
-    console.log('success');
+    if(this.readyState == 4) {   
+      let filename = JSON.parse(xhr.responseText)['filename'];
+      alert(`filename: ${filename}`);
+    }
   }
   xhr.send(formData);
 }
