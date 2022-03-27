@@ -12,8 +12,10 @@ function clickListener(name) {
   let xhr = new XMLHttpRequest();
   xhr.open('GET', `/data/text/${name}.txt`);
   xhr.onreadystatechange = function() {
-    setText(xhr.responseText);
-    setAudioVideo(name);
+    if(this.readyState == 4) {
+      setText(xhr.responseText);
+      setAudioVideo(name);
+    }
   }
   xhr.send();
 
