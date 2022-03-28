@@ -128,6 +128,9 @@
       </div>
     </div>
 
+
+    <div id = "MAG_BERT_TEXT" type='text' src="./predict/MAG-BERT_mosi_result">
+    <div id = "MISA_TEXT" type='text' src="./predict/MISA_mosi_result">
     <script type="text/javascript" src="./script/csv.js"></script>
     <script type="text/javascript" src="./script/chart.js-3.7.1/package/dist/chart.js"></script>
     <script>
@@ -721,11 +724,31 @@
   var ourModel = new Model("OUR","notDonghoon",ourTestResult)
   var analysis = new Analysis(goldModel, ourModel)
 
-
-
   analysis.updateGraph()
   analysis.updatePbarVideo()
   analysis.updatePbarSegment('abcd')
+
+  var modelTest0 = new Model()
+  var modelTest1 = new Model()
+  var modelTest2 = new Model()
+
+  var mag_bertFile = new File([],"./predict/MAG-BERT_mosi_result.csv")
+  var misaFile = new File([],"./predict/MISA_mosi_result.csv")
+
+  console.log(mag_bertFile)
+  console.log(misaFile)
+
+  var fr = new FileReader();
+  fr.prototype.readAsText(mag_bertFile)
+  console.log(fr.result)
+
+  fr.prototype.readAsText(misaFile)
+  console.log(fr.result)
+
+
+
+  modelTest0.uploadModel("MAG-BERT","google",mag_bertFile)
+  modelTest0.uploadModel("MISA","not me",misaFile)
 
   //interaction
   function uploadResult() {
