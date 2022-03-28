@@ -22,7 +22,7 @@
 }
 */
 
-#p-barVideos, #p-barSengment {
+#p-barVideos, #p-barSengment, #compSegment {
   overflow: scroll;
 
 }

@@ -49,21 +49,12 @@
         <table id="videoAcc">
           <tr id="vidName_vidAcc">
             <td></td>
-            <td>video0</td>
-            <td>video1</td>
-            <td>video2</td>
           </tr>
           <tr>
             <td>2 Class</td>
-            <td><progress value='70' max='100'></progress></td>
-            <td><progress value='50' max='100'></progress></td>
-            <td><progress value='40' max='100'></progress></td>
           </tr>
           <tr>
             <td>7 Class</td>
-            <td><progress value='40' max='100'></progress></td>
-            <td><progress value='70' max='100'></progress></td>
-            <td><progress value='60' max='100'></progress></td>
           </tr>
         </table>
       </div>
@@ -73,21 +64,12 @@
         <table id="segmentAcc">
           <tr id="segName_segAcc">
             <td></td>
-            <td>id_0</td>
-            <td>id_1</td>
-            <td>id_2</td>
           </tr>
           <tr>
             <td>2 Class</td>
-            <td><progress value='100' max='100'></progress></td>
-            <td><progress value='0' max='100'></progress></td>
-            <td><progress value='100' max='100'></progress></td>
           </tr>
           <tr>
             <td>7 Class</td>
-            <td><progress value='0' max='100'></progress></td>
-            <td><progress value='0' max='100'></progress></td>
-            <td><progress value='100' max='100'></progress></td>
           </tr>
         </table>
       </div>
@@ -240,7 +222,7 @@
             case 'very negative'    : j = 0; break;
             case 'negative'         : j = 1; break;
             case 'slightly negative': j = 2; break;
-            case 'neutral'          : j = 3; break;
+            case 'Neutral'          : j = 3; break;
             case 'slightly positive': j = 4; break;
             case 'positive'         : j = 5; break;
             case 'very positive'    : j = 6; break;
@@ -248,8 +230,11 @@
           }
 
           cnt7class[j] = cnt7class[j] + 1
-          if(result[i][5] == result[i][8]) {
+          //console.log(result[i][5])
+          //console.log(result[i][8])
+          if(result[i][5] == result[i][8] || result[i][5] + "\r" == result[i][8]) {
             hit7class[j] = hit7class[j] + 1
+            console.log('hit')
           }
         }
 
@@ -303,7 +288,7 @@
           if(this.result[i][4] == this.result[i][7]) {
             hitVid2[saveIndex] = hitVid2[saveIndex] + 1
           }
-          if(this.result[i][5] == this.result[i][8]) {
+          if(this.result[i][5] == this.result[i][8] || this.result[i][5] + "\r"== this.result[i][8]) {
             hitVid7[saveIndex] = hitVid7[saveIndex] + 1
           }
         }
@@ -338,7 +323,7 @@
               hitMap2.push(1)
             } else hitMap2.push(0) //miss in 2 class
 
-            if(this.result[i][5] == this.result[i][8]) {//hit in 7 class
+            if(this.result[i][5] == this.result[i][8] || this.result[i][5]+"\r" == this.result[i][8] ) {//hit in 7 class
               hitMap7.push(1)
             } else hitMap7.push(0) //miss in 7 class
           }
@@ -351,12 +336,17 @@
     //hitMap2, linear Hit map of video in 7 class
 
     this.calMAE = function() {
-      var sumErr = 0
+      var sumErr = 0.0
+
 
       for(var i = 0; i< this.result.length; i++) { // | predi - labeli |
+        if(this.result[i][6])
         var err = this.result[i][6] - this.result[i][3]
-        if(err > 0 ) { sumErr = sumErr + err}
-        else {sumErr = sumErr - err}
+        if(err > 0 ){
+          sumErr = sumErr + err
+        } else {
+          sumErr = sumErr - err
+        }
       }
 
       if(this.result.length > 0) {
@@ -396,7 +386,7 @@
 
       for(var i = 0; i < this.result.length; i++) {
         if(this.result[i][4] == this.result[i][7]) {classHits[0] = classHits[0] + 1}
-        if(this.result[i][5] == this.result[i][8]) {classHits[1] = classHits[1] + 1}
+        if(this.result[i][5] == this.result[i][8] || this.result[i][5] +'\r' == this.result[i][8]) {classHits[1] = classHits[1] + 1}
       }
 
       return [100 * classHits[0]/this.result.length, 100 * classHits[1]/this.result.length]
@@ -624,7 +614,7 @@
     this.models = modelList
     this.compTable = document.getElementById('compTable')
 
-    this.updateTop() = function() {
+    this.updateTop = function() {
       for(var i = 0; i < this.goldModels.length; i++) {
         var lastRow = this.compTable.rows.length;
         // if there's no header row in the table, then iteration = lastRow + 1
@@ -670,8 +660,8 @@
       }
     }
 
-    this.updateList(alignRule) = function(){
-      this.models.sort(alignRule)
+    this.updateList = function(){
+      this.models.sort()
       for(var i = 0; i < this.models.length; i++) {
         var lastRow = this.compTable.rows.length;
         // if there's no header row in the table, then iteration = lastRow + 1
@@ -683,21 +673,21 @@
         var cell_model = row.insertCell(0);
         cell_model.innerHTML = this.models[i].modelName
         var cell_MAE = row.insertCell(1);
-        cell_MAE.innerHTML = String(scores[0])
+        cell_MAE.innerHTML = String(scores[1])
         var cell_Corr = row.insertCell(2);
-        cell_Corr.innerHTML = String(scores[1])
+        cell_Corr.innerHTML = String(scores[2])
         var cell_Acc2  = row.insertCell(3);
-        cell_Acc2.innerHTML = String(scores[2])
+        cell_Acc2.innerHTML = String(scores[3])
         var cell_Acc7 = row.insertCell(4);
-        cell_Acc7.innerHTML = String(scores[3])
+        cell_Acc7.innerHTML = String(scores[4])
         var cell_F1 = row.insertCell(5);
-        cell_F1.innerHTML = String(scores[4])
+        cell_F1.innerHTML = String(scores[5])
       }
     }
 
-    this.drawCompTable(alignRule) = function() {
+    this.drawCompTable = function() {
       this.updateTop()
-      this.updateList(alignRule)
+      this.updateList()
     }//use this to draw Comparison table
   }
 
@@ -732,12 +722,6 @@
   var modelTest1 = new Model()
   var modelTest2 = new Model()
 
-  var mag_bertFile = new File([],"./predict/MAG-BERT_mosi_result.csv")
-  var misaFile = new File([],"./predict/MISA_mosi_result.csv")
-
-  console.log(mag_bertFile)
-  console.log(misaFile)
-
   /*var fr = new FileReader();
   fr.prototype.readAsText(mag_bertFile)
   console.log(fr.result)
@@ -748,7 +732,11 @@
   function jsonToResult(jsonFile) {
     var returnResult = []
     for(var i = 0; i < jsonFile.length; i++) {
-      returnResult.push([jsonFile[i]['Video_id'], jsonFile[i]['Segment_id'], jsonFile[i]['Text'], jsonFile[i]['Label'], jsonFile[i]['Label_binary'], jsonFile[i]['Label_7'], jsonFile[i]['Pred'], jsonFile[i]['Pred_binary'], jsonFile[i]['Pred_7\r']])
+      returnResult.push([jsonFile[i]['Video_id'], parseInt(jsonFile[i]['Segment_id']), jsonFile[i]['Text'], parseFloat(jsonFile[i]['Label']), jsonFile[i]['Label_binary'], jsonFile[i]['Label_7'], parseFloat(jsonFile[i]['Pred']), jsonFile[i]['Pred_binary'], jsonFile[i]['Pred_7\r']])
+      if(typeof(jsonFile[i]['Video_id']) == 'undefined') {
+        console.log("found undefined!")
+        returnResult.pop()
+      }
     }
 
     return returnResult
@@ -772,6 +760,9 @@
       var analysisTest = new Analysis(modelTest01, modelCopy)
       analysisTest.updateGraph()
       analysisTest.updatePbarVideo()
+
+      var comparisonTest = new Comparison([modelTest01, modelCopy, modelTest01], [modelTest01], [modelTest01, modelCopy, modelTest01])
+      comparisonTest.updateList()
     }
   }
   xmlhttprequest.send();
