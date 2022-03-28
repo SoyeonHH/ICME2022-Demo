@@ -4,23 +4,29 @@ var moseiTable = document.querySelectorAll('#mosei-table tbody');
 loadMosiScoreboard();
 loadMoseiScoreboard();
 
-function loadMosiScoreboard() {
+function loadMosiScoreboard(isUpload=false) {
   var mosiHTTPRequest = new XMLHttpRequest();
-  mosiHTTPRequest.open('GET', 'http://localhost:3000/csv/list?dataset=mosi');
+  if(!isUpload) removeScoreboard('mosi');
+  var uploadPath = isUpload ? '/upload' : '';
+  mosiHTTPRequest.open('GET', `http://localhost:3000/csv${uploadPath}/list?dataset=mosi`);
   mosiHTTPRequest.onreadystatechange = function() {
     if(this.readyState == 4) {
       setScoreboard(JSON.parse(mosiHTTPRequest.responseText), 'mosi');
+      if(!isUpload) loadMosiScoreboard({isUpload: true});
     }
   }
   mosiHTTPRequest.send();
 }
 
-function loadMoseiScoreboard() {
+function loadMoseiScoreboard(isUpload=false) {
   var moseiHTTPRequest = new XMLHttpRequest();
-  moseiHTTPRequest.open('GET', 'http://localhost:3000/csv/list?dataset=mosei');
+  if(!isUpload) removeScoreboard('mosei');
+  var uploadPath = isUpload ? '/upload' : '';
+  moseiHTTPRequest.open('GET', `http://localhost:3000/csv${uploadPath}/list?dataset=mosei`);
   moseiHTTPRequest.onreadystatechange = function() {
     if(this.readyState == 4) {
       setScoreboard(JSON.parse(moseiHTTPRequest.responseText), 'mosei');
+      if(!isUpload) loadMoseiScoreboard({isUpload: true});
     }
   }
   moseiHTTPRequest.send();
@@ -32,6 +38,7 @@ function setScoreboard(modelList, dataset) {
   var table = document.querySelectorAll(`#${dataset}-table tbody`)[0];
   modelList.map((model) => {
     let modelColumn = document.createElement('tr');
+    modelColumn.className = `tr-${dataset}`
     scoreboardRowList.map((e) => {
       let modelTd = document.createElement('td');
       if(e == 'Model') modelTd.innerText = model;
@@ -40,4 +47,11 @@ function setScoreboard(modelList, dataset) {
     });
     table.appendChild(modelColumn);
   });
+}
+
+function removeScoreboard(dataset) {
+  var trList = document.querySelectorAll(`.tr-${dataset}`);
+  for(var i=0; trList[i]; i++) {
+    trList[i].parentElement.removeChild(trList[i]);
+  }
 }

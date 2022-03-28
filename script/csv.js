@@ -16,6 +16,7 @@ radioMosei.addEventListener('click', function() {
 });
 
 var uploadButton = document.getElementById('uploadButton');
+
 function postCsv() {
   var files = document.getElementById('inputModelFile').files;
   console.log(files);
@@ -29,7 +30,6 @@ function postCsv() {
     alert('no file');
     return
   }
-
   if(radioMosei.checked == false && radioMosi.checked == false) {
     alert('no dataset');
     return
@@ -45,6 +45,12 @@ function postCsv() {
     if(this.readyState == 4) {   
       let filename = JSON.parse(xhr.responseText)['filename'];
       alert(`filename: ${filename}`);
+      if(dataset == 'mosi') {
+        loadMosiScoreboard();
+      }
+      else if(dataset == 'mosei') {
+        loadMoseiScoreboard();
+      }
     }
   }
   xhr.send(formData);

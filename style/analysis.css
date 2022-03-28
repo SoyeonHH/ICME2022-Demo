@@ -51,6 +51,7 @@
 .scoreboard-left, .scoreboard-right {
   width: 50%;
   text-align: center;
+  vertical-align: top;
 }
 
 #mosei-table, #mosi-table {
