@@ -1,7 +1,5 @@
 // return file list
 
-const { resourceLimits } = require('worker_threads');
-
 module.exports = () => {
   var router = require('express').Router();
   const fs = require('fs');
