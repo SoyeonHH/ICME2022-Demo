@@ -722,11 +722,11 @@
 
   var goldModel = new Model("GOLD", "donghoon", goldTestResult)
   var ourModel = new Model("OUR","notDonghoon",ourTestResult)
-  var analysis = new Analysis(goldModel, ourModel)
+  //var analysis = new Analysis(goldModel, ourModel)
 
-  analysis.updateGraph()
-  analysis.updatePbarVideo()
-  analysis.updatePbarSegment('abcd')
+  //analysis.updateGraph()
+  //analysis.updatePbarVideo()
+  //analysis.updatePbarSegment('abcd')
 
   var modelTest0 = new Model()
   var modelTest1 = new Model()
@@ -749,7 +749,6 @@
     var returnResult = []
     for(var i = 0; i < jsonFile.length; i++) {
       returnResult.push([jsonFile[i]['Video_id'], jsonFile[i]['Segment_id'], jsonFile[i]['Text'], jsonFile[i]['Label'], jsonFile[i]['Label_binary'], jsonFile[i]['Label_7'], jsonFile[i]['Pred'], jsonFile[i]['Pred_binary'], jsonFile[i]['Pred_7\r']])
-      console.log(returnResult[i][8])
     }
 
     return returnResult
@@ -767,6 +766,12 @@
       console.log(modelTest01.getScores())
       console.log(modelTest01.getClassAcc())
       console.log(modelTest01.getVideoAcc())
+
+      var modelCopy = new Model("newCopy","hoons",jsonToResult(jsonParsed))
+
+      var analysisTest = new Analysis(modelTest01, modelCopy)
+      analysisTest.updateGraph()
+      analysisTest.updatePbarVideo()
     }
   }
   xmlhttprequest.send();
