@@ -54,7 +54,7 @@ module.exports = () => {
       else {
         data = fs.readFileSync('./predict/MAG-BERT_mosi_result.csv', {encoding: 'utf8'});
       }
-      var rows = data.split('\n');
+      var rows = data.replace(/\r/gi, '').split('\n');
       var csv = [];
 
       for(var rowIndex in rows) {
