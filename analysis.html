@@ -71,10 +71,12 @@
         <h2>Segment Hit</h2>
         <h3>Video_0<h3>
         <table id="segmentAcc">
-          <th></th>
-          <th>id_0</th>
-          <th>id_1</th>
-          <th>id_2</th>
+          <tr id="segName_segAcc">
+            <td></td>
+            <td>id_0</td>
+            <td>id_1</td>
+            <td>id_2</td>
+          </tr>
           <tr>
             <td>2 Class</td>
             <td><progress value='100' max='100'></progress></td>
@@ -166,6 +168,18 @@
       this.publisher = publisher
 
       //process input file and make this.result
+      var fileReader = new FileReader()
+      fileReader.onload = function() {
+        var readResult = []
+        var lines = this.result.split(/\r\n|\n/)
+        lines.shift //remove header
+        for(var i = 0; i < lines.length; i++) {
+            readResult.push(lines[i].split(','))
+        }
+        return readResult
+
+      }
+
       console.log()
       this.result = []
 
@@ -283,7 +297,11 @@
         accVid7.push(hitVid7[i]/cntVid7[i]*100)
       }
 
-      return [vidName, accVid2, accVid7]
+      var returning = []
+      for(var i = 0; i < cntVid2.length; i++) {
+        returning.push([vidName[i],accVid2[i],accVid7[i]])
+      }
+      return returning
     }
     //return [vidName, accVid2, accVid7]
     //vidName, list of video_id
@@ -296,8 +314,8 @@
 
       if(this.result) {
         for(var i = 0; i < this.result.length; i++) {
-          console.log(videoId)
-          console.log(this.result[i][0])
+          //console.log(videoId)
+          //console.log(this.result[i][0])
           if(this.result[i][0] == videoId) {//the correct video id
             if(this.result[i][4] == this.result[i][7]) {//hit in 2 class
               hitMap2.push(1)
@@ -486,6 +504,11 @@
         };
       }
 
+      //clear canvas before new drawing
+      this.graph2.clearRect(0,0,50,50)
+      this.graph7.clearRect(0,0,50,50)
+
+      //draw chart with new chart instance
       var chart0 = new Chart(this.graph2, {
         type: 'bar',
         data: analysisDataset2,
@@ -527,15 +550,18 @@
     this.updatePbarVideo = function(){//Draw Accuracy Bar of the Videos
       var modelAcc = this.model.getVideoAcc()
       console.log(modelAcc)
-      /*
-      for(var i = 0; i < modelAcc.length; i++) {//create per video progress bar
-        var newHead = this.vidTable.row[0].insertCell(-1)
-        newHead.innerHTML = modelAcc[i][0]
-        var new2class = this.vidTable.row[1].insertCell(-1)
-        new2class.innerHTML = modelAcc[i][1]
-        var new7class = this.vidTable.row[2].insertCell(-1)
-        new7class.innerHTML = modelAcc[i][2]
-      }*/
+
+      //add progess bar in table #videoAcc
+      for(var i = 0; i < modelAcc.length; i++) {
+        var tblBodyObj = this.vidTable.tBodies[0];
+        var newVidTitle = tblBodyObj.rows[0].insertCell(-1);
+        var newVidAcc_2 = tblBodyObj.rows[1].insertCell(-1);
+        var newVidAcc_7 = tblBodyObj.rows[2].insertCell(-1);
+
+        newVidTitle.innerHTML = modelAcc[i][0]
+        newVidAcc_2.innerHTML = '<progress value=' + String(modelAcc[i][1]) + ' max="100">'
+        newVidAcc_7.innerHTML = '<progress value=' + String(modelAcc[i][2]) + ' max="100">'
+      }
 
 
     }
@@ -546,6 +572,16 @@
       console.log(segHitMap)
       //create per segment progress bar
 
+      for(var i = 0; i < segHitMap[0].length; i++) {
+        var tblBodyObj = this.segTable.tBodies[0];
+        var newSegTitle = tblBodyObj.rows[0].insertCell(-1);
+        var newSegAcc_2 = tblBodyObj.rows[1].insertCell(-1);
+        var newSegAcc_7 = tblBodyObj.rows[2].insertCell(-1);
+
+        newSegTitle.innerHTML = String(i)
+        newSegAcc_2.innerHTML = '<progress value=' + String(segHitMap[0][i]*100) + ' max="100">'
+        newSegAcc_7.innerHTML = '<progress value=' + String(segHitMap[1][i]*100) + ' max="100">'
+      }
     }
 
     this.updateView = function(video_id) { //Show Video's video, sound, text
@@ -581,6 +617,8 @@
                        ,["abcd",4,"text1",-2.5,'negative','very negative',-2.4,"negative",'very negative']
                        ,["abcd",5,"text1", 0.3,'positive','neutral',-0.4,"negative",'slightly negative']
                        ,["abcd",6,"text1", 1.0,'positive','positive',1.0,"positive",'positive']];
+
+
 
   var goldModel = new Model("GOLD", "donghoon", goldTestResult)
   var ourModel = new Model("OUR","notDonghoon",ourTestResult)

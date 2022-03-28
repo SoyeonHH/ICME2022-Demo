@@ -21,3 +21,8 @@
   width: 54.5%
 }
 */
+
+#p-barVideos, #p-barSengment {
+  overflow: scroll;
+
+}
