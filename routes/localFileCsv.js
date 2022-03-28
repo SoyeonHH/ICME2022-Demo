@@ -46,7 +46,6 @@ module.exports = () => {
 
   router.get('/:filename?', (req, res) => {
     var filename = req.params.filename;
-    var data;
     try {
       if(filename) {
         data = fs.readFileSync(`./userUpload/${filename}.csv`, {encoding: 'utf8'});
@@ -80,8 +79,9 @@ module.exports = () => {
 
   router.post('/', upload.single('file'), (req, res) => {
     var name = req.query.name;
+    var dataset = req.query.dataset;
     var newFileName = `${name}_${Date.now()}.csv`;
-    fs.renameSync(req.file.path, `${req.file.destination}/${newFileName}`);
+    fs.renameSync(req.file.path, `${req.file.destination}/${dataset}/${newFileName}`);
     res.json({
       'filename': newFileName
     });

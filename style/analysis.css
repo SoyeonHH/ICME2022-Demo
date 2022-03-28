@@ -26,3 +26,48 @@
   overflow: scroll;
 
 }
+
+#uploadTable {
+  width: 30%;
+}
+#uploadTable td:first-child {
+  width: 30%;
+}
+
+#scoreboard {
+  width: 100%;
+}
+
+#scoreboard tbody, #scoreboard tr,
+#mosei-table tbody, #mosei-table tr, #mosi-table tbody, #mosi-table tr{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.scoreboard-left, .scoreboard-right {
+  width: 50%;
+  text-align: center;
+}
+
+#mosei-table, #mosi-table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#mosei-table table, #mosi-table table {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 1px solid #000000;
+  border-collapse: collapse;
+}
+
+#mosei-table table tr td, #mosi-table table tr td {
+  width: 10%;
+  border: 1px solid #000000;
+}
+
+#mosei-table table tr td:first-child, #mosi-table table tr td:first-child {
+  width: 50% !important;
+}
