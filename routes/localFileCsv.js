@@ -1,18 +1,24 @@
 /**
  * /csv
- * [GET] no params
- * return base csv file
- * 
- * [POST] name, multipart data(csv)
+ * [POST] query: name, dataset (mosi, mosei)
+ * requestBody: multipart data(csv)
  * save csv in local path, return saved filename
  * 
- * /csv/{filename}
- * [GET] no params
+ * /csv
+ * [GET] query: dataset (mosi, mosei) & name
+ * return prepared csv file
+ * 
+ * /csv/upload
+ * [GET] query: dataset (mosi, mosei) & name
  * return saved csv file
  * 
  * /csv/list
- * [GET] no params
- * return all csv name in userUpload
+ * [GET] query: dataset (mosi, mosei)
+ * return all csv name in predict
+ * 
+ * /csv/upload/list
+ * [GET] query: dataset (mosi, mosei)
+ * return filelist of uploaded csv
  */
 
 module.exports = () => {
@@ -36,52 +42,112 @@ module.exports = () => {
   });
 
   router.get('/list', (req, res) => {
-    var files = fs.readdirSync('./userUpload');
-    var fileList = files.map((e) => {
-      return e.split('.')[0]
-    });
+    var dataset = req.query.dataset;
+    if(dataset != 'mosi' && dataset != 'mosei') {
+      res.json(false);
+    }
+    else{
+      var files = fs.readdirSync(`./predict/${dataset}`);
+      var fileList = files.filter(function(file) {
+        if(file.split('.')[1] == 'csv') return true;
+        else return false;
+      }).map((e) => {
+        return e.split('.')[0];
+      });
 
-    res.json(fileList);
+      res.json(fileList);
+    }
   });
 
-  router.get('/:filename?', (req, res) => {
-    var filename = req.params.filename;
-    var data;
-    try {
-      if(filename) {
-        data = fs.readFileSync(`./userUpload/${filename}.csv`, {encoding: 'utf8'});
-      }
-      else {
-        data = fs.readFileSync('./predict/MAG-BERT_mosi_result.csv', {encoding: 'utf8'});
-      }
-      var rows = data.replace(/\r/gi, '').split('\n');
-      var csv = [];
-
-      for(var rowIndex in rows) {
-        var row = rows[rowIndex].split(',');
-        if(rowIndex === "0") {
-          var columns = row;
-        }
-        else {
-          var data = {};
-          for(var columnIndex in columns) {
-            var column = columns[columnIndex];
-            data[column] = row[columnIndex];
-          }
-          csv.push(data);
-        }
-      }
-
-      res.json(csv);
-    } catch(e) {
+  router.get('/upload/list', (req, res) => {
+    var dataset = req.query.dataset;
+    if(dataset != 'mosi' && dataset != 'mosei') {
       res.json(false);
+    }
+    else {
+      var files = fs.readdirSync(`./userUpload/${dataset}`);
+      var fileList = files.filter(function(file) {
+        if(file.split('.')[1] == 'csv') return true;
+        else return false;
+      }).map((e) => {
+        return e.split('.')[0];
+      });
+
+      res.json(fileList);
+    }
+  });
+
+  router.get('/upload', (req, res) => {
+    var dataset = req.query.dataset;
+    var name = req.query.name;
+    if(dataset != 'mosi' && dataset != 'mosei') {
+      res.json(false);
+    }
+    else {
+      try {
+        data = fs.readFileSync(`./userUpload/${dataset}/${name}.csv`, {encoding: 'utf8'});
+        var rows = data.split('\n');
+        var csv = [];
+
+        for(var rowIndex in rows) {
+          var row = rows[rowIndex].split(',');
+          if(rowIndex === "0") {
+            var columns = row;
+          }
+          else {
+            var data = {};
+            for(var columnIndex in columns) {
+              var column = columns[columnIndex];
+              data[column] = row[columnIndex];
+            }
+            csv.push(data);
+          }
+        }
+        res.json(csv);
+      } catch(e) {
+        res.json(false);
+      }
+    }
+  });
+
+  router.get('/', (req, res) => {
+    var dataset = req.query.dataset;
+    var name = req.query.name;
+    if(dataset != 'mosi' && dataset != 'mosei') {
+      res.json(false);
+    }
+    else{
+      try {
+        data = fs.readFileSync(`./predict/${dataset}/${name}.csv`, {encoding: 'utf8'});
+        var rows = data.split('\n');
+        var csv = [];
+  
+        for(var rowIndex in rows) {
+          var row = rows[rowIndex].split(',');
+          if(rowIndex === "0") {
+            var columns = row;
+          }
+          else {
+            var data = {};
+            for(var columnIndex in columns) {
+              var column = columns[columnIndex];
+              data[column] = row[columnIndex];
+            }
+            csv.push(data);
+          }
+        }
+        res.json(csv);
+      } catch(e) {
+        res.json(false);
+      }
     }
   });
 
   router.post('/', upload.single('file'), (req, res) => {
     var name = req.query.name;
+    var dataset = req.query.dataset;
     var newFileName = `${name}_${Date.now()}.csv`;
-    fs.renameSync(req.file.path, `${req.file.destination}/${newFileName}`);
+    fs.renameSync(req.file.path, `${req.file.destination}/${dataset}/${newFileName}`);
     res.json({
       'filename': newFileName
     });
