@@ -546,7 +546,16 @@ def test_instance(model: nn.Module, test_tokenizer):
 
     for idx in range(len(test_data)):
         (words, visual, acoustic), label, segment = test_data[idx]
-        segment_list.append(segment)
+        if args.dataset == 'mosi':
+            segment_list.append(segment)
+        else:
+            video_name = segment[0]
+            if video_name in video:
+                count += 1
+            else:
+                video.add(video_name)
+                count = 0
+            segment_list.append(video_name + '[' + str(count) + ']')
         words_list.append(words)
         labels.append(label[0][0])
 
