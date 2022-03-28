@@ -614,7 +614,7 @@
     this.models = modelList
     this.compTable = document.getElementById('compTable')
 
-    this.updateTop() = function() {
+    this.updateTop = function() {
       for(var i = 0; i < this.goldModels.length; i++) {
         var lastRow = this.compTable.rows.length;
         // if there's no header row in the table, then iteration = lastRow + 1
@@ -660,8 +660,8 @@
       }
     }
 
-    this.updateList(alignRule) = function(){
-      this.models.sort(alignRule)
+    this.updateList = function(){
+      this.models.sort()
       for(var i = 0; i < this.models.length; i++) {
         var lastRow = this.compTable.rows.length;
         // if there's no header row in the table, then iteration = lastRow + 1
@@ -673,21 +673,21 @@
         var cell_model = row.insertCell(0);
         cell_model.innerHTML = this.models[i].modelName
         var cell_MAE = row.insertCell(1);
-        cell_MAE.innerHTML = String(scores[0])
+        cell_MAE.innerHTML = String(scores[1])
         var cell_Corr = row.insertCell(2);
-        cell_Corr.innerHTML = String(scores[1])
+        cell_Corr.innerHTML = String(scores[2])
         var cell_Acc2  = row.insertCell(3);
-        cell_Acc2.innerHTML = String(scores[2])
+        cell_Acc2.innerHTML = String(scores[3])
         var cell_Acc7 = row.insertCell(4);
-        cell_Acc7.innerHTML = String(scores[3])
+        cell_Acc7.innerHTML = String(scores[4])
         var cell_F1 = row.insertCell(5);
-        cell_F1.innerHTML = String(scores[4])
+        cell_F1.innerHTML = String(scores[5])
       }
     }
 
-    this.drawCompTable(alignRule) = function() {
+    this.drawCompTable = function() {
       this.updateTop()
-      this.updateList(alignRule)
+      this.updateList()
     }//use this to draw Comparison table
   }
 
@@ -721,12 +721,6 @@
   var modelTest0 = new Model()
   var modelTest1 = new Model()
   var modelTest2 = new Model()
-
-  var mag_bertFile = new File([],"./predict/MAG-BERT_mosi_result.csv")
-  var misaFile = new File([],"./predict/MISA_mosi_result.csv")
-
-  console.log(mag_bertFile)
-  console.log(misaFile)
 
   /*var fr = new FileReader();
   fr.prototype.readAsText(mag_bertFile)
@@ -766,6 +760,9 @@
       var analysisTest = new Analysis(modelTest01, modelCopy)
       analysisTest.updateGraph()
       analysisTest.updatePbarVideo()
+
+      var comparisonTest = new Comparison([modelTest01, modelCopy, modelTest01], [modelTest01], [modelTest01, modelCopy, modelTest01])
+      comparisonTest.updateList()
     }
   }
   xmlhttprequest.send();
