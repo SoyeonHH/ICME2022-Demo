@@ -34,3 +34,9 @@ app.get('/analysis', function(req, res) {
 
 var localFileSystem = require('./routes/localFileSystem')();
 app.use('/file', localFileSystem);
+
+var localFileText = require('./routes/localFileText')();
+app.use('/text', localFileText);
+
+var localFileCsv = require('./routes/localFileCsv')();
+app.use('/csv', localFileCsv);
