@@ -12,8 +12,10 @@ function clickListener(name) {
   let xhr = new XMLHttpRequest();
   xhr.open('GET', `/data/text/${name}.txt`);
   xhr.onreadystatechange = function() {
-    setText(xhr.responseText);
-    setAudioVideo(name);
+    if(this.readyState == 4) {
+      setText(xhr.responseText);
+      setAudioVideo(name);
+    }
   }
   xhr.send();
 
@@ -29,6 +31,16 @@ function clickClipListener(name) {
   for(var i=0; next[i]; i++) {
     next[i].classList.add('clicked');
   }
+
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', `/data/text/${name}.txt`);
+  xhr.onreadystatechange = function() {
+    if(this.readyState == 4) {
+      setText(xhr.responseText);
+      setAudioVideo(name);
+    }
+  }
+  xhr.send();
 }
 
 function setText(text) {
