@@ -28,10 +28,13 @@
 }
 
 #uploadTable {
-  width: 30%;
+  width: 50%;
 }
 #uploadTable td:first-child {
-  width: 30%;
+  width: 15%;
+}
+#uploadButton {
+  float: right;
 }
 
 #scoreboard {

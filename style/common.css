@@ -5,6 +5,7 @@
 body, html {
   margin: 0;
   padding: 0;
+  min-width: 720px;
 }
 
 span {
@@ -65,17 +66,17 @@ a {
 
 .header-github {
   margin-right: 10%;
-  margin-left: 20px;
+  margin-left: 10px;
   float: right;
   right: 0px;
 }
 .header-github img {
-  height: 40px;
+  width: 36px;
+  height: 36px;
   vertical-align: middle;
 }
 
 .header-item {
-  /* width: 120px; */
   margin-left: 14px;
   margin-right: 14px;
   float: right;
@@ -86,8 +87,13 @@ a {
   color: #ffffff;
 }
 
+.header-item.view {
+  width: 76px;
+}
+.header-item.analysis {
+  width: 212px;
+}
 .header-item.selected {
-  /* text-decoration: underline; */
   font-weight: 500;
 }
 

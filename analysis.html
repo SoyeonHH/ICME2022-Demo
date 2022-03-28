@@ -10,8 +10,8 @@
         DeMOSI
       </div>
       <div class="header-github"><img src="./image/github.png" style="filter: invert(100%);"/></div>
-      <div class="header-item selected">Analysis & Comparison</div>
-      <a href="/"><div class="header-item">View</div></a>
+      <div class="header-item analysis selected">Analysis & Comparison</div>
+      <a href="/"><div class="header-item view">View</div></a>
     </div>
     
     <div class="section">
@@ -28,12 +28,14 @@
             <td width="30%"><input type="radio" name="MOSI" id="radio-mosi" checked="true"/>MOSI</td>
             <td width="30%"><input type="radio" name="MOSEI" id="radio-mosei"/>MOSEI</td>
           </tr>
+          <tr>
+            <td>result csv file</td>
+            <td colspan="2" width="60%">
+              <input type="file" id="inputModelFile" accept=".csv"></input>
+              <button type="button" id="uploadButton">upload</button>
+            </td>
+          </tr>
         </table>
-        <form id="csv-form" enctype="multipart/form-data">
-          result csv file
-          <input type="file" id="inputModelFile" accept=".csv"></input>
-          <button type="button" id="uploadButton">upload</button>
-        </form>
         <div style="height: 100px;"></div>
         <h2>Scoreboard</h2>
         <table id="scoreboard">
