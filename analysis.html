@@ -15,28 +15,35 @@
     </div>
 
     <div class="section">
-      <h1>Analysis</h1>
+      <h1>Analyzer</h1>
       <div id="workspace">
         <h2>Upload Your Results</h2>
-        <table id = "uploadTable">
-          <tr>
-            <td>Model Name</td>
-            <td colspan="2" width="60%"><input type="text" id="inputModelName" style="width:100%"/></td>
-          </tr>
-          <tr>
-            <td>Dataset</td>
-            <td width="30%"><input type="radio" name="MOSI" id="radio-mosi" checked="true"/>MOSI</td>
-            <td width="30%"><input type="radio" name="MOSEI" id="radio-mosei"/>MOSEI</td>
-          </tr>
-          <tr>
-            <td>result csv file</td>
-            <td colspan="2" width="60%">
-              <input type="file" id="inputModelFile" accept=".csv"></input>
-              <button type="button" id="uploadButton">upload</button>
-            </td>
-          </tr>
-        </table>
-        <div style="height: 100px;"></div>
+        <div style="height: 24px;"></div>
+        <div id="upload-table-wrapper">
+          <table id = "upload-table">
+            <tr>
+              <td>Model Name</td>
+              <td colspan="2" width="60%"><input type="text" id="inputModelName" style="width:100%"/></td>
+            </tr>
+            <tr>
+              <td>Dataset</td>
+              <td width="30%"><input type="radio" name="MOSI" id="radio-mosi" checked="true"/>MOSI</td>
+              <td width="30%"><input type="radio" name="MOSEI" id="radio-mosei"/>MOSEI</td>
+            </tr>
+            <tr>
+              <td>result csv file</td>
+              <td colspan="2" width="60%">
+                <input type="file" id="inputModelFile" accept=".csv"></input>
+                <button type="button" id="uploadButton">upload</button>
+              </td>
+            </tr>
+          </table>
+          <div id="upload-description">
+            <h3>Select a csv file such as image below</h4>
+            <img src="./image/upload_file_example2.png" />
+          </div>
+        </div>
+        <div style="height: 8px;"></div>
         <h2>Scoreboard</h2>
         <table id="scoreboard">
           <tr>
