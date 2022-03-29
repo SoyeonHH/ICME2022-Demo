@@ -21,8 +21,38 @@
   width: 54.5%
 }
 */
+#plotHolder{
+  position: relative;
+  height:300px;
+  width:600px;
+}
+.plotBackGround {
+  z-index: 1;
+  position: absolute;
+  top:0;
+  left:0;
+  width:50%;
+  height:100%;
+  opacity:0.1;
+  margin-top:5%
+}
+#plotBackGround_1 {
+  margin-left:50%;
+  background:green;
+}
+#plotBackGround_0 {
+  background:red;
+}
+#scatter0 {
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:0;
+  width:600px;
+  height:200px;
+}
 
-#p-barVideos, #p-barSengment, #compSegment {
+#p-barVideos, #p-barSengment, #compSegment, #plotSegment{
   overflow: auto;
 
 }
