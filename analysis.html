@@ -99,7 +99,7 @@
       </div>
       <div id="p-barSengment">
         <h2>Segment Hit</h2>
-        <h3>Video_0<h3>
+        <h3 id="segmentVidName">no video selected<h3>
         <table id="segmentAcc">
           <tr id="segName_segAcc">
             <td></td>
@@ -586,6 +586,7 @@
       var modelAcc = this.model.getVideoAcc()
       console.log(modelAcc)
 
+
       //add progess bar in table #videoAcc
       for(var i = 0; i < modelAcc.length; i++) {
         var tblBodyObj = this.vidTable.tBodies[0];
@@ -593,10 +594,11 @@
         var newVidAcc_2 = tblBodyObj.rows[1].insertCell(-1);
         var newVidAcc_7 = tblBodyObj.rows[2].insertCell(-1);
 
-        newVidTitle.innerHTML = modelAcc[i][0]
+        newVidTitle.innerHTML = '<div class="videoId_in_vidTable" onclick="selectVideo(this)">' + modelAcc[i][0] + '</div>'
         newVidAcc_2.innerHTML = '<progress value=' + String(modelAcc[i][1]) + ' max="100">'
         newVidAcc_7.innerHTML = '<progress value=' + String(modelAcc[i][2]) + ' max="100">'
       }
+
 
 
     }
@@ -605,7 +607,8 @@
       //process this.result via video
       var segHitMap = this.model.getSegmentAcc(video_id)
       console.log(segHitMap)
-      //create per segment progress bar
+
+      this.segTable.innerHTML = "<tr id='segName_segAcc'><td></td></tr><tr><td>2 Class</td></tr><tr><td>7 Class</td></tr>"
 
       for(var i = 0; i < segHitMap[0].length; i++) {
         var tblBodyObj = this.segTable.tBodies[0];
@@ -740,22 +743,11 @@
 
   var goldModel = new Model("GOLD", "donghoon", goldTestResult)
   var ourModel = new Model("OUR","notDonghoon",ourTestResult)
-  //var analysis = new Analysis(goldModel, ourModel)
+  var analysis = new Analysis(goldModel,ourModel)
 
-  //analysis.updateGraph()
-  //analysis.updatePbarVideo()
+  analysis.updateGraph()
+  analysis.updatePbarVideo()
   //analysis.updatePbarSegment('abcd')
-
-  var modelTest0 = new Model()
-  var modelTest1 = new Model()
-  var modelTest2 = new Model()
-
-  /*var fr = new FileReader();
-  fr.prototype.readAsText(mag_bertFile)
-  console.log(fr.result)
-
-  fr.prototype.readAsText(misaFile)
-  console.log(fr.result)*/
 
   function jsonToResult(jsonFile) {
     var returnResult = []
@@ -776,6 +768,7 @@
   xmlhttprequest.onreadystatechange = function() {
     if(this.readyState == 4) {
       var jsonParsed = JSON.parse(xmlhttprequest.responseText)
+      console.log(jsonParsed)
       console.log(jsonToResult(jsonParsed))
 
       var modelTest01 = new Model("newTest","hoons",jsonToResult(jsonParsed))
@@ -803,6 +796,18 @@
     console.log()
     //uploadingModel.uploadModel(document.getElementById("inputModelName").value,document.getElementById("inputModelUrl").value,[]);
 
+  }
+
+  function selectVideo(videoId) { //update Segment Hit section when we click video_id in Video Accuracy section
+    //change Segment Hit
+    analysis.updatePbarSegment(videoId.innerText)
+    
+    //change segmentVidName
+    var segmentTitle = document.getElementById('segmentVidName')
+    segmentTitle.innerText = videoId.innerText
+
+    //change View
+    analysis.updateView(videoId.innerText)
   }
 
 
