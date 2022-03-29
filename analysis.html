@@ -194,6 +194,23 @@
   };
 
 
+  function jsonToResult(jsonFile, goldYes=false) {
+    var returnResult = []
+    for(let i = 0; i < jsonFile.length; i++) {
+      if(goldYes) {
+        returnResult.push([jsonFile[i]['Video_id'], parseInt(jsonFile[i]['Segment_id']),parseFloat(jsonFile[i]['Label']), jsonFile[i]['Label_binary'], jsonFile[i]['Label_7']])}
+      else {
+        returnResult.push([jsonFile[i]['Video_id'], parseInt(jsonFile[i]['Segment_id']),parseFloat(jsonFile[i]['Pred']), jsonFile[i]['Pred_binary'], jsonFile[i]['Pred_7']])}
+      if(typeof(jsonFile[i]['Video_id']) == 'undefined') {
+        console.log("found undefined!")
+        returnResult.pop()
+      }
+    }
+    return returnResult
+  }
+
+  var globalGoldMosei = jsonToResult(,true)
+
   function Model(modelName, publisher, result) {
     this.modelName = modelName
     this.publisher = publisher
@@ -845,6 +862,10 @@
                        ,["abcd",6,"text1", 1.0,'positive','positive',1.0,"positive",'positive']];
 
 
+  var newGoleTestResult = [["abcd",0,0.33,positive,Neutral]
+                           ["abcd",1,0.33,positive,Neutral]]
+  var newOurTestResult =  [["abcd",0,1.33,positive,positive]
+                           ["abcd",0,0.33,positive,Neutral]]
 
   var goldModel = new Model("GOLD", "donghoon", goldTestResult)
   var ourModel = new Model("OUR","notDonghoon",ourTestResult)
@@ -854,18 +875,7 @@
   //analysis.updatePbarVideo()
   //analysis.updatePbarSegment('abcd')
 
-  function jsonToResult(jsonFile) {
-    var returnResult = []
-    for(let i = 0; i < jsonFile.length; i++) {
-      returnResult.push([jsonFile[i]['Video_id'], parseInt(jsonFile[i]['Segment_id']), jsonFile[i]['Text'], parseFloat(jsonFile[i]['Label']), jsonFile[i]['Label_binary'], jsonFile[i]['Label_7'], parseFloat(jsonFile[i]['Pred']), jsonFile[i]['Pred_binary'], jsonFile[i]['Pred_7\r']])
-      if(typeof(jsonFile[i]['Video_id']) == 'undefined') {
-        console.log("found undefined!")
-        returnResult.pop()
-      }
-    }
 
-    return returnResult
-  }
 
   let xmlhttprequest = new XMLHttpRequest();
 
