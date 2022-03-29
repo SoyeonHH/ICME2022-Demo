@@ -11,5 +11,4 @@ data/*.wav
 __pycache__
 wandb
 .vscode
-*.csv
 checkpoints

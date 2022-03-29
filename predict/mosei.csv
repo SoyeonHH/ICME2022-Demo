@@ -1,0 +1,4644 @@
+Video_id,Segment_id,Label,Label_binary,Label_7
+-6rXp3zJ3kc,0,0.33,positive,Neutral
+-6rXp3zJ3kc,1,-1.0,negative,slightly negative
+-6rXp3zJ3kc,2,0.0,negative,Neutral
+-9y-fZ3swSY,0,1.33,positive,positive
+-9y-fZ3swSY,1,1.0,positive,slightly positive
+-9y-fZ3swSY,2,1.33,positive,positive
+-9y-fZ3swSY,3,0.33,positive,Neutral
+-9y-fZ3swSY,4,0.0,negative,Neutral
+-9y-fZ3swSY,5,0.33,positive,Neutral
+-9y-fZ3swSY,6,-0.33,negative,Neutral
+-9y-fZ3swSY,7,1.67,positive,positive
+-AUZQgSxyPQ,0,0.67,positive,slightly positive
+-HeZS2-Prhc,0,1.33,positive,positive
+-HeZS2-Prhc,1,-0.67,negative,slightly negative
+-HeZS2-Prhc,2,0.67,positive,slightly positive
+-HeZS2-Prhc,3,1.0,positive,slightly positive
+-MeTTeMJBNc,0,0.33,positive,Neutral
+-MeTTeMJBNc,1,0.33,positive,Neutral
+-MeTTeMJBNc,2,0.0,negative,Neutral
+-MeTTeMJBNc,3,1.33,positive,positive
+-RfYyzHpjk4,0,2.0,positive,positive
+-RfYyzHpjk4,1,0.33,positive,Neutral
+-RfYyzHpjk4,2,0.33,positive,Neutral
+-RfYyzHpjk4,3,0.0,negative,Neutral
+-UUCSKoHeMA,0,0.67,positive,slightly positive
+-UUCSKoHeMA,1,-0.33,negative,Neutral
+-UUCSKoHeMA,2,0.0,negative,Neutral
+-UUCSKoHeMA,3,0.0,negative,Neutral
+-cEhr0cQcDM,0,0.0,negative,Neutral
+-cEhr0cQcDM,1,1.33,positive,positive
+-ri04Z7vwnc,0,-0.33,negative,Neutral
+-ri04Z7vwnc,1,0.0,negative,Neutral
+-ri04Z7vwnc,2,-0.33,negative,Neutral
+-ri04Z7vwnc,3,0.33,positive,Neutral
+-ri04Z7vwnc,4,0.67,positive,slightly positive
+-ri04Z7vwnc,5,1.0,positive,slightly positive
+-rxZxtG0xmY,0,-1.0,negative,slightly negative
+-rxZxtG0xmY,1,0.0,negative,Neutral
+-s9qJ7ATP7w,0,0.67,positive,slightly positive
+-s9qJ7ATP7w,1,-0.33,negative,Neutral
+-s9qJ7ATP7w,2,0.67,positive,slightly positive
+-s9qJ7ATP7w,3,1.33,positive,positive
+-s9qJ7ATP7w,4,-2.0,negative,negative
+-s9qJ7ATP7w,5,0.0,negative,Neutral
+-s9qJ7ATP7w,6,1.0,positive,slightly positive
+-s9qJ7ATP7w,7,0.0,negative,Neutral
+-s9qJ7ATP7w,8,1.0,positive,slightly positive
+-s9qJ7ATP7w,9,1.33,positive,positive
+-yRb-Jum7EQ,0,0.0,negative,Neutral
+-yRb-Jum7EQ,1,0.0,negative,Neutral
+-yRb-Jum7EQ,2,-0.67,negative,slightly negative
+-yRb-Jum7EQ,3,0.0,negative,Neutral
+-yRb-Jum7EQ,4,0.0,negative,Neutral
+0Fqav67TDEw,0,0.33,positive,Neutral
+0JaYazphxfM,0,1.0,positive,slightly positive
+0JaYazphxfM,1,0.0,negative,Neutral
+0K7dCp80n9c,0,0.33,positive,Neutral
+0K7dCp80n9c,1,1.67,positive,positive
+0K7dCp80n9c,2,0.0,negative,Neutral
+0K7dCp80n9c,3,0.0,negative,Neutral
+0K7dCp80n9c,4,0.33,positive,Neutral
+0K7dCp80n9c,5,0.0,negative,Neutral
+0K7dCp80n9c,6,0.0,negative,Neutral
+0K7dCp80n9c,7,1.0,positive,slightly positive
+0PlQc98SccA,0,0.67,positive,slightly positive
+0PlQc98SccA,1,0.33,positive,Neutral
+0PlQc98SccA,2,0.33,positive,Neutral
+0YiAKqU36KE,0,1.33,positive,positive
+0YiAKqU36KE,1,-1.0,negative,slightly negative
+0YiAKqU36KE,2,1.0,positive,slightly positive
+0YiAKqU36KE,3,0.0,negative,Neutral
+0YiAKqU36KE,4,-1.67,negative,negative
+0YiAKqU36KE,5,0.0,negative,Neutral
+0YiAKqU36KE,6,-0.33,negative,Neutral
+0YiAKqU36KE,7,1.67,positive,positive
+0YiAKqU36KE,8,0.0,negative,Neutral
+0bxhZ-LIfZY,0,-0.33,negative,Neutral
+0bxhZ-LIfZY,1,-0.33,negative,Neutral
+0eTibWQdO5M,0,-0.67,negative,slightly negative
+0uftSGdwo0Q,0,1.33,positive,positive
+0uftSGdwo0Q,1,0.0,negative,Neutral
+0uftSGdwo0Q,2,0.33,positive,Neutral
+0uftSGdwo0Q,3,0.67,positive,slightly positive
+100178,0,-2.0,negative,negative
+100178,1,0.0,negative,Neutral
+100178,2,1.33,positive,positive
+100178,3,-1.33,negative,negative
+100178,4,0.0,negative,Neutral
+100178,5,0.67,positive,slightly positive
+100178,6,-1.33,negative,negative
+100178,7,0.33,positive,Neutral
+100178,8,0.0,negative,Neutral
+100178,9,0.0,negative,Neutral
+100178,10,0.0,negative,Neutral
+100178,11,0.0,negative,Neutral
+100178,12,0.33,positive,Neutral
+100178,13,0.0,negative,Neutral
+100178,14,-0.67,negative,slightly negative
+100178,15,-2.0,negative,negative
+100178,16,-1.0,negative,slightly negative
+100178,17,-2.33,negative,very negative
+10219,0,2.67,positive,very positive
+10219,1,2.0,positive,positive
+10219,2,2.0,positive,positive
+10219,3,0.0,negative,Neutral
+10219,4,0.0,negative,Neutral
+10219,5,0.0,negative,Neutral
+10219,6,0.67,positive,slightly positive
+10219,7,2.67,positive,very positive
+10219,8,1.67,positive,positive
+10219,9,1.0,positive,slightly positive
+10219,10,1.33,positive,positive
+10219,11,0.0,negative,Neutral
+10219,12,1.33,positive,positive
+10219,13,0.33,positive,Neutral
+102213,0,-2.0,negative,negative
+102213,1,-1.67,negative,negative
+102213,2,-1.0,negative,slightly negative
+102213,3,-2.33,negative,very negative
+102213,4,0.33,positive,Neutral
+102213,5,0.0,negative,Neutral
+102213,6,0.33,positive,Neutral
+102213,7,1.33,positive,positive
+102213,8,-1.0,negative,slightly negative
+102213,9,-0.33,negative,Neutral
+102213,10,-1.0,negative,slightly negative
+102213,11,-0.67,negative,slightly negative
+102213,12,-1.33,negative,negative
+102213,13,0.0,negative,Neutral
+102389,0,-1.0,negative,slightly negative
+102389,1,-0.67,negative,slightly negative
+102389,2,0.33,positive,Neutral
+102389,3,-2.0,negative,negative
+102389,4,-1.67,negative,negative
+102389,5,-2.0,negative,negative
+102389,6,0.0,negative,Neutral
+102389,7,0.0,negative,Neutral
+102389,8,0.0,negative,Neutral
+102389,9,-1.67,negative,negative
+102389,10,0.0,negative,Neutral
+102389,11,-1.0,negative,slightly negative
+102389,12,-1.33,negative,negative
+102389,13,-0.33,negative,Neutral
+102389,14,-1.67,negative,negative
+104741,0,0.0,negative,Neutral
+104741,1,0.0,negative,Neutral
+104741,2,-1.67,negative,negative
+104741,3,-1.67,negative,negative
+104741,4,0.0,negative,Neutral
+104741,5,-0.33,negative,Neutral
+104741,6,-1.33,negative,negative
+104741,7,0.33,positive,Neutral
+104741,8,-0.67,negative,slightly negative
+104741,9,-0.67,negative,slightly negative
+107585,0,-2.0,negative,negative
+107585,1,-1.33,negative,negative
+107585,2,-1.0,negative,slightly negative
+107585,3,-2.0,negative,negative
+107585,4,-1.0,negative,slightly negative
+107585,5,-1.0,negative,slightly negative
+107585,6,-1.0,negative,slightly negative
+107585,7,-0.67,negative,slightly negative
+107585,8,-1.0,negative,slightly negative
+107585,9,-2.0,negative,negative
+107585,10,-0.67,negative,slightly negative
+107585,11,0.33,positive,Neutral
+107585,12,-2.33,negative,very negative
+107585,13,-2.0,negative,negative
+107585,14,-1.33,negative,negative
+107585,15,-2.0,negative,negative
+107585,16,-1.0,negative,slightly negative
+107585,17,-2.0,negative,negative
+107585,18,-2.0,negative,negative
+107585,19,-2.0,negative,negative
+108146,0,-1.0,negative,slightly negative
+108146,1,-1.67,negative,negative
+108146,2,1.67,positive,positive
+108146,3,0.0,negative,Neutral
+108146,4,-1.67,negative,negative
+108146,5,1.33,positive,positive
+108146,6,1.0,positive,slightly positive
+108146,7,-2.67,negative,very negative
+108146,8,-2.0,negative,negative
+108146,9,1.33,positive,positive
+108146,10,-2.0,negative,negative
+108146,11,-0.33,negative,Neutral
+110565,0,-1.0,negative,slightly negative
+110565,1,-2.0,negative,negative
+110565,2,-1.67,negative,negative
+110565,3,-1.0,negative,slightly negative
+110565,4,1.0,positive,slightly positive
+110565,5,1.67,positive,positive
+110565,6,-1.33,negative,negative
+110565,7,-1.33,negative,negative
+110565,8,-1.67,negative,negative
+111881,0,-1.0,negative,slightly negative
+111881,1,-2.0,negative,negative
+111881,2,0.0,negative,Neutral
+111881,3,-2.0,negative,negative
+111881,4,-2.0,negative,negative
+111881,5,0.33,positive,Neutral
+111881,6,-1.67,negative,negative
+111881,7,-2.0,negative,negative
+111881,8,-0.33,negative,Neutral
+111881,9,0.0,negative,Neutral
+111881,10,-1.0,negative,slightly negative
+111881,11,-2.67,negative,very negative
+111881,12,0.0,negative,Neutral
+111881,13,-1.33,negative,negative
+111881,14,-2.0,negative,negative
+111881,15,0.33,positive,Neutral
+111881,16,-2.0,negative,negative
+111881,17,0.67,positive,slightly positive
+112425,0,1.67,positive,positive
+112425,1,2.33,positive,very positive
+112425,2,0.33,positive,Neutral
+112425,3,0.67,positive,slightly positive
+112425,4,0.0,negative,Neutral
+112425,5,0.67,positive,slightly positive
+112425,6,1.67,positive,positive
+112425,7,-1.0,negative,slightly negative
+112425,8,2.0,positive,positive
+112425,9,1.33,positive,positive
+112425,10,1.0,positive,slightly positive
+112425,11,2.67,positive,very positive
+112425,12,2.67,positive,very positive
+112509,0,-1.0,negative,slightly negative
+112509,1,-0.33,negative,Neutral
+112509,2,-1.33,negative,negative
+112509,3,-0.33,negative,Neutral
+112509,4,1.33,positive,positive
+112509,5,-2.0,negative,negative
+116213,0,0.33,positive,Neutral
+116213,1,0.0,negative,Neutral
+116213,2,1.33,positive,positive
+116213,3,2.33,positive,very positive
+116213,4,0.33,positive,Neutral
+116213,5,-0.67,negative,slightly negative
+116213,6,2.33,positive,very positive
+116213,7,1.67,positive,positive
+116213,8,0.0,negative,Neutral
+116213,9,0.0,negative,Neutral
+116213,10,-0.33,negative,Neutral
+116213,11,0.33,positive,Neutral
+116213,12,-0.67,negative,slightly negative
+11UtTaDYgII,0,1.67,positive,positive
+11UtTaDYgII,1,1.67,positive,positive
+11UtTaDYgII,2,1.33,positive,positive
+11UtTaDYgII,3,2.0,positive,positive
+11UtTaDYgII,4,1.33,positive,positive
+11UtTaDYgII,5,0.67,positive,slightly positive
+11UtTaDYgII,6,2.0,positive,positive
+121400,0,-0.33,negative,Neutral
+121400,1,-0.67,negative,slightly negative
+121400,2,-2.33,negative,very negative
+121400,3,0.0,negative,Neutral
+121400,4,0.0,negative,Neutral
+121400,5,-0.67,negative,slightly negative
+121400,6,0.0,negative,Neutral
+121400,7,1.0,positive,slightly positive
+121400,8,0.0,negative,Neutral
+121400,9,0.67,positive,slightly positive
+121400,10,-0.33,negative,Neutral
+121400,11,0.0,negative,Neutral
+126872,0,-2.0,negative,negative
+126872,1,0.0,negative,Neutral
+126872,2,-0.67,negative,slightly negative
+126872,3,-0.33,negative,Neutral
+126872,4,-2.0,negative,negative
+126872,5,-1.0,negative,slightly negative
+126872,6,0.0,negative,Neutral
+126872,7,-0.67,negative,slightly negative
+126872,8,-2.0,negative,negative
+126872,9,-2.67,negative,very negative
+126872,10,-2.0,negative,negative
+126872,11,-0.33,negative,Neutral
+126872,12,-1.0,negative,slightly negative
+126872,13,-1.67,negative,negative
+126872,14,-1.67,negative,negative
+130366,0,-1.33,negative,negative
+130366,1,-0.33,negative,Neutral
+130366,2,0.33,positive,Neutral
+130366,3,0.33,positive,Neutral
+130366,4,0.0,negative,Neutral
+130366,5,0.33,positive,Neutral
+130366,6,0.0,negative,Neutral
+130366,7,-0.33,negative,Neutral
+130366,8,-2.33,negative,very negative
+130366,9,-2.0,negative,negative
+130366,10,-0.67,negative,slightly negative
+130366,11,-1.0,negative,slightly negative
+132028,0,0.0,negative,Neutral
+132028,1,0.0,negative,Neutral
+132028,2,-1.33,negative,negative
+132028,3,-1.33,negative,negative
+132028,4,0.0,negative,Neutral
+132028,5,1.0,positive,slightly positive
+132028,6,0.33,positive,Neutral
+132028,7,-0.33,negative,Neutral
+135623,0,-1.67,negative,negative
+135623,1,0.0,negative,Neutral
+135623,2,-2.0,negative,negative
+135623,3,-1.33,negative,negative
+135623,4,-2.33,negative,very negative
+135623,5,-2.0,negative,negative
+135623,6,-1.67,negative,negative
+135623,7,-2.67,negative,very negative
+135623,8,-2.0,negative,negative
+135623,9,-1.33,negative,negative
+136196,0,-1.67,negative,negative
+136196,1,-1.67,negative,negative
+136196,2,-2.33,negative,very negative
+136196,3,-2.33,negative,very negative
+136196,4,-1.33,negative,negative
+136196,5,0.0,negative,Neutral
+136196,6,0.33,positive,Neutral
+136196,7,1.0,positive,slightly positive
+136196,8,0.0,negative,Neutral
+136196,9,-0.33,negative,Neutral
+136196,10,-1.67,negative,negative
+136196,11,-1.33,negative,negative
+136196,12,-1.67,negative,negative
+136196,13,-2.0,negative,negative
+136196,14,-1.67,negative,negative
+167521,0,0.0,negative,Neutral
+167521,1,-0.33,negative,Neutral
+167521,2,2.67,positive,very positive
+167521,3,1.67,positive,positive
+167521,4,2.33,positive,very positive
+167521,5,2.67,positive,very positive
+167521,6,1.33,positive,positive
+167521,7,2.0,positive,positive
+167521,8,2.33,positive,very positive
+167521,9,0.67,positive,slightly positive
+167521,10,0.33,positive,Neutral
+167521,11,0.0,negative,Neutral
+167521,12,0.33,positive,Neutral
+167521,13,0.33,positive,Neutral
+167521,14,1.33,positive,positive
+167521,15,2.33,positive,very positive
+167521,16,0.67,positive,slightly positive
+167521,17,2.33,positive,very positive
+173CpFb3clw,0,0.0,negative,Neutral
+173CpFb3clw,1,0.33,positive,Neutral
+173CpFb3clw,2,0.0,negative,Neutral
+180971,0,0.0,negative,Neutral
+180971,1,0.0,negative,Neutral
+180971,2,0.0,negative,Neutral
+180971,3,1.0,positive,slightly positive
+180971,4,-2.67,negative,very negative
+180971,5,0.67,positive,slightly positive
+180971,6,0.67,positive,slightly positive
+190743,0,-0.33,negative,Neutral
+190743,1,0.0,negative,Neutral
+190743,2,-2.0,negative,negative
+190743,3,-1.33,negative,negative
+190743,4,-3.0,negative,very negative
+190743,5,-3.0,negative,very negative
+190743,6,-2.0,negative,negative
+190743,7,-1.67,negative,negative
+190743,8,-3.0,negative,very negative
+190743,9,0.0,negative,Neutral
+190743,10,0.0,negative,Neutral
+190743,11,-0.33,negative,Neutral
+190743,12,0.0,negative,Neutral
+190743,13,-2.0,negative,negative
+190743,14,0.0,negative,Neutral
+190743,15,-2.0,negative,negative
+190743,16,-2.33,negative,very negative
+190743,17,-0.67,negative,slightly negative
+190743,18,0.0,negative,Neutral
+194299,0,-0.33,negative,Neutral
+194299,1,0.0,negative,Neutral
+194299,2,0.0,negative,Neutral
+194299,3,0.0,negative,Neutral
+194299,4,-1.0,negative,slightly negative
+194299,5,0.0,negative,Neutral
+194299,6,0.0,negative,Neutral
+194299,7,0.67,positive,slightly positive
+194299,8,0.0,negative,Neutral
+194299,9,0.0,negative,Neutral
+194299,10,0.0,negative,Neutral
+194299,11,-1.33,negative,negative
+194299,12,-1.0,negative,slightly negative
+194299,13,1.33,positive,positive
+194299,14,-1.0,negative,slightly negative
+194299,15,0.0,negative,Neutral
+194299,16,0.0,negative,Neutral
+198112,0,0.0,negative,Neutral
+198112,1,1.0,positive,slightly positive
+198112,2,2.0,positive,positive
+198112,3,0.0,negative,Neutral
+198112,4,0.33,positive,Neutral
+198112,5,0.33,positive,Neutral
+198112,6,0.0,negative,Neutral
+198112,7,1.0,positive,slightly positive
+198112,8,2.0,positive,positive
+198112,9,2.0,positive,positive
+198112,10,0.0,negative,Neutral
+198112,11,2.33,positive,very positive
+198112,12,2.0,positive,positive
+1Gp4l-ZTCVk,0,0.67,positive,slightly positive
+1Gp4l-ZTCVk,1,1.0,positive,slightly positive
+1HS2HcN2LDo,0,1.67,positive,positive
+1HS2HcN2LDo,1,0.33,positive,Neutral
+1HS2HcN2LDo,2,-2.33,negative,very negative
+1HS2HcN2LDo,3,0.33,positive,Neutral
+1HS2HcN2LDo,4,0.33,positive,Neutral
+1HS2HcN2LDo,5,0.67,positive,slightly positive
+1HS2HcN2LDo,6,1.0,positive,slightly positive
+1HS2HcN2LDo,7,1.33,positive,positive
+1HS2HcN2LDo,8,1.67,positive,positive
+1LkYxsqRPZM,0,2.0,positive,positive
+1LkYxsqRPZM,1,2.33,positive,very positive
+1LkYxsqRPZM,2,2.0,positive,positive
+1S6ji_d4OLI,0,0.67,positive,slightly positive
+1S6ji_d4OLI,1,0.33,positive,Neutral
+1jogeKX0wGw,0,2.67,positive,very positive
+1jogeKX0wGw,1,1.67,positive,positive
+1jogeKX0wGw,2,1.0,positive,slightly positive
+1pl2FVdQWj0,0,0.33,positive,Neutral
+1pl2FVdQWj0,1,0.67,positive,slightly positive
+1pl2FVdQWj0,2,-0.33,negative,Neutral
+200941,0,-1.33,negative,negative
+200941,1,-1.0,negative,slightly negative
+200941,2,-2.0,negative,negative
+200941,3,-1.33,negative,negative
+200941,4,-1.33,negative,negative
+200941,5,-1.33,negative,negative
+200941,6,-1.67,negative,negative
+200941,7,0.0,negative,Neutral
+200941,8,-2.33,negative,very negative
+200941,9,-0.33,negative,Neutral
+200941,10,-2.33,negative,very negative
+200941,11,-2.0,negative,negative
+200941,12,-1.67,negative,negative
+200941,13,0.67,positive,slightly positive
+200941,14,0.0,negative,Neutral
+200941,15,-1.67,negative,negative
+201005,0,1.0,positive,slightly positive
+201005,1,0.0,negative,Neutral
+201005,2,0.33,positive,Neutral
+201005,3,-0.33,negative,Neutral
+201005,4,0.0,negative,Neutral
+201005,5,0.33,positive,Neutral
+201005,6,0.0,negative,Neutral
+201005,7,0.0,negative,Neutral
+201005,8,-1.67,negative,negative
+201005,9,-1.0,negative,slightly negative
+201005,10,1.33,positive,positive
+202826,0,0.0,negative,Neutral
+202826,1,-1.67,negative,negative
+202826,2,-1.33,negative,negative
+202826,3,-1.67,negative,negative
+202826,4,0.0,negative,Neutral
+202826,5,0.0,negative,Neutral
+202826,6,0.0,negative,Neutral
+202826,7,0.0,negative,Neutral
+202826,8,-0.67,negative,slightly negative
+202826,9,-1.33,negative,negative
+202826,10,0.0,negative,Neutral
+202826,11,1.0,positive,slightly positive
+202826,12,-1.33,negative,negative
+202826,13,-2.0,negative,negative
+202826,14,-1.0,negative,slightly negative
+206585,0,-2.67,negative,very negative
+206585,1,0.33,positive,Neutral
+206585,2,0.0,negative,Neutral
+206585,3,0.0,negative,Neutral
+206585,4,-2.33,negative,very negative
+206585,5,0.67,positive,slightly positive
+208322,0,0.0,negative,Neutral
+208322,1,-1.33,negative,negative
+208322,2,0.0,negative,Neutral
+208322,3,-2.33,negative,very negative
+208322,4,0.0,negative,Neutral
+208322,5,0.33,positive,Neutral
+208322,6,-1.67,negative,negative
+208322,7,-2.0,negative,negative
+208322,8,0.67,positive,slightly positive
+208322,9,-2.0,negative,negative
+208322,10,-1.0,negative,slightly negative
+208322,11,-1.67,negative,negative
+208322,12,-3.0,negative,very negative
+208322,13,-1.67,negative,negative
+208592,0,-2.67,negative,very negative
+208592,1,0.0,negative,Neutral
+208592,2,0.33,positive,Neutral
+208592,3,-2.0,negative,negative
+208592,4,0.0,negative,Neutral
+208592,5,0.0,negative,Neutral
+208592,6,-2.67,negative,very negative
+208592,7,-1.0,negative,slightly negative
+208592,8,0.0,negative,Neutral
+208592,9,-2.67,negative,very negative
+208592,10,-1.33,negative,negative
+209758,0,0.0,negative,Neutral
+209758,1,0.67,positive,slightly positive
+209758,2,0.0,negative,Neutral
+209758,3,1.67,positive,positive
+209758,4,1.33,positive,positive
+209758,5,1.67,positive,positive
+209758,6,0.0,negative,Neutral
+209758,7,1.67,positive,positive
+209758,8,0.0,negative,Neutral
+209758,9,0.0,negative,Neutral
+209758,10,0.0,negative,Neutral
+209758,11,0.0,negative,Neutral
+209758,12,0.0,negative,Neutral
+209758,13,2.0,positive,positive
+209758,14,2.0,positive,positive
+209758,15,0.67,positive,slightly positive
+20LfN8ENbhM,0,2.0,positive,positive
+20LfN8ENbhM,1,2.33,positive,very positive
+20LfN8ENbhM,2,0.67,positive,slightly positive
+20LfN8ENbhM,3,0.67,positive,slightly positive
+20LfN8ENbhM,4,1.0,positive,slightly positive
+20LfN8ENbhM,5,1.67,positive,positive
+210259,0,-3.0,negative,very negative
+210259,1,-1.67,negative,negative
+210259,2,-1.67,negative,negative
+210259,3,-1.67,negative,negative
+210259,4,-1.67,negative,negative
+210259,5,-2.67,negative,very negative
+210259,6,-1.67,negative,negative
+210259,7,-2.33,negative,very negative
+210259,8,2.33,positive,very positive
+210259,9,0.0,negative,Neutral
+210259,10,0.0,negative,Neutral
+210259,11,-2.67,negative,very negative
+210259,12,0.0,negative,Neutral
+210259,13,0.0,negative,Neutral
+210259,14,-2.0,negative,negative
+210259,15,-1.33,negative,negative
+210259,16,0.0,negative,Neutral
+210259,17,-2.33,negative,very negative
+210433,0,0.0,negative,Neutral
+210433,1,0.0,negative,Neutral
+210433,2,1.33,positive,positive
+210433,3,0.33,positive,Neutral
+210433,4,-1.0,negative,slightly negative
+210433,5,0.0,negative,Neutral
+210433,6,-2.0,negative,negative
+210433,7,-1.0,negative,slightly negative
+210433,8,-1.33,negative,negative
+211875,0,-2.0,negative,negative
+211875,1,-2.33,negative,very negative
+211875,2,0.0,negative,Neutral
+211875,3,0.0,negative,Neutral
+211875,4,0.0,negative,Neutral
+211875,5,0.0,negative,Neutral
+211875,6,-1.67,negative,negative
+211875,7,-1.67,negative,negative
+211875,8,-2.0,negative,negative
+211875,9,-2.33,negative,very negative
+211875,10,-2.0,negative,negative
+211875,11,-1.33,negative,negative
+213327,0,-1.67,negative,negative
+213327,1,0.0,negative,Neutral
+213327,2,0.0,negative,Neutral
+213327,3,-0.33,negative,Neutral
+213327,4,-1.33,negative,negative
+213327,5,0.0,negative,Neutral
+213327,6,0.0,negative,Neutral
+213327,7,-1.67,negative,negative
+213327,8,-2.33,negative,very negative
+213327,9,-1.0,negative,slightly negative
+213327,10,-2.0,negative,negative
+215318,0,0.67,positive,slightly positive
+215318,1,0.0,negative,Neutral
+215318,2,0.67,positive,slightly positive
+215318,3,0.0,negative,Neutral
+215318,4,-1.67,negative,negative
+215318,5,0.67,positive,slightly positive
+215318,6,0.33,positive,Neutral
+215318,7,0.67,positive,slightly positive
+215318,8,-1.33,negative,negative
+215318,9,0.0,negative,Neutral
+215318,10,0.33,positive,Neutral
+215318,11,-2.67,negative,very negative
+215318,12,0.33,positive,Neutral
+215318,13,0.33,positive,Neutral
+215318,14,0.33,positive,Neutral
+215318,15,-2.33,negative,very negative
+221137,0,0.0,negative,Neutral
+221137,1,0.33,positive,Neutral
+221137,2,-2.0,negative,negative
+221137,3,0.0,negative,Neutral
+221137,4,-2.0,negative,negative
+221137,5,-1.33,negative,negative
+221137,6,-1.0,negative,slightly negative
+221137,7,-1.33,negative,negative
+221137,8,-2.33,negative,very negative
+221153,0,0.0,negative,Neutral
+221153,1,0.33,positive,Neutral
+221153,2,-1.33,negative,negative
+221153,3,-1.67,negative,negative
+221153,4,0.0,negative,Neutral
+221153,5,-0.67,negative,slightly negative
+221153,6,-0.67,negative,slightly negative
+221153,7,1.0,positive,slightly positive
+221153,8,0.33,positive,Neutral
+221153,9,0.33,positive,Neutral
+221153,10,0.33,positive,Neutral
+221153,11,0.0,negative,Neutral
+221153,12,0.33,positive,Neutral
+221153,13,0.33,positive,Neutral
+221153,14,0.33,positive,Neutral
+221153,15,0.0,negative,Neutral
+221153,16,0.33,positive,Neutral
+221153,17,0.33,positive,Neutral
+221153,18,0.0,negative,Neutral
+221274,0,-2.0,negative,negative
+221274,1,0.33,positive,Neutral
+221274,2,0.67,positive,slightly positive
+221274,3,0.33,positive,Neutral
+221274,4,-2.0,negative,negative
+221274,5,1.0,positive,slightly positive
+221274,6,-0.33,negative,Neutral
+221274,7,-2.0,negative,negative
+221274,8,-1.0,negative,slightly negative
+221274,9,-1.67,negative,negative
+222247,0,-2.0,negative,negative
+222247,1,-1.0,negative,slightly negative
+222247,2,-2.0,negative,negative
+222247,3,0.33,positive,Neutral
+222247,4,-1.33,negative,negative
+222247,5,0.33,positive,Neutral
+222247,6,0.0,negative,Neutral
+222247,7,0.0,negative,Neutral
+222247,8,0.0,negative,Neutral
+222247,9,-1.33,negative,negative
+222247,10,0.33,positive,Neutral
+222247,11,-2.0,negative,negative
+222247,12,-1.33,negative,negative
+222247,13,-1.67,negative,negative
+222247,14,-2.0,negative,negative
+22373,0,-2.67,negative,very negative
+22373,1,0.0,negative,Neutral
+22373,2,0.0,negative,Neutral
+22373,3,0.0,negative,Neutral
+22373,4,-2.33,negative,very negative
+22373,5,-1.33,negative,negative
+22373,6,1.67,positive,positive
+22373,7,0.0,negative,Neutral
+22373,8,-1.0,negative,slightly negative
+22373,9,-0.67,negative,slightly negative
+22373,10,-0.67,negative,slightly negative
+224263,0,-2.67,negative,very negative
+224263,1,-3.0,negative,very negative
+224263,2,0.67,positive,slightly positive
+224263,3,-1.67,negative,negative
+224263,4,-2.0,negative,negative
+224263,5,-2.33,negative,very negative
+224263,6,-1.33,negative,negative
+224263,7,-2.33,negative,very negative
+224263,8,0.0,negative,Neutral
+224263,9,0.0,negative,Neutral
+224263,10,-2.33,negative,very negative
+224263,11,-1.33,negative,negative
+224263,12,-2.0,negative,negative
+224263,13,-1.67,negative,negative
+224263,14,-2.67,negative,very negative
+224263,15,-1.0,negative,slightly negative
+224263,16,0.0,negative,Neutral
+224263,17,-1.67,negative,negative
+224370,0,-2.67,negative,very negative
+224370,1,0.0,negative,Neutral
+224370,2,1.0,positive,slightly positive
+224370,3,0.0,negative,Neutral
+224370,4,0.0,negative,Neutral
+224370,5,-2.0,negative,negative
+224370,6,-2.33,negative,very negative
+224370,7,-2.67,negative,very negative
+224370,8,-2.0,negative,negative
+224370,9,0.0,negative,Neutral
+224370,10,-2.0,negative,negative
+224370,11,1.0,positive,slightly positive
+224370,12,0.0,negative,Neutral
+224370,13,0.33,positive,Neutral
+224370,14,-0.33,negative,Neutral
+224370,15,-1.67,negative,negative
+224370,16,-1.0,negative,slightly negative
+224370,17,-1.67,negative,negative
+224370,18,-1.67,negative,negative
+224370,19,-2.0,negative,negative
+224370,20,-2.33,negative,very negative
+224370,21,-2.0,negative,negative
+224370,22,-2.0,negative,negative
+224631,0,2.0,positive,positive
+224631,1,2.33,positive,very positive
+224631,2,0.33,positive,Neutral
+224631,3,0.67,positive,slightly positive
+224631,4,1.33,positive,positive
+224631,5,1.0,positive,slightly positive
+224631,6,0.33,positive,Neutral
+224631,7,1.67,positive,positive
+224631,8,0.67,positive,slightly positive
+224631,9,0.0,negative,Neutral
+224631,10,0.0,negative,Neutral
+224631,11,0.0,negative,Neutral
+226601,0,-1.33,negative,negative
+226601,1,-1.33,negative,negative
+226601,2,-2.33,negative,very negative
+226601,3,-2.0,negative,negative
+226601,4,0.0,negative,Neutral
+226601,5,0.0,negative,Neutral
+226601,6,1.33,positive,positive
+226601,7,-0.67,negative,slightly negative
+226601,8,-2.0,negative,negative
+226601,9,0.67,positive,slightly positive
+226601,10,0.33,positive,Neutral
+226601,11,1.0,positive,slightly positive
+226601,12,0.0,negative,Neutral
+226601,13,0.33,positive,Neutral
+226601,14,-0.33,negative,Neutral
+226601,15,-1.67,negative,negative
+226601,16,0.33,positive,Neutral
+226601,17,1.33,positive,positive
+226601,18,-1.0,negative,slightly negative
+226640,0,0.0,negative,Neutral
+226640,1,0.67,positive,slightly positive
+226640,2,0.33,positive,Neutral
+226640,3,0.0,negative,Neutral
+226640,4,-2.0,negative,negative
+226640,5,-1.33,negative,negative
+226640,6,1.33,positive,positive
+226640,7,-0.33,negative,Neutral
+226640,8,0.0,negative,Neutral
+226640,9,-0.33,negative,Neutral
+22689,0,-1.33,negative,negative
+22689,1,-1.67,negative,negative
+22689,2,-2.0,negative,negative
+22689,3,0.0,negative,Neutral
+22689,4,-1.33,negative,negative
+22689,5,-0.33,negative,Neutral
+22689,6,-1.33,negative,negative
+22689,7,0.0,negative,Neutral
+22689,8,0.0,negative,Neutral
+22689,9,-2.0,negative,negative
+22689,10,-2.0,negative,negative
+22689,11,-0.67,negative,slightly negative
+233939,0,-0.33,negative,Neutral
+233939,1,-1.33,negative,negative
+233939,2,-2.33,negative,very negative
+233939,3,-0.67,negative,slightly negative
+233939,4,-2.33,negative,very negative
+233939,5,-2.67,negative,very negative
+233939,6,0.0,negative,Neutral
+233939,7,0.0,negative,Neutral
+233939,8,0.33,positive,Neutral
+233939,9,-2.67,negative,very negative
+233939,10,0.0,negative,Neutral
+233939,11,0.0,negative,Neutral
+233939,12,-2.0,negative,negative
+233939,13,-1.33,negative,negative
+233939,14,-2.67,negative,very negative
+233939,15,-2.33,negative,very negative
+233939,16,-2.0,negative,negative
+234046,0,-2.33,negative,very negative
+234046,1,-0.33,negative,Neutral
+234046,2,-2.0,negative,negative
+234046,3,-1.67,negative,negative
+234046,4,-0.33,negative,Neutral
+234046,5,-2.33,negative,very negative
+234046,6,-1.0,negative,slightly negative
+234046,7,-1.67,negative,negative
+234046,8,0.0,negative,Neutral
+234046,9,-2.0,negative,negative
+234046,10,0.0,negative,Neutral
+234046,11,0.33,positive,Neutral
+234046,12,-0.33,negative,Neutral
+234046,13,0.33,positive,Neutral
+234046,14,-0.67,negative,slightly negative
+234046,15,0.0,negative,Neutral
+234046,16,-0.67,negative,slightly negative
+234046,17,-0.33,negative,Neutral
+234046,18,0.67,positive,slightly positive
+234046,19,0.0,negative,Neutral
+236442,0,0.67,positive,slightly positive
+236442,1,-1.67,negative,negative
+236442,2,0.33,positive,Neutral
+236442,3,0.33,positive,Neutral
+236442,4,-1.33,negative,negative
+236442,5,-2.0,negative,negative
+236442,6,-2.0,negative,negative
+236442,7,-1.33,negative,negative
+236442,8,0.33,positive,Neutral
+236442,9,0.0,negative,Neutral
+236442,10,-1.0,negative,slightly negative
+236442,11,-1.0,negative,slightly negative
+23656,0,0.0,negative,Neutral
+23656,1,-0.33,negative,Neutral
+23656,2,0.0,negative,Neutral
+23656,3,0.33,positive,Neutral
+23656,4,-0.33,negative,Neutral
+23656,5,1.0,positive,slightly positive
+23656,6,-0.33,negative,Neutral
+23656,7,-1.67,negative,negative
+23656,8,-2.0,negative,negative
+23656,9,-1.33,negative,negative
+23656,10,-1.33,negative,negative
+23656,11,-1.33,negative,negative
+23656,12,0.0,negative,Neutral
+23656,13,-1.67,negative,negative
+23656,14,-0.33,negative,Neutral
+23656,15,-2.0,negative,negative
+23656,16,0.33,positive,Neutral
+23656,17,-0.33,negative,Neutral
+23656,18,0.0,negative,Neutral
+23656,19,-1.67,negative,negative
+23656,20,-1.0,negative,slightly negative
+23656,21,-3.0,negative,very negative
+237363,0,-1.33,negative,negative
+237363,1,0.0,negative,Neutral
+237363,2,-2.33,negative,very negative
+237363,3,-2.33,negative,very negative
+237363,4,2.0,positive,positive
+237363,5,0.33,positive,Neutral
+237363,6,-1.0,negative,slightly negative
+237363,7,2.0,positive,positive
+237363,8,-1.0,negative,slightly negative
+237363,9,0.0,negative,Neutral
+237363,10,-1.67,negative,negative
+237363,11,-2.33,negative,very negative
+237363,12,-1.33,negative,negative
+237363,13,-2.67,negative,very negative
+238063,0,-1.0,negative,slightly negative
+238063,1,0.0,negative,Neutral
+238063,2,-0.33,negative,Neutral
+238063,3,2.0,positive,positive
+238063,4,-1.33,negative,negative
+238063,5,-1.0,negative,slightly negative
+238063,6,1.0,positive,slightly positive
+238063,7,-1.0,negative,slightly negative
+238063,8,1.33,positive,positive
+238063,9,0.33,positive,Neutral
+238063,10,-0.67,negative,slightly negative
+238063,11,0.0,negative,Neutral
+238063,12,1.67,positive,positive
+238063,13,0.0,negative,Neutral
+238063,14,-0.33,negative,Neutral
+238063,15,1.33,positive,positive
+238063,16,0.33,positive,Neutral
+238063,17,0.33,positive,Neutral
+24196,0,-0.67,negative,slightly negative
+24196,1,0.33,positive,Neutral
+24196,2,1.0,positive,slightly positive
+24196,3,-0.67,negative,slightly negative
+24196,4,-2.0,negative,negative
+24196,5,1.0,positive,slightly positive
+24196,6,-2.33,negative,very negative
+24196,7,0.0,negative,Neutral
+24196,8,0.0,negative,Neutral
+24196,9,0.33,positive,Neutral
+24196,10,-0.33,negative,Neutral
+24196,11,-2.0,negative,negative
+24196,12,-0.33,negative,Neutral
+24196,13,-1.0,negative,slightly negative
+24196,14,-2.67,negative,very negative
+24196,15,-1.67,negative,negative
+24196,16,-1.0,negative,slightly negative
+24196,17,-1.67,negative,negative
+24351,0,1.67,positive,positive
+24351,1,0.0,negative,Neutral
+24351,2,2.33,positive,very positive
+24351,3,0.0,negative,Neutral
+24351,4,0.33,positive,Neutral
+24351,5,0.0,negative,Neutral
+24351,6,0.0,negative,Neutral
+24351,7,0.0,negative,Neutral
+24351,8,0.33,positive,Neutral
+24351,9,2.33,positive,very positive
+24351,10,0.67,positive,slightly positive
+24351,11,2.0,positive,positive
+24351,12,0.33,positive,Neutral
+243981,0,-1.0,negative,slightly negative
+243981,1,-2.33,negative,very negative
+243981,2,-1.67,negative,negative
+243981,3,-1.33,negative,negative
+243981,4,0.0,negative,Neutral
+243981,5,-1.33,negative,negative
+243981,6,-1.33,negative,negative
+243981,7,0.0,negative,Neutral
+243981,8,-2.33,negative,very negative
+243981,9,1.0,positive,slightly positive
+243981,10,0.0,negative,Neutral
+243981,11,0.0,negative,Neutral
+243981,12,0.0,negative,Neutral
+243981,13,0.0,negative,Neutral
+243981,14,-2.67,negative,very negative
+243981,15,-2.33,negative,very negative
+243981,16,-1.67,negative,negative
+243981,17,-2.0,negative,negative
+243981,18,0.0,negative,Neutral
+243981,19,-1.67,negative,negative
+24504,0,-0.33,negative,Neutral
+24504,1,0.67,positive,slightly positive
+24504,2,-1.0,negative,slightly negative
+24504,3,0.33,positive,Neutral
+24504,4,-1.0,negative,slightly negative
+24504,5,-1.67,negative,negative
+24504,6,0.33,positive,Neutral
+24504,7,-0.33,negative,Neutral
+24504,8,-1.33,negative,negative
+24504,9,-1.0,negative,slightly negative
+24504,10,2.0,positive,positive
+24504,11,-1.0,negative,slightly negative
+245582,0,-1.67,negative,negative
+245582,1,-0.33,negative,Neutral
+245582,2,0.33,positive,Neutral
+245582,3,0.0,negative,Neutral
+245582,4,-2.33,negative,very negative
+245582,5,-2.0,negative,negative
+245582,6,0.0,negative,Neutral
+245582,7,1.0,positive,slightly positive
+245582,8,-1.67,negative,negative
+245582,9,0.0,negative,Neutral
+245582,10,0.0,negative,Neutral
+245582,11,-1.67,negative,negative
+245582,12,0.0,negative,Neutral
+245582,13,-1.33,negative,negative
+245582,14,-0.67,negative,slightly negative
+245582,15,-0.67,negative,slightly negative
+245582,16,0.33,positive,Neutral
+245582,17,-0.67,negative,slightly negative
+252097,0,-2.0,negative,negative
+252097,1,0.33,positive,Neutral
+252097,2,-2.33,negative,very negative
+252097,3,0.67,positive,slightly positive
+252097,4,1.33,positive,positive
+252097,5,-1.0,negative,slightly negative
+252097,6,-3.0,negative,very negative
+252097,7,-1.67,negative,negative
+252097,8,-1.33,negative,negative
+252097,9,-2.0,negative,negative
+252097,10,0.33,positive,Neutral
+252097,11,-1.67,negative,negative
+252097,12,-1.67,negative,negative
+252912,0,-1.67,negative,negative
+252912,1,-2.0,negative,negative
+252912,2,-1.67,negative,negative
+252912,3,-2.67,negative,very negative
+252912,4,-1.67,negative,negative
+252912,5,0.33,positive,Neutral
+252912,6,-1.33,negative,negative
+252912,7,-2.67,negative,very negative
+252912,8,-1.33,negative,negative
+252912,9,0.0,negative,Neutral
+252912,10,-1.67,negative,negative
+252912,11,-1.33,negative,negative
+252912,12,-1.33,negative,negative
+252912,13,1.67,positive,positive
+254427,0,1.67,positive,positive
+255408,0,0.0,negative,Neutral
+255408,1,0.0,negative,Neutral
+255408,2,-2.0,negative,negative
+255408,3,0.0,negative,Neutral
+255408,4,0.0,negative,Neutral
+255408,5,-1.0,negative,slightly negative
+255408,6,0.0,negative,Neutral
+255408,7,-0.33,negative,Neutral
+255408,8,-0.67,negative,slightly negative
+255408,9,-1.33,negative,negative
+25640,0,0.33,positive,Neutral
+25640,1,0.0,negative,Neutral
+25640,2,-1.0,negative,slightly negative
+25640,3,1.0,positive,slightly positive
+25640,4,-0.33,negative,Neutral
+25640,5,-1.0,negative,slightly negative
+25640,6,-2.33,negative,very negative
+25640,7,-0.33,negative,Neutral
+25640,8,-2.0,negative,negative
+257277,0,-1.0,negative,slightly negative
+257277,1,-2.0,negative,negative
+257277,2,-1.0,negative,slightly negative
+257277,3,0.0,negative,Neutral
+257277,4,0.0,negative,Neutral
+257277,5,0.0,negative,Neutral
+257277,6,-1.33,negative,negative
+257277,7,0.33,positive,Neutral
+257277,8,0.33,positive,Neutral
+257277,9,1.0,positive,slightly positive
+257277,10,-0.33,negative,Neutral
+257277,11,-2.0,negative,negative
+257277,12,0.0,negative,Neutral
+257277,13,0.67,positive,slightly positive
+257277,14,2.0,positive,positive
+257277,15,0.0,negative,Neutral
+257277,16,-1.67,negative,negative
+257534,0,-1.33,negative,negative
+257534,1,-2.67,negative,very negative
+257534,2,0.0,negative,Neutral
+257534,3,-1.33,negative,negative
+257534,4,-1.33,negative,negative
+257534,5,-3.0,negative,very negative
+257534,6,-1.33,negative,negative
+257534,7,0.0,negative,Neutral
+257534,8,0.0,negative,Neutral
+257534,9,-0.67,negative,slightly negative
+257534,10,-2.0,negative,negative
+257534,11,0.0,negative,Neutral
+257534,12,0.0,negative,Neutral
+257534,13,0.0,negative,Neutral
+257534,14,-2.0,negative,negative
+257534,15,0.0,negative,Neutral
+257534,16,0.0,negative,Neutral
+259470,0,-1.0,negative,slightly negative
+259470,1,-1.67,negative,negative
+259470,2,-1.67,negative,negative
+259470,3,-1.33,negative,negative
+259470,4,-1.67,negative,negative
+259470,5,-2.33,negative,very negative
+259470,6,-2.67,negative,very negative
+259470,7,-1.33,negative,negative
+259470,8,-0.67,negative,slightly negative
+259470,9,0.0,negative,Neutral
+259470,10,0.0,negative,Neutral
+259470,11,0.0,negative,Neutral
+259470,12,-2.33,negative,very negative
+259470,13,0.67,positive,slightly positive
+259470,14,-1.33,negative,negative
+259470,15,-2.33,negative,very negative
+259470,16,-2.33,negative,very negative
+267466,0,-1.0,negative,slightly negative
+267466,1,-1.67,negative,negative
+267466,2,0.67,positive,slightly positive
+267466,3,-0.33,negative,Neutral
+267466,4,-1.67,negative,negative
+267466,5,-0.33,negative,Neutral
+267466,6,-0.33,negative,Neutral
+267466,7,-2.0,negative,negative
+267466,8,-2.0,negative,negative
+267466,9,-2.67,negative,very negative
+267466,10,-1.33,negative,negative
+267466,11,-2.67,negative,very negative
+267466,12,-3.0,negative,very negative
+267466,13,-2.33,negative,very negative
+267466,14,-1.67,negative,negative
+267466,15,0.67,positive,slightly positive
+267466,16,0.67,positive,slightly positive
+267466,17,0.0,negative,Neutral
+267466,18,0.0,negative,Neutral
+267466,19,0.0,negative,Neutral
+267466,20,0.0,negative,Neutral
+267466,21,-1.67,negative,negative
+267466,22,-1.33,negative,negative
+267466,23,-2.67,negative,very negative
+267466,24,-1.67,negative,negative
+267466,25,-1.0,negative,slightly negative
+267466,26,-1.0,negative,slightly negative
+267466,27,0.0,negative,Neutral
+267466,28,-2.67,negative,very negative
+267466,29,-1.0,negative,slightly negative
+267466,30,0.67,positive,slightly positive
+267466,31,-1.67,negative,negative
+267466,32,0.0,negative,Neutral
+267466,33,0.0,negative,Neutral
+267466,34,0.0,negative,Neutral
+267466,35,-2.0,negative,negative
+267466,36,-1.0,negative,slightly negative
+267466,37,-1.0,negative,slightly negative
+267466,38,0.67,positive,slightly positive
+267466,39,-1.0,negative,slightly negative
+267466,40,-1.33,negative,negative
+267466,41,-1.67,negative,negative
+267466,42,-3.0,negative,very negative
+267466,43,-1.0,negative,slightly negative
+267466,44,-2.33,negative,very negative
+267466,45,0.0,negative,Neutral
+267466,46,-2.0,negative,negative
+267694,0,-1.67,negative,negative
+267694,1,0.33,positive,Neutral
+267694,2,-2.33,negative,very negative
+267694,3,-1.33,negative,negative
+267694,4,-2.33,negative,very negative
+267694,5,-2.33,negative,very negative
+267694,6,-1.33,negative,negative
+267694,7,-1.0,negative,slightly negative
+267694,8,-0.67,negative,slightly negative
+267694,9,-2.33,negative,very negative
+267694,10,0.0,negative,Neutral
+267694,11,0.0,negative,Neutral
+267694,12,-0.33,negative,Neutral
+267694,13,0.0,negative,Neutral
+267694,14,0.0,negative,Neutral
+267694,15,0.0,negative,Neutral
+267694,16,-2.0,negative,negative
+267694,17,-1.67,negative,negative
+267694,18,0.0,negative,Neutral
+267694,19,0.0,negative,Neutral
+272838,0,-1.0,negative,slightly negative
+272838,1,-1.67,negative,negative
+272838,2,-0.67,negative,slightly negative
+272838,3,-0.67,negative,slightly negative
+272838,4,-2.33,negative,very negative
+272838,5,-0.33,negative,Neutral
+272838,6,0.0,negative,Neutral
+272838,7,0.0,negative,Neutral
+272838,8,0.0,negative,Neutral
+272838,9,-1.0,negative,slightly negative
+272838,10,-1.33,negative,negative
+272838,11,-2.0,negative,negative
+272838,12,0.0,negative,Neutral
+272838,13,0.0,negative,Neutral
+272838,14,0.0,negative,Neutral
+272838,15,-2.0,negative,negative
+272838,16,0.0,negative,Neutral
+272838,17,-0.33,negative,Neutral
+273207,0,-1.67,negative,negative
+273207,1,0.0,negative,Neutral
+273207,2,0.0,negative,Neutral
+273207,3,-1.67,negative,negative
+273207,4,0.67,positive,slightly positive
+273207,5,0.33,positive,Neutral
+273207,6,0.33,positive,Neutral
+273207,7,-0.33,negative,Neutral
+273207,8,-0.33,negative,Neutral
+273207,9,-0.33,negative,Neutral
+273207,10,0.0,negative,Neutral
+273250,0,-2.33,negative,very negative
+273250,1,-1.33,negative,negative
+273250,2,-2.67,negative,very negative
+273250,3,-2.0,negative,negative
+273250,4,-0.33,negative,Neutral
+273250,5,-2.0,negative,negative
+273250,6,-1.33,negative,negative
+273250,7,-3.0,negative,very negative
+273250,8,0.0,negative,Neutral
+273250,9,0.67,positive,slightly positive
+273250,10,-0.67,negative,slightly negative
+273250,11,0.0,negative,Neutral
+273250,12,-0.67,negative,slightly negative
+273250,13,-3.0,negative,very negative
+273250,14,-0.33,negative,Neutral
+273250,15,0.0,negative,Neutral
+273250,16,0.0,negative,Neutral
+273250,17,-0.33,negative,Neutral
+273250,18,-1.33,negative,negative
+273250,19,-2.67,negative,very negative
+273250,20,-1.33,negative,negative
+273250,21,-2.67,negative,very negative
+273250,22,-0.67,negative,slightly negative
+273250,23,-2.0,negative,negative
+273250,24,-2.33,negative,very negative
+273250,25,-2.33,negative,very negative
+273250,26,0.0,negative,Neutral
+273250,27,-1.67,negative,negative
+275267,0,-2.33,negative,very negative
+275267,1,-2.67,negative,very negative
+275267,2,-1.33,negative,negative
+275267,3,-1.33,negative,negative
+275267,4,0.0,negative,Neutral
+275267,5,-1.67,negative,negative
+275267,6,-2.67,negative,very negative
+275267,7,0.0,negative,Neutral
+275267,8,-1.33,negative,negative
+275267,9,-1.33,negative,negative
+275267,10,0.0,negative,Neutral
+275267,11,-1.33,negative,negative
+275267,12,0.0,negative,Neutral
+275267,13,0.0,negative,Neutral
+275267,14,-0.67,negative,slightly negative
+275267,15,0.0,negative,Neutral
+27v7Blr0vjw,0,-0.33,negative,Neutral
+27v7Blr0vjw,1,0.0,negative,Neutral
+27v7Blr0vjw,2,-0.33,negative,Neutral
+27v7Blr0vjw,3,0.0,negative,Neutral
+27v7Blr0vjw,4,0.0,negative,Neutral
+28006,0,-3.0,negative,very negative
+28006,1,-3.0,negative,very negative
+28006,2,-2.33,negative,very negative
+28006,3,0.0,negative,Neutral
+28006,4,-2.67,negative,very negative
+28006,5,-0.33,negative,Neutral
+28006,6,-3.0,negative,very negative
+28006,7,-1.67,negative,negative
+28006,8,-0.33,negative,Neutral
+28006,9,-2.33,negative,very negative
+28006,10,-2.0,negative,negative
+28006,11,-2.0,negative,negative
+28006,12,-0.33,negative,Neutral
+28006,13,-2.33,negative,very negative
+28006,14,-1.33,negative,negative
+28006,15,-2.33,negative,very negative
+28006,16,-2.0,negative,negative
+28006,17,-1.67,negative,negative
+28006,18,-3.0,negative,very negative
+28006,19,-2.0,negative,negative
+28006,20,-1.33,negative,negative
+28006,21,-2.33,negative,very negative
+28006,22,-2.0,negative,negative
+283935,0,0.33,positive,Neutral
+283935,1,0.67,positive,slightly positive
+283935,2,-2.33,negative,very negative
+283935,3,0.67,positive,slightly positive
+283935,4,-2.0,negative,negative
+283935,5,1.33,positive,positive
+286943,0,0.0,negative,Neutral
+286943,1,-1.67,negative,negative
+286943,2,0.0,negative,Neutral
+286943,3,0.33,positive,Neutral
+286943,4,0.0,negative,Neutral
+286943,5,0.0,negative,Neutral
+286943,6,-1.33,negative,negative
+286943,7,-0.33,negative,Neutral
+286943,8,-1.67,negative,negative
+286943,9,-1.67,negative,negative
+286943,10,-1.33,negative,negative
+286943,11,-1.67,negative,negative
+29751,0,0.0,negative,Neutral
+29751,1,0.0,negative,Neutral
+29751,2,0.0,negative,Neutral
+29751,3,0.0,negative,Neutral
+29751,4,-2.0,negative,negative
+29751,5,0.0,negative,Neutral
+29751,6,-1.0,negative,slightly negative
+29751,7,-2.0,negative,negative
+29751,8,-1.33,negative,negative
+29751,9,0.0,negative,Neutral
+29751,10,0.0,negative,Neutral
+29751,11,-2.0,negative,negative
+2BuFtglEcaY,0,2.33,positive,very positive
+2BuFtglEcaY,1,1.67,positive,positive
+2BuFtglEcaY,2,2.0,positive,positive
+2BuFtglEcaY,3,2.33,positive,very positive
+2BuFtglEcaY,4,2.33,positive,very positive
+2BuFtglEcaY,5,1.0,positive,slightly positive
+2BuFtglEcaY,6,-1.67,negative,negative
+2BuFtglEcaY,7,2.67,positive,very positive
+2BuFtglEcaY,8,2.0,positive,positive
+2BuFtglEcaY,9,2.0,positive,positive
+2BuFtglEcaY,10,1.33,positive,positive
+2BuFtglEcaY,11,1.0,positive,slightly positive
+2BuFtglEcaY,12,1.67,positive,positive
+2BuFtglEcaY,13,2.0,positive,positive
+2ItiGjefTRA,0,0.0,negative,Neutral
+2ItiGjefTRA,1,-0.67,negative,slightly negative
+2Ky9DBSl49w,0,0.0,negative,Neutral
+2QXHdu2zlQY,0,-2.0,negative,negative
+2QXHdu2zlQY,1,0.33,positive,Neutral
+2QXHdu2zlQY,2,1.33,positive,positive
+2QXHdu2zlQY,3,1.0,positive,slightly positive
+2QXHdu2zlQY,4,1.33,positive,positive
+2QXHdu2zlQY,5,0.0,negative,Neutral
+2QXHdu2zlQY,6,0.33,positive,Neutral
+2W-U94hXuK0,0,0.33,positive,Neutral
+2W-U94hXuK0,1,-3.0,negative,very negative
+2W-U94hXuK0,2,-1.33,negative,negative
+2W-U94hXuK0,3,-2.0,negative,negative
+2fbBrB1nJEQ,0,2.0,positive,positive
+2m58ShI1QSI,0,0.0,negative,Neutral
+2m58ShI1QSI,1,0.33,positive,Neutral
+2o2ljA0QD7g,0,0.0,negative,Neutral
+2o2ljA0QD7g,1,0.67,positive,slightly positive
+2o2ljA0QD7g,2,0.33,positive,Neutral
+2vsgDSlJ9pU,0,0.0,negative,Neutral
+2vsgDSlJ9pU,1,0.67,positive,slightly positive
+2vsgDSlJ9pU,2,1.0,positive,slightly positive
+2vsgDSlJ9pU,3,1.33,positive,positive
+2ze94yo2aPo,0,0.67,positive,slightly positive
+2ze94yo2aPo,1,2.0,positive,positive
+2ze94yo2aPo,2,1.0,positive,slightly positive
+2ze94yo2aPo,3,0.67,positive,slightly positive
+34cU3HO_hEA,0,0.33,positive,Neutral
+35694,0,0.33,positive,Neutral
+35694,1,0.0,negative,Neutral
+35694,2,-1.67,negative,negative
+35694,3,-1.33,negative,negative
+35694,4,-1.33,negative,negative
+35694,5,-1.33,negative,negative
+35694,6,-1.67,negative,negative
+35694,7,0.33,positive,Neutral
+35694,8,0.67,positive,slightly positive
+35694,9,0.0,negative,Neutral
+35694,10,-1.33,negative,negative
+35694,11,-0.33,negative,Neutral
+35694,12,0.0,negative,Neutral
+35694,13,0.67,positive,slightly positive
+35694,14,1.0,positive,slightly positive
+35694,15,0.0,negative,Neutral
+35694,16,0.33,positive,Neutral
+35694,17,0.67,positive,slightly positive
+37NMbnd7r20,0,0.0,negative,Neutral
+3At-BKm9eYk,0,-0.33,negative,Neutral
+3At-BKm9eYk,1,-0.67,negative,slightly negative
+3At-BKm9eYk,2,-0.67,negative,slightly negative
+3At-BKm9eYk,3,-2.33,negative,very negative
+3At-BKm9eYk,4,-0.33,negative,Neutral
+3At-BKm9eYk,5,0.0,negative,Neutral
+3At-BKm9eYk,6,0.33,positive,Neutral
+3At-BKm9eYk,7,1.0,positive,slightly positive
+3HyAaqre_Fk,0,-0.67,negative,slightly negative
+3HyAaqre_Fk,1,1.0,positive,slightly positive
+3HyAaqre_Fk,2,1.33,positive,positive
+3IUVpwx23cY,0,0.33,positive,Neutral
+3IUVpwx23cY,1,-0.67,negative,slightly negative
+3IUVpwx23cY,2,0.0,negative,Neutral
+3IUVpwx23cY,3,0.0,negative,Neutral
+3OYY5Tsz_2k,0,0.0,negative,Neutral
+3OYY5Tsz_2k,1,1.33,positive,positive
+3OYY5Tsz_2k,2,0.67,positive,slightly positive
+3OYY5Tsz_2k,3,0.0,negative,Neutral
+3OYY5Tsz_2k,4,0.0,negative,Neutral
+3OYY5Tsz_2k,5,0.0,negative,Neutral
+3REPHw7oLWo,0,1.0,positive,slightly positive
+3REPHw7oLWo,1,0.33,positive,Neutral
+3REPHw7oLWo,2,-0.33,negative,Neutral
+3REPHw7oLWo,3,1.0,positive,slightly positive
+3UOqbf_B_Yc,0,0.0,negative,Neutral
+3UOqbf_B_Yc,1,0.33,positive,Neutral
+3UOqbf_B_Yc,2,0.33,positive,Neutral
+3UOqbf_B_Yc,3,1.0,positive,slightly positive
+3WZ6R9B0PcU,0,-0.67,negative,slightly negative
+3XShFTBsp_Q,0,1.33,positive,positive
+3hOlJf_JQDs,0,2.33,positive,very positive
+3hOlJf_JQDs,1,2.0,positive,positive
+3odZe3AGilc,0,1.33,positive,positive
+3odZe3AGilc,1,1.33,positive,positive
+3odZe3AGilc,2,1.33,positive,positive
+3wHE78v9zr4,0,1.33,positive,positive
+3wHE78v9zr4,1,2.0,positive,positive
+3wHE78v9zr4,2,-0.67,negative,slightly negative
+3wHE78v9zr4,3,1.0,positive,slightly positive
+3wHE78v9zr4,4,0.0,negative,Neutral
+3wHE78v9zr4,5,-0.33,negative,Neutral
+3wHE78v9zr4,6,1.0,positive,slightly positive
+3wHE78v9zr4,7,1.0,positive,slightly positive
+3wHE78v9zr4,8,0.67,positive,slightly positive
+3wHE78v9zr4,9,1.0,positive,slightly positive
+3wHE78v9zr4,10,1.67,positive,positive
+3wHE78v9zr4,11,2.0,positive,positive
+3wHE78v9zr4,12,0.0,negative,Neutral
+3wHE78v9zr4,13,0.33,positive,Neutral
+3wHE78v9zr4,14,1.67,positive,positive
+3wHE78v9zr4,15,0.33,positive,Neutral
+3wHE78v9zr4,16,0.67,positive,slightly positive
+3wHE78v9zr4,17,0.33,positive,Neutral
+3wHE78v9zr4,18,-2.0,negative,negative
+3wHE78v9zr4,19,0.0,negative,Neutral
+3wHE78v9zr4,20,1.0,positive,slightly positive
+3wHE78v9zr4,21,1.0,positive,slightly positive
+3wHE78v9zr4,22,0.0,negative,Neutral
+3wHE78v9zr4,23,-1.33,negative,negative
+3wHE78v9zr4,24,-1.67,negative,negative
+3wHE78v9zr4,25,1.0,positive,slightly positive
+3wHE78v9zr4,26,1.33,positive,positive
+41381,0,-0.67,negative,slightly negative
+41381,1,1.0,positive,slightly positive
+41381,2,0.67,positive,slightly positive
+41381,3,0.33,positive,Neutral
+41381,4,0.0,negative,Neutral
+41381,5,-0.67,negative,slightly negative
+41381,6,0.0,negative,Neutral
+41381,7,0.0,negative,Neutral
+41381,8,-0.67,negative,slightly negative
+41381,9,-2.0,negative,negative
+41381,10,1.0,positive,slightly positive
+424SXFTCFsA,0,0.67,positive,slightly positive
+424SXFTCFsA,1,1.33,positive,positive
+424SXFTCFsA,2,1.33,positive,positive
+424SXFTCFsA,3,2.0,positive,positive
+46495,0,0.0,negative,Neutral
+46495,1,-0.67,negative,slightly negative
+46495,2,0.0,negative,Neutral
+46495,3,0.0,negative,Neutral
+46495,4,0.0,negative,Neutral
+46495,5,0.0,negative,Neutral
+46495,6,-2.0,negative,negative
+46495,7,-2.33,negative,very negative
+46495,8,-2.0,negative,negative
+46495,9,-2.0,negative,negative
+46615,0,-1.33,negative,negative
+46615,1,0.0,negative,Neutral
+46615,2,-1.0,negative,slightly negative
+46615,3,0.0,negative,Neutral
+46615,4,-2.33,negative,very negative
+46615,5,-0.33,negative,Neutral
+46615,6,-2.33,negative,very negative
+46615,7,-2.0,negative,negative
+46615,8,-1.0,negative,slightly negative
+46615,9,-3.0,negative,very negative
+4EDblUpJieU,0,0.67,positive,slightly positive
+4EDblUpJieU,1,2.0,positive,positive
+4YfyP0uIqw0,0,0.67,positive,slightly positive
+4dAYMzRyndc,0,2.0,positive,positive
+4dAYMzRyndc,1,0.0,negative,Neutral
+4dAYMzRyndc,2,0.0,negative,Neutral
+4dAYMzRyndc,3,1.67,positive,positive
+4dAYMzRyndc,4,0.33,positive,Neutral
+4dAYMzRyndc,5,0.0,negative,Neutral
+4dAYMzRyndc,6,0.0,negative,Neutral
+4o4ilPK9rl8,0,-1.33,negative,negative
+4t5k_yILGJM,0,-0.67,negative,slightly negative
+4wLP4elp1uM,0,-0.67,negative,slightly negative
+4wLP4elp1uM,1,-1.67,negative,negative
+53609,0,-0.67,negative,slightly negative
+53609,1,-2.0,negative,negative
+53609,2,-2.0,negative,negative
+53609,3,-0.33,negative,Neutral
+53609,4,-0.33,negative,Neutral
+53609,5,-2.67,negative,very negative
+53609,6,0.0,negative,Neutral
+53609,7,-0.33,negative,Neutral
+53609,8,0.0,negative,Neutral
+53609,9,0.33,positive,Neutral
+53609,10,0.0,negative,Neutral
+53609,11,0.0,negative,Neutral
+53609,12,-1.67,negative,negative
+53609,13,0.0,negative,Neutral
+53609,14,-1.33,negative,negative
+53609,15,-1.67,negative,negative
+53766,0,1.33,positive,positive
+53766,1,0.0,negative,Neutral
+53766,2,1.0,positive,slightly positive
+53766,3,0.0,negative,Neutral
+53766,4,0.67,positive,slightly positive
+53766,5,2.33,positive,very positive
+53766,6,2.0,positive,positive
+53766,7,3.0,positive,very positive
+53766,8,2.0,positive,positive
+53766,9,3.0,positive,very positive
+56989,0,-2.0,negative,negative
+56989,1,-2.0,negative,negative
+56989,2,0.33,positive,Neutral
+56989,3,-0.67,negative,slightly negative
+56989,4,-3.0,negative,very negative
+56989,5,0.0,negative,Neutral
+56989,6,-2.33,negative,very negative
+56989,7,-2.0,negative,negative
+56989,8,-2.33,negative,very negative
+56989,9,-0.67,negative,slightly negative
+56989,10,1.67,positive,positive
+56989,11,-2.0,negative,negative
+56989,12,1.0,positive,slightly positive
+56989,13,0.33,positive,Neutral
+59673,0,-2.0,negative,negative
+59673,1,-0.33,negative,Neutral
+59673,2,0.0,negative,Neutral
+59673,3,-1.0,negative,slightly negative
+59673,4,0.0,negative,Neutral
+59673,5,0.0,negative,Neutral
+59673,6,-1.0,negative,slightly negative
+59673,7,0.0,negative,Neutral
+59673,8,0.33,positive,Neutral
+59673,9,1.0,positive,slightly positive
+59673,10,-0.33,negative,Neutral
+59673,11,-0.33,negative,Neutral
+59673,12,-2.0,negative,negative
+59673,13,-0.67,negative,slightly negative
+5eY4S1F62Z4,0,0.33,positive,Neutral
+5eY4S1F62Z4,1,0.0,negative,Neutral
+5eY4S1F62Z4,2,0.33,positive,Neutral
+5eY4S1F62Z4,3,-0.33,negative,Neutral
+5eY4S1F62Z4,4,0.67,positive,slightly positive
+5eY4S1F62Z4,5,0.33,positive,Neutral
+5eY4S1F62Z4,6,0.33,positive,Neutral
+5eY4S1F62Z4,7,1.33,positive,positive
+5eY4S1F62Z4,8,1.0,positive,slightly positive
+5eY4S1F62Z4,9,0.33,positive,Neutral
+5eY4S1F62Z4,10,0.67,positive,slightly positive
+5eY4S1F62Z4,11,0.33,positive,Neutral
+5eY4S1F62Z4,12,0.67,positive,slightly positive
+5eY4S1F62Z4,13,0.67,positive,slightly positive
+5eY4S1F62Z4,14,0.33,positive,Neutral
+5eY4S1F62Z4,15,0.67,positive,slightly positive
+5eY4S1F62Z4,16,1.0,positive,slightly positive
+5fKPJPFqPho,0,-0.67,negative,slightly negative
+5fKPJPFqPho,1,0.0,negative,Neutral
+5fKPJPFqPho,2,0.0,negative,Neutral
+5fKPJPFqPho,3,0.0,negative,Neutral
+5fKPJPFqPho,4,0.67,positive,slightly positive
+5fKPJPFqPho,5,0.33,positive,Neutral
+5fKPJPFqPho,6,0.0,negative,Neutral
+5fKPJPFqPho,7,0.33,positive,Neutral
+5fKPJPFqPho,8,0.33,positive,Neutral
+5fKPJPFqPho,9,0.0,negative,Neutral
+5fKPJPFqPho,10,0.33,positive,Neutral
+5lrDS7LluCA,0,-0.67,negative,slightly negative
+5lrDS7LluCA,1,0.67,positive,slightly positive
+5lrDS7LluCA,2,0.67,positive,slightly positive
+5lrDS7LluCA,3,-0.33,negative,Neutral
+5lrDS7LluCA,4,1.0,positive,slightly positive
+5lrDS7LluCA,5,0.67,positive,slightly positive
+5lrDS7LluCA,6,0.0,negative,Neutral
+5pxFqJ5hKMU,0,0.0,negative,Neutral
+5pxFqJ5hKMU,1,0.0,negative,Neutral
+5vwXp27bCLw,0,0.0,negative,Neutral
+5vwXp27bCLw,1,-1.67,negative,negative
+5vwXp27bCLw,2,0.0,negative,Neutral
+5vwXp27bCLw,3,0.67,positive,slightly positive
+5vwXp27bCLw,4,-0.33,negative,Neutral
+5vwXp27bCLw,5,-0.33,negative,Neutral
+5vwXp27bCLw,6,0.0,negative,Neutral
+5vwXp27bCLw,7,-0.33,negative,Neutral
+5vwXp27bCLw,8,1.33,positive,positive
+5vwXp27bCLw,9,-0.33,negative,Neutral
+5vwXp27bCLw,10,0.33,positive,Neutral
+5vwXp27bCLw,11,-0.33,negative,Neutral
+5vwXp27bCLw,12,-1.33,negative,negative
+5xa0Ac2krGs,0,-0.33,negative,Neutral
+5xa0Ac2krGs,1,0.33,positive,Neutral
+61531,0,1.0,positive,slightly positive
+61531,1,1.33,positive,positive
+61531,2,0.0,negative,Neutral
+61531,3,0.67,positive,slightly positive
+61531,4,0.0,negative,Neutral
+61531,5,0.67,positive,slightly positive
+61531,6,2.67,positive,very positive
+61531,7,0.0,negative,Neutral
+61531,8,0.33,positive,Neutral
+61531,9,0.0,negative,Neutral
+61531,10,0.0,negative,Neutral
+61531,11,0.0,negative,Neutral
+61531,12,0.33,positive,Neutral
+61531,13,2.67,positive,very positive
+61531,14,2.33,positive,very positive
+61531,15,2.0,positive,positive
+61531,16,2.33,positive,very positive
+63951,0,-2.0,negative,negative
+63951,1,-2.67,negative,very negative
+63951,2,-2.67,negative,very negative
+63951,3,-2.0,negative,negative
+63951,4,0.0,negative,Neutral
+63951,5,-1.67,negative,negative
+63951,6,0.0,negative,Neutral
+63951,7,0.0,negative,Neutral
+63951,8,-0.67,negative,slightly negative
+63951,9,0.0,negative,Neutral
+63951,10,-0.67,negative,slightly negative
+63951,11,0.0,negative,Neutral
+63951,12,-3.0,negative,very negative
+63951,13,-3.0,negative,very negative
+63951,14,-2.0,negative,negative
+63951,15,-2.67,negative,very negative
+67uKYi7mslE,0,1.33,positive,positive
+67uKYi7mslE,1,0.67,positive,slightly positive
+67uKYi7mslE,2,1.0,positive,slightly positive
+67uKYi7mslE,3,0.67,positive,slightly positive
+67uKYi7mslE,4,0.67,positive,slightly positive
+67uKYi7mslE,5,1.33,positive,positive
+67uKYi7mslE,6,-1.0,negative,slightly negative
+67uKYi7mslE,7,0.67,positive,slightly positive
+67uKYi7mslE,8,-1.67,negative,negative
+67uKYi7mslE,9,1.33,positive,positive
+67uKYi7mslE,10,0.67,positive,slightly positive
+67uKYi7mslE,11,0.67,positive,slightly positive
+67uKYi7mslE,12,0.0,negative,Neutral
+67uKYi7mslE,13,0.67,positive,slightly positive
+67uKYi7mslE,14,0.0,negative,Neutral
+67uKYi7mslE,15,0.0,negative,Neutral
+67uKYi7mslE,16,0.67,positive,slightly positive
+67uKYi7mslE,17,0.0,negative,Neutral
+67uKYi7mslE,18,-0.33,negative,Neutral
+69824,0,-1.67,negative,negative
+69824,1,0.0,negative,Neutral
+69824,2,-3.0,negative,very negative
+69824,3,-1.33,negative,negative
+69824,4,-2.67,negative,very negative
+69824,5,2.0,positive,positive
+69824,6,-1.0,negative,slightly negative
+69824,7,-1.0,negative,slightly negative
+6EDoVEm16fU,0,0.67,positive,slightly positive
+6EDoVEm16fU,1,1.33,positive,positive
+6EDoVEm16fU,2,0.33,positive,Neutral
+6EDoVEm16fU,3,2.0,positive,positive
+6EDoVEm16fU,4,2.0,positive,positive
+6EDoVEm16fU,5,0.67,positive,slightly positive
+6EDoVEm16fU,6,1.67,positive,positive
+6EDoVEm16fU,7,1.0,positive,slightly positive
+6EDoVEm16fU,8,1.0,positive,slightly positive
+6EJHA6IDLNk,0,1.67,positive,positive
+6EJHA6IDLNk,1,0.67,positive,slightly positive
+6EJHA6IDLNk,2,0.0,negative,Neutral
+6RFVsOWK1m4,0,0.0,negative,Neutral
+6RFVsOWK1m4,1,0.0,negative,Neutral
+6RFVsOWK1m4,2,-1.0,negative,slightly negative
+6RFVsOWK1m4,3,0.0,negative,Neutral
+6RFVsOWK1m4,4,-0.33,negative,Neutral
+6RFVsOWK1m4,5,-0.67,negative,slightly negative
+6RFVsOWK1m4,6,1.0,positive,slightly positive
+6RFVsOWK1m4,7,0.67,positive,slightly positive
+6brtMLkjjYk,0,2.0,positive,positive
+6brtMLkjjYk,1,2.0,positive,positive
+6brtMLkjjYk,2,1.0,positive,slightly positive
+6gtfeIqGasE,0,0.67,positive,slightly positive
+6gtfeIqGasE,1,1.33,positive,positive
+6gtfeIqGasE,2,1.0,positive,slightly positive
+6gtfeIqGasE,3,2.0,positive,positive
+6gtfeIqGasE,4,2.67,positive,very positive
+6uoM8-9d0zA,0,0.67,positive,slightly positive
+79356,0,0.33,positive,Neutral
+79356,1,-0.33,negative,Neutral
+79356,2,2.0,positive,positive
+79356,3,1.67,positive,positive
+79356,4,1.0,positive,slightly positive
+79356,5,2.67,positive,very positive
+79356,6,2.67,positive,very positive
+79356,7,0.0,negative,Neutral
+79356,8,0.0,negative,Neutral
+79356,9,2.67,positive,very positive
+79356,10,-0.33,negative,Neutral
+79356,11,1.0,positive,slightly positive
+79356,12,0.0,negative,Neutral
+7IxmlIwqigw,0,1.0,positive,slightly positive
+7IxmlIwqigw,1,0.67,positive,slightly positive
+7IxmlIwqigw,2,0.0,negative,Neutral
+7IxmlIwqigw,3,0.67,positive,slightly positive
+7IxmlIwqigw,4,0.67,positive,slightly positive
+7IxmlIwqigw,5,1.67,positive,positive
+7IxmlIwqigw,6,0.33,positive,Neutral
+7IxmlIwqigw,7,0.0,negative,Neutral
+7IxmlIwqigw,8,-1.0,negative,slightly negative
+7IxmlIwqigw,9,-0.67,negative,slightly negative
+7deoh0NoMs4,0,1.0,positive,slightly positive
+7deoh0NoMs4,1,2.0,positive,positive
+7f3ndBCx_JE,0,2.0,positive,positive
+7f3ndBCx_JE,1,2.0,positive,positive
+7f3ndBCx_JE,2,1.67,positive,positive
+7idU7rR77Ss,0,0.0,negative,Neutral
+7idU7rR77Ss,1,0.0,negative,Neutral
+7idU7rR77Ss,2,0.0,negative,Neutral
+7idU7rR77Ss,3,0.0,negative,Neutral
+7idU7rR77Ss,4,0.0,negative,Neutral
+7mb8Y2AhXIY,0,0.33,positive,Neutral
+7mb8Y2AhXIY,1,0.67,positive,slightly positive
+7mb8Y2AhXIY,2,-0.33,negative,Neutral
+7mb8Y2AhXIY,3,2.0,positive,positive
+7npCA0zoQ8Q,0,0.67,positive,slightly positive
+7npCA0zoQ8Q,1,1.33,positive,positive
+7npCA0zoQ8Q,2,1.67,positive,positive
+83400,0,-1.0,negative,slightly negative
+83400,1,0.0,negative,Neutral
+83400,2,1.33,positive,positive
+83400,3,0.0,negative,Neutral
+83400,4,-0.67,negative,slightly negative
+83400,5,0.0,negative,Neutral
+83400,6,0.0,negative,Neutral
+83400,7,0.33,positive,Neutral
+83400,8,-0.33,negative,Neutral
+83400,9,-2.33,negative,very negative
+83400,10,-1.67,negative,negative
+86c2OkQ3_U8,0,0.0,negative,Neutral
+86c2OkQ3_U8,1,0.67,positive,slightly positive
+86c2OkQ3_U8,2,2.0,positive,positive
+86c2OkQ3_U8,3,0.0,negative,Neutral
+86c2OkQ3_U8,4,-1.33,negative,negative
+86c2OkQ3_U8,5,0.33,positive,Neutral
+86c2OkQ3_U8,6,0.67,positive,slightly positive
+86c2OkQ3_U8,7,0.67,positive,slightly positive
+86c2OkQ3_U8,8,0.67,positive,slightly positive
+86c2OkQ3_U8,9,0.33,positive,Neutral
+86c2OkQ3_U8,10,0.33,positive,Neutral
+88791,0,-2.33,negative,very negative
+88791,1,-3.0,negative,very negative
+88791,2,-2.0,negative,negative
+88791,3,-1.67,negative,negative
+88791,4,0.33,positive,Neutral
+88791,5,0.0,negative,Neutral
+88791,6,-1.0,negative,slightly negative
+88791,7,-2.33,negative,very negative
+88791,8,0.67,positive,slightly positive
+88791,9,0.0,negative,Neutral
+88791,10,-2.0,negative,negative
+88791,11,-1.67,negative,negative
+88791,12,-1.67,negative,negative
+88791,13,-2.0,negative,negative
+88791,14,0.0,negative,Neutral
+88791,15,-1.0,negative,slightly negative
+89ZmOPOilu4,0,-1.0,negative,slightly negative
+89ZmOPOilu4,1,-0.33,negative,Neutral
+8NPaDkOiXw4,0,0.0,negative,Neutral
+8NPaDkOiXw4,1,0.0,negative,Neutral
+8NPaDkOiXw4,2,-0.67,negative,slightly negative
+8NPaDkOiXw4,3,0.67,positive,slightly positive
+8TDAP0KNIIw,0,0.33,positive,Neutral
+8TDAP0KNIIw,1,0.0,negative,Neutral
+8VhVf0TbjDA,0,1.33,positive,positive
+8VhVf0TbjDA,1,1.0,positive,slightly positive
+8XZszYrUSCQ,0,2.0,positive,positive
+8XZszYrUSCQ,1,1.0,positive,slightly positive
+8XZszYrUSCQ,2,1.0,positive,slightly positive
+8XZszYrUSCQ,3,1.0,positive,slightly positive
+8i7u3fl-hP8,0,0.0,negative,Neutral
+8i7u3fl-hP8,1,1.33,positive,positive
+8i7u3fl-hP8,2,1.33,positive,positive
+8jY_RhOS89o,0,0.0,negative,Neutral
+8jY_RhOS89o,1,1.67,positive,positive
+8jY_RhOS89o,2,0.67,positive,slightly positive
+8jY_RhOS89o,3,0.67,positive,slightly positive
+8lfS97s2AKc,0,0.67,positive,slightly positive
+8lfS97s2AKc,1,-1.33,negative,negative
+8lfS97s2AKc,2,-0.67,negative,slightly negative
+8lfS97s2AKc,3,2.0,positive,positive
+8lfS97s2AKc,4,-1.67,negative,negative
+8lfS97s2AKc,5,0.33,positive,Neutral
+8lfS97s2AKc,6,-1.0,negative,slightly negative
+8lfS97s2AKc,7,-2.0,negative,negative
+8wNr-NQImFg,0,0.0,negative,Neutral
+8wNr-NQImFg,1,-0.33,negative,Neutral
+8wNr-NQImFg,2,-1.33,negative,negative
+8wNr-NQImFg,3,0.0,negative,Neutral
+8wNr-NQImFg,4,0.33,positive,Neutral
+8wNr-NQImFg,5,1.33,positive,positive
+8wNr-NQImFg,6,0.67,positive,slightly positive
+8wNr-NQImFg,7,0.33,positive,Neutral
+8wQhzezNcUY,0,1.67,positive,positive
+8wQhzezNcUY,1,2.0,positive,positive
+8wQhzezNcUY,2,0.0,negative,Neutral
+8wQhzezNcUY,3,2.0,positive,positive
+8wQhzezNcUY,4,1.0,positive,slightly positive
+8wQhzezNcUY,5,1.0,positive,slightly positive
+8wQhzezNcUY,6,0.67,positive,slightly positive
+91844,0,2.67,positive,very positive
+91844,1,-0.33,negative,Neutral
+91844,2,0.67,positive,slightly positive
+91844,3,3.0,positive,very positive
+91844,4,-0.33,negative,Neutral
+91844,5,0.67,positive,slightly positive
+91844,6,2.0,positive,positive
+91844,7,0.0,negative,Neutral
+91844,8,3.0,positive,very positive
+91844,9,0.0,negative,Neutral
+91844,10,0.67,positive,slightly positive
+91844,11,0.67,positive,slightly positive
+91844,12,-0.33,negative,Neutral
+91844,13,2.0,positive,positive
+92291,0,1.33,positive,positive
+92291,1,0.67,positive,slightly positive
+92291,2,0.67,positive,slightly positive
+92291,3,0.0,negative,Neutral
+92291,4,-2.33,negative,very negative
+92291,5,-2.33,negative,very negative
+92291,6,-2.33,negative,very negative
+92291,7,-1.33,negative,negative
+92496,0,-1.0,negative,slightly negative
+92496,1,-2.67,negative,very negative
+92496,2,-2.0,negative,negative
+92496,3,-1.67,negative,negative
+92496,4,-3.0,negative,very negative
+92496,5,0.0,negative,Neutral
+93iGT5oueTA,0,1.0,positive,slightly positive
+93iGT5oueTA,1,-2.0,negative,negative
+93iGT5oueTA,2,0.67,positive,slightly positive
+93iGT5oueTA,3,1.33,positive,positive
+93iGT5oueTA,4,1.67,positive,positive
+93iGT5oueTA,5,0.0,negative,Neutral
+93iGT5oueTA,6,1.33,positive,positive
+93iGT5oueTA,7,-0.33,negative,Neutral
+93iGT5oueTA,8,1.0,positive,slightly positive
+93iGT5oueTA,9,-0.33,negative,Neutral
+93iGT5oueTA,10,-2.67,negative,very negative
+94481,0,1.33,positive,positive
+94481,1,-0.67,negative,slightly negative
+94481,2,-1.67,negative,negative
+94481,3,0.0,negative,Neutral
+94481,4,1.67,positive,positive
+94481,5,0.67,positive,slightly positive
+94481,6,3.0,positive,very positive
+94481,7,2.67,positive,very positive
+94481,8,0.67,positive,slightly positive
+94481,9,1.67,positive,positive
+94481,10,1.0,positive,slightly positive
+94481,11,1.67,positive,positive
+97ENTofrmNo,0,1.0,positive,slightly positive
+97ENTofrmNo,1,1.33,positive,positive
+97ENTofrmNo,2,2.0,positive,positive
+97ENTofrmNo,3,0.67,positive,slightly positive
+9GzFQBljNIY,0,-1.0,negative,slightly negative
+9GzFQBljNIY,1,0.0,negative,Neutral
+9GzFQBljNIY,2,0.33,positive,Neutral
+9GzFQBljNIY,3,-1.0,negative,slightly negative
+9GzFQBljNIY,4,1.0,positive,slightly positive
+9GzFQBljNIY,5,-1.67,negative,negative
+9Lr4i7bIB6w,0,0.67,positive,slightly positive
+9Lr4i7bIB6w,1,0.0,negative,Neutral
+9Lr4i7bIB6w,2,1.0,positive,slightly positive
+9Lr4i7bIB6w,3,0.0,negative,Neutral
+9Lr4i7bIB6w,4,0.67,positive,slightly positive
+9Lr4i7bIB6w,5,0.67,positive,slightly positive
+9Lr4i7bIB6w,6,1.0,positive,slightly positive
+9Lr4i7bIB6w,7,1.33,positive,positive
+9Lr4i7bIB6w,8,0.67,positive,slightly positive
+9Lr4i7bIB6w,9,0.33,positive,Neutral
+9PzZSheh10U,0,2.33,positive,very positive
+9PzZSheh10U,1,0.67,positive,slightly positive
+9PzZSheh10U,2,1.0,positive,slightly positive
+9PzZSheh10U,3,1.33,positive,positive
+9PzZSheh10U,4,0.33,positive,Neutral
+9PzZSheh10U,5,0.67,positive,slightly positive
+9PzZSheh10U,6,0.33,positive,Neutral
+9PzZSheh10U,7,0.67,positive,slightly positive
+9PzZSheh10U,8,0.67,positive,slightly positive
+9PzZSheh10U,9,1.67,positive,positive
+9PzZSheh10U,10,1.33,positive,positive
+9PzZSheh10U,11,0.67,positive,slightly positive
+9PzZSheh10U,12,1.0,positive,slightly positive
+9PzZSheh10U,13,0.67,positive,slightly positive
+9PzZSheh10U,14,0.0,negative,Neutral
+9PzZSheh10U,15,0.0,negative,Neutral
+9PzZSheh10U,16,0.33,positive,Neutral
+9PzZSheh10U,17,0.0,negative,Neutral
+9PzZSheh10U,18,1.0,positive,slightly positive
+9PzZSheh10U,19,0.33,positive,Neutral
+9PzZSheh10U,20,1.33,positive,positive
+9PzZSheh10U,21,0.0,negative,Neutral
+9PzZSheh10U,22,1.0,positive,slightly positive
+9PzZSheh10U,23,0.67,positive,slightly positive
+9PzZSheh10U,24,0.67,positive,slightly positive
+9PzZSheh10U,25,0.67,positive,slightly positive
+9PzZSheh10U,26,0.33,positive,Neutral
+9PzZSheh10U,27,1.33,positive,positive
+9PzZSheh10U,28,0.33,positive,Neutral
+9PzZSheh10U,29,0.33,positive,Neutral
+9PzZSheh10U,30,2.33,positive,very positive
+9TAGpMywQyE,0,0.67,positive,slightly positive
+9cYNT_YSo8o,0,1.33,positive,positive
+9cYNT_YSo8o,1,-1.0,negative,slightly negative
+9orb0lQnVW4,0,0.0,negative,Neutral
+A1lFJXUpxZo,0,1.33,positive,positive
+A1lFJXUpxZo,1,0.33,positive,Neutral
+A1lFJXUpxZo,2,0.67,positive,slightly positive
+A1lFJXUpxZo,3,1.67,positive,positive
+A1lFJXUpxZo,4,1.67,positive,positive
+AB1PbMaW03s,0,0.0,negative,Neutral
+AB1PbMaW03s,1,0.0,negative,Neutral
+AB1PbMaW03s,2,-0.33,negative,Neutral
+AB1PbMaW03s,3,0.33,positive,Neutral
+AB1PbMaW03s,4,1.0,positive,slightly positive
+AB1PbMaW03s,5,0.0,negative,Neutral
+AB1PbMaW03s,6,0.0,negative,Neutral
+AB1PbMaW03s,7,0.33,positive,Neutral
+AB1PbMaW03s,8,0.0,negative,Neutral
+AB1PbMaW03s,9,0.33,positive,Neutral
+AB1PbMaW03s,10,0.0,negative,Neutral
+AHiA9hohKr8,0,0.33,positive,Neutral
+AHiA9hohKr8,1,0.0,negative,Neutral
+AHiA9hohKr8,2,-0.67,negative,slightly negative
+AHiA9hohKr8,3,0.0,negative,Neutral
+AHiA9hohKr8,4,1.0,positive,slightly positive
+AHiA9hohKr8,5,1.33,positive,positive
+AHiA9hohKr8,6,-1.67,negative,negative
+AHiA9hohKr8,7,0.33,positive,Neutral
+AQ4Pktv4-Gc,0,0.33,positive,Neutral
+AgH84SNRx5s,0,1.67,positive,positive
+AgH84SNRx5s,1,1.67,positive,positive
+AlJX3Jw3xKk,0,0.67,positive,slightly positive
+AlJX3Jw3xKk,1,0.67,positive,slightly positive
+An8x4UfwZ7k,0,0.33,positive,Neutral
+An8x4UfwZ7k,1,0.0,negative,Neutral
+B9oeT0K92wU,0,0.0,negative,Neutral
+BJS5KCSowgU,0,1.33,positive,positive
+BJS5KCSowgU,1,2.0,positive,positive
+BJS5KCSowgU,2,1.0,positive,slightly positive
+BR2pkk3TK-0,0,0.67,positive,slightly positive
+BR2pkk3TK-0,1,0.0,negative,Neutral
+BRSyH6yfDLk,0,2.0,positive,positive
+BRSyH6yfDLk,1,1.67,positive,positive
+BRSyH6yfDLk,2,1.33,positive,positive
+BRSyH6yfDLk,3,-0.67,negative,slightly negative
+BRSyH6yfDLk,4,0.0,negative,Neutral
+BTjV5dU_rfY,0,1.33,positive,positive
+Bpy61RdLAvo,0,-1.0,negative,slightly negative
+C5-cY1nPQ20,0,0.67,positive,slightly positive
+C5-cY1nPQ20,1,1.33,positive,positive
+C5-cY1nPQ20,2,0.67,positive,slightly positive
+C5-cY1nPQ20,3,0.0,negative,Neutral
+C5-cY1nPQ20,4,-0.67,negative,slightly negative
+C5-cY1nPQ20,5,1.0,positive,slightly positive
+C5-cY1nPQ20,6,0.67,positive,slightly positive
+C5-cY1nPQ20,7,1.33,positive,positive
+C5-cY1nPQ20,8,0.67,positive,slightly positive
+C5-cY1nPQ20,9,0.33,positive,Neutral
+CKqDDh50gcU,0,1.33,positive,positive
+CKqDDh50gcU,1,1.67,positive,positive
+CKqDDh50gcU,2,2.67,positive,very positive
+CKqDDh50gcU,3,2.0,positive,positive
+CKqDDh50gcU,4,1.67,positive,positive
+CKqDDh50gcU,5,0.33,positive,Neutral
+CO2YoTZbUr0,0,0.0,negative,Neutral
+CO2YoTZbUr0,1,0.0,negative,Neutral
+CO2YoTZbUr0,2,0.0,negative,Neutral
+CO2YoTZbUr0,3,-0.67,negative,slightly negative
+CO2YoTZbUr0,4,0.0,negative,Neutral
+CO2YoTZbUr0,5,0.67,positive,slightly positive
+CO2YoTZbUr0,6,0.67,positive,slightly positive
+CO2YoTZbUr0,7,0.33,positive,Neutral
+CO2YoTZbUr0,8,-1.67,negative,negative
+CO2YoTZbUr0,9,0.0,negative,Neutral
+CO6n-skQJss,0,0.67,positive,slightly positive
+CO6n-skQJss,1,0.0,negative,Neutral
+CO6n-skQJss,2,-1.33,negative,negative
+CO6n-skQJss,3,1.33,positive,positive
+CU6U-gS76K4,0,1.33,positive,positive
+CU6U-gS76K4,1,1.0,positive,slightly positive
+CU6U-gS76K4,2,0.0,negative,Neutral
+CU6U-gS76K4,3,1.67,positive,positive
+CU6U-gS76K4,4,0.67,positive,slightly positive
+CbRexsp1HKw,0,-0.33,negative,Neutral
+CbRexsp1HKw,1,-0.33,negative,Neutral
+CbRexsp1HKw,2,-0.33,negative,Neutral
+CbRexsp1HKw,3,0.0,negative,Neutral
+CbRexsp1HKw,4,0.33,positive,Neutral
+CbRexsp1HKw,5,-0.33,negative,Neutral
+ChhZna-aBK4,0,0.33,positive,Neutral
+ChhZna-aBK4,1,0.33,positive,Neutral
+ChhZna-aBK4,2,1.0,positive,slightly positive
+ChhZna-aBK4,3,0.67,positive,slightly positive
+ChhZna-aBK4,4,1.33,positive,positive
+ChhZna-aBK4,5,1.33,positive,positive
+ChhZna-aBK4,6,0.0,negative,Neutral
+ChhZna-aBK4,7,1.33,positive,positive
+ChhZna-aBK4,8,1.33,positive,positive
+ChhZna-aBK4,9,0.67,positive,slightly positive
+ChhZna-aBK4,10,0.33,positive,Neutral
+ChhZna-aBK4,11,0.67,positive,slightly positive
+ChhZna-aBK4,12,0.67,positive,slightly positive
+ChhZna-aBK4,13,0.33,positive,Neutral
+ChhZna-aBK4,14,0.67,positive,slightly positive
+CwF97vXPYX4,0,-0.67,negative,slightly negative
+CwF97vXPYX4,1,-0.33,negative,Neutral
+DMtFQjrY7Hg,0,0.33,positive,Neutral
+DMtFQjrY7Hg,1,0.67,positive,slightly positive
+DR65no1jCbg,0,0.0,negative,Neutral
+DR65no1jCbg,1,0.0,negative,Neutral
+DR65no1jCbg,2,0.0,negative,Neutral
+DVAY-u_cJWU,0,-0.33,negative,Neutral
+DVAY-u_cJWU,1,0.0,negative,Neutral
+DVAY-u_cJWU,2,1.0,positive,slightly positive
+DebbnL-_rnI,0,1.67,positive,positive
+DebbnL-_rnI,1,2.0,positive,positive
+DjcZrtcBZi4,0,0.33,positive,Neutral
+DjcZrtcBZi4,1,0.0,negative,Neutral
+DjcZrtcBZi4,2,0.33,positive,Neutral
+DjcZrtcBZi4,3,-0.33,negative,Neutral
+DjcZrtcBZi4,4,0.67,positive,slightly positive
+DjcZrtcBZi4,5,0.0,negative,Neutral
+DjcZrtcBZi4,6,0.0,negative,Neutral
+DjcZrtcBZi4,7,0.67,positive,slightly positive
+DjcZrtcBZi4,8,0.0,negative,Neutral
+DlX-WyVe-D0,0,1.0,positive,slightly positive
+DlX-WyVe-D0,1,1.0,positive,slightly positive
+Dm8AL84e11w,0,2.0,positive,positive
+Dm8AL84e11w,1,0.67,positive,slightly positive
+Dm8AL84e11w,2,0.0,negative,Neutral
+DnBHq5I52LM,0,-1.67,negative,negative
+DnBHq5I52LM,1,-1.67,negative,negative
+DnBHq5I52LM,2,0.0,negative,Neutral
+DnBHq5I52LM,3,-1.0,negative,slightly negative
+DnBHq5I52LM,4,-1.33,negative,negative
+DnBHq5I52LM,5,-0.33,negative,Neutral
+DnBHq5I52LM,6,0.0,negative,Neutral
+DnBHq5I52LM,7,-0.33,negative,Neutral
+DnBHq5I52LM,8,-0.33,negative,Neutral
+DnBHq5I52LM,9,0.0,negative,Neutral
+DtbT85s3i94,0,0.0,negative,Neutral
+DtbT85s3i94,1,0.67,positive,slightly positive
+DtbT85s3i94,2,0.67,positive,slightly positive
+DtbT85s3i94,3,1.0,positive,slightly positive
+DtbT85s3i94,4,1.0,positive,slightly positive
+DzdPl68gV5o,0,0.67,positive,slightly positive
+DzdPl68gV5o,1,-0.67,negative,slightly negative
+E1r0FrFyNTw,0,0.0,negative,Neutral
+E1r0FrFyNTw,1,2.67,positive,very positive
+E1r0FrFyNTw,2,0.0,negative,Neutral
+EMS14J0odIE,0,0.0,negative,Neutral
+EMS14J0odIE,1,0.33,positive,Neutral
+EMS14J0odIE,2,0.67,positive,slightly positive
+EMS14J0odIE,3,-0.33,negative,Neutral
+EO_5o9Gup6g,0,0.33,positive,Neutral
+EO_5o9Gup6g,1,-0.67,negative,slightly negative
+EO_5o9Gup6g,2,-1.67,negative,negative
+EO_5o9Gup6g,3,-1.33,negative,negative
+EO_5o9Gup6g,4,-1.33,negative,negative
+EO_5o9Gup6g,5,0.0,negative,Neutral
+EO_5o9Gup6g,6,-0.67,negative,slightly negative
+EO_5o9Gup6g,7,-1.0,negative,slightly negative
+EO_5o9Gup6g,8,-1.0,negative,slightly negative
+EO_5o9Gup6g,9,-0.33,negative,Neutral
+EO_5o9Gup6g,10,-1.33,negative,negative
+EO_5o9Gup6g,11,-1.67,negative,negative
+EO_5o9Gup6g,12,-1.33,negative,negative
+EO_5o9Gup6g,13,-1.0,negative,slightly negative
+EO_5o9Gup6g,14,0.0,negative,Neutral
+EO_5o9Gup6g,15,-2.0,negative,negative
+EO_5o9Gup6g,16,-1.33,negative,negative
+EO_5o9Gup6g,17,-0.33,negative,Neutral
+EO_5o9Gup6g,18,-1.0,negative,slightly negative
+EujJ0SwiCRE,0,0.0,negative,Neutral
+EyoMU2yoJPY,0,1.67,positive,positive
+EyoMU2yoJPY,1,0.33,positive,Neutral
+EyoMU2yoJPY,2,0.33,positive,Neutral
+EyoMU2yoJPY,3,-0.33,negative,Neutral
+F2hc2FLOdhI,0,0.67,positive,slightly positive
+F2hc2FLOdhI,1,1.67,positive,positive
+F2hc2FLOdhI,2,1.0,positive,slightly positive
+F2hc2FLOdhI,3,0.0,negative,Neutral
+F2hc2FLOdhI,4,1.0,positive,slightly positive
+F2hc2FLOdhI,5,-0.67,negative,slightly negative
+F2hc2FLOdhI,6,0.0,negative,Neutral
+F7zQPzwFToE,0,-1.67,negative,negative
+F7zQPzwFToE,1,-0.67,negative,slightly negative
+F7zQPzwFToE,2,0.0,negative,Neutral
+F7zQPzwFToE,3,-1.0,negative,slightly negative
+F8eQI8E-6q4,0,0.67,positive,slightly positive
+F8eQI8E-6q4,1,-0.67,negative,slightly negative
+F8eQI8E-6q4,2,-0.67,negative,slightly negative
+FHDVQkU-nGI,0,0.67,positive,slightly positive
+FHDVQkU-nGI,1,1.33,positive,positive
+FHDVQkU-nGI,2,1.0,positive,slightly positive
+FHDVQkU-nGI,3,2.0,positive,positive
+FHDVQkU-nGI,4,1.67,positive,positive
+FHDVQkU-nGI,5,2.0,positive,positive
+FHDVQkU-nGI,6,2.33,positive,very positive
+FHDVQkU-nGI,7,1.67,positive,positive
+FMenDv3y8jc,0,0.67,positive,slightly positive
+FMenDv3y8jc,1,0.33,positive,Neutral
+FMenDv3y8jc,2,0.67,positive,slightly positive
+FMenDv3y8jc,3,0.67,positive,slightly positive
+FMenDv3y8jc,4,1.0,positive,slightly positive
+FMenDv3y8jc,5,0.33,positive,Neutral
+F_YaG_pvZrA,0,0.33,positive,Neutral
+F_YaG_pvZrA,1,0.67,positive,slightly positive
+F_YaG_pvZrA,2,0.0,negative,Neutral
+F_YaG_pvZrA,3,0.67,positive,slightly positive
+F_YaG_pvZrA,4,0.0,negative,Neutral
+FqEekswKPWE,0,0.0,negative,Neutral
+FqEekswKPWE,1,0.33,positive,Neutral
+FqEekswKPWE,2,0.33,positive,Neutral
+FqEekswKPWE,3,0.0,negative,Neutral
+FqEekswKPWE,4,0.0,negative,Neutral
+GAVpYuhMZAw,0,0.67,positive,slightly positive
+GAVpYuhMZAw,1,0.67,positive,slightly positive
+GAVpYuhMZAw,2,1.0,positive,slightly positive
+GAVpYuhMZAw,3,2.0,positive,positive
+GAVpYuhMZAw,4,0.0,negative,Neutral
+GAVpYuhMZAw,5,1.33,positive,positive
+GAVpYuhMZAw,6,0.33,positive,Neutral
+GAVpYuhMZAw,7,1.0,positive,slightly positive
+GAVpYuhMZAw,8,-0.33,negative,Neutral
+GK-Pprzh0t0,0,-1.67,negative,negative
+GK-Pprzh0t0,1,-0.67,negative,slightly negative
+GK-Pprzh0t0,2,0.33,positive,Neutral
+GK-Pprzh0t0,3,1.67,positive,positive
+GKsjv42t284,0,1.33,positive,positive
+GKsjv42t284,1,-0.67,negative,slightly negative
+GKsjv42t284,2,-0.67,negative,slightly negative
+GKsjv42t284,3,-0.67,negative,slightly negative
+GKsjv42t284,4,0.33,positive,Neutral
+GMa0cIAltnw,0,-0.67,negative,slightly negative
+GMa0cIAltnw,1,0.33,positive,Neutral
+GMa0cIAltnw,2,-1.33,negative,negative
+GMa0cIAltnw,3,-2.33,negative,very negative
+GNP0PFas12Y,0,0.33,positive,Neutral
+GNP0PFas12Y,1,0.0,negative,Neutral
+GNP0PFas12Y,2,0.67,positive,slightly positive
+GNP0PFas12Y,3,0.33,positive,Neutral
+GNP0PFas12Y,4,0.33,positive,Neutral
+GNP0PFas12Y,5,0.67,positive,slightly positive
+GNP0PFas12Y,6,1.0,positive,slightly positive
+GO0V4ZGSF28,0,0.0,negative,Neutral
+GXIfrEUJ5d4,0,-0.33,negative,Neutral
+GXIfrEUJ5d4,1,0.0,negative,Neutral
+Gc_zIjqqUys,0,0.67,positive,slightly positive
+Gc_zIjqqUys,1,-0.33,negative,Neutral
+Gc_zIjqqUys,2,0.0,negative,Neutral
+GlShH_ua_GU,0,1.67,positive,positive
+GmpDbIstUdc,0,0.33,positive,Neutral
+GmpDbIstUdc,1,0.33,positive,Neutral
+GmpDbIstUdc,2,-0.33,negative,Neutral
+H-74k5vclCU,0,0.33,positive,Neutral
+H-74k5vclCU,1,0.67,positive,slightly positive
+H-74k5vclCU,2,1.0,positive,slightly positive
+H9BNzzxlscA,0,0.0,negative,Neutral
+H9BNzzxlscA,1,1.0,positive,slightly positive
+H9BNzzxlscA,2,0.0,negative,Neutral
+H9BNzzxlscA,3,-0.67,negative,slightly negative
+H9BNzzxlscA,4,0.0,negative,Neutral
+HA2AiTz-qxc,0,-0.67,negative,slightly negative
+HA2AiTz-qxc,1,0.0,negative,Neutral
+HA2AiTz-qxc,2,0.0,negative,Neutral
+HAnQVHOd3hg,0,0.33,positive,Neutral
+HAnQVHOd3hg,1,0.0,negative,Neutral
+HAnQVHOd3hg,2,-0.33,negative,Neutral
+HFPGeaEPy9o,0,-0.67,negative,slightly negative
+HFPGeaEPy9o,1,-0.33,negative,Neutral
+HFPGeaEPy9o,2,0.33,positive,Neutral
+HFPGeaEPy9o,3,0.0,negative,Neutral
+HJTxq72GuMs,0,1.0,positive,slightly positive
+HJTxq72GuMs,1,0.0,negative,Neutral
+HJTxq72GuMs,2,-2.0,negative,negative
+HJTxq72GuMs,3,0.67,positive,slightly positive
+HJTxq72GuMs,4,-0.33,negative,Neutral
+HMRqR-P68Ws,0,0.0,negative,Neutral
+HMRqR-P68Ws,1,0.33,positive,Neutral
+HMRqR-P68Ws,2,-1.33,negative,negative
+HMRqR-P68Ws,3,1.0,positive,slightly positive
+HMRqR-P68Ws,4,-1.0,negative,slightly negative
+HMRqR-P68Ws,5,0.0,negative,Neutral
+HMRqR-P68Ws,6,-0.33,negative,Neutral
+HMRqR-P68Ws,7,0.0,negative,Neutral
+HMRqR-P68Ws,8,0.33,positive,Neutral
+HR18U0yAlTc,0,0.0,negative,Neutral
+HR18U0yAlTc,1,-0.33,negative,Neutral
+HR18U0yAlTc,2,-0.33,negative,Neutral
+HR18U0yAlTc,3,-0.33,negative,Neutral
+HR18U0yAlTc,4,-0.33,negative,Neutral
+HR18U0yAlTc,5,0.33,positive,Neutral
+H_x5O9GdknI,0,0.0,negative,Neutral
+H_x5O9GdknI,1,-1.0,negative,slightly negative
+HbaycY0VuZk,0,1.33,positive,positive
+HbaycY0VuZk,1,1.67,positive,positive
+HbaycY0VuZk,2,1.67,positive,positive
+Hq3cHc6X8BM,0,0.33,positive,Neutral
+I9iV9q3ePhI,0,0.33,positive,Neutral
+I9iV9q3ePhI,1,0.0,negative,Neutral
+I9iV9q3ePhI,2,0.33,positive,Neutral
+IHp8hd1jm6k,0,2.33,positive,very positive
+IHp8hd1jm6k,1,1.67,positive,positive
+IHp8hd1jm6k,2,2.0,positive,positive
+IHp8hd1jm6k,3,1.33,positive,positive
+IHp8hd1jm6k,4,0.67,positive,slightly positive
+IHp8hd1jm6k,5,1.33,positive,positive
+IHp8hd1jm6k,6,0.67,positive,slightly positive
+IHp8hd1jm6k,7,2.67,positive,very positive
+IHp8hd1jm6k,8,0.33,positive,Neutral
+IHp8hd1jm6k,9,2.33,positive,very positive
+IHp8hd1jm6k,10,0.0,negative,Neutral
+IHp8hd1jm6k,11,1.67,positive,positive
+IHp8hd1jm6k,12,0.67,positive,slightly positive
+IHp8hd1jm6k,13,1.0,positive,slightly positive
+IHp8hd1jm6k,14,1.0,positive,slightly positive
+IHp8hd1jm6k,15,0.0,negative,Neutral
+IHp8hd1jm6k,16,0.0,negative,Neutral
+IHp8hd1jm6k,17,1.0,positive,slightly positive
+IHp8hd1jm6k,18,1.67,positive,positive
+IHp8hd1jm6k,19,2.0,positive,positive
+IHp8hd1jm6k,20,1.0,positive,slightly positive
+IHp8hd1jm6k,21,0.67,positive,slightly positive
+IHp8hd1jm6k,22,-0.33,negative,Neutral
+IHp8hd1jm6k,23,-0.33,negative,Neutral
+IHp8hd1jm6k,24,1.33,positive,positive
+IHp8hd1jm6k,25,1.33,positive,positive
+IHp8hd1jm6k,26,0.0,negative,Neutral
+IHp8hd1jm6k,27,0.67,positive,slightly positive
+IHp8hd1jm6k,28,0.0,negative,Neutral
+IHp8hd1jm6k,29,0.0,negative,Neutral
+IHp8hd1jm6k,30,0.67,positive,slightly positive
+IIPYcCii7Sg,0,0.0,negative,Neutral
+IIPYcCii7Sg,1,-0.33,negative,Neutral
+IIPYcCii7Sg,2,-1.0,negative,slightly negative
+IIPYcCii7Sg,3,1.0,positive,slightly positive
+IIPYcCii7Sg,4,0.33,positive,Neutral
+IIPYcCii7Sg,5,-0.33,negative,Neutral
+IOpWjKAHG8Q,0,-1.0,negative,slightly negative
+IOpWjKAHG8Q,1,0.67,positive,slightly positive
+IOpWjKAHG8Q,2,-0.33,negative,Neutral
+IOpWjKAHG8Q,3,-0.33,negative,Neutral
+IOpWjKAHG8Q,4,0.0,negative,Neutral
+IOpWjKAHG8Q,5,0.33,positive,Neutral
+IRSxo_XXArg,0,0.33,positive,Neutral
+IRSxo_XXArg,1,0.0,negative,Neutral
+IRSxo_XXArg,2,0.67,positive,slightly positive
+IRSxo_XXArg,3,0.0,negative,Neutral
+IRSxo_XXArg,4,0.67,positive,slightly positive
+IRSxo_XXArg,5,-0.67,negative,slightly negative
+IRSxo_XXArg,6,0.0,negative,Neutral
+IRSxo_XXArg,7,0.0,negative,Neutral
+Ie6sDptjAsU,0,0.67,positive,slightly positive
+Iemw8vqt-54,0,2.67,positive,very positive
+Iemw8vqt-54,1,2.33,positive,very positive
+Iemw8vqt-54,2,1.67,positive,positive
+Iemw8vqt-54,3,0.67,positive,slightly positive
+Iemw8vqt-54,4,1.0,positive,slightly positive
+Iemw8vqt-54,5,1.67,positive,positive
+JATMzuV6sUE,0,0.33,positive,Neutral
+JHJOK6cdW-0,0,0.0,negative,Neutral
+JHJOK6cdW-0,1,-0.33,negative,Neutral
+JHJOK6cdW-0,2,0.0,negative,Neutral
+JHJOK6cdW-0,3,0.0,negative,Neutral
+JHJOK6cdW-0,4,-0.33,negative,Neutral
+JKueLneBoik,0,1.0,positive,slightly positive
+JKueLneBoik,1,1.0,positive,slightly positive
+JKueLneBoik,2,0.0,negative,Neutral
+JKueLneBoik,3,1.0,positive,slightly positive
+JKueLneBoik,4,2.0,positive,positive
+JKueLneBoik,5,0.0,negative,Neutral
+JNhqI4JtPXA,0,1.67,positive,positive
+JNhqI4JtPXA,1,1.33,positive,positive
+JNhqI4JtPXA,2,2.0,positive,positive
+JNhqI4JtPXA,3,1.33,positive,positive
+JNhqI4JtPXA,4,0.67,positive,slightly positive
+JXYot3NDQn0,0,0.33,positive,Neutral
+JXYot3NDQn0,1,0.67,positive,slightly positive
+Jz1oMq6l-ZM,0,-2.0,negative,negative
+Jz1oMq6l-ZM,1,2.33,positive,very positive
+Jz1oMq6l-ZM,2,-1.0,negative,slightly negative
+Jz1oMq6l-ZM,3,-2.0,negative,negative
+Jz1oMq6l-ZM,4,-0.33,negative,Neutral
+Jz1oMq6l-ZM,5,-1.67,negative,negative
+Jz1oMq6l-ZM,6,-1.67,negative,negative
+Jz1oMq6l-ZM,7,0.33,positive,Neutral
+Jz1oMq6l-ZM,8,-1.0,negative,slightly negative
+KB5hSnV1emg,0,0.33,positive,Neutral
+KB5hSnV1emg,1,0.0,negative,Neutral
+KB5hSnV1emg,2,0.0,negative,Neutral
+KB5hSnV1emg,3,0.0,negative,Neutral
+KB5hSnV1emg,4,0.0,negative,Neutral
+KB5hSnV1emg,5,0.67,positive,slightly positive
+KB5hSnV1emg,6,0.0,negative,Neutral
+KB5hSnV1emg,7,0.33,positive,Neutral
+KB5hSnV1emg,8,0.33,positive,Neutral
+KB5hSnV1emg,9,0.67,positive,slightly positive
+KRje7su4I5U,0,0.33,positive,Neutral
+KRje7su4I5U,1,-0.67,negative,slightly negative
+KRje7su4I5U,2,1.33,positive,positive
+KRje7su4I5U,3,1.0,positive,slightly positive
+KRje7su4I5U,4,0.33,positive,Neutral
+KRje7su4I5U,5,2.0,positive,positive
+KRje7su4I5U,6,1.0,positive,slightly positive
+KXsjl0DKgL0,0,1.33,positive,positive
+KYQTwFVBzME,0,0.67,positive,slightly positive
+KZzFCrEyKF0,0,-0.33,negative,Neutral
+KZzFCrEyKF0,1,0.67,positive,slightly positive
+KZzFCrEyKF0,2,0.0,negative,Neutral
+KZzFCrEyKF0,3,-0.33,negative,Neutral
+KanWhGY33Hk,0,0.0,negative,Neutral
+KanWhGY33Hk,1,0.0,negative,Neutral
+KanWhGY33Hk,2,1.0,positive,slightly positive
+Kn5eKHlPD0k,0,1.0,positive,slightly positive
+Kn5eKHlPD0k,1,0.67,positive,slightly positive
+Kn5eKHlPD0k,2,0.0,negative,Neutral
+Kn5eKHlPD0k,3,0.67,positive,slightly positive
+Kn5eKHlPD0k,4,0.67,positive,slightly positive
+Kn5eKHlPD0k,5,-0.67,negative,slightly negative
+Kn5eKHlPD0k,6,1.0,positive,slightly positive
+Kn99u05vlpA,0,1.67,positive,positive
+Kn99u05vlpA,1,1.67,positive,positive
+Kn99u05vlpA,2,1.67,positive,positive
+Kn99u05vlpA,3,2.33,positive,very positive
+KrmVX-HANew,0,0.67,positive,slightly positive
+KrmVX-HANew,1,0.0,negative,Neutral
+KrmVX-HANew,2,0.67,positive,slightly positive
+Kyz32PTyP4I,0,1.67,positive,positive
+Kyz32PTyP4I,1,0.67,positive,slightly positive
+Kyz32PTyP4I,2,1.33,positive,positive
+Kyz32PTyP4I,3,0.33,positive,Neutral
+Kyz32PTyP4I,4,0.67,positive,slightly positive
+L-7oRnbi9-w,0,0.33,positive,Neutral
+L-7oRnbi9-w,1,0.33,positive,Neutral
+L-7oRnbi9-w,2,0.67,positive,slightly positive
+L-a4Sh6iAcw,0,0.0,negative,Neutral
+L-a4Sh6iAcw,1,0.67,positive,slightly positive
+L-a4Sh6iAcw,2,0.67,positive,slightly positive
+L-a4Sh6iAcw,3,-0.33,negative,Neutral
+L-a4Sh6iAcw,4,0.67,positive,slightly positive
+L-a4Sh6iAcw,5,0.67,positive,slightly positive
+LD3HYOwk1Bc,0,0.0,negative,Neutral
+LD3HYOwk1Bc,1,0.0,negative,Neutral
+LDKWr94J0wM,0,1.0,positive,slightly positive
+LDKWr94J0wM,1,1.0,positive,slightly positive
+LDKWr94J0wM,2,0.67,positive,slightly positive
+LDKWr94J0wM,3,-0.33,negative,Neutral
+LDKWr94J0wM,4,0.33,positive,Neutral
+LDKWr94J0wM,5,1.33,positive,positive
+LDKWr94J0wM,6,1.0,positive,slightly positive
+LFOwCSiGOvw,0,-1.0,negative,slightly negative
+LFOwCSiGOvw,1,0.0,negative,Neutral
+LFOwCSiGOvw,2,-1.0,negative,slightly negative
+LJGL2sGvSS0,0,1.33,positive,positive
+LJGL2sGvSS0,1,1.33,positive,positive
+LJGL2sGvSS0,2,2.0,positive,positive
+LJGL2sGvSS0,3,0.67,positive,slightly positive
+LJGL2sGvSS0,4,1.0,positive,slightly positive
+LJGL2sGvSS0,5,1.67,positive,positive
+LJGL2sGvSS0,6,1.33,positive,positive
+LJGL2sGvSS0,7,1.0,positive,slightly positive
+LJGL2sGvSS0,8,1.0,positive,slightly positive
+LJGL2sGvSS0,9,1.33,positive,positive
+LJGL2sGvSS0,10,-0.67,negative,slightly negative
+LJGL2sGvSS0,11,1.0,positive,slightly positive
+LJGL2sGvSS0,12,0.67,positive,slightly positive
+LJGL2sGvSS0,13,1.0,positive,slightly positive
+LJGL2sGvSS0,14,1.33,positive,positive
+LJGL2sGvSS0,15,2.0,positive,positive
+LJGL2sGvSS0,16,1.0,positive,slightly positive
+LJGL2sGvSS0,17,0.67,positive,slightly positive
+LJGL2sGvSS0,18,1.67,positive,positive
+LJGL2sGvSS0,19,2.0,positive,positive
+LJGL2sGvSS0,20,2.0,positive,positive
+LJGL2sGvSS0,21,1.0,positive,slightly positive
+LJGL2sGvSS0,22,2.0,positive,positive
+LcfubBagG6Q,0,1.33,positive,positive
+LcfubBagG6Q,1,-1.0,negative,slightly negative
+LcfubBagG6Q,2,1.0,positive,slightly positive
+LcfubBagG6Q,3,1.0,positive,slightly positive
+LcfubBagG6Q,4,1.33,positive,positive
+LcfubBagG6Q,5,0.33,positive,Neutral
+LcfubBagG6Q,6,0.33,positive,Neutral
+LcfubBagG6Q,7,0.0,negative,Neutral
+LcfubBagG6Q,8,0.33,positive,Neutral
+LcfubBagG6Q,9,0.0,negative,Neutral
+LcfubBagG6Q,10,1.0,positive,slightly positive
+LcfubBagG6Q,11,1.33,positive,positive
+LcfubBagG6Q,12,0.33,positive,Neutral
+LcfubBagG6Q,13,1.33,positive,positive
+LpTbjgELALo,0,0.0,negative,Neutral
+LpTbjgELALo,1,1.33,positive,positive
+LtlL-03S79Q,0,0.33,positive,Neutral
+LtlL-03S79Q,1,1.33,positive,positive
+LtlL-03S79Q,2,1.0,positive,slightly positive
+LtlL-03S79Q,3,0.33,positive,Neutral
+LtlL-03S79Q,4,1.0,positive,slightly positive
+LtlL-03S79Q,5,1.33,positive,positive
+LueQT0vY1zI,0,1.0,positive,slightly positive
+LyOq9mOEPuk,0,-0.67,negative,slightly negative
+LyOq9mOEPuk,1,1.33,positive,positive
+LyOq9mOEPuk,2,-0.67,negative,slightly negative
+M6HKUzJNlsE,0,0.67,positive,slightly positive
+M6HKUzJNlsE,1,0.67,positive,slightly positive
+M6HKUzJNlsE,2,0.33,positive,Neutral
+M6HKUzJNlsE,3,1.67,positive,positive
+M6HKUzJNlsE,4,1.33,positive,positive
+M6HKUzJNlsE,5,1.0,positive,slightly positive
+MHVrwCEWLPI,0,-0.67,negative,slightly negative
+MHVrwCEWLPI,1,0.67,positive,slightly positive
+MHVrwCEWLPI,2,1.0,positive,slightly positive
+MHVrwCEWLPI,3,0.33,positive,Neutral
+MHyW857u_X8,0,0.0,negative,Neutral
+MHyW857u_X8,1,0.0,negative,Neutral
+MHyW857u_X8,2,0.33,positive,Neutral
+MHyW857u_X8,3,0.33,positive,Neutral
+MHyW857u_X8,4,-0.33,negative,Neutral
+MHyW857u_X8,5,0.0,negative,Neutral
+MHyW857u_X8,6,0.0,negative,Neutral
+MHyW857u_X8,7,2.0,positive,positive
+MLegxOZBGUc,0,1.0,positive,slightly positive
+MM2qPdnRmQ8,0,0.0,negative,Neutral
+MM2qPdnRmQ8,1,0.0,negative,Neutral
+MSHBEntSDjU,0,0.33,positive,Neutral
+MYEyQUpMe3k,0,1.0,positive,slightly positive
+MYEyQUpMe3k,1,0.67,positive,slightly positive
+MYEyQUpMe3k,2,0.0,negative,Neutral
+MYEyQUpMe3k,3,0.0,negative,Neutral
+MYEyQUpMe3k,4,0.0,negative,Neutral
+MYEyQUpMe3k,5,0.0,negative,Neutral
+MYEyQUpMe3k,6,0.0,negative,Neutral
+MYEyQUpMe3k,7,0.0,negative,Neutral
+MZUr1DfYNNw,0,1.33,positive,positive
+MZUr1DfYNNw,1,0.67,positive,slightly positive
+MZUr1DfYNNw,2,0.0,negative,Neutral
+MtIklGnIMGo,0,-1.33,negative,negative
+MvEw24PU2Ac,0,0.67,positive,slightly positive
+MvEw24PU2Ac,1,-1.0,negative,slightly negative
+MvEw24PU2Ac,2,0.0,negative,Neutral
+N-NnCI6U52c,0,2.33,positive,very positive
+N-NnCI6U52c,1,2.67,positive,very positive
+N0d2JL7JC1s,0,0.0,negative,Neutral
+N2nCB34Am-E,0,0.67,positive,slightly positive
+N2nCB34Am-E,1,0.67,positive,slightly positive
+NIpuKcoJhGM,0,2.0,positive,positive
+NIpuKcoJhGM,1,-0.33,negative,Neutral
+NIpuKcoJhGM,2,1.67,positive,positive
+NOGhjdK-rDI,0,-0.33,negative,Neutral
+NVLPURuAVLU,0,-0.67,negative,slightly negative
+NVLPURuAVLU,1,0.67,positive,slightly positive
+NVLPURuAVLU,2,0.33,positive,Neutral
+NaWmaHwjElo,0,0.67,positive,slightly positive
+NaWmaHwjElo,1,0.0,negative,Neutral
+NgENhhXf0LE,0,1.33,positive,positive
+NiAjz4ciA60,0,1.0,positive,slightly positive
+NiAjz4ciA60,1,0.33,positive,Neutral
+NiAjz4ciA60,2,0.33,positive,Neutral
+NiAjz4ciA60,3,-0.33,negative,Neutral
+NlrCjfHELLE,0,0.67,positive,slightly positive
+NoOt0oU843M,0,0.67,positive,slightly positive
+NoOt0oU843M,1,0.33,positive,Neutral
+NoOt0oU843M,2,0.0,negative,Neutral
+NoOt0oU843M,3,0.67,positive,slightly positive
+NoOt0oU843M,4,1.67,positive,positive
+NocexkPXja8,0,-1.0,negative,slightly negative
+NocexkPXja8,1,-0.67,negative,slightly negative
+NocexkPXja8,2,-1.0,negative,slightly negative
+NocexkPXja8,3,-1.67,negative,negative
+NocexkPXja8,4,-1.33,negative,negative
+NocexkPXja8,5,-1.0,negative,slightly negative
+NocexkPXja8,6,-2.33,negative,very negative
+NocexkPXja8,7,-1.67,negative,negative
+O-b3DQg0QmA,0,0.0,negative,Neutral
+O-b3DQg0QmA,1,0.0,negative,Neutral
+O-b3DQg0QmA,2,2.33,positive,very positive
+O2ShYliS3CU,0,1.67,positive,positive
+O2ShYliS3CU,1,0.0,negative,Neutral
+O4UkHVJlIs8,0,0.33,positive,Neutral
+O4UkHVJlIs8,1,1.0,positive,slightly positive
+O4UkHVJlIs8,2,0.67,positive,slightly positive
+OFia3dWgaoI,0,-0.67,negative,slightly negative
+OFia3dWgaoI,1,-1.33,negative,negative
+OFia3dWgaoI,2,-0.67,negative,slightly negative
+OFia3dWgaoI,3,-0.67,negative,slightly negative
+OFia3dWgaoI,4,-0.33,negative,Neutral
+OFia3dWgaoI,5,-0.67,negative,slightly negative
+OFia3dWgaoI,6,-0.33,negative,Neutral
+OKJPFisBoPY,0,0.33,positive,Neutral
+OKJPFisBoPY,1,0.33,positive,Neutral
+OORklkFql3k,0,-1.33,negative,negative
+OORklkFql3k,1,-0.33,negative,Neutral
+OORklkFql3k,2,0.0,negative,Neutral
+OORklkFql3k,3,-1.33,negative,negative
+OORklkFql3k,4,-2.67,negative,very negative
+OORklkFql3k,5,-0.67,negative,slightly negative
+OORklkFql3k,6,-2.0,negative,negative
+OORklkFql3k,7,-2.0,negative,negative
+OORklkFql3k,8,-2.0,negative,negative
+OORklkFql3k,9,-0.33,negative,Neutral
+OORklkFql3k,10,-2.0,negative,negative
+OORklkFql3k,11,-2.0,negative,negative
+OWWHjP3pX9o,0,0.0,negative,Neutral
+OWWHjP3pX9o,1,-0.33,negative,Neutral
+OWWHjP3pX9o,2,0.33,positive,Neutral
+OWWHjP3pX9o,3,0.0,negative,Neutral
+OWWHjP3pX9o,4,0.0,negative,Neutral
+OWWHjP3pX9o,5,0.67,positive,slightly positive
+OWWHjP3pX9o,6,1.33,positive,positive
+OWWHjP3pX9o,7,0.33,positive,Neutral
+OWWHjP3pX9o,8,1.0,positive,slightly positive
+OWWHjP3pX9o,9,0.67,positive,slightly positive
+OXsTIPdytiw,0,-0.33,negative,Neutral
+OXsTIPdytiw,1,0.0,negative,Neutral
+OXsTIPdytiw,2,0.33,positive,Neutral
+OXsTIPdytiw,3,0.67,positive,slightly positive
+OXsTIPdytiw,4,-0.33,negative,Neutral
+OXsTIPdytiw,5,0.0,negative,Neutral
+OXsTIPdytiw,6,0.67,positive,slightly positive
+Oa2xVjzAMFc,0,0.0,negative,Neutral
+Oa2xVjzAMFc,1,1.67,positive,positive
+Oa2xVjzAMFc,2,0.0,negative,Neutral
+Oa2xVjzAMFc,3,2.0,positive,positive
+Oa2xVjzAMFc,4,-0.33,negative,Neutral
+Oa2xVjzAMFc,5,0.33,positive,Neutral
+OaWYjsS02fk,0,2.33,positive,very positive
+OaWYjsS02fk,1,0.0,negative,Neutral
+OaWYjsS02fk,2,1.0,positive,slightly positive
+OaWYjsS02fk,3,0.67,positive,slightly positive
+OaWYjsS02fk,4,0.0,negative,Neutral
+OctOcfI4KSs,0,0.67,positive,slightly positive
+OctOcfI4KSs,1,-0.33,negative,Neutral
+OctOcfI4KSs,2,0.33,positive,Neutral
+OctOcfI4KSs,3,-0.67,negative,slightly negative
+OctOcfI4KSs,4,0.67,positive,slightly positive
+OctOcfI4KSs,5,0.33,positive,Neutral
+OctOcfI4KSs,6,0.0,negative,Neutral
+OctOcfI4KSs,7,0.0,negative,Neutral
+OyK86reBnJE,0,0.33,positive,Neutral
+P0UHzR4CmYg,0,0.33,positive,Neutral
+P0UHzR4CmYg,1,1.33,positive,positive
+P0UHzR4CmYg,2,1.0,positive,slightly positive
+P0UHzR4CmYg,3,1.33,positive,positive
+P0UHzR4CmYg,4,0.67,positive,slightly positive
+P0UHzR4CmYg,5,0.67,positive,slightly positive
+P0UHzR4CmYg,6,0.67,positive,slightly positive
+P0UHzR4CmYg,7,1.0,positive,slightly positive
+P0UHzR4CmYg,8,0.0,negative,Neutral
+P0UHzR4CmYg,9,1.0,positive,slightly positive
+P0UHzR4CmYg,10,1.0,positive,slightly positive
+P0UHzR4CmYg,11,0.67,positive,slightly positive
+P0UHzR4CmYg,12,-1.0,negative,slightly negative
+P0UHzR4CmYg,13,0.33,positive,Neutral
+P0UHzR4CmYg,14,0.67,positive,slightly positive
+P0UHzR4CmYg,15,1.0,positive,slightly positive
+P0UHzR4CmYg,16,-0.67,negative,slightly negative
+P0UHzR4CmYg,17,-0.33,negative,Neutral
+P0UHzR4CmYg,18,2.0,positive,positive
+P0UHzR4CmYg,19,-1.33,negative,negative
+P0UHzR4CmYg,20,-1.0,negative,slightly negative
+P0UHzR4CmYg,21,2.0,positive,positive
+P17tYiqMGRU,0,1.67,positive,positive
+PHZIx22aFhU,0,1.0,positive,slightly positive
+Pbu6oAKFCvo,0,2.0,positive,positive
+Pbu6oAKFCvo,1,1.33,positive,positive
+Pbu6oAKFCvo,2,0.33,positive,Neutral
+PcqKFt1p3UQ,0,0.33,positive,Neutral
+PcqKFt1p3UQ,1,0.33,positive,Neutral
+PcqKFt1p3UQ,2,-0.67,negative,slightly negative
+PexNiFbPTYM,0,0.0,negative,Neutral
+PexNiFbPTYM,1,1.0,positive,slightly positive
+PexNiFbPTYM,2,2.0,positive,positive
+PexNiFbPTYM,3,0.33,positive,Neutral
+PexNiFbPTYM,4,0.33,positive,Neutral
+PexNiFbPTYM,5,0.0,negative,Neutral
+PexNiFbPTYM,6,-0.67,negative,slightly negative
+PexNiFbPTYM,7,1.0,positive,slightly positive
+PexNiFbPTYM,8,0.0,negative,Neutral
+PexNiFbPTYM,9,0.0,negative,Neutral
+PexNiFbPTYM,10,1.0,positive,slightly positive
+PexNiFbPTYM,11,0.67,positive,slightly positive
+PexNiFbPTYM,12,0.67,positive,slightly positive
+PexNiFbPTYM,13,-0.33,negative,Neutral
+PexNiFbPTYM,14,-1.0,negative,slightly negative
+PexNiFbPTYM,15,1.0,positive,slightly positive
+PexNiFbPTYM,16,-0.33,negative,Neutral
+PexNiFbPTYM,17,0.67,positive,slightly positive
+PexNiFbPTYM,18,1.0,positive,slightly positive
+PexNiFbPTYM,19,1.0,positive,slightly positive
+PexNiFbPTYM,20,1.33,positive,positive
+PzI6yY9Y2xQ,0,2.0,positive,positive
+PzI6yY9Y2xQ,1,1.67,positive,positive
+PzI6yY9Y2xQ,2,2.0,positive,positive
+PzI6yY9Y2xQ,3,1.67,positive,positive
+PzI6yY9Y2xQ,4,1.33,positive,positive
+PzI6yY9Y2xQ,5,-0.67,negative,slightly negative
+QBc7X5jj8oA,0,-1.0,negative,slightly negative
+QBc7X5jj8oA,1,0.33,positive,Neutral
+QBc7X5jj8oA,2,1.33,positive,positive
+QCR7uyowjhM,0,0.33,positive,Neutral
+QCR7uyowjhM,1,0.0,negative,Neutral
+QCR7uyowjhM,2,-1.0,negative,slightly negative
+QCR7uyowjhM,3,-0.33,negative,Neutral
+QCR7uyowjhM,4,1.0,positive,slightly positive
+QCR7uyowjhM,5,-0.33,negative,Neutral
+QCR7uyowjhM,6,0.33,positive,Neutral
+QCR7uyowjhM,7,0.33,positive,Neutral
+QCR7uyowjhM,8,0.67,positive,slightly positive
+QCR7uyowjhM,9,0.0,negative,Neutral
+QIonRUsCqBs,0,1.33,positive,positive
+QIonRUsCqBs,1,0.33,positive,Neutral
+QIonRUsCqBs,2,2.0,positive,positive
+QIonRUsCqBs,3,0.67,positive,slightly positive
+QJBQIOmG1CA,0,-0.67,negative,slightly negative
+QLI-OnegxFM,0,0.0,negative,Neutral
+QLI-OnegxFM,1,0.0,negative,Neutral
+QVyxySAaehE,0,0.0,negative,Neutral
+QVyxySAaehE,1,1.33,positive,positive
+QVyxySAaehE,2,1.0,positive,slightly positive
+QVyxySAaehE,3,0.33,positive,Neutral
+QWll4lS1qqI,0,1.67,positive,positive
+QWll4lS1qqI,1,-1.0,negative,slightly negative
+QWll4lS1qqI,2,2.0,positive,positive
+QXXexH-ow_k,0,-1.33,negative,negative
+Qfa1fY_07bQ,0,0.33,positive,Neutral
+Qfa1fY_07bQ,1,0.67,positive,slightly positive
+Qfa1fY_07bQ,2,0.67,positive,slightly positive
+Qfa1fY_07bQ,3,1.33,positive,positive
+Qfa1fY_07bQ,4,0.0,negative,Neutral
+Qfa1fY_07bQ,5,0.67,positive,slightly positive
+Qfa1fY_07bQ,6,0.67,positive,slightly positive
+QnYlpSeVOYo,0,0.0,negative,Neutral
+R9xTBw3MCWI,0,0.33,positive,Neutral
+R9xTBw3MCWI,1,0.67,positive,slightly positive
+R9xTBw3MCWI,2,0.67,positive,slightly positive
+R9xTBw3MCWI,3,1.0,positive,slightly positive
+R9xTBw3MCWI,4,0.33,positive,Neutral
+R9xTBw3MCWI,5,0.33,positive,Neutral
+R9xTBw3MCWI,6,1.67,positive,positive
+R9xTBw3MCWI,7,0.67,positive,slightly positive
+R9xTBw3MCWI,8,0.33,positive,Neutral
+R9xTBw3MCWI,9,0.0,negative,Neutral
+R9xTBw3MCWI,10,0.33,positive,Neutral
+R9xTBw3MCWI,11,1.0,positive,slightly positive
+R9xTBw3MCWI,12,1.0,positive,slightly positive
+R9xTBw3MCWI,13,0.67,positive,slightly positive
+R9xTBw3MCWI,14,0.33,positive,Neutral
+R9xTBw3MCWI,15,0.33,positive,Neutral
+R9xTBw3MCWI,16,1.0,positive,slightly positive
+R9xTBw3MCWI,17,0.0,negative,Neutral
+R9xTBw3MCWI,18,-0.67,negative,slightly negative
+R9xTBw3MCWI,19,1.0,positive,slightly positive
+RB3HA-ZMtFw,0,0.33,positive,Neutral
+RChkXDS8ulE,0,-1.0,negative,slightly negative
+RChkXDS8ulE,1,1.0,positive,slightly positive
+RChkXDS8ulE,2,1.0,positive,slightly positive
+RChkXDS8ulE,3,0.33,positive,Neutral
+ROC2YI3tDsk,0,0.67,positive,slightly positive
+ROC2YI3tDsk,1,0.67,positive,slightly positive
+ROC2YI3tDsk,2,0.33,positive,Neutral
+ROC2YI3tDsk,3,0.33,positive,Neutral
+ROC2YI3tDsk,4,1.67,positive,positive
+ROC2YI3tDsk,5,0.33,positive,Neutral
+ROC2YI3tDsk,6,1.0,positive,slightly positive
+ROC2YI3tDsk,7,1.67,positive,positive
+ROC2YI3tDsk,8,0.67,positive,slightly positive
+ROC2YI3tDsk,9,1.0,positive,slightly positive
+ROC2YI3tDsk,10,0.0,negative,Neutral
+ROC2YI3tDsk,11,0.67,positive,slightly positive
+ROC2YI3tDsk,12,2.33,positive,very positive
+RVC8l5hf2Eg,0,0.67,positive,slightly positive
+RVC8l5hf2Eg,1,0.33,positive,Neutral
+RVC8l5hf2Eg,2,-0.67,negative,slightly negative
+RVC8l5hf2Eg,3,0.67,positive,slightly positive
+RVC8l5hf2Eg,4,0.0,negative,Neutral
+RVC8l5hf2Eg,5,1.67,positive,positive
+RVC8l5hf2Eg,6,0.67,positive,slightly positive
+RVC8l5hf2Eg,7,0.33,positive,Neutral
+RVC8l5hf2Eg,8,0.0,negative,Neutral
+RVC8l5hf2Eg,9,0.0,negative,Neutral
+RVC8l5hf2Eg,10,0.0,negative,Neutral
+RVC8l5hf2Eg,11,0.33,positive,Neutral
+RVC8l5hf2Eg,12,0.67,positive,slightly positive
+RVC8l5hf2Eg,13,-0.33,negative,Neutral
+RVC8l5hf2Eg,14,-0.33,negative,Neutral
+Rb1uzHNcYcA,0,0.33,positive,Neutral
+Rb1uzHNcYcA,1,0.0,negative,Neutral
+Rb1uzHNcYcA,2,-1.0,negative,slightly negative
+Rb1uzHNcYcA,3,1.0,positive,slightly positive
+Rb1uzHNcYcA,4,1.67,positive,positive
+Rb1uzHNcYcA,5,1.67,positive,positive
+Rb1uzHNcYcA,6,1.67,positive,positive
+RmX9t_HY_dU,0,0.0,negative,Neutral
+RmX9t_HY_dU,1,1.33,positive,positive
+RsE2gYghZ2s,0,0.33,positive,Neutral
+RsE2gYghZ2s,1,0.33,positive,Neutral
+RvmTZVNAAuQ,0,0.0,negative,Neutral
+RvmTZVNAAuQ,1,1.33,positive,positive
+RvmTZVNAAuQ,2,2.0,positive,positive
+RvmTZVNAAuQ,3,-0.33,negative,Neutral
+RvmTZVNAAuQ,4,1.0,positive,slightly positive
+SBFnCNzlynQ,0,-0.33,negative,Neutral
+SBFnCNzlynQ,1,-0.33,negative,Neutral
+SD6wphlw72U,0,0.33,positive,Neutral
+SD6wphlw72U,1,2.0,positive,positive
+SD6wphlw72U,2,0.33,positive,Neutral
+SH0OYx3fR7s,0,0.33,positive,Neutral
+SH0OYx3fR7s,1,0.33,positive,Neutral
+SH0OYx3fR7s,2,2.0,positive,positive
+SH0OYx3fR7s,3,1.0,positive,slightly positive
+SH0OYx3fR7s,4,1.0,positive,slightly positive
+SKTyBOhDX6U,0,1.67,positive,positive
+SKTyBOhDX6U,1,1.33,positive,positive
+SKTyBOhDX6U,2,0.67,positive,slightly positive
+SKTyBOhDX6U,3,-0.33,negative,Neutral
+SKTyBOhDX6U,4,1.33,positive,positive
+SKTyBOhDX6U,5,0.67,positive,slightly positive
+SKTyBOhDX6U,6,-0.67,negative,slightly negative
+SKTyBOhDX6U,7,2.0,positive,positive
+SKTyBOhDX6U,8,1.0,positive,slightly positive
+SKTyBOhDX6U,9,-0.33,negative,Neutral
+SYQ_zv8dWng,0,0.67,positive,slightly positive
+SYQ_zv8dWng,1,0.33,positive,Neutral
+SYQ_zv8dWng,2,-0.67,negative,slightly negative
+SYQ_zv8dWng,3,0.67,positive,slightly positive
+SYQ_zv8dWng,4,0.67,positive,slightly positive
+SYQ_zv8dWng,5,0.33,positive,Neutral
+SYQ_zv8dWng,6,0.0,negative,Neutral
+SYQ_zv8dWng,7,0.67,positive,slightly positive
+SYQ_zv8dWng,8,0.0,negative,Neutral
+SYQ_zv8dWng,9,0.0,negative,Neutral
+SZ7HK5ns6mE,0,1.67,positive,positive
+SZ7HK5ns6mE,1,1.67,positive,positive
+SZ7HK5ns6mE,2,2.0,positive,positive
+SZ7HK5ns6mE,3,2.0,positive,positive
+SZ7HK5ns6mE,4,0.67,positive,slightly positive
+SZ7HK5ns6mE,5,1.67,positive,positive
+SZ7HK5ns6mE,6,-1.0,negative,slightly negative
+SZ7HK5ns6mE,7,1.33,positive,positive
+Sb6ftNgzz9M,0,0.33,positive,Neutral
+Sb6ftNgzz9M,1,0.67,positive,slightly positive
+Sb6ftNgzz9M,2,0.33,positive,Neutral
+Sb6ftNgzz9M,3,0.0,negative,Neutral
+Sq6DIhFxPqQ,0,0.33,positive,Neutral
+Sq6DIhFxPqQ,1,0.67,positive,slightly positive
+Sq6DIhFxPqQ,2,0.0,negative,Neutral
+Sq6DIhFxPqQ,3,0.0,negative,Neutral
+SqAiJrvHXNA,0,1.0,positive,slightly positive
+SqAiJrvHXNA,1,0.33,positive,Neutral
+SqAiJrvHXNA,2,1.0,positive,slightly positive
+SqAiJrvHXNA,3,1.33,positive,positive
+SqAiJrvHXNA,4,1.0,positive,slightly positive
+SqAiJrvHXNA,5,1.0,positive,slightly positive
+SqAiJrvHXNA,6,1.0,positive,slightly positive
+SqAiJrvHXNA,7,1.0,positive,slightly positive
+SqAiJrvHXNA,8,1.33,positive,positive
+SqAiJrvHXNA,9,1.67,positive,positive
+SqAiJrvHXNA,10,1.0,positive,slightly positive
+SqAiJrvHXNA,11,0.33,positive,Neutral
+SqofxdeEcjg,0,1.33,positive,positive
+SqofxdeEcjg,1,1.67,positive,positive
+SqofxdeEcjg,2,1.0,positive,slightly positive
+SqofxdeEcjg,3,1.33,positive,positive
+SqofxdeEcjg,4,0.33,positive,Neutral
+SwT0gh0V8fI,0,0.67,positive,slightly positive
+SwT0gh0V8fI,1,0.0,negative,Neutral
+SwT0gh0V8fI,2,1.33,positive,positive
+SwT0gh0V8fI,3,0.33,positive,Neutral
+SwT0gh0V8fI,4,0.33,positive,Neutral
+SwT0gh0V8fI,5,-0.33,negative,Neutral
+SwT0gh0V8fI,6,0.0,negative,Neutral
+SwT0gh0V8fI,7,0.67,positive,slightly positive
+SwT0gh0V8fI,8,1.67,positive,positive
+SwT0gh0V8fI,9,-0.33,negative,Neutral
+SwT0gh0V8fI,10,-0.33,negative,Neutral
+SwT0gh0V8fI,11,0.0,negative,Neutral
+SwT0gh0V8fI,12,0.0,negative,Neutral
+SwT0gh0V8fI,13,2.33,positive,very positive
+TLPlduck5II,0,-1.67,negative,negative
+TLPlduck5II,1,-1.33,negative,negative
+TLPlduck5II,2,0.0,negative,Neutral
+TLPlduck5II,3,0.0,negative,Neutral
+TLPlduck5II,4,0.67,positive,slightly positive
+TLPlduck5II,5,1.67,positive,positive
+TXiOSZdaLJ8,0,0.0,negative,Neutral
+TXiOSZdaLJ8,1,0.67,positive,slightly positive
+TXiOSZdaLJ8,2,0.33,positive,Neutral
+TcTGCIh6e5s,0,0.0,negative,Neutral
+TcTGCIh6e5s,1,0.67,positive,slightly positive
+TcTGCIh6e5s,2,0.0,negative,Neutral
+TcTGCIh6e5s,3,0.33,positive,Neutral
+TcTGCIh6e5s,4,0.0,negative,Neutral
+TcTGCIh6e5s,5,0.0,negative,Neutral
+TcTGCIh6e5s,6,0.0,negative,Neutral
+TqQgIxR7thU,0,0.0,negative,Neutral
+TsfyeZ8hgwE,0,0.33,positive,Neutral
+TsfyeZ8hgwE,1,2.67,positive,very positive
+TsfyeZ8hgwE,2,1.67,positive,positive
+TtAyUQtmTLk,0,0.0,negative,Neutral
+TtAyUQtmTLk,1,-0.67,negative,slightly negative
+TtAyUQtmTLk,2,-0.33,negative,Neutral
+TtAyUQtmTLk,3,2.0,positive,positive
+TtAyUQtmTLk,4,0.33,positive,Neutral
+TxRtSItpGMo,0,0.67,positive,slightly positive
+TxRtSItpGMo,1,2.33,positive,very positive
+TxRtSItpGMo,2,2.0,positive,positive
+TxRtSItpGMo,3,1.33,positive,positive
+TxRtSItpGMo,4,2.0,positive,positive
+U-KihZeIfKI,0,1.33,positive,positive
+U-KihZeIfKI,1,1.0,positive,slightly positive
+U-KihZeIfKI,2,1.33,positive,positive
+U-KihZeIfKI,3,0.33,positive,Neutral
+U-KihZeIfKI,4,1.0,positive,slightly positive
+U-KihZeIfKI,5,0.33,positive,Neutral
+U-KihZeIfKI,6,0.67,positive,slightly positive
+U-KihZeIfKI,7,0.67,positive,slightly positive
+U-KihZeIfKI,8,-1.0,negative,slightly negative
+U-KihZeIfKI,9,-0.67,negative,slightly negative
+U-KihZeIfKI,10,-0.33,negative,Neutral
+U-KihZeIfKI,11,-1.0,negative,slightly negative
+U-KihZeIfKI,12,0.33,positive,Neutral
+U-KihZeIfKI,13,1.33,positive,positive
+U-KihZeIfKI,14,0.67,positive,slightly positive
+U-KihZeIfKI,15,1.0,positive,slightly positive
+U-KihZeIfKI,16,0.0,negative,Neutral
+U-KihZeIfKI,17,0.0,negative,Neutral
+U-KihZeIfKI,18,0.67,positive,slightly positive
+U-KihZeIfKI,19,0.0,negative,Neutral
+U-KihZeIfKI,20,0.33,positive,Neutral
+U-KihZeIfKI,21,1.0,positive,slightly positive
+U-KihZeIfKI,22,1.33,positive,positive
+U-KihZeIfKI,23,1.67,positive,positive
+U6IqFbpM-VM,0,1.67,positive,positive
+U6IqFbpM-VM,1,0.0,negative,Neutral
+U8VYG_g6yVE,0,2.0,positive,positive
+U8VYG_g6yVE,1,1.33,positive,positive
+U8VYG_g6yVE,2,2.67,positive,very positive
+U8VYG_g6yVE,3,2.67,positive,very positive
+UNLD7eYPzfQ,0,-1.0,negative,slightly negative
+UNLD7eYPzfQ,1,-0.33,negative,Neutral
+USkMa4Evv7U,0,1.0,positive,slightly positive
+USkMa4Evv7U,1,1.33,positive,positive
+USkMa4Evv7U,2,0.33,positive,Neutral
+UTErYLpdAY0,0,1.33,positive,positive
+UcV-bpksJi0,0,0.0,negative,Neutral
+UcV-bpksJi0,1,0.0,negative,Neutral
+UcV-bpksJi0,2,0.0,negative,Neutral
+UiurP5k-f1A,0,1.0,positive,slightly positive
+UiurP5k-f1A,1,1.0,positive,slightly positive
+UiurP5k-f1A,2,1.0,positive,slightly positive
+UjqA6KVW2m8,0,0.67,positive,slightly positive
+UjqA6KVW2m8,1,1.67,positive,positive
+UjqA6KVW2m8,2,-0.33,negative,Neutral
+UjqA6KVW2m8,3,-0.67,negative,slightly negative
+UjqA6KVW2m8,4,-1.33,negative,negative
+UjqA6KVW2m8,5,0.67,positive,slightly positive
+UjqA6KVW2m8,6,1.0,positive,slightly positive
+UjqA6KVW2m8,7,-1.0,negative,slightly negative
+UjqA6KVW2m8,8,1.67,positive,positive
+UjqA6KVW2m8,9,2.0,positive,positive
+Uu_XyXyKHAk,0,-1.0,negative,slightly negative
+UweZVaFqruU,0,0.33,positive,Neutral
+UweZVaFqruU,1,0.0,negative,Neutral
+UweZVaFqruU,2,0.0,negative,Neutral
+UweZVaFqruU,3,0.0,negative,Neutral
+UweZVaFqruU,4,0.0,negative,Neutral
+UweZVaFqruU,5,0.0,negative,Neutral
+UweZVaFqruU,6,0.33,positive,Neutral
+UweZVaFqruU,7,2.0,positive,positive
+UweZVaFqruU,8,0.67,positive,slightly positive
+V0SvSPkiJUY,0,-0.33,negative,Neutral
+V0SvSPkiJUY,1,1.67,positive,positive
+V0SvSPkiJUY,2,0.67,positive,slightly positive
+V0SvSPkiJUY,3,2.33,positive,very positive
+V0SvSPkiJUY,4,0.0,negative,Neutral
+V0SvSPkiJUY,5,0.67,positive,slightly positive
+V0SvSPkiJUY,6,0.67,positive,slightly positive
+V0SvSPkiJUY,7,-0.33,negative,Neutral
+V0SvSPkiJUY,8,1.67,positive,positive
+V27mmEkN80g,0,0.0,negative,Neutral
+V2X1NU5RkwY,0,0.0,negative,Neutral
+V2X1NU5RkwY,1,-0.67,negative,slightly negative
+V2X1NU5RkwY,2,0.33,positive,Neutral
+V2X1NU5RkwY,3,0.0,negative,Neutral
+V2X1NU5RkwY,4,0.0,negative,Neutral
+V2X1NU5RkwY,5,0.0,negative,Neutral
+V2X1NU5RkwY,6,-0.33,negative,Neutral
+V7OFSHYcQD0,0,-0.33,negative,Neutral
+VDkBM0ZG4q8,0,0.0,negative,Neutral
+VDkBM0ZG4q8,1,0.33,positive,Neutral
+VDkBM0ZG4q8,2,0.33,positive,Neutral
+VDkBM0ZG4q8,3,0.67,positive,slightly positive
+VDkBM0ZG4q8,4,0.0,negative,Neutral
+VDkBM0ZG4q8,5,0.0,negative,Neutral
+VDkBM0ZG4q8,6,0.0,negative,Neutral
+VDkBM0ZG4q8,7,0.33,positive,Neutral
+VDkBM0ZG4q8,8,0.33,positive,Neutral
+VIVkYG31Oas,0,1.0,positive,slightly positive
+VLQgw-88v4Q,0,2.0,positive,positive
+VLQgw-88v4Q,1,2.33,positive,very positive
+VLQgw-88v4Q,2,0.0,negative,Neutral
+VLQgw-88v4Q,3,1.67,positive,positive
+VLQgw-88v4Q,4,1.0,positive,slightly positive
+VLQgw-88v4Q,5,2.33,positive,very positive
+VLQgw-88v4Q,6,1.67,positive,positive
+VLQgw-88v4Q,7,1.33,positive,positive
+VLQgw-88v4Q,8,1.33,positive,positive
+VS7xSvno7NA,0,1.0,positive,slightly positive
+VS7xSvno7NA,1,0.33,positive,Neutral
+VS7xSvno7NA,2,0.33,positive,Neutral
+VS7xSvno7NA,3,-1.33,negative,negative
+VS7xSvno7NA,4,-0.67,negative,slightly negative
+VS7xSvno7NA,5,-0.67,negative,slightly negative
+VS7xSvno7NA,6,0.0,negative,Neutral
+VS7xSvno7NA,7,1.0,positive,slightly positive
+VVtx4IDsHZA,0,-0.67,negative,slightly negative
+VXy21GwGs8o,0,0.0,negative,Neutral
+VXy21GwGs8o,1,1.67,positive,positive
+Vdf1McvE9ao,0,0.0,negative,Neutral
+Vdf1McvE9ao,1,0.33,positive,Neutral
+Vdf1McvE9ao,2,-0.67,negative,slightly negative
+Vdf1McvE9ao,3,-0.67,negative,slightly negative
+Vdf1McvE9ao,4,0.0,negative,Neutral
+Vdf1McvE9ao,5,-0.67,negative,slightly negative
+Vdf1McvE9ao,6,-0.67,negative,slightly negative
+Vdf1McvE9ao,7,-0.67,negative,slightly negative
+Vdf1McvE9ao,8,0.67,positive,slightly positive
+Vdf1McvE9ao,9,0.33,positive,Neutral
+Vdf1McvE9ao,10,1.0,positive,slightly positive
+Vdf1McvE9ao,11,1.0,positive,slightly positive
+Vdf1McvE9ao,12,0.0,negative,Neutral
+Vlas-mPydcg,0,1.67,positive,positive
+Vlas-mPydcg,1,0.67,positive,slightly positive
+Vlas-mPydcg,2,0.0,negative,Neutral
+Vlas-mPydcg,3,1.0,positive,slightly positive
+Vlas-mPydcg,4,0.33,positive,Neutral
+Vlas-mPydcg,5,2.67,positive,very positive
+VsXGwSZazwA,0,0.67,positive,slightly positive
+VsXGwSZazwA,1,0.0,negative,Neutral
+VsXGwSZazwA,2,1.33,positive,positive
+VsXGwSZazwA,3,1.0,positive,slightly positive
+VsXGwSZazwA,4,0.0,negative,Neutral
+VsXGwSZazwA,5,0.0,negative,Neutral
+VsXGwSZazwA,6,1.67,positive,positive
+VsXGwSZazwA,7,1.67,positive,positive
+VwGPIUNayKM,0,0.0,negative,Neutral
+VwGPIUNayKM,1,0.0,negative,Neutral
+VwGPIUNayKM,2,0.0,negative,Neutral
+VwGPIUNayKM,3,0.0,negative,Neutral
+VwGPIUNayKM,4,-1.0,negative,slightly negative
+VwGPIUNayKM,5,-0.33,negative,Neutral
+VwGPIUNayKM,6,0.67,positive,slightly positive
+VwGPIUNayKM,7,0.67,positive,slightly positive
+VwGPIUNayKM,8,1.0,positive,slightly positive
+W1CWpktWtTs,0,2.67,positive,very positive
+W1CWpktWtTs,1,1.33,positive,positive
+W1CWpktWtTs,2,1.0,positive,slightly positive
+W1CWpktWtTs,3,0.33,positive,Neutral
+W1CWpktWtTs,4,0.0,negative,Neutral
+W1CWpktWtTs,5,1.0,positive,slightly positive
+W1CWpktWtTs,6,1.33,positive,positive
+W1CWpktWtTs,7,0.0,negative,Neutral
+W1CWpktWtTs,8,0.67,positive,slightly positive
+W1CWpktWtTs,9,0.0,negative,Neutral
+WBA79Q3e_PU,0,1.0,positive,slightly positive
+WJM8u2I2rQ4,0,0.0,negative,Neutral
+WJM8u2I2rQ4,1,0.0,negative,Neutral
+WJM8u2I2rQ4,2,0.67,positive,slightly positive
+WQFRctNL8AA,0,0.0,negative,Neutral
+WQFRctNL8AA,1,-0.67,negative,slightly negative
+WbtsuXkaGeg,0,0.67,positive,slightly positive
+WbtsuXkaGeg,1,0.0,negative,Neutral
+WfNiQBXmPw8,0,0.0,negative,Neutral
+WfNiQBXmPw8,1,0.0,negative,Neutral
+WfNiQBXmPw8,2,-0.33,negative,Neutral
+WfNiQBXmPw8,3,-1.33,negative,negative
+WfNiQBXmPw8,4,0.33,positive,Neutral
+WfNiQBXmPw8,5,0.33,positive,Neutral
+WfNiQBXmPw8,6,0.0,negative,Neutral
+WfNiQBXmPw8,7,-1.67,negative,negative
+WfNiQBXmPw8,8,0.0,negative,Neutral
+WfNiQBXmPw8,9,0.33,positive,Neutral
+WgI8IbJtXHw,0,0.0,negative,Neutral
+WgI8IbJtXHw,1,2.0,positive,positive
+Wmhif6hmPTQ,0,0.0,negative,Neutral
+Wmhif6hmPTQ,1,0.0,negative,Neutral
+Wmhif6hmPTQ,2,0.0,negative,Neutral
+WoL4fCxGd8Q,0,-2.33,negative,very negative
+WoL4fCxGd8Q,1,-0.33,negative,Neutral
+WoL4fCxGd8Q,2,0.33,positive,Neutral
+WoL4fCxGd8Q,3,0.0,negative,Neutral
+WoL4fCxGd8Q,4,-1.67,negative,negative
+WoL4fCxGd8Q,5,-0.33,negative,Neutral
+WoL4fCxGd8Q,6,-0.33,negative,Neutral
+WoL4fCxGd8Q,7,0.0,negative,Neutral
+WoL4fCxGd8Q,8,0.0,negative,Neutral
+WoL4fCxGd8Q,9,0.0,negative,Neutral
+WoL4fCxGd8Q,10,0.0,negative,Neutral
+WoL4fCxGd8Q,11,-2.33,negative,very negative
+WoL4fCxGd8Q,12,1.0,positive,slightly positive
+Wu-wQTmxRgo,0,2.0,positive,positive
+WuaoxGAKue0,0,-0.33,negative,Neutral
+X2Hs89fZ2-c,0,0.0,negative,Neutral
+X2Hs89fZ2-c,1,0.0,negative,Neutral
+X2Hs89fZ2-c,2,0.33,positive,Neutral
+X2Hs89fZ2-c,3,1.0,positive,slightly positive
+X2Hs89fZ2-c,4,1.0,positive,slightly positive
+X2Hs89fZ2-c,5,0.0,negative,Neutral
+X2Hs89fZ2-c,6,1.33,positive,positive
+X2Hs89fZ2-c,7,0.0,negative,Neutral
+X2Hs89fZ2-c,8,0.33,positive,Neutral
+X2Hs89fZ2-c,9,0.0,negative,Neutral
+X2Hs89fZ2-c,10,0.0,negative,Neutral
+X2Hs89fZ2-c,11,0.33,positive,Neutral
+X2Hs89fZ2-c,12,0.33,positive,Neutral
+X2Hs89fZ2-c,13,0.0,negative,Neutral
+X2Hs89fZ2-c,14,0.0,negative,Neutral
+X2Hs89fZ2-c,15,0.0,negative,Neutral
+X2Hs89fZ2-c,16,1.0,positive,slightly positive
+X2Hs89fZ2-c,17,0.67,positive,slightly positive
+X2Hs89fZ2-c,18,0.0,negative,Neutral
+X2Hs89fZ2-c,19,0.33,positive,Neutral
+X2Hs89fZ2-c,20,0.33,positive,Neutral
+X6N7UEFJLNY,0,0.33,positive,Neutral
+X6N7UEFJLNY,1,0.33,positive,Neutral
+X6N7UEFJLNY,2,0.0,negative,Neutral
+X6N7UEFJLNY,3,1.0,positive,slightly positive
+X6N7UEFJLNY,4,0.67,positive,slightly positive
+XDVit9ASVUg,0,0.0,negative,Neutral
+XDVit9ASVUg,1,0.33,positive,Neutral
+XKyumlBmix8,0,0.0,negative,Neutral
+XKyumlBmix8,1,-0.67,negative,slightly negative
+XKyumlBmix8,2,0.0,negative,Neutral
+XKyumlBmix8,3,0.0,negative,Neutral
+XKyumlBmix8,4,0.67,positive,slightly positive
+XKyumlBmix8,5,0.67,positive,slightly positive
+XLjpZUsFEXo,0,0.67,positive,slightly positive
+XLjpZUsFEXo,1,1.33,positive,positive
+XLjpZUsFEXo,2,1.0,positive,slightly positive
+XLjpZUsFEXo,3,0.33,positive,Neutral
+XLjpZUsFEXo,4,0.33,positive,Neutral
+XVWiAArXYpE,0,0.0,negative,Neutral
+XVWiAArXYpE,1,0.33,positive,Neutral
+XVWiAArXYpE,2,0.0,negative,Neutral
+XVWiAArXYpE,3,-0.33,negative,Neutral
+XVWiAArXYpE,4,-0.67,negative,slightly negative
+XVWiAArXYpE,5,0.0,negative,Neutral
+XVWiAArXYpE,6,-1.33,negative,negative
+XVWiAArXYpE,7,-2.0,negative,negative
+XVWiAArXYpE,8,-0.33,negative,Neutral
+XVWiAArXYpE,9,-0.33,negative,Neutral
+XWIp0zH3qDM,0,1.0,positive,slightly positive
+X_TusmBIlC0,0,0.0,negative,Neutral
+X_TusmBIlC0,1,0.0,negative,Neutral
+Xa086gxLJ3Y,0,0.33,positive,Neutral
+Xa086gxLJ3Y,1,0.33,positive,Neutral
+Xa086gxLJ3Y,2,0.33,positive,Neutral
+XadAy93f1P8,0,0.0,negative,Neutral
+XbkYA-iXUwA,0,0.33,positive,Neutral
+XbkYA-iXUwA,1,0.0,negative,Neutral
+XbkYA-iXUwA,2,0.0,negative,Neutral
+XbkYA-iXUwA,3,0.33,positive,Neutral
+XbkYA-iXUwA,4,-0.67,negative,slightly negative
+XlTYSOaZ_vM,0,0.67,positive,slightly positive
+XlTYSOaZ_vM,1,1.0,positive,slightly positive
+XrNaL-MTjXg,0,0.0,negative,Neutral
+XrNaL-MTjXg,1,0.67,positive,slightly positive
+XrNaL-MTjXg,2,1.0,positive,slightly positive
+XrNaL-MTjXg,3,1.33,positive,positive
+XrNaL-MTjXg,4,2.67,positive,very positive
+Xy57UpKRNEo,0,0.0,negative,Neutral
+Xy57UpKRNEo,1,0.0,negative,Neutral
+Xy57UpKRNEo,2,0.67,positive,slightly positive
+Xy57UpKRNEo,3,0.33,positive,Neutral
+Xy57UpKRNEo,4,-1.0,negative,slightly negative
+Xy57UpKRNEo,5,0.0,negative,Neutral
+Y2F51I-dzAg,0,0.67,positive,slightly positive
+Y2F51I-dzAg,1,-0.33,negative,Neutral
+Y2F51I-dzAg,2,0.33,positive,Neutral
+Y2F51I-dzAg,3,0.0,negative,Neutral
+Y2F51I-dzAg,4,1.0,positive,slightly positive
+Y2F51I-dzAg,5,-0.33,negative,Neutral
+Y8dI1GTWCk4,0,-1.0,negative,slightly negative
+Y8dI1GTWCk4,1,0.33,positive,Neutral
+Y8dI1GTWCk4,2,0.67,positive,slightly positive
+Y8dI1GTWCk4,3,0.0,negative,Neutral
+Y8dI1GTWCk4,4,0.0,negative,Neutral
+Y8dI1GTWCk4,5,0.0,negative,Neutral
+Y8dI1GTWCk4,6,1.33,positive,positive
+Y8dI1GTWCk4,7,0.0,negative,Neutral
+YCEllKyaCrc,0,-2.0,negative,negative
+YCEllKyaCrc,1,0.33,positive,Neutral
+YCEllKyaCrc,2,0.33,positive,Neutral
+YCI-ZzclIPQ,0,0.0,negative,Neutral
+YLK58srjhNI,0,-1.0,negative,slightly negative
+YLK58srjhNI,1,-0.33,negative,Neutral
+YLK58srjhNI,2,0.67,positive,slightly positive
+YLK58srjhNI,3,0.33,positive,Neutral
+YLK58srjhNI,4,1.33,positive,positive
+YQZPnHZRp1w,0,0.33,positive,Neutral
+YUNxD04EvfE,0,-0.33,negative,Neutral
+YUNxD04EvfE,1,0.67,positive,slightly positive
+YUNxD04EvfE,2,0.67,positive,slightly positive
+YUNxD04EvfE,3,0.0,negative,Neutral
+YUNxD04EvfE,4,-0.33,negative,Neutral
+YUNxD04EvfE,5,0.67,positive,slightly positive
+YUNxD04EvfE,6,0.33,positive,Neutral
+YUNxD04EvfE,7,0.67,positive,slightly positive
+YUNxD04EvfE,8,-0.67,negative,slightly negative
+YUNxD04EvfE,9,0.33,positive,Neutral
+YgyeyooSz0g,0,-0.33,negative,Neutral
+YsMM_1R1vtw,0,-0.33,negative,Neutral
+YsMM_1R1vtw,1,1.0,positive,slightly positive
+YsMM_1R1vtw,2,1.33,positive,positive
+YsMM_1R1vtw,3,1.33,positive,positive
+YsMM_1R1vtw,4,0.67,positive,slightly positive
+Z4iYSMMMycQ,0,0.0,negative,Neutral
+Z4iYSMMMycQ,1,0.67,positive,slightly positive
+ZHUFlEgKk-w,0,0.33,positive,Neutral
+ZHUFlEgKk-w,1,-0.33,negative,Neutral
+ZHUFlEgKk-w,2,0.67,positive,slightly positive
+ZHUFlEgKk-w,3,1.0,positive,slightly positive
+ZKErPftd--w,0,1.33,positive,positive
+ZKErPftd--w,1,0.33,positive,Neutral
+ZKErPftd--w,2,-1.33,negative,negative
+ZKErPftd--w,3,-0.33,negative,Neutral
+ZKErPftd--w,4,-1.0,negative,slightly negative
+ZKErPftd--w,5,-0.33,negative,Neutral
+ZKErPftd--w,6,-1.33,negative,negative
+ZKErPftd--w,7,0.67,positive,slightly positive
+ZKErPftd--w,8,0.67,positive,slightly positive
+ZKErPftd--w,9,0.0,negative,Neutral
+ZKKNd0zR8Io,0,0.0,negative,Neutral
+ZKZ8UjaQQT4,0,0.67,positive,slightly positive
+ZKZ8UjaQQT4,1,0.0,negative,Neutral
+ZS1Nb0OWYNE,0,0.67,positive,slightly positive
+ZS1Nb0OWYNE,1,0.67,positive,slightly positive
+ZS1Nb0OWYNE,2,0.67,positive,slightly positive
+ZS1Nb0OWYNE,3,2.0,positive,positive
+ZS1Nb0OWYNE,4,0.0,negative,Neutral
+ZS1Nb0OWYNE,5,1.33,positive,positive
+ZS1Nb0OWYNE,6,2.0,positive,positive
+ZS1Nb0OWYNE,7,0.33,positive,Neutral
+ZS1Nb0OWYNE,8,0.0,negative,Neutral
+ZS1Nb0OWYNE,9,1.0,positive,slightly positive
+ZS1Nb0OWYNE,10,1.0,positive,slightly positive
+ZS1Nb0OWYNE,11,0.67,positive,slightly positive
+ZS1Nb0OWYNE,12,1.33,positive,positive
+ZS1Nb0OWYNE,13,1.0,positive,slightly positive
+ZS1Nb0OWYNE,14,2.67,positive,very positive
+ZS1Nb0OWYNE,15,0.0,negative,Neutral
+Zb7bdrjWyEY,0,-2.33,negative,very negative
+ZcFzcd4ZoMg,0,1.0,positive,slightly positive
+ZcFzcd4ZoMg,1,0.0,negative,Neutral
+ZcFzcd4ZoMg,2,0.0,negative,Neutral
+ZcFzcd4ZoMg,3,1.33,positive,positive
+ZcFzcd4ZoMg,4,-0.33,negative,Neutral
+ZcFzcd4ZoMg,5,1.0,positive,slightly positive
+ZcFzcd4ZoMg,6,1.67,positive,positive
+ZcFzcd4ZoMg,7,0.33,positive,Neutral
+ZeH7gZw94k0,0,1.67,positive,positive
+ZsLrKF7_Oos,0,0.0,negative,Neutral
+ZsLrKF7_Oos,1,0.67,positive,slightly positive
+ZtocGyL3Tfc,0,0.33,positive,Neutral
+ZtocGyL3Tfc,1,0.67,positive,slightly positive
+ZtocGyL3Tfc,2,1.0,positive,slightly positive
+ZtocGyL3Tfc,3,-0.33,negative,Neutral
+ZtocGyL3Tfc,4,0.67,positive,slightly positive
+ZtocGyL3Tfc,5,0.0,negative,Neutral
+ZtocGyL3Tfc,6,1.0,positive,slightly positive
+ZtocGyL3Tfc,7,1.0,positive,slightly positive
+ZtocGyL3Tfc,8,0.0,negative,Neutral
+ZtocGyL3Tfc,9,0.33,positive,Neutral
+ZtocGyL3Tfc,10,-1.33,negative,negative
+ZtocGyL3Tfc,11,0.67,positive,slightly positive
+ZtocGyL3Tfc,12,1.33,positive,positive
+ZtocGyL3Tfc,13,1.67,positive,positive
+ZtocGyL3Tfc,14,0.33,positive,Neutral
+ZznoGQVwTtw,0,-0.67,negative,slightly negative
+ZznoGQVwTtw,1,0.67,positive,slightly positive
+ZznoGQVwTtw,2,1.33,positive,positive
+ZznoGQVwTtw,3,0.67,positive,slightly positive
+ZznoGQVwTtw,4,1.67,positive,positive
+ZznoGQVwTtw,5,1.33,positive,positive
+ZznoGQVwTtw,6,0.0,negative,Neutral
+ZznoGQVwTtw,7,-1.67,negative,negative
+_0efYOjQYRc,0,0.33,positive,Neutral
+_0efYOjQYRc,1,0.67,positive,slightly positive
+_1nvuNk7EFY,0,0.33,positive,Neutral
+_1nvuNk7EFY,1,-0.33,negative,Neutral
+_1nvuNk7EFY,2,0.0,negative,Neutral
+_1nvuNk7EFY,3,0.67,positive,slightly positive
+_1nvuNk7EFY,4,0.0,negative,Neutral
+_1nvuNk7EFY,5,-0.33,negative,Neutral
+_1nvuNk7EFY,6,0.0,negative,Neutral
+_1nvuNk7EFY,7,-0.33,negative,Neutral
+_1nvuNk7EFY,8,0.33,positive,Neutral
+_1nvuNk7EFY,9,0.0,negative,Neutral
+_1nvuNk7EFY,10,0.0,negative,Neutral
+_1nvuNk7EFY,11,1.67,positive,positive
+_1nvuNk7EFY,12,1.33,positive,positive
+_OmWVs0-6UM,0,0.0,negative,Neutral
+_OmWVs0-6UM,1,1.33,positive,positive
+_OmWVs0-6UM,2,0.67,positive,slightly positive
+_OmWVs0-6UM,3,2.33,positive,very positive
+_WA0HtVEe8U,0,-0.33,negative,Neutral
+_aJghSQmxD8,0,0.67,positive,slightly positive
+_aJghSQmxD8,1,0.33,positive,Neutral
+_aJghSQmxD8,2,0.67,positive,slightly positive
+_on_E-ZWy0I,0,-1.33,negative,negative
+_on_E-ZWy0I,1,1.33,positive,positive
+_on_E-ZWy0I,2,2.0,positive,positive
+_on_E-ZWy0I,3,0.0,negative,Neutral
+_on_E-ZWy0I,4,0.0,negative,Neutral
+_on_E-ZWy0I,5,0.0,negative,Neutral
+_on_E-ZWy0I,6,0.67,positive,slightly positive
+_on_E-ZWy0I,7,-0.33,negative,Neutral
+_on_E-ZWy0I,8,1.0,positive,slightly positive
+_on_E-ZWy0I,9,0.0,negative,Neutral
+_on_E-ZWy0I,10,-0.33,negative,Neutral
+_on_E-ZWy0I,11,0.0,negative,Neutral
+_on_E-ZWy0I,12,0.33,positive,Neutral
+_on_E-ZWy0I,13,0.0,negative,Neutral
+_on_E-ZWy0I,14,0.33,positive,Neutral
+_on_E-ZWy0I,15,-0.67,negative,slightly negative
+_on_E-ZWy0I,16,-1.0,negative,slightly negative
+_on_E-ZWy0I,17,0.33,positive,Neutral
+_on_E-ZWy0I,18,0.0,negative,Neutral
+_on_E-ZWy0I,19,2.0,positive,positive
+_on_E-ZWy0I,20,0.67,positive,slightly positive
+_on_E-ZWy0I,21,-0.67,negative,slightly negative
+_on_E-ZWy0I,22,0.0,negative,Neutral
+_q7DM8WkzAQ,0,1.0,positive,slightly positive
+_q7DM8WkzAQ,1,0.33,positive,Neutral
+_q7DM8WkzAQ,2,0.67,positive,slightly positive
+_q7DM8WkzAQ,3,-0.67,negative,slightly negative
+_q7DM8WkzAQ,4,0.33,positive,Neutral
+_q7DM8WkzAQ,5,-1.0,negative,slightly negative
+a4PHWxILDp0,0,0.0,negative,Neutral
+a4PHWxILDp0,1,0.0,negative,Neutral
+a4PHWxILDp0,2,-0.33,negative,Neutral
+a4PHWxILDp0,3,0.0,negative,Neutral
+a4PHWxILDp0,4,0.0,negative,Neutral
+a4PHWxILDp0,5,0.0,negative,Neutral
+a4PHWxILDp0,6,0.0,negative,Neutral
+a4PHWxILDp0,7,0.0,negative,Neutral
+a4PHWxILDp0,8,-0.67,negative,slightly negative
+a4PHWxILDp0,9,0.0,negative,Neutral
+a4PHWxILDp0,10,0.33,positive,Neutral
+a4PHWxILDp0,11,0.67,positive,slightly positive
+a4PHWxILDp0,12,0.0,negative,Neutral
+a4PHWxILDp0,13,0.0,negative,Neutral
+a8UMRrUjavI,0,-0.67,negative,slightly negative
+a8UMRrUjavI,1,0.0,negative,Neutral
+a8UMRrUjavI,2,-0.33,negative,Neutral
+a8UMRrUjavI,3,-1.33,negative,negative
+a8UMRrUjavI,4,-0.67,negative,slightly negative
+a8UMRrUjavI,5,-0.33,negative,Neutral
+aa0J1AXSseY,0,1.0,positive,slightly positive
+aa0J1AXSseY,1,0.33,positive,Neutral
+aa0J1AXSseY,2,2.0,positive,positive
+absh1hsZeF0,0,-0.67,negative,slightly negative
+absh1hsZeF0,1,0.0,negative,Neutral
+absh1hsZeF0,2,1.0,positive,slightly positive
+absh1hsZeF0,3,0.67,positive,slightly positive
+absh1hsZeF0,4,1.0,positive,slightly positive
+ahG9c_uaf8s,0,0.33,positive,Neutral
+ahG9c_uaf8s,1,0.0,negative,Neutral
+ahG9c_uaf8s,2,0.33,positive,Neutral
+ahG9c_uaf8s,3,1.33,positive,positive
+an_GzG40hcE,0,0.67,positive,slightly positive
+an_GzG40hcE,1,1.67,positive,positive
+an_GzG40hcE,2,1.67,positive,positive
+an_GzG40hcE,3,2.0,positive,positive
+an_GzG40hcE,4,0.33,positive,Neutral
+b86B3hP8ARM,0,0.0,negative,Neutral
+b86B3hP8ARM,1,0.33,positive,Neutral
+b92iw0OAnI4,0,-0.33,negative,Neutral
+b92iw0OAnI4,1,0.0,negative,Neutral
+b92iw0OAnI4,2,1.33,positive,positive
+bCBMKwafZKY,0,0.67,positive,slightly positive
+bNQOeiAotbk,0,1.67,positive,positive
+bNQOeiAotbk,1,0.33,positive,Neutral
+bNQOeiAotbk,2,2.33,positive,very positive
+bNQOeiAotbk,3,0.33,positive,Neutral
+bNQOeiAotbk,4,0.33,positive,Neutral
+bNQOeiAotbk,5,1.0,positive,slightly positive
+bNQOeiAotbk,6,1.0,positive,slightly positive
+bNQOeiAotbk,7,0.33,positive,Neutral
+bNQOeiAotbk,8,0.67,positive,slightly positive
+bNQOeiAotbk,9,0.0,negative,Neutral
+bNQOeiAotbk,10,0.0,negative,Neutral
+bWmrrWQOVCM,0,0.33,positive,Neutral
+bWmrrWQOVCM,1,0.33,positive,Neutral
+bWmrrWQOVCM,2,0.0,negative,Neutral
+bdFCD-3BCRg,0,1.33,positive,positive
+bdFCD-3BCRg,1,0.67,positive,slightly positive
+bdFCD-3BCRg,2,1.33,positive,positive
+bdFCD-3BCRg,3,0.0,negative,Neutral
+bdFCD-3BCRg,4,1.0,positive,slightly positive
+bdFCD-3BCRg,5,1.33,positive,positive
+bdFCD-3BCRg,6,1.0,positive,slightly positive
+bdFCD-3BCRg,7,0.33,positive,Neutral
+bdFCD-3BCRg,8,2.33,positive,very positive
+bdFCD-3BCRg,9,1.0,positive,slightly positive
+bdFCD-3BCRg,10,0.67,positive,slightly positive
+bdFCD-3BCRg,11,0.67,positive,slightly positive
+bdFCD-3BCRg,12,0.67,positive,slightly positive
+bdFCD-3BCRg,13,1.67,positive,positive
+bdFCD-3BCRg,14,1.0,positive,slightly positive
+bdFCD-3BCRg,15,0.33,positive,Neutral
+bdFCD-3BCRg,16,0.67,positive,slightly positive
+bdFCD-3BCRg,17,0.67,positive,slightly positive
+bdFCD-3BCRg,18,0.33,positive,Neutral
+bdFCD-3BCRg,19,1.0,positive,slightly positive
+bdFCD-3BCRg,20,1.0,positive,slightly positive
+bdFCD-3BCRg,21,0.67,positive,slightly positive
+bdFCD-3BCRg,22,1.33,positive,positive
+bdFCD-3BCRg,23,0.33,positive,Neutral
+bdFCD-3BCRg,24,1.0,positive,slightly positive
+bdFCD-3BCRg,25,0.0,negative,Neutral
+bkX5FOX22Tw,0,0.0,negative,Neutral
+bkX5FOX22Tw,1,0.0,negative,Neutral
+bkX5FOX22Tw,2,0.33,positive,Neutral
+bkX5FOX22Tw,3,-0.33,negative,Neutral
+bkX5FOX22Tw,4,0.33,positive,Neutral
+bkX5FOX22Tw,5,0.0,negative,Neutral
+bkX5FOX22Tw,6,0.0,negative,Neutral
+bnzVR2ETQQ8,0,-0.33,negative,Neutral
+bnzVR2ETQQ8,1,1.33,positive,positive
+bnzVR2ETQQ8,2,-0.67,negative,slightly negative
+bvycs3BXtx0,0,0.0,negative,Neutral
+bvycs3BXtx0,1,-1.33,negative,negative
+c5VEvmutmVg,0,2.0,positive,positive
+c5VEvmutmVg,1,1.33,positive,positive
+c5VEvmutmVg,2,1.0,positive,slightly positive
+c5VEvmutmVg,3,0.0,negative,Neutral
+c5VEvmutmVg,4,-0.33,negative,Neutral
+c5VEvmutmVg,5,0.0,negative,Neutral
+c5VEvmutmVg,6,0.67,positive,slightly positive
+c5VEvmutmVg,7,0.0,negative,Neutral
+c5VEvmutmVg,8,0.0,negative,Neutral
+c5VEvmutmVg,9,1.0,positive,slightly positive
+c5VEvmutmVg,10,1.0,positive,slightly positive
+c5VEvmutmVg,11,1.67,positive,positive
+c5VEvmutmVg,12,0.67,positive,slightly positive
+c5VEvmutmVg,13,1.0,positive,slightly positive
+c5VEvmutmVg,14,1.33,positive,positive
+c5VEvmutmVg,15,2.0,positive,positive
+c5VEvmutmVg,16,2.0,positive,positive
+c5VEvmutmVg,17,1.67,positive,positive
+c5VEvmutmVg,18,1.33,positive,positive
+c5VEvmutmVg,19,2.33,positive,very positive
+c5zxqITn3ZM,0,0.33,positive,Neutral
+c5zxqITn3ZM,1,0.0,negative,Neutral
+c5zxqITn3ZM,2,0.67,positive,slightly positive
+c5zxqITn3ZM,3,1.33,positive,positive
+c5zxqITn3ZM,4,1.0,positive,slightly positive
+c5zxqITn3ZM,5,0.67,positive,slightly positive
+c5zxqITn3ZM,6,0.67,positive,slightly positive
+c9hE1ghElrM,0,0.0,negative,Neutral
+c9hE1ghElrM,1,0.0,negative,Neutral
+c9hE1ghElrM,2,-1.33,negative,negative
+c9hE1ghElrM,3,0.0,negative,Neutral
+c9hE1ghElrM,4,0.0,negative,Neutral
+cW-aX4dPVfk,0,1.67,positive,positive
+cW-aX4dPVfk,1,0.0,negative,Neutral
+cW-aX4dPVfk,2,2.0,positive,positive
+cW-aX4dPVfk,3,1.67,positive,positive
+cW-aX4dPVfk,4,0.0,negative,Neutral
+cW-aX4dPVfk,5,-0.33,negative,Neutral
+cW-aX4dPVfk,6,2.33,positive,very positive
+cW-aX4dPVfk,7,1.67,positive,positive
+cW-aX4dPVfk,8,1.33,positive,positive
+cW-aX4dPVfk,9,1.33,positive,positive
+cW-aX4dPVfk,10,1.0,positive,slightly positive
+cW-aX4dPVfk,11,0.33,positive,Neutral
+cW-aX4dPVfk,12,0.0,negative,Neutral
+cW-aX4dPVfk,13,0.33,positive,Neutral
+cW-aX4dPVfk,14,-0.33,negative,Neutral
+cW-aX4dPVfk,15,0.33,positive,Neutral
+cW-aX4dPVfk,16,0.0,negative,Neutral
+cW-aX4dPVfk,17,0.0,negative,Neutral
+cW-aX4dPVfk,18,0.33,positive,Neutral
+cW-aX4dPVfk,19,1.33,positive,positive
+cW-aX4dPVfk,20,0.67,positive,slightly positive
+cW-aX4dPVfk,21,0.33,positive,Neutral
+cW-aX4dPVfk,22,0.0,negative,Neutral
+cW-aX4dPVfk,23,0.67,positive,slightly positive
+cW-aX4dPVfk,24,1.33,positive,positive
+cW-aX4dPVfk,25,1.0,positive,slightly positive
+cW-aX4dPVfk,26,1.33,positive,positive
+cW-aX4dPVfk,27,0.0,negative,Neutral
+cW-aX4dPVfk,28,1.67,positive,positive
+cW-aX4dPVfk,29,0.67,positive,slightly positive
+cW-aX4dPVfk,30,2.33,positive,very positive
+cW-aX4dPVfk,31,0.67,positive,slightly positive
+cW-aX4dPVfk,32,-1.33,negative,negative
+cW-aX4dPVfk,33,1.33,positive,positive
+cW-aX4dPVfk,34,-1.33,negative,negative
+cW-aX4dPVfk,35,2.0,positive,positive
+cX8FScpsfLE,0,-0.33,negative,Neutral
+cX8FScpsfLE,1,0.33,positive,Neutral
+cY8DcaHXNNs,0,0.67,positive,slightly positive
+cY8DcaHXNNs,1,0.0,negative,Neutral
+cY8DcaHXNNs,2,0.33,positive,Neutral
+cia8OM3Oe7Q,0,2.0,positive,positive
+cml9rShionM,0,1.0,positive,slightly positive
+cml9rShionM,1,0.0,negative,Neutral
+cml9rShionM,2,0.0,negative,Neutral
+cml9rShionM,3,-0.33,negative,Neutral
+cml9rShionM,4,0.0,negative,Neutral
+cml9rShionM,5,0.0,negative,Neutral
+cml9rShionM,6,0.0,negative,Neutral
+cn0WZ8-0Z1Y,0,0.67,positive,slightly positive
+cn0WZ8-0Z1Y,1,-0.33,negative,Neutral
+cn0WZ8-0Z1Y,2,0.33,positive,Neutral
+cn0WZ8-0Z1Y,3,-1.0,negative,slightly negative
+cn0WZ8-0Z1Y,4,0.33,positive,Neutral
+cn0WZ8-0Z1Y,5,1.0,positive,slightly positive
+cn0WZ8-0Z1Y,6,-0.67,negative,slightly negative
+cn0WZ8-0Z1Y,7,-1.67,negative,negative
+cn0WZ8-0Z1Y,8,0.33,positive,Neutral
+ctAZf4sMBUQ,0,1.67,positive,positive
+ctAZf4sMBUQ,1,1.67,positive,positive
+ctAZf4sMBUQ,2,1.67,positive,positive
+d-Uw_uZyUys,0,-2.33,negative,very negative
+d-Uw_uZyUys,1,-0.33,negative,Neutral
+d-Uw_uZyUys,2,-1.0,negative,slightly negative
+d-Uw_uZyUys,3,-1.0,negative,slightly negative
+d-Uw_uZyUys,4,-2.33,negative,very negative
+d1CDP6sMuLA,0,1.33,positive,positive
+d1CDP6sMuLA,1,-0.33,negative,Neutral
+d1CDP6sMuLA,2,0.67,positive,slightly positive
+d1CDP6sMuLA,3,1.0,positive,slightly positive
+d1CDP6sMuLA,4,0.67,positive,slightly positive
+d1CDP6sMuLA,5,2.33,positive,very positive
+d1CDP6sMuLA,6,2.33,positive,very positive
+d1CDP6sMuLA,7,1.67,positive,positive
+d1CDP6sMuLA,8,2.0,positive,positive
+d1CDP6sMuLA,9,2.0,positive,positive
+d1CDP6sMuLA,10,0.67,positive,slightly positive
+d1CDP6sMuLA,11,0.33,positive,Neutral
+d1CDP6sMuLA,12,-1.67,negative,negative
+dHk--ExZbHs,0,1.0,positive,slightly positive
+dHk--ExZbHs,1,0.67,positive,slightly positive
+dHk--ExZbHs,2,0.33,positive,Neutral
+dHk--ExZbHs,3,0.0,negative,Neutral
+dR68gbeOWOc,0,0.33,positive,Neutral
+dR68gbeOWOc,1,0.33,positive,Neutral
+dTcz1am1eUw,0,0.33,positive,Neutral
+dTcz1am1eUw,1,0.0,negative,Neutral
+dTcz1am1eUw,2,1.33,positive,positive
+ddWHTdJz2O8,0,-0.33,negative,Neutral
+ddWHTdJz2O8,1,-0.33,negative,Neutral
+ddWHTdJz2O8,2,0.33,positive,Neutral
+dlE05KC95uk,0,0.33,positive,Neutral
+dlE05KC95uk,1,1.67,positive,positive
+dlE05KC95uk,2,2.0,positive,positive
+dlE05KC95uk,3,1.67,positive,positive
+dlE05KC95uk,4,0.33,positive,Neutral
+dlE05KC95uk,5,1.67,positive,positive
+dlE05KC95uk,6,0.67,positive,slightly positive
+dlE05KC95uk,7,0.0,negative,Neutral
+dlE05KC95uk,8,1.0,positive,slightly positive
+dxsPkcG-Q30,0,1.0,positive,slightly positive
+dxsPkcG-Q30,1,1.0,positive,slightly positive
+eD5cScqaf6c,0,0.33,positive,Neutral
+eD5cScqaf6c,1,2.67,positive,very positive
+eD5cScqaf6c,2,1.33,positive,positive
+eE8Qr9fOvVA,0,2.33,positive,very positive
+eE8Qr9fOvVA,1,-1.33,negative,negative
+eE8Qr9fOvVA,2,-1.33,negative,negative
+eE8Qr9fOvVA,3,-1.33,negative,negative
+eFV7iFPYZB4,0,1.33,positive,positive
+eFV7iFPYZB4,1,1.0,positive,slightly positive
+eFV7iFPYZB4,2,1.67,positive,positive
+eFV7iFPYZB4,3,1.33,positive,positive
+eFV7iFPYZB4,4,2.33,positive,very positive
+eFV7iFPYZB4,5,0.67,positive,slightly positive
+eFV7iFPYZB4,6,0.67,positive,slightly positive
+eFV7iFPYZB4,7,1.67,positive,positive
+eFV7iFPYZB4,8,1.67,positive,positive
+eFV7iFPYZB4,9,2.0,positive,positive
+eFV7iFPYZB4,10,0.0,negative,Neutral
+eFV7iFPYZB4,11,0.67,positive,slightly positive
+eJfT7-dDqzA,0,0.67,positive,slightly positive
+eJfT7-dDqzA,1,0.67,positive,slightly positive
+eJfT7-dDqzA,2,1.0,positive,slightly positive
+eJfT7-dDqzA,3,0.0,negative,Neutral
+eJfT7-dDqzA,4,0.67,positive,slightly positive
+eJfT7-dDqzA,5,0.67,positive,slightly positive
+eJfT7-dDqzA,6,1.0,positive,slightly positive
+eKQKEi2-0Ws,0,0.0,negative,Neutral
+eQc5uI7FKCU,0,0.0,negative,Neutral
+eQc5uI7FKCU,1,1.0,positive,slightly positive
+eQc5uI7FKCU,2,0.67,positive,slightly positive
+eQc5uI7FKCU,3,0.33,positive,Neutral
+eQc5uI7FKCU,4,1.0,positive,slightly positive
+eQc5uI7FKCU,5,0.67,positive,slightly positive
+eREud0qYR3s,0,1.33,positive,positive
+eREud0qYR3s,1,1.33,positive,positive
+eUwbRLhV1vs,0,1.0,positive,slightly positive
+ehZrOdw6PhA,0,-0.67,negative,slightly negative
+ehZrOdw6PhA,1,-0.33,negative,Neutral
+ehZrOdw6PhA,2,-0.67,negative,slightly negative
+ex-dKshlXoY,0,-0.67,negative,slightly negative
+ex-dKshlXoY,1,0.33,positive,Neutral
+ex-dKshlXoY,2,0.33,positive,Neutral
+ey1lr8wFFDc,0,0.0,negative,Neutral
+ey1lr8wFFDc,1,0.67,positive,slightly positive
+ey1lr8wFFDc,2,0.0,negative,Neutral
+ey1lr8wFFDc,3,0.33,positive,Neutral
+ezuWKsxPRSM,0,1.67,positive,positive
+ezuWKsxPRSM,1,1.0,positive,slightly positive
+ezuWKsxPRSM,2,1.0,positive,slightly positive
+ezuWKsxPRSM,3,0.0,negative,Neutral
+f-VdKweez2U,0,2.0,positive,positive
+f-VdKweez2U,1,0.67,positive,slightly positive
+f-VdKweez2U,2,0.0,negative,Neutral
+f-VdKweez2U,3,1.33,positive,positive
+f-VdKweez2U,4,0.67,positive,slightly positive
+f8Puta8k8fU,0,0.0,negative,Neutral
+fT6SrlsWV7M,0,0.33,positive,Neutral
+fT6SrlsWV7M,1,0.33,positive,Neutral
+fT6SrlsWV7M,2,-1.67,negative,negative
+fT6SrlsWV7M,3,-1.33,negative,negative
+fT6SrlsWV7M,4,0.67,positive,slightly positive
+fT6SrlsWV7M,5,-0.67,negative,slightly negative
+fT6SrlsWV7M,6,-0.67,negative,slightly negative
+fT6SrlsWV7M,7,-0.67,negative,slightly negative
+fT6SrlsWV7M,8,0.0,negative,Neutral
+fT6SrlsWV7M,9,-0.33,negative,Neutral
+fT6SrlsWV7M,10,0.33,positive,Neutral
+fU5AYkq0m9k,0,1.33,positive,positive
+fU5AYkq0m9k,1,0.33,positive,Neutral
+fU5AYkq0m9k,2,0.33,positive,Neutral
+fU5AYkq0m9k,3,-1.0,negative,slightly negative
+fVCDn6SdtVM,0,1.33,positive,positive
+fVCDn6SdtVM,1,-0.33,negative,Neutral
+fVCDn6SdtVM,2,0.0,negative,Neutral
+fWAKek8jA5M,0,-1.67,negative,negative
+fWAKek8jA5M,1,-1.33,negative,negative
+fWAKek8jA5M,2,-1.0,negative,slightly negative
+fWAKek8jA5M,3,0.0,negative,Neutral
+fWAKek8jA5M,4,-1.67,negative,negative
+fWAKek8jA5M,5,-1.0,negative,slightly negative
+fWAKek8jA5M,6,-1.33,negative,negative
+fWAKek8jA5M,7,0.0,negative,Neutral
+faUvT7zfsyk,0,1.67,positive,positive
+faUvT7zfsyk,1,1.0,positive,slightly positive
+faUvT7zfsyk,2,2.0,positive,positive
+fcxbB7ybUfs,0,0.0,negative,Neutral
+fcxbB7ybUfs,1,0.0,negative,Neutral
+fcxbB7ybUfs,2,1.0,positive,slightly positive
+fdc7iyzKvFQ,0,0.33,positive,Neutral
+fdc7iyzKvFQ,1,1.0,positive,slightly positive
+fdc7iyzKvFQ,2,1.33,positive,positive
+fhADeWE5VgU,0,1.0,positive,slightly positive
+fhADeWE5VgU,1,0.0,negative,Neutral
+fhADeWE5VgU,2,0.0,negative,Neutral
+frCWtiam4tE,0,0.33,positive,Neutral
+frCWtiam4tE,1,1.67,positive,positive
+frCWtiam4tE,2,1.67,positive,positive
+frCWtiam4tE,3,1.33,positive,positive
+fsBzpr4k3rY,0,2.0,positive,positive
+fsd1qPLA3kY,0,-0.33,negative,Neutral
+fsd1qPLA3kY,1,1.0,positive,slightly positive
+fsd1qPLA3kY,2,0.33,positive,Neutral
+fz-MzQcOBwQ,0,1.67,positive,positive
+fz-MzQcOBwQ,1,1.33,positive,positive
+fz-MzQcOBwQ,2,1.67,positive,positive
+fz-MzQcOBwQ,3,1.33,positive,positive
+fz-MzQcOBwQ,4,2.33,positive,very positive
+fz-MzQcOBwQ,5,0.33,positive,Neutral
+fz-MzQcOBwQ,6,0.33,positive,Neutral
+fz-MzQcOBwQ,7,0.67,positive,slightly positive
+fz-MzQcOBwQ,8,0.0,negative,Neutral
+fz-MzQcOBwQ,9,2.33,positive,very positive
+fz-MzQcOBwQ,10,1.33,positive,positive
+fz-MzQcOBwQ,11,1.0,positive,slightly positive
+fz-MzQcOBwQ,12,1.33,positive,positive
+g6VJg6ycUk0,0,0.33,positive,Neutral
+gE7kUqMqQ9g,0,-1.33,negative,negative
+gE7kUqMqQ9g,1,-0.67,negative,slightly negative
+gJjkCPO7iXg,0,1.0,positive,slightly positive
+gJjkCPO7iXg,1,1.0,positive,slightly positive
+gJjkCPO7iXg,2,1.33,positive,positive
+gJjkCPO7iXg,3,1.0,positive,slightly positive
+gKojBrXHhUc,0,0.0,negative,Neutral
+gKojBrXHhUc,1,0.0,negative,Neutral
+gL8h7lOPv1Q,0,1.33,positive,positive
+gL8h7lOPv1Q,1,0.33,positive,Neutral
+gL8h7lOPv1Q,2,0.0,negative,Neutral
+gL8h7lOPv1Q,3,0.0,negative,Neutral
+gL8h7lOPv1Q,4,0.0,negative,Neutral
+gL8h7lOPv1Q,5,0.33,positive,Neutral
+gL8h7lOPv1Q,6,0.67,positive,slightly positive
+gL8h7lOPv1Q,7,1.33,positive,positive
+gL8h7lOPv1Q,8,0.0,negative,Neutral
+gL8h7lOPv1Q,9,0.67,positive,slightly positive
+gLTxaEcx41E,0,-0.33,negative,Neutral
+gLTxaEcx41E,1,0.33,positive,Neutral
+gLTxaEcx41E,2,1.33,positive,positive
+gLTxaEcx41E,3,0.0,negative,Neutral
+gLTxaEcx41E,4,0.33,positive,Neutral
+gLTxaEcx41E,5,0.0,negative,Neutral
+gLTxaEcx41E,6,-0.33,negative,Neutral
+gLTxaEcx41E,7,0.0,negative,Neutral
+gLTxaEcx41E,8,0.0,negative,Neutral
+gLTxaEcx41E,9,0.33,positive,Neutral
+gLTxaEcx41E,10,0.67,positive,slightly positive
+gLTxaEcx41E,11,0.33,positive,Neutral
+gR3igiwaeyc,0,-0.33,negative,Neutral
+gR3igiwaeyc,1,0.0,negative,Neutral
+gR3igiwaeyc,2,-0.33,negative,Neutral
+gR3igiwaeyc,3,0.0,negative,Neutral
+gR3igiwaeyc,4,0.0,negative,Neutral
+gR3igiwaeyc,5,0.0,negative,Neutral
+gR3igiwaeyc,6,0.0,negative,Neutral
+gR3igiwaeyc,7,-0.33,negative,Neutral
+gR3igiwaeyc,8,-0.67,negative,slightly negative
+gcFECfN4BCU,0,1.33,positive,positive
+gcFECfN4BCU,1,1.0,positive,slightly positive
+gcFECfN4BCU,2,0.33,positive,Neutral
+gcFECfN4BCU,3,2.0,positive,positive
+gcFECfN4BCU,4,0.67,positive,slightly positive
+gcFECfN4BCU,5,1.0,positive,slightly positive
+gcFECfN4BCU,6,0.0,negative,Neutral
+gcFECfN4BCU,7,0.0,negative,Neutral
+gcFECfN4BCU,8,0.33,positive,Neutral
+gcFECfN4BCU,9,1.67,positive,positive
+gcFECfN4BCU,10,0.33,positive,Neutral
+gcFECfN4BCU,11,1.0,positive,slightly positive
+gcFECfN4BCU,12,1.33,positive,positive
+gcFECfN4BCU,13,0.67,positive,slightly positive
+gcFECfN4BCU,14,0.67,positive,slightly positive
+gcFECfN4BCU,15,1.0,positive,slightly positive
+gcFECfN4BCU,16,1.0,positive,slightly positive
+gcFECfN4BCU,17,1.33,positive,positive
+gcFECfN4BCU,18,1.0,positive,slightly positive
+gcFECfN4BCU,19,1.0,positive,slightly positive
+gcFECfN4BCU,20,0.33,positive,Neutral
+gcFECfN4BCU,21,0.0,negative,Neutral
+gcFECfN4BCU,22,0.33,positive,Neutral
+gpn71-aKWwQ,0,0.67,positive,slightly positive
+gpn71-aKWwQ,1,1.67,positive,positive
+gpn71-aKWwQ,2,1.67,positive,positive
+grsV1YN1z5s,0,0.67,positive,slightly positive
+h1ZZHUU4j0k,0,-0.33,negative,Neutral
+h1ZZHUU4j0k,1,0.33,positive,Neutral
+h1ZZHUU4j0k,2,0.0,negative,Neutral
+h1ZZHUU4j0k,3,0.67,positive,slightly positive
+h1ZZHUU4j0k,4,1.33,positive,positive
+h1ZZHUU4j0k,5,0.67,positive,slightly positive
+h1ZZHUU4j0k,6,-0.67,negative,slightly negative
+h1ZZHUU4j0k,7,0.33,positive,Neutral
+h1ZZHUU4j0k,8,0.67,positive,slightly positive
+h1ZZHUU4j0k,9,1.0,positive,slightly positive
+h1ZZHUU4j0k,10,0.67,positive,slightly positive
+h1ZZHUU4j0k,11,1.33,positive,positive
+h1ZZHUU4j0k,12,1.0,positive,slightly positive
+h1ZZHUU4j0k,13,1.0,positive,slightly positive
+h1ZZHUU4j0k,14,-1.0,negative,slightly negative
+h1ZZHUU4j0k,15,-0.33,negative,Neutral
+h1ZZHUU4j0k,16,1.0,positive,slightly positive
+h1ZZHUU4j0k,17,1.33,positive,positive
+h1ZZHUU4j0k,18,1.67,positive,positive
+h1ZZHUU4j0k,19,-0.67,negative,slightly negative
+h1ZZHUU4j0k,20,1.33,positive,positive
+h1ZZHUU4j0k,21,1.33,positive,positive
+hBzw4r0kfjA,0,0.0,negative,Neutral
+hBzw4r0kfjA,1,0.0,negative,Neutral
+hE-sA5umuCk,0,2.33,positive,very positive
+hE-sA5umuCk,1,2.0,positive,positive
+hI7ObFqn9Bg,0,0.0,negative,Neutral
+hbJfSyJKBEA,0,0.67,positive,slightly positive
+huzEsVEJPaY,0,0.67,positive,slightly positive
+iFxFTtCQ6zA,0,-1.0,negative,slightly negative
+iFxFTtCQ6zA,1,1.0,positive,slightly positive
+iPPp6MCythU,0,0.33,positive,Neutral
+iPPp6MCythU,1,0.0,negative,Neutral
+iPPp6MCythU,2,-0.33,negative,Neutral
+iPPp6MCythU,3,1.67,positive,positive
+iPPp6MCythU,4,0.0,negative,Neutral
+iPPp6MCythU,5,-0.33,negative,Neutral
+iPPp6MCythU,6,0.33,positive,Neutral
+iPPp6MCythU,7,0.0,negative,Neutral
+iQDB_OkAQWs,0,0.0,negative,Neutral
+iXiMifHNKPI,0,-1.0,negative,slightly negative
+iXiMifHNKPI,1,-0.33,negative,Neutral
+iXiMifHNKPI,2,0.67,positive,slightly positive
+iXiMifHNKPI,3,0.67,positive,slightly positive
+iXiMifHNKPI,4,0.33,positive,Neutral
+iXiMifHNKPI,5,0.0,negative,Neutral
+iXiMifHNKPI,6,0.33,positive,Neutral
+iXiMifHNKPI,7,-0.67,negative,slightly negative
+iXiMifHNKPI,8,0.33,positive,Neutral
+ihPjsliqz5o,0,1.33,positive,positive
+ihPjsliqz5o,1,0.33,positive,Neutral
+ihPjsliqz5o,2,0.33,positive,Neutral
+ihPjsliqz5o,3,0.0,negative,Neutral
+j1m6ctAgjsM,0,0.33,positive,Neutral
+j1m6ctAgjsM,1,1.0,positive,slightly positive
+j1m6ctAgjsM,2,0.67,positive,slightly positive
+j1m6ctAgjsM,3,0.0,negative,Neutral
+j1m6ctAgjsM,4,0.0,negative,Neutral
+j1m6ctAgjsM,5,0.67,positive,slightly positive
+j1m6ctAgjsM,6,0.0,negative,Neutral
+j1m6ctAgjsM,7,1.33,positive,positive
+j1m6ctAgjsM,8,1.0,positive,slightly positive
+j1m6ctAgjsM,9,0.67,positive,slightly positive
+j1m6ctAgjsM,10,1.33,positive,positive
+j1m6ctAgjsM,11,2.33,positive,very positive
+j1m6ctAgjsM,12,1.0,positive,slightly positive
+j1m6ctAgjsM,13,1.67,positive,positive
+j1m6ctAgjsM,14,-0.67,negative,slightly negative
+j1m6ctAgjsM,15,0.67,positive,slightly positive
+j1m6ctAgjsM,16,0.67,positive,slightly positive
+j1m6ctAgjsM,17,1.0,positive,slightly positive
+j1m6ctAgjsM,18,0.67,positive,slightly positive
+j1m6ctAgjsM,19,0.0,negative,Neutral
+j1m6ctAgjsM,20,1.33,positive,positive
+j1m6ctAgjsM,21,0.67,positive,slightly positive
+j1m6ctAgjsM,22,0.33,positive,Neutral
+j1m6ctAgjsM,23,1.0,positive,slightly positive
+j1m6ctAgjsM,24,0.67,positive,slightly positive
+j1m6ctAgjsM,25,0.33,positive,Neutral
+j1m6ctAgjsM,26,-0.33,negative,Neutral
+j1m6ctAgjsM,27,0.67,positive,slightly positive
+j1m6ctAgjsM,28,0.67,positive,slightly positive
+j1m6ctAgjsM,29,1.33,positive,positive
+j1m6ctAgjsM,30,0.67,positive,slightly positive
+j1m6ctAgjsM,31,0.67,positive,slightly positive
+j1m6ctAgjsM,32,1.0,positive,slightly positive
+j1m6ctAgjsM,33,2.33,positive,very positive
+j1m6ctAgjsM,34,0.0,negative,Neutral
+j1m6ctAgjsM,35,0.67,positive,slightly positive
+j1m6ctAgjsM,36,0.67,positive,slightly positive
+j1m6ctAgjsM,37,0.0,negative,Neutral
+j1m6ctAgjsM,38,1.33,positive,positive
+j1m6ctAgjsM,39,0.0,negative,Neutral
+j1m6ctAgjsM,40,1.33,positive,positive
+j1m6ctAgjsM,41,1.0,positive,slightly positive
+j1m6ctAgjsM,42,1.0,positive,slightly positive
+j1m6ctAgjsM,43,0.33,positive,Neutral
+j1m6ctAgjsM,44,2.0,positive,positive
+j1m6ctAgjsM,45,0.0,negative,Neutral
+j1m6ctAgjsM,46,1.0,positive,slightly positive
+j1m6ctAgjsM,47,1.33,positive,positive
+j1m6ctAgjsM,48,0.33,positive,Neutral
+j1m6ctAgjsM,49,0.0,negative,Neutral
+j1m6ctAgjsM,50,0.33,positive,Neutral
+j1m6ctAgjsM,51,0.67,positive,slightly positive
+jE3gYsxr_5s,0,0.67,positive,slightly positive
+jE3gYsxr_5s,1,0.0,negative,Neutral
+jE3gYsxr_5s,2,0.67,positive,slightly positive
+jLN6B0aSrW0,0,0.0,negative,Neutral
+jLN6B0aSrW0,1,-0.33,negative,Neutral
+jLN6B0aSrW0,2,0.0,negative,Neutral
+jLN6B0aSrW0,3,0.67,positive,slightly positive
+jLN6B0aSrW0,4,-0.33,negative,Neutral
+jPtaz1rN6lc,0,0.0,negative,Neutral
+jPtaz1rN6lc,1,0.0,negative,Neutral
+jPtaz1rN6lc,2,0.0,negative,Neutral
+jPtaz1rN6lc,3,0.0,negative,Neutral
+jXQmVFcOiUI,0,1.0,positive,slightly positive
+jXQmVFcOiUI,1,1.0,positive,slightly positive
+jXQmVFcOiUI,2,0.0,negative,Neutral
+jZe-2w7pkd8,0,1.33,positive,positive
+jZe-2w7pkd8,1,0.0,negative,Neutral
+jZe-2w7pkd8,2,-0.67,negative,slightly negative
+jZe-2w7pkd8,3,-0.33,negative,Neutral
+jj8aSNPHMw8,0,0.33,positive,Neutral
+jj8aSNPHMw8,1,-0.33,negative,Neutral
+jj8aSNPHMw8,2,0.0,negative,Neutral
+jj8aSNPHMw8,3,2.0,positive,positive
+jj8aSNPHMw8,4,1.67,positive,positive
+jj8aSNPHMw8,5,-0.67,negative,slightly negative
+jj8aSNPHMw8,6,2.0,positive,positive
+jj8aSNPHMw8,7,2.0,positive,positive
+jj8aSNPHMw8,8,-1.33,negative,negative
+jj8aSNPHMw8,9,2.0,positive,positive
+jj8aSNPHMw8,10,1.67,positive,positive
+jj8aSNPHMw8,11,-0.67,negative,slightly negative
+jqutn5ou8_0,0,0.0,negative,Neutral
+jqutn5ou8_0,1,0.67,positive,slightly positive
+jqutn5ou8_0,2,0.67,positive,slightly positive
+jqutn5ou8_0,3,1.33,positive,positive
+jqutn5ou8_0,4,0.67,positive,slightly positive
+jqutn5ou8_0,5,0.67,positive,slightly positive
+jscKL5jS-SQ,0,1.0,positive,slightly positive
+jscKL5jS-SQ,1,-0.67,negative,slightly negative
+jscKL5jS-SQ,2,-1.0,negative,slightly negative
+jscKL5jS-SQ,3,1.0,positive,slightly positive
+jscKL5jS-SQ,4,0.0,negative,Neutral
+jscKL5jS-SQ,5,1.0,positive,slightly positive
+jscKL5jS-SQ,6,0.0,negative,Neutral
+jscKL5jS-SQ,7,1.0,positive,slightly positive
+jscKL5jS-SQ,8,-1.0,negative,slightly negative
+jscKL5jS-SQ,9,0.33,positive,Neutral
+jscKL5jS-SQ,10,-1.33,negative,negative
+jscKL5jS-SQ,11,-1.0,negative,slightly negative
+jscKL5jS-SQ,12,0.33,positive,Neutral
+k1BrzX5bc7U,0,0.33,positive,Neutral
+k1BrzX5bc7U,1,0.0,negative,Neutral
+k1BrzX5bc7U,2,0.67,positive,slightly positive
+k8yDywC4gt8,0,1.0,positive,slightly positive
+k8yDywC4gt8,1,2.33,positive,very positive
+k8yDywC4gt8,2,0.67,positive,slightly positive
+k8yDywC4gt8,3,0.67,positive,slightly positive
+kI6jzM_aLGs,0,1.0,positive,slightly positive
+kI6jzM_aLGs,1,1.33,positive,positive
+kLAXmTx2xOA,0,0.0,negative,Neutral
+kLAXmTx2xOA,1,0.67,positive,slightly positive
+kXhJ3hHK9hQ,0,1.33,positive,positive
+kXhJ3hHK9hQ,1,0.67,positive,slightly positive
+kXhJ3hHK9hQ,2,0.0,negative,Neutral
+kXhJ3hHK9hQ,3,0.67,positive,slightly positive
+kXhJ3hHK9hQ,4,-0.67,negative,slightly negative
+kXhJ3hHK9hQ,5,-0.33,negative,Neutral
+kXiBdruxTvE,0,0.0,negative,Neutral
+kXiBdruxTvE,1,0.33,positive,Neutral
+kXiBdruxTvE,2,0.0,negative,Neutral
+kXiBdruxTvE,3,0.0,negative,Neutral
+kXiBdruxTvE,4,0.0,negative,Neutral
+kaudsLIvYC8,0,-1.33,negative,negative
+kaudsLIvYC8,1,1.67,positive,positive
+kaudsLIvYC8,2,0.67,positive,slightly positive
+kaudsLIvYC8,3,0.0,negative,Neutral
+kbRtSmJM5aU,0,1.33,positive,positive
+kbRtSmJM5aU,1,0.0,negative,Neutral
+kg-W6-hP2Do,0,0.33,positive,Neutral
+kg-W6-hP2Do,1,0.67,positive,slightly positive
+kg-W6-hP2Do,2,0.67,positive,slightly positive
+kg-W6-hP2Do,3,1.0,positive,slightly positive
+kg-W6-hP2Do,4,0.67,positive,slightly positive
+kg-W6-hP2Do,5,0.0,negative,Neutral
+kg-W6-hP2Do,6,0.0,negative,Neutral
+kg-W6-hP2Do,7,0.0,negative,Neutral
+kld9r0iFkWM,0,1.33,positive,positive
+kld9r0iFkWM,1,0.67,positive,slightly positive
+kld9r0iFkWM,2,0.33,positive,Neutral
+kld9r0iFkWM,3,1.0,positive,slightly positive
+kmgsC68hIL8,0,0.0,negative,Neutral
+kmgsC68hIL8,1,2.0,positive,positive
+kmgsC68hIL8,2,1.67,positive,positive
+kmgsC68hIL8,3,0.67,positive,slightly positive
+kmgsC68hIL8,4,2.0,positive,positive
+kmgsC68hIL8,5,0.0,negative,Neutral
+kmgsC68hIL8,6,-1.67,negative,negative
+kpS4BXif_Sw,0,-2.0,negative,negative
+kpS4BXif_Sw,1,-1.67,negative,negative
+kpS4BXif_Sw,2,0.33,positive,Neutral
+kpS4BXif_Sw,3,-2.0,negative,negative
+kpS4BXif_Sw,4,1.33,positive,positive
+kpS4BXif_Sw,5,-1.0,negative,slightly negative
+kpS4BXif_Sw,6,1.0,positive,slightly positive
+kpS4BXif_Sw,7,1.33,positive,positive
+kpS4BXif_Sw,8,-0.67,negative,slightly negative
+kpS4BXif_Sw,9,0.33,positive,Neutral
+kpS4BXif_Sw,10,-0.67,negative,slightly negative
+kpS4BXif_Sw,11,0.33,positive,Neutral
+kpS4BXif_Sw,12,1.33,positive,positive
+kpS4BXif_Sw,13,-0.67,negative,slightly negative
+kpS4BXif_Sw,14,-2.0,negative,negative
+kpS4BXif_Sw,15,0.0,negative,Neutral
+kpS4BXif_Sw,16,-0.67,negative,slightly negative
+kpS4BXif_Sw,17,0.0,negative,Neutral
+kpS4BXif_Sw,18,-1.67,negative,negative
+kpS4BXif_Sw,19,-0.67,negative,slightly negative
+kpS4BXif_Sw,20,-1.0,negative,slightly negative
+ktblaVOnFVE,0,0.67,positive,slightly positive
+ktblaVOnFVE,1,1.0,positive,slightly positive
+ktblaVOnFVE,2,0.67,positive,slightly positive
+ktblaVOnFVE,3,0.33,positive,Neutral
+ktblaVOnFVE,4,1.33,positive,positive
+l0vCKpk6Aes,0,0.0,negative,Neutral
+l0vCKpk6Aes,1,-0.67,negative,slightly negative
+l0vCKpk6Aes,2,1.0,positive,slightly positive
+l0vCKpk6Aes,3,0.33,positive,Neutral
+l0vCKpk6Aes,4,-0.33,negative,Neutral
+l0vCKpk6Aes,5,0.0,negative,Neutral
+l0vCKpk6Aes,6,2.0,positive,positive
+l0vCKpk6Aes,7,0.0,negative,Neutral
+l0vCKpk6Aes,8,1.67,positive,positive
+l0vCKpk6Aes,9,2.0,positive,positive
+l1jW3OMXUzs,0,-1.33,negative,negative
+l4oMbKDuW3Y,0,-1.0,negative,slightly negative
+l4oMbKDuW3Y,1,2.0,positive,positive
+l4oMbKDuW3Y,2,-0.67,negative,slightly negative
+l4oMbKDuW3Y,3,-0.33,negative,Neutral
+l4oMbKDuW3Y,4,0.0,negative,Neutral
+lD4xtQ6NpDY,0,1.33,positive,positive
+lD4xtQ6NpDY,1,0.67,positive,slightly positive
+lD4xtQ6NpDY,2,-0.67,negative,slightly negative
+lD4xtQ6NpDY,3,0.0,negative,Neutral
+lD4xtQ6NpDY,4,0.0,negative,Neutral
+lD4xtQ6NpDY,5,0.0,negative,Neutral
+lD4xtQ6NpDY,6,0.67,positive,slightly positive
+lD4xtQ6NpDY,7,0.0,negative,Neutral
+lD4xtQ6NpDY,8,1.0,positive,slightly positive
+lD4xtQ6NpDY,9,1.0,positive,slightly positive
+lD4xtQ6NpDY,10,1.0,positive,slightly positive
+lD4xtQ6NpDY,11,1.33,positive,positive
+lO6N9dyvPTA,0,0.33,positive,Neutral
+lYwgLa4R5XQ,0,0.0,negative,Neutral
+lYwgLa4R5XQ,1,0.0,negative,Neutral
+lYwgLa4R5XQ,2,0.0,negative,Neutral
+lYwgLa4R5XQ,3,-0.33,negative,Neutral
+lYwgLa4R5XQ,4,0.67,positive,slightly positive
+lYwgLa4R5XQ,5,0.67,positive,slightly positive
+lYwgLa4R5XQ,6,-0.67,negative,slightly negative
+lYwgLa4R5XQ,7,0.33,positive,Neutral
+lYwgLa4R5XQ,8,-1.33,negative,negative
+lYwgLa4R5XQ,9,0.33,positive,Neutral
+lc5bSoGlQwY,0,0.33,positive,Neutral
+lc5bSoGlQwY,1,0.0,negative,Neutral
+lc5bSoGlQwY,2,0.33,positive,Neutral
+lc5bSoGlQwY,3,-0.33,negative,Neutral
+lc5bSoGlQwY,4,0.33,positive,Neutral
+lkIe41StoGI,0,0.33,positive,Neutral
+lkIe41StoGI,1,0.0,negative,Neutral
+lkIe41StoGI,2,0.0,negative,Neutral
+lkIe41StoGI,3,0.67,positive,slightly positive
+lkIe41StoGI,4,0.67,positive,slightly positive
+lkIe41StoGI,5,0.67,positive,slightly positive
+lkIe41StoGI,6,0.33,positive,Neutral
+lkIe41StoGI,7,0.0,negative,Neutral
+lkIe41StoGI,8,-0.33,negative,Neutral
+lkIe41StoGI,9,0.0,negative,Neutral
+lkeVfgI0eEk,0,1.0,positive,slightly positive
+lkeVfgI0eEk,1,0.67,positive,slightly positive
+lkeVfgI0eEk,2,1.0,positive,slightly positive
+lkeVfgI0eEk,3,-1.33,negative,negative
+lkeVfgI0eEk,4,-0.33,negative,Neutral
+lkeVfgI0eEk,5,0.67,positive,slightly positive
+lkeVfgI0eEk,6,-2.0,negative,negative
+lkeVfgI0eEk,7,-0.67,negative,slightly negative
+lkeVfgI0eEk,8,-1.67,negative,negative
+lrjm6F3JJgg,0,1.33,positive,positive
+lwL4hjhkid4,0,0.0,negative,Neutral
+lwL4hjhkid4,1,-1.67,negative,negative
+lwL4hjhkid4,2,2.0,positive,positive
+lwL4hjhkid4,3,0.33,positive,Neutral
+lxBKEPIUSgc,0,-0.33,negative,Neutral
+lxBKEPIUSgc,1,-1.33,negative,negative
+m-7yRWZLwLY,0,0.67,positive,slightly positive
+m-7yRWZLwLY,1,0.0,negative,Neutral
+m-7yRWZLwLY,2,1.0,positive,slightly positive
+m-7yRWZLwLY,3,-0.33,negative,Neutral
+mRqqH_gx7Q0,0,1.33,positive,positive
+mRqqH_gx7Q0,1,-0.33,negative,Neutral
+mVnqP-vLpuo,0,0.33,positive,Neutral
+mVnqP-vLpuo,1,1.0,positive,slightly positive
+mVnqP-vLpuo,2,0.67,positive,slightly positive
+mVnqP-vLpuo,3,1.33,positive,positive
+mVnqP-vLpuo,4,0.67,positive,slightly positive
+mVnqP-vLpuo,5,1.33,positive,positive
+mVnqP-vLpuo,6,1.33,positive,positive
+mVnqP-vLpuo,7,0.67,positive,slightly positive
+mVnqP-vLpuo,8,0.0,negative,Neutral
+mVnqP-vLpuo,9,1.67,positive,positive
+mVnqP-vLpuo,10,1.67,positive,positive
+mZ_8em_-CGc,0,0.67,positive,slightly positive
+mZ_8em_-CGc,1,0.67,positive,slightly positive
+mfpR4CN9LZo,0,1.33,positive,positive
+mfpR4CN9LZo,1,0.0,negative,Neutral
+mfpR4CN9LZo,2,0.67,positive,slightly positive
+mfpR4CN9LZo,3,0.0,negative,Neutral
+mfpR4CN9LZo,4,0.0,negative,Neutral
+mfpR4CN9LZo,5,0.0,negative,Neutral
+mgsvwAVQAQo,0,0.33,positive,Neutral
+mgsvwAVQAQo,1,-1.33,negative,negative
+mgsvwAVQAQo,2,0.0,negative,Neutral
+mgsvwAVQAQo,3,2.0,positive,positive
+mgsvwAVQAQo,4,0.33,positive,Neutral
+mmg_eTDHjkk,0,0.0,negative,Neutral
+mmg_eTDHjkk,1,1.0,positive,slightly positive
+mmg_eTDHjkk,2,1.33,positive,positive
+mmg_eTDHjkk,3,2.0,positive,positive
+mmg_eTDHjkk,4,0.33,positive,Neutral
+mmg_eTDHjkk,5,1.33,positive,positive
+mmg_eTDHjkk,6,1.33,positive,positive
+mmg_eTDHjkk,7,0.33,positive,Neutral
+mmg_eTDHjkk,8,1.0,positive,slightly positive
+mmg_eTDHjkk,9,0.67,positive,slightly positive
+mmg_eTDHjkk,10,0.0,negative,Neutral
+mmg_eTDHjkk,11,1.0,positive,slightly positive
+mmg_eTDHjkk,12,0.67,positive,slightly positive
+mmg_eTDHjkk,13,-0.33,negative,Neutral
+mmg_eTDHjkk,14,0.67,positive,slightly positive
+mmg_eTDHjkk,15,1.33,positive,positive
+mmg_eTDHjkk,16,0.0,negative,Neutral
+mmg_eTDHjkk,17,1.0,positive,slightly positive
+mmg_eTDHjkk,18,0.0,negative,Neutral
+mmg_eTDHjkk,19,-0.33,negative,Neutral
+mmg_eTDHjkk,20,0.33,positive,Neutral
+mmg_eTDHjkk,21,1.33,positive,positive
+mmg_eTDHjkk,22,0.33,positive,Neutral
+mzAu5gxjE-w,0,1.0,positive,slightly positive
+mzAu5gxjE-w,1,0.33,positive,Neutral
+mzAu5gxjE-w,2,1.67,positive,positive
+mzAu5gxjE-w,3,0.67,positive,slightly positive
+nFTo-Lz4Fr8,0,0.67,positive,slightly positive
+nFTo-Lz4Fr8,1,1.0,positive,slightly positive
+nTZSH0EwpnY,0,1.33,positive,positive
+nTZSH0EwpnY,1,-0.67,negative,slightly negative
+nTZSH0EwpnY,2,1.0,positive,slightly positive
+nTZSH0EwpnY,3,0.33,positive,Neutral
+nTZSH0EwpnY,4,0.67,positive,slightly positive
+nTZSH0EwpnY,5,-0.33,negative,Neutral
+nTZSH0EwpnY,6,-1.33,negative,negative
+nTZSH0EwpnY,7,0.33,positive,Neutral
+nTZSH0EwpnY,8,-0.67,negative,slightly negative
+nXWNHVZtV9A,0,0.0,negative,Neutral
+nZFPKP9kBkw,0,0.33,positive,Neutral
+nZFPKP9kBkw,1,1.33,positive,positive
+nZFPKP9kBkw,2,0.0,negative,Neutral
+nZFPKP9kBkw,3,0.0,negative,Neutral
+nZFPKP9kBkw,4,0.33,positive,Neutral
+naZi9AusrW4,0,-0.33,negative,Neutral
+naZi9AusrW4,1,0.33,positive,Neutral
+namehdJxRIM,0,0.33,positive,Neutral
+namehdJxRIM,1,0.0,negative,Neutral
+namehdJxRIM,2,0.0,negative,Neutral
+namehdJxRIM,3,0.0,negative,Neutral
+namehdJxRIM,4,0.33,positive,Neutral
+nbru7qLot04,0,0.0,negative,Neutral
+nbru7qLot04,1,-0.67,negative,slightly negative
+nbru7qLot04,2,0.33,positive,Neutral
+nbru7qLot04,3,1.0,positive,slightly positive
+nbru7qLot04,4,2.0,positive,positive
+nbru7qLot04,5,0.0,negative,Neutral
+nbru7qLot04,6,1.33,positive,positive
+nbru7qLot04,7,0.0,negative,Neutral
+nbru7qLot04,8,0.0,negative,Neutral
+nbru7qLot04,9,0.67,positive,slightly positive
+nbru7qLot04,10,0.0,negative,Neutral
+nbru7qLot04,11,0.33,positive,Neutral
+o2XbNJDpOlc,0,0.0,negative,Neutral
+o2XbNJDpOlc,1,-0.33,negative,Neutral
+o2XbNJDpOlc,2,1.0,positive,slightly positive
+o2XbNJDpOlc,3,-0.67,negative,slightly negative
+o2XbNJDpOlc,4,1.67,positive,positive
+o2XbNJDpOlc,5,0.67,positive,slightly positive
+oBS-IW-BO00,0,0.0,negative,Neutral
+oBS-IW-BO00,1,0.0,negative,Neutral
+oBS-IW-BO00,2,0.0,negative,Neutral
+oBS-IW-BO00,3,1.33,positive,positive
+oGFDE-6nd7Q,0,-0.33,negative,Neutral
+oGFDE-6nd7Q,1,0.67,positive,slightly positive
+oGFDE-6nd7Q,2,0.67,positive,slightly positive
+oGFDE-6nd7Q,3,0.0,negative,Neutral
+oGFDE-6nd7Q,4,1.0,positive,slightly positive
+oGFDE-6nd7Q,5,-0.33,negative,Neutral
+oH9fMma8jiQ,0,1.33,positive,positive
+oHff2W51wZ8,0,1.33,positive,positive
+oHff2W51wZ8,1,2.33,positive,very positive
+oHff2W51wZ8,2,2.0,positive,positive
+oHff2W51wZ8,3,2.67,positive,very positive
+oHff2W51wZ8,4,1.33,positive,positive
+oHff2W51wZ8,5,0.67,positive,slightly positive
+oHff2W51wZ8,6,0.67,positive,slightly positive
+oPlnhc0DkcU,0,-0.33,negative,Neutral
+oPlnhc0DkcU,1,0.67,positive,slightly positive
+oPlnhc0DkcU,2,0.33,positive,Neutral
+oPlnhc0DkcU,3,0.67,positive,slightly positive
+oPlnhc0DkcU,4,1.67,positive,positive
+oQizLbmte0c,0,1.0,positive,slightly positive
+oQizLbmte0c,1,1.0,positive,slightly positive
+oQizLbmte0c,2,0.67,positive,slightly positive
+oQizLbmte0c,3,1.67,positive,positive
+oQizLbmte0c,4,1.0,positive,slightly positive
+oQizLbmte0c,5,1.67,positive,positive
+oQizLbmte0c,6,0.0,negative,Neutral
+oZxMx8e0x2U,0,0.33,positive,Neutral
+oZxMx8e0x2U,1,0.0,negative,Neutral
+oZxMx8e0x2U,2,0.33,positive,Neutral
+obGF3RfWQKE,0,0.0,negative,Neutral
+obGF3RfWQKE,1,2.0,positive,positive
+obGF3RfWQKE,2,0.67,positive,slightly positive
+obGF3RfWQKE,3,0.0,negative,Neutral
+obGF3RfWQKE,4,1.67,positive,positive
+obGF3RfWQKE,5,0.33,positive,Neutral
+obGF3RfWQKE,6,1.33,positive,positive
+obGF3RfWQKE,7,0.33,positive,Neutral
+obGF3RfWQKE,8,2.33,positive,very positive
+obGF3RfWQKE,9,1.33,positive,positive
+obGF3RfWQKE,10,-0.67,negative,slightly negative
+obGF3RfWQKE,11,2.0,positive,positive
+obGF3RfWQKE,12,1.67,positive,positive
+obGF3RfWQKE,13,1.0,positive,slightly positive
+obGF3RfWQKE,14,0.33,positive,Neutral
+ossKC1VrusE,0,1.0,positive,slightly positive
+ossKC1VrusE,1,0.67,positive,slightly positive
+ossKC1VrusE,2,1.67,positive,positive
+ossKC1VrusE,3,0.33,positive,Neutral
+ozA7pRW4gFM,0,0.0,negative,Neutral
+ozA7pRW4gFM,1,0.67,positive,slightly positive
+ozA7pRW4gFM,2,0.0,negative,Neutral
+ozA7pRW4gFM,3,0.67,positive,slightly positive
+ozA7pRW4gFM,4,0.0,negative,Neutral
+ozA7pRW4gFM,5,0.0,negative,Neutral
+ozA7pRW4gFM,6,0.33,positive,Neutral
+ozA7pRW4gFM,7,0.33,positive,Neutral
+ozA7pRW4gFM,8,1.0,positive,slightly positive
+p1zqEGwRMI8,0,1.33,positive,positive
+p4WmcxrXkc4,0,1.0,positive,slightly positive
+p4WmcxrXkc4,1,0.33,positive,Neutral
+p4WmcxrXkc4,2,0.67,positive,slightly positive
+p4WmcxrXkc4,3,2.0,positive,positive
+p7zuPEZgtY4,0,-0.33,negative,Neutral
+p7zuPEZgtY4,1,0.67,positive,slightly positive
+p7zuPEZgtY4,2,-0.67,negative,slightly negative
+p7zuPEZgtY4,3,0.67,positive,slightly positive
+p7zuPEZgtY4,4,0.33,positive,Neutral
+p7zuPEZgtY4,5,0.33,positive,Neutral
+p7zuPEZgtY4,6,-0.33,negative,Neutral
+pDRdCSIyjkA,0,0.33,positive,Neutral
+pDRdCSIyjkA,1,0.67,positive,slightly positive
+pDRdCSIyjkA,2,-0.33,negative,Neutral
+pIaEcqnzI-s,0,0.33,positive,Neutral
+pIaEcqnzI-s,1,0.0,negative,Neutral
+pIaEcqnzI-s,2,0.0,negative,Neutral
+pIaEcqnzI-s,3,0.33,positive,Neutral
+pIaEcqnzI-s,4,-0.67,negative,slightly negative
+pIaEcqnzI-s,5,-0.33,negative,Neutral
+pIaEcqnzI-s,6,0.0,negative,Neutral
+pIaEcqnzI-s,7,-0.33,negative,Neutral
+pIaEcqnzI-s,8,0.0,negative,Neutral
+pIaEcqnzI-s,9,0.0,negative,Neutral
+pIaEcqnzI-s,10,0.0,negative,Neutral
+pQpy7RSfWzM,0,0.67,positive,slightly positive
+pQpy7RSfWzM,1,-0.33,negative,Neutral
+pQpy7RSfWzM,2,2.0,positive,positive
+pQpy7RSfWzM,3,0.33,positive,Neutral
+pQpy7RSfWzM,4,-1.33,negative,negative
+pQpy7RSfWzM,5,0.0,negative,Neutral
+pQpy7RSfWzM,6,0.33,positive,Neutral
+pQpy7RSfWzM,7,1.0,positive,slightly positive
+pQpy7RSfWzM,8,0.33,positive,Neutral
+pQpy7RSfWzM,9,0.33,positive,Neutral
+pQpy7RSfWzM,10,0.67,positive,slightly positive
+pQpy7RSfWzM,11,0.67,positive,slightly positive
+pQpy7RSfWzM,12,1.0,positive,slightly positive
+pQpy7RSfWzM,13,0.0,negative,Neutral
+pSxte-ms0t8,0,0.67,positive,slightly positive
+pSxte-ms0t8,1,-1.33,negative,negative
+pSxte-ms0t8,2,-1.67,negative,negative
+pSxte-ms0t8,3,-0.67,negative,slightly negative
+pSxte-ms0t8,4,1.67,positive,positive
+pSxte-ms0t8,5,-0.33,negative,Neutral
+pSxte-ms0t8,6,-0.33,negative,Neutral
+pSxte-ms0t8,7,0.33,positive,Neutral
+pSxte-ms0t8,8,1.0,positive,slightly positive
+pSxte-ms0t8,9,0.33,positive,Neutral
+pSxte-ms0t8,10,0.0,negative,Neutral
+pSxte-ms0t8,11,-0.67,negative,slightly negative
+pSxte-ms0t8,12,-0.67,negative,slightly negative
+pSxte-ms0t8,13,0.67,positive,slightly positive
+pSxte-ms0t8,14,-1.67,negative,negative
+pSxte-ms0t8,15,-1.67,negative,negative
+pSxte-ms0t8,16,-2.0,negative,negative
+pSxte-ms0t8,17,1.0,positive,slightly positive
+pSxte-ms0t8,18,-2.0,negative,negative
+pSxte-ms0t8,19,-1.67,negative,negative
+pSxte-ms0t8,20,-0.67,negative,slightly negative
+pZye4zFzk3o,0,-1.33,negative,negative
+pZye4zFzk3o,1,0.0,negative,Neutral
+pZye4zFzk3o,2,0.0,negative,Neutral
+pZye4zFzk3o,3,-0.67,negative,slightly negative
+pZye4zFzk3o,4,-0.67,negative,slightly negative
+pZye4zFzk3o,5,-0.33,negative,Neutral
+pZye4zFzk3o,6,0.0,negative,Neutral
+pZye4zFzk3o,7,0.0,negative,Neutral
+pZye4zFzk3o,8,-1.0,negative,slightly negative
+pZye4zFzk3o,9,0.33,positive,Neutral
+pnpFPX34Agk,0,1.67,positive,positive
+pnpFPX34Agk,1,0.33,positive,Neutral
+pnpFPX34Agk,2,0.33,positive,Neutral
+pnpFPX34Agk,3,1.0,positive,slightly positive
+pnpFPX34Agk,4,1.67,positive,positive
+pnpFPX34Agk,5,0.33,positive,Neutral
+pvIQWWiT4-0,0,2.0,positive,positive
+q17gSr9kNww,0,1.33,positive,positive
+q17gSr9kNww,1,1.0,positive,slightly positive
+q17gSr9kNww,2,1.33,positive,positive
+q17gSr9kNww,3,1.67,positive,positive
+q17gSr9kNww,4,0.33,positive,Neutral
+q17gSr9kNww,5,-0.33,negative,Neutral
+q17gSr9kNww,6,-0.33,negative,Neutral
+q5M1God4M6Y,0,0.0,negative,Neutral
+q5M1God4M6Y,1,0.33,positive,Neutral
+q5M1God4M6Y,2,0.0,negative,Neutral
+q5M1God4M6Y,3,0.0,negative,Neutral
+q5M1God4M6Y,4,-0.33,negative,Neutral
+q5M1God4M6Y,5,0.0,negative,Neutral
+q5M1God4M6Y,6,0.33,positive,Neutral
+q5M1God4M6Y,7,0.33,positive,Neutral
+q5M1God4M6Y,8,0.33,positive,Neutral
+q5M1God4M6Y,9,0.0,negative,Neutral
+q5M1God4M6Y,10,0.67,positive,slightly positive
+q5M1God4M6Y,11,0.0,negative,Neutral
+qAip3lZRj-g,0,0.0,negative,Neutral
+qAip3lZRj-g,1,0.0,negative,Neutral
+qAip3lZRj-g,2,0.0,negative,Neutral
+qBanrqkzobg,0,2.33,positive,very positive
+qBanrqkzobg,1,0.67,positive,slightly positive
+qBanrqkzobg,2,1.0,positive,slightly positive
+qBanrqkzobg,3,1.33,positive,positive
+qDfSYz0PX9g,0,1.67,positive,positive
+qDfSYz0PX9g,1,-2.0,negative,negative
+qDfSYz0PX9g,2,2.0,positive,positive
+qDfSYz0PX9g,3,1.67,positive,positive
+qDfSYz0PX9g,4,-0.67,negative,slightly negative
+qDfSYz0PX9g,5,-0.67,negative,slightly negative
+qDfSYz0PX9g,6,0.67,positive,slightly positive
+qDfSYz0PX9g,7,1.0,positive,slightly positive
+qDfSYz0PX9g,8,-0.67,negative,slightly negative
+qEuJj4uW93E,0,0.0,negative,Neutral
+qEuJj4uW93E,1,-0.67,negative,slightly negative
+qEuJj4uW93E,2,0.67,positive,slightly positive
+qEuJj4uW93E,3,0.67,positive,slightly positive
+qEuJj4uW93E,4,0.0,negative,Neutral
+qEuJj4uW93E,5,1.0,positive,slightly positive
+qTkazqluJ_I,0,2.0,positive,positive
+qTkazqluJ_I,1,2.33,positive,very positive
+qTkazqluJ_I,2,1.0,positive,slightly positive
+qTkazqluJ_I,3,2.0,positive,positive
+qTkazqluJ_I,4,1.0,positive,slightly positive
+qTkazqluJ_I,5,1.0,positive,slightly positive
+qgC8_emxSIU,0,0.0,negative,Neutral
+qgC8_emxSIU,1,-0.33,negative,Neutral
+qgC8_emxSIU,2,0.0,negative,Neutral
+qyqVc352g3Q,0,1.0,positive,slightly positive
+r46amqjpWgg,0,0.67,positive,slightly positive
+r46amqjpWgg,1,1.67,positive,positive
+r46amqjpWgg,2,0.67,positive,slightly positive
+r46amqjpWgg,3,1.0,positive,slightly positive
+r46amqjpWgg,4,1.0,positive,slightly positive
+r46amqjpWgg,5,1.0,positive,slightly positive
+r46amqjpWgg,6,0.67,positive,slightly positive
+r46amqjpWgg,7,0.67,positive,slightly positive
+r46amqjpWgg,8,1.0,positive,slightly positive
+r46amqjpWgg,9,1.67,positive,positive
+r46amqjpWgg,10,0.33,positive,Neutral
+r46amqjpWgg,11,2.0,positive,positive
+r46amqjpWgg,12,0.33,positive,Neutral
+r46amqjpWgg,13,1.0,positive,slightly positive
+r46amqjpWgg,14,1.0,positive,slightly positive
+r46amqjpWgg,15,1.33,positive,positive
+r46amqjpWgg,16,1.67,positive,positive
+r46amqjpWgg,17,1.33,positive,positive
+r46amqjpWgg,18,1.0,positive,slightly positive
+r46amqjpWgg,19,1.33,positive,positive
+r46amqjpWgg,20,1.33,positive,positive
+r46amqjpWgg,21,2.0,positive,positive
+r46amqjpWgg,22,1.33,positive,positive
+r46amqjpWgg,23,0.0,negative,Neutral
+r46amqjpWgg,24,0.0,negative,Neutral
+r46amqjpWgg,25,1.67,positive,positive
+r46amqjpWgg,26,1.33,positive,positive
+r46amqjpWgg,27,1.0,positive,slightly positive
+r46amqjpWgg,28,1.33,positive,positive
+r46amqjpWgg,29,0.33,positive,Neutral
+r46amqjpWgg,30,1.33,positive,positive
+r46amqjpWgg,31,2.67,positive,very positive
+r46amqjpWgg,32,1.0,positive,slightly positive
+rC29Qub0U7A,0,0.0,negative,Neutral
+rC29Qub0U7A,1,-0.67,negative,slightly negative
+rC29Qub0U7A,2,0.33,positive,Neutral
+rC29Qub0U7A,3,0.67,positive,slightly positive
+rC29Qub0U7A,4,1.0,positive,slightly positive
+rC29Qub0U7A,5,0.33,positive,Neutral
+rC29Qub0U7A,6,1.0,positive,slightly positive
+rC29Qub0U7A,7,-0.67,negative,slightly negative
+rC29Qub0U7A,8,0.0,negative,Neutral
+rcfnqiD0y8o,0,-1.0,negative,slightly negative
+rcfnqiD0y8o,1,0.33,positive,Neutral
+rcfnqiD0y8o,2,0.33,positive,Neutral
+rcfnqiD0y8o,3,1.67,positive,positive
+rcfnqiD0y8o,4,0.0,negative,Neutral
+rcfnqiD0y8o,5,0.0,negative,Neutral
+rcfnqiD0y8o,6,0.0,negative,Neutral
+rcfnqiD0y8o,7,1.0,positive,slightly positive
+rcfnqiD0y8o,8,0.33,positive,Neutral
+rcfnqiD0y8o,9,-0.67,negative,slightly negative
+rcfnqiD0y8o,10,0.67,positive,slightly positive
+rePYTlT5_AY,0,-0.33,negative,Neutral
+rePYTlT5_AY,1,0.0,negative,Neutral
+rhQB8e999-Q,0,1.0,positive,slightly positive
+rhQB8e999-Q,1,1.0,positive,slightly positive
+rhQB8e999-Q,2,2.0,positive,positive
+rhQB8e999-Q,3,2.0,positive,positive
+rhQB8e999-Q,4,1.0,positive,slightly positive
+rhQB8e999-Q,5,1.33,positive,positive
+rhQB8e999-Q,6,0.67,positive,slightly positive
+rhQB8e999-Q,7,0.0,negative,Neutral
+rhQB8e999-Q,8,0.67,positive,slightly positive
+rhQB8e999-Q,9,0.67,positive,slightly positive
+rhQB8e999-Q,10,2.33,positive,very positive
+rhQB8e999-Q,11,0.0,negative,Neutral
+ryE9VBiR3p8,0,0.33,positive,Neutral
+sIusv36VoBY,0,1.33,positive,positive
+sfaWfZ2-4c0,0,-2.33,negative,very negative
+sfaWfZ2-4c0,1,-2.33,negative,very negative
+sfaWfZ2-4c0,2,-0.33,negative,Neutral
+skRqBxLLJkE,0,1.0,positive,slightly positive
+skRqBxLLJkE,1,1.0,positive,slightly positive
+svsbGQn389o,0,-1.33,negative,negative
+svsbGQn389o,1,1.0,positive,slightly positive
+tC2KicUHB9Q,0,1.0,positive,slightly positive
+tC2KicUHB9Q,1,-1.0,negative,slightly negative
+tC2KicUHB9Q,2,0.33,positive,Neutral
+tC2KicUHB9Q,3,0.33,positive,Neutral
+tC2KicUHB9Q,4,0.33,positive,Neutral
+tC2KicUHB9Q,5,0.0,negative,Neutral
+tC2KicUHB9Q,6,-0.33,negative,Neutral
+tC2KicUHB9Q,7,-0.33,negative,Neutral
+tC2KicUHB9Q,8,1.33,positive,positive
+tNd3--lvSXE,0,0.0,negative,Neutral
+tNd3--lvSXE,1,2.0,positive,positive
+tNd3--lvSXE,2,0.0,negative,Neutral
+tNd3--lvSXE,3,-1.33,negative,negative
+tNd3--lvSXE,4,1.67,positive,positive
+tNd3--lvSXE,5,0.67,positive,slightly positive
+tNd3--lvSXE,6,0.67,positive,slightly positive
+tO68uTk-T_E,0,1.0,positive,slightly positive
+tO68uTk-T_E,1,0.67,positive,slightly positive
+tO68uTk-T_E,2,1.0,positive,slightly positive
+tO68uTk-T_E,3,1.33,positive,positive
+tW5xAWDnbGU,0,0.67,positive,slightly positive
+tW5xAWDnbGU,1,0.33,positive,Neutral
+tW5xAWDnbGU,2,-2.33,negative,very negative
+tZDNinnrGf8,0,0.33,positive,Neutral
+tZDNinnrGf8,1,0.67,positive,slightly positive
+tZDNinnrGf8,2,0.33,positive,Neutral
+tZDNinnrGf8,3,-0.33,negative,Neutral
+teQqaAmqqx0,0,0.0,negative,Neutral
+teQqaAmqqx0,1,0.0,negative,Neutral
+tnWmVXZ87h0,0,0.0,negative,Neutral
+tnWmVXZ87h0,1,2.0,positive,positive
+tnWmVXZ87h0,2,1.67,positive,positive
+tnWmVXZ87h0,3,0.67,positive,slightly positive
+tnWmVXZ87h0,4,2.0,positive,positive
+tnWmVXZ87h0,5,1.67,positive,positive
+tnWmVXZ87h0,6,2.0,positive,positive
+tnWmVXZ87h0,7,2.0,positive,positive
+ttfaZ8IIWCo,0,0.33,positive,Neutral
+ttfaZ8IIWCo,1,-0.67,negative,slightly negative
+ttfaZ8IIWCo,2,1.33,positive,positive
+ttfaZ8IIWCo,3,2.33,positive,very positive
+ttfaZ8IIWCo,4,2.33,positive,very positive
+ttfaZ8IIWCo,5,2.33,positive,very positive
+ttfaZ8IIWCo,6,2.0,positive,positive
+ttfaZ8IIWCo,7,1.0,positive,slightly positive
+ttfaZ8IIWCo,8,2.67,positive,very positive
+tymso_pAxhk,0,0.67,positive,slightly positive
+tymso_pAxhk,1,-0.33,negative,Neutral
+tymso_pAxhk,2,-1.0,negative,slightly negative
+tymso_pAxhk,3,0.0,negative,Neutral
+tymso_pAxhk,4,0.33,positive,Neutral
+u9I5WD3Nglk,0,0.33,positive,Neutral
+u9ZV8jb_-U0,0,-1.67,negative,negative
+u9ZV8jb_-U0,1,-0.33,negative,Neutral
+uVM4JWjfGgQ,0,1.33,positive,positive
+uVM4JWjfGgQ,1,0.67,positive,slightly positive
+uVM4JWjfGgQ,2,1.67,positive,positive
+um8WVjZMLUc,0,0.0,negative,Neutral
+um8WVjZMLUc,1,0.0,negative,Neutral
+unOeTDc2rlY,0,0.67,positive,slightly positive
+unOeTDc2rlY,1,1.0,positive,slightly positive
+unOeTDc2rlY,2,1.0,positive,slightly positive
+unOeTDc2rlY,3,-0.33,negative,Neutral
+unOeTDc2rlY,4,0.67,positive,slightly positive
+unOeTDc2rlY,5,2.67,positive,very positive
+unOeTDc2rlY,6,1.0,positive,slightly positive
+unOeTDc2rlY,7,0.67,positive,slightly positive
+unOeTDc2rlY,8,0.67,positive,slightly positive
+unOeTDc2rlY,9,-0.33,negative,Neutral
+unOeTDc2rlY,10,0.67,positive,slightly positive
+unOeTDc2rlY,11,2.0,positive,positive
+unOeTDc2rlY,12,0.33,positive,Neutral
+unOeTDc2rlY,13,0.67,positive,slightly positive
+unOeTDc2rlY,14,0.67,positive,slightly positive
+unOeTDc2rlY,15,1.67,positive,positive
+unOeTDc2rlY,16,1.0,positive,slightly positive
+unOeTDc2rlY,17,0.0,negative,Neutral
+unOeTDc2rlY,18,0.33,positive,Neutral
+unOeTDc2rlY,19,0.67,positive,slightly positive
+uogwnZGb-iE,0,1.33,positive,positive
+uogwnZGb-iE,1,1.67,positive,positive
+uogwnZGb-iE,2,2.0,positive,positive
+uogwnZGb-iE,3,2.67,positive,very positive
+uogwnZGb-iE,4,1.67,positive,positive
+uogwnZGb-iE,5,0.33,positive,Neutral
+uogwnZGb-iE,6,2.0,positive,positive
+uogwnZGb-iE,7,2.67,positive,very positive
+uogwnZGb-iE,8,1.67,positive,positive
+uogwnZGb-iE,9,3.0,positive,very positive
+uogwnZGb-iE,10,2.33,positive,very positive
+uogwnZGb-iE,11,2.33,positive,very positive
+uogwnZGb-iE,12,1.33,positive,positive
+uogwnZGb-iE,13,0.0,negative,Neutral
+uogwnZGb-iE,14,-0.33,negative,Neutral
+uogwnZGb-iE,15,1.0,positive,slightly positive
+ussfmzwftQ8,0,1.67,positive,positive
+ussfmzwftQ8,1,1.33,positive,positive
+vB_kZocHtYo,0,0.0,negative,Neutral
+vGkIaClHKDg,0,0.33,positive,Neutral
+vGkIaClHKDg,1,1.67,positive,positive
+vGkIaClHKDg,2,2.33,positive,very positive
+vGkIaClHKDg,3,0.67,positive,slightly positive
+vGkIaClHKDg,4,2.0,positive,positive
+vGkIaClHKDg,5,0.33,positive,Neutral
+vGkIaClHKDg,6,0.67,positive,slightly positive
+vGkIaClHKDg,7,0.0,negative,Neutral
+vGkIaClHKDg,8,1.33,positive,positive
+vGkIaClHKDg,9,1.0,positive,slightly positive
+vGkIaClHKDg,10,1.0,positive,slightly positive
+vGxqVh_kJdo,0,0.33,positive,Neutral
+vGxqVh_kJdo,1,0.0,negative,Neutral
+vI5JH0daNsM,0,1.0,positive,slightly positive
+vI5JH0daNsM,1,-0.67,negative,slightly negative
+vJDDEuE-FlY,0,-0.33,negative,Neutral
+vJDDEuE-FlY,1,0.33,positive,Neutral
+vR90Pdx9wxs,0,0.67,positive,slightly positive
+vR90Pdx9wxs,1,-0.33,negative,Neutral
+vR90Pdx9wxs,2,0.33,positive,Neutral
+vR90Pdx9wxs,3,1.33,positive,positive
+vR90Pdx9wxs,4,-0.33,negative,Neutral
+vR90Pdx9wxs,5,1.33,positive,positive
+vR90Pdx9wxs,6,1.33,positive,positive
+vTAV6FThy30,0,0.0,negative,Neutral
+vTAV6FThy30,1,1.33,positive,positive
+vTAV6FThy30,2,2.33,positive,very positive
+vTAV6FThy30,3,0.67,positive,slightly positive
+vTAV6FThy30,4,0.67,positive,slightly positive
+vTAV6FThy30,5,1.33,positive,positive
+vTAV6FThy30,6,2.0,positive,positive
+v_8QeoNc4QY,0,0.0,negative,Neutral
+v_8QeoNc4QY,1,-0.67,negative,slightly negative
+v_8QeoNc4QY,2,0.33,positive,Neutral
+v_8QeoNc4QY,3,-0.33,negative,Neutral
+v_8QeoNc4QY,4,1.0,positive,slightly positive
+veA6ECsGFxI,0,0.67,positive,slightly positive
+veA6ECsGFxI,1,0.0,negative,Neutral
+wC_1M7KIv9s,0,0.0,negative,Neutral
+wC_1M7KIv9s,1,-0.33,negative,Neutral
+wC_1M7KIv9s,2,0.33,positive,Neutral
+wC_1M7KIv9s,3,0.33,positive,Neutral
+wC_1M7KIv9s,4,0.67,positive,slightly positive
+wC_1M7KIv9s,5,0.33,positive,Neutral
+wC_1M7KIv9s,6,0.0,negative,Neutral
+wC_1M7KIv9s,7,0.67,positive,slightly positive
+wC_1M7KIv9s,8,0.33,positive,Neutral
+wC_1M7KIv9s,9,1.67,positive,positive
+wC_1M7KIv9s,10,0.67,positive,slightly positive
+wC_1M7KIv9s,11,1.0,positive,slightly positive
+wC_1M7KIv9s,12,0.67,positive,slightly positive
+wC_1M7KIv9s,13,-0.33,negative,Neutral
+wC_1M7KIv9s,14,0.0,negative,Neutral
+wC_1M7KIv9s,15,2.0,positive,positive
+wC_1M7KIv9s,16,1.67,positive,positive
+wC_1M7KIv9s,17,0.0,negative,Neutral
+wC_1M7KIv9s,18,1.0,positive,slightly positive
+wC_1M7KIv9s,19,-0.33,negative,Neutral
+wHeZHLv9wGI,0,-0.67,negative,slightly negative
+wO8fUOC4OSE,0,-1.0,negative,slightly negative
+wO8fUOC4OSE,1,-1.33,negative,negative
+wd8VQ5E7o7o,0,1.67,positive,positive
+wd8VQ5E7o7o,1,1.33,positive,positive
+wk5lFk5kFjY,0,1.0,positive,slightly positive
+wnL3ld9bM2o,0,2.0,positive,positive
+wnL3ld9bM2o,1,2.33,positive,very positive
+wnL3ld9bM2o,2,0.33,positive,Neutral
+wnL3ld9bM2o,3,0.33,positive,Neutral
+wnL3ld9bM2o,4,1.33,positive,positive
+wnL3ld9bM2o,5,0.67,positive,slightly positive
+wnL3ld9bM2o,6,0.67,positive,slightly positive
+wnL3ld9bM2o,7,1.33,positive,positive
+wnL3ld9bM2o,8,0.33,positive,Neutral
+wnL3ld9bM2o,9,0.67,positive,slightly positive
+wnL3ld9bM2o,10,0.33,positive,Neutral
+wnL3ld9bM2o,11,1.0,positive,slightly positive
+wnL3ld9bM2o,12,1.0,positive,slightly positive
+wnL3ld9bM2o,13,0.0,negative,Neutral
+wnL3ld9bM2o,14,0.33,positive,Neutral
+wnL3ld9bM2o,15,0.67,positive,slightly positive
+wnL3ld9bM2o,16,0.0,negative,Neutral
+wnL3ld9bM2o,17,0.0,negative,Neutral
+wnL3ld9bM2o,18,2.0,positive,positive
+wnL3ld9bM2o,19,1.0,positive,slightly positive
+wnL3ld9bM2o,20,1.67,positive,positive
+wnL3ld9bM2o,21,1.67,positive,positive
+wznRBN1fWj4,0,-0.33,negative,Neutral
+wznRBN1fWj4,1,0.0,negative,Neutral
+wznRBN1fWj4,2,-0.33,negative,Neutral
+wznRBN1fWj4,3,0.0,negative,Neutral
+wznRBN1fWj4,4,-1.33,negative,negative
+wznRBN1fWj4,5,0.0,negative,Neutral
+wznRBN1fWj4,6,1.67,positive,positive
+x0rLwBIocuI,0,0.33,positive,Neutral
+x0rLwBIocuI,1,0.0,negative,Neutral
+x0rLwBIocuI,2,-0.67,negative,slightly negative
+x266rUJQC_8,0,-0.67,negative,slightly negative
+x266rUJQC_8,1,0.67,positive,slightly positive
+x266rUJQC_8,2,-0.67,negative,slightly negative
+x266rUJQC_8,3,-1.67,negative,negative
+x266rUJQC_8,4,0.33,positive,Neutral
+x2n19Cn96aw,0,0.0,negative,Neutral
+x2n19Cn96aw,1,-0.33,negative,Neutral
+x8UZQkN52o4,0,-1.33,negative,negative
+x8UZQkN52o4,1,-0.33,negative,Neutral
+x8UZQkN52o4,2,0.0,negative,Neutral
+x8UZQkN52o4,3,-0.33,negative,Neutral
+x8UZQkN52o4,4,-1.33,negative,negative
+x8UZQkN52o4,5,0.0,negative,Neutral
+x8UZQkN52o4,6,0.67,positive,slightly positive
+x8UZQkN52o4,7,0.33,positive,Neutral
+xBE9YWYGjtk,0,0.33,positive,Neutral
+xBE9YWYGjtk,1,2.33,positive,very positive
+xBE9YWYGjtk,2,1.67,positive,positive
+xBE9YWYGjtk,3,1.33,positive,positive
+xBE9YWYGjtk,4,1.67,positive,positive
+xBE9YWYGjtk,5,1.67,positive,positive
+xBE9YWYGjtk,6,2.0,positive,positive
+xBE9YWYGjtk,7,1.67,positive,positive
+xBE9YWYGjtk,8,1.67,positive,positive
+xBE9YWYGjtk,9,1.33,positive,positive
+xSCvspXYU9k,0,-1.67,negative,negative
+xSCvspXYU9k,1,-1.67,negative,negative
+xSCvspXYU9k,2,-1.0,negative,slightly negative
+xSCvspXYU9k,3,-1.33,negative,negative
+xSCvspXYU9k,4,1.0,positive,slightly positive
+xSCvspXYU9k,5,-1.0,negative,slightly negative
+xSCvspXYU9k,6,0.0,negative,Neutral
+xSCvspXYU9k,7,0.0,negative,Neutral
+xU3N7ujUB-g,0,-0.33,negative,Neutral
+xU3N7ujUB-g,1,0.67,positive,slightly positive
+xU3N7ujUB-g,2,2.0,positive,positive
+xU3N7ujUB-g,3,0.0,negative,Neutral
+xXXcgb9eZ9Y,0,0.0,negative,Neutral
+xXXcgb9eZ9Y,1,0.0,negative,Neutral
+xXXcgb9eZ9Y,2,0.0,negative,Neutral
+xXXcgb9eZ9Y,3,-0.33,negative,Neutral
+xXXcgb9eZ9Y,4,-0.33,negative,Neutral
+xXXcgb9eZ9Y,5,0.0,negative,Neutral
+xXXcgb9eZ9Y,6,0.33,positive,Neutral
+xkEK17UUyi4,0,0.0,negative,Neutral
+xmLJHru6Z1M,0,1.0,positive,slightly positive
+xmLJHru6Z1M,1,1.0,positive,slightly positive
+xmLJHru6Z1M,2,0.67,positive,slightly positive
+xmLJHru6Z1M,3,0.0,negative,Neutral
+xmLJHru6Z1M,4,0.0,negative,Neutral
+xmLJHru6Z1M,5,0.33,positive,Neutral
+xobMRm5Vs44,0,0.0,negative,Neutral
+xwvSYhQrHoA,0,0.0,negative,Neutral
+xwvSYhQrHoA,1,0.0,negative,Neutral
+y3r2kk8zvl0,0,-0.5,negative,slightly negative
+y3r2kk8zvl0,1,0.0,negative,Neutral
+y3r2kk8zvl0,2,0.17,positive,Neutral
+y3r2kk8zvl0,3,0.0,negative,Neutral
+y3r2kk8zvl0,4,0.83,positive,slightly positive
+y3r2kk8zvl0,5,0.5,positive,slightly positive
+y3r2kk8zvl0,6,0.33,positive,Neutral
+y3r2kk8zvl0,7,0.67,positive,slightly positive
+y3r2kk8zvl0,8,0.67,positive,slightly positive
+y3r2kk8zvl0,9,0.0,negative,Neutral
+y3r2kk8zvl0,10,-0.5,negative,slightly negative
+y3r2kk8zvl0,11,0.33,positive,Neutral
+y3r2kk8zvl0,12,-0.67,negative,slightly negative
+y3r2kk8zvl0,13,0.33,positive,Neutral
+y5Jpf48SUX8,0,0.67,positive,slightly positive
+y5Jpf48SUX8,1,0.67,positive,slightly positive
+yBtMwyQFXwA,0,0.67,positive,slightly positive
+yBtMwyQFXwA,1,0.0,negative,Neutral
+yBtMwyQFXwA,2,0.67,positive,slightly positive
+yBtMwyQFXwA,3,0.67,positive,slightly positive
+yBtMwyQFXwA,4,0.67,positive,slightly positive
+yBtMwyQFXwA,5,1.67,positive,positive
+yBtMwyQFXwA,6,0.67,positive,slightly positive
+yBtMwyQFXwA,7,1.0,positive,slightly positive
+yCpHmPSshKY,0,1.67,positive,positive
+yCpHmPSshKY,1,0.67,positive,slightly positive
+yCpHmPSshKY,2,1.0,positive,slightly positive
+yCpHmPSshKY,3,-0.67,negative,slightly negative
+yLo-Jl8nBXU,0,0.67,positive,slightly positive
+yLo-Jl8nBXU,1,1.0,positive,slightly positive
+yLo-Jl8nBXU,2,0.0,negative,Neutral
+yLo-Jl8nBXU,3,1.67,positive,positive
+yLo-Jl8nBXU,4,1.33,positive,positive
+yLo-Jl8nBXU,5,-0.33,negative,Neutral
+yLo-Jl8nBXU,6,0.0,negative,Neutral
+ySblgk7T7eQ,0,-0.33,negative,Neutral
+ySblgk7T7eQ,1,-0.33,negative,Neutral
+ySblgk7T7eQ,2,0.0,negative,Neutral
+ySblgk7T7eQ,3,-0.33,negative,Neutral
+ySblgk7T7eQ,4,0.67,positive,slightly positive
+ySblgk7T7eQ,5,0.33,positive,Neutral
+ySblgk7T7eQ,6,1.0,positive,slightly positive
+ySblgk7T7eQ,7,-1.33,negative,negative
+ySblgk7T7eQ,8,0.0,negative,Neutral
+ySblgk7T7eQ,9,0.0,negative,Neutral
+ySblgk7T7eQ,10,0.67,positive,slightly positive
+ySblgk7T7eQ,11,-0.33,negative,Neutral
+ySblgk7T7eQ,12,-0.67,negative,slightly negative
+ySblgk7T7eQ,13,1.0,positive,slightly positive
+ySblgk7T7eQ,14,0.0,negative,Neutral
+yUqNp-poh9M,0,-0.33,negative,Neutral
+yUqNp-poh9M,1,0.67,positive,slightly positive
+yUqNp-poh9M,2,0.0,negative,Neutral
+yUqNp-poh9M,3,0.0,negative,Neutral
+yUqNp-poh9M,4,1.67,positive,positive
+yUqNp-poh9M,5,0.67,positive,slightly positive
+yUqNp-poh9M,6,1.0,positive,slightly positive
+yUqNp-poh9M,7,-0.67,negative,slightly negative
+yUqNp-poh9M,8,-0.33,negative,Neutral
+yUqNp-poh9M,9,-0.33,negative,Neutral
+yUqNp-poh9M,10,0.0,negative,Neutral
+yUqNp-poh9M,11,-0.33,negative,Neutral
+yUqNp-poh9M,12,0.0,negative,Neutral
+yUqNp-poh9M,13,0.0,negative,Neutral
+yUqNp-poh9M,14,0.0,negative,Neutral
+yUqNp-poh9M,15,0.0,negative,Neutral
+yXE_XZUb8qE,0,0.0,negative,Neutral
+yXE_XZUb8qE,1,-0.67,negative,slightly negative
+yXE_XZUb8qE,2,0.0,negative,Neutral
+ybK5wRaaUyE,0,1.0,positive,slightly positive
+ybK5wRaaUyE,1,-1.33,negative,negative
+ybK5wRaaUyE,2,-0.67,negative,slightly negative
+ybK5wRaaUyE,3,-1.67,negative,negative
+ybK5wRaaUyE,4,-1.67,negative,negative
+ybK5wRaaUyE,5,-0.33,negative,Neutral
+ydzNAuqUAnc,0,0.67,positive,slightly positive
+ydzNAuqUAnc,1,-0.33,negative,Neutral
+ydzNAuqUAnc,2,-0.67,negative,slightly negative
+ydzNAuqUAnc,3,-1.0,negative,slightly negative
+yoDMh8FlHR8,0,1.67,positive,positive
+yoDMh8FlHR8,1,-0.33,negative,Neutral
+yzCHa2qchpg,0,-2.0,negative,negative
+yzCHa2qchpg,1,0.33,positive,Neutral
+yzCHa2qchpg,2,1.33,positive,positive
+z0y1ZxH1f74,0,-0.67,negative,slightly negative
+z0y1ZxH1f74,1,-0.67,negative,slightly negative
+z0y1ZxH1f74,2,-0.67,negative,slightly negative
+z0y1ZxH1f74,3,-1.0,negative,slightly negative
+z0y1ZxH1f74,4,-0.67,negative,slightly negative
+z0y1ZxH1f74,5,-1.33,negative,negative
+z0y1ZxH1f74,6,-1.33,negative,negative
+z441aDJvAcU,0,1.0,positive,slightly positive
+z441aDJvAcU,1,1.67,positive,positive
+z441aDJvAcU,2,-1.0,negative,slightly negative
+z441aDJvAcU,3,0.0,negative,Neutral
+z441aDJvAcU,4,1.0,positive,slightly positive
+z441aDJvAcU,5,0.33,positive,Neutral
+z441aDJvAcU,6,0.0,negative,Neutral
+z441aDJvAcU,7,1.33,positive,positive
+z441aDJvAcU,8,1.67,positive,positive
+z441aDJvAcU,9,0.0,negative,Neutral
+z441aDJvAcU,10,0.33,positive,Neutral
+z441aDJvAcU,11,0.0,negative,Neutral
+z441aDJvAcU,12,1.33,positive,positive
+z441aDJvAcU,13,0.33,positive,Neutral
+zfZUOvZZTuk,0,-0.67,negative,slightly negative
+zfZUOvZZTuk,1,0.0,negative,Neutral
+zfZUOvZZTuk,2,0.0,negative,Neutral
+zfZUOvZZTuk,3,-1.0,negative,slightly negative
+zfZUOvZZTuk,4,0.0,negative,Neutral
+zfZUOvZZTuk,5,0.0,negative,Neutral
+zfZUOvZZTuk,6,0.67,positive,slightly positive
+zfZUOvZZTuk,7,0.0,negative,Neutral
+zfZUOvZZTuk,8,0.0,negative,Neutral
+zfZUOvZZTuk,9,0.0,negative,Neutral
+zfZUOvZZTuk,10,0.0,negative,Neutral
+zfZUOvZZTuk,11,-1.0,negative,slightly negative
+zfZUOvZZTuk,12,0.0,negative,Neutral
+zfZUOvZZTuk,13,-0.33,negative,Neutral
+zfZUOvZZTuk,14,0.0,negative,Neutral
+zfZUOvZZTuk,15,1.0,positive,slightly positive
+zfZUOvZZTuk,16,-0.67,negative,slightly negative
+zfZUOvZZTuk,17,0.0,negative,Neutral
+zfZUOvZZTuk,18,-0.33,negative,Neutral
+zfZUOvZZTuk,19,0.0,negative,Neutral
+zhNksSReaQk,0,1.0,positive,slightly positive
+zhNksSReaQk,1,1.33,positive,positive
+zhNksSReaQk,2,-0.67,negative,slightly negative
+zhNksSReaQk,3,0.0,negative,Neutral
+zhNksSReaQk,4,0.0,negative,Neutral
+zhNksSReaQk,5,0.0,negative,Neutral
+zhNksSReaQk,6,0.0,negative,Neutral
+zhNksSReaQk,7,-0.67,negative,slightly negative
+zhNksSReaQk,8,0.0,negative,Neutral
+zhNksSReaQk,9,0.33,positive,Neutral
+zhNksSReaQk,10,0.67,positive,slightly positive
+zhNksSReaQk,11,-1.0,negative,slightly negative
+zhNksSReaQk,12,-0.33,negative,Neutral
+zhNksSReaQk,13,-1.0,negative,slightly negative
+zhNksSReaQk,14,-2.0,negative,negative
+zhNksSReaQk,15,1.67,positive,positive
+zhNksSReaQk,16,-0.33,negative,Neutral
+zhNksSReaQk,17,0.0,negative,Neutral
+zhNksSReaQk,18,0.33,positive,Neutral
+zhNksSReaQk,19,0.0,negative,Neutral
+zhNksSReaQk,20,0.0,negative,Neutral
+zhNksSReaQk,21,-0.33,negative,Neutral
+zhNksSReaQk,22,0.0,negative,Neutral
+zhNksSReaQk,23,0.0,negative,Neutral
+zhNksSReaQk,24,0.33,positive,Neutral
+zhNksSReaQk,25,0.0,negative,Neutral
+zhNksSReaQk,26,0.0,negative,Neutral
+zhNksSReaQk,27,-1.33,negative,negative
+zhNksSReaQk,28,0.33,positive,Neutral
+zhNksSReaQk,29,0.0,negative,Neutral
+zhNksSReaQk,30,1.0,positive,slightly positive
+zhNksSReaQk,31,-0.33,negative,Neutral
+zhNksSReaQk,32,-0.33,negative,Neutral
+zhNksSReaQk,33,0.0,negative,Neutral
+zhNksSReaQk,34,0.0,negative,Neutral
+zhNksSReaQk,35,-0.67,negative,slightly negative
+zhNksSReaQk,36,0.0,negative,Neutral
+zhNksSReaQk,37,0.0,negative,Neutral
+zhNksSReaQk,38,0.0,negative,Neutral
+zhNksSReaQk,39,-2.0,negative,negative
+zhNksSReaQk,40,0.0,negative,Neutral
+zvZd3V5D5Ik,0,1.0,positive,slightly positive
+zvZd3V5D5Ik,1,1.67,positive,positive
