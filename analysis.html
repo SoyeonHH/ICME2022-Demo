@@ -13,7 +13,7 @@
       <div class="header-item analysis selected">Analysis & Comparison</div>
       <a href="/"><div class="header-item view">View</div></a>
     </div>
-    
+
     <div class="section">
       <h1>Analysis</h1>
       <div id="workspace">
@@ -182,18 +182,6 @@
       }
     },
   };
-  /*
-  var reader = new FileReader()
-  reader.onload = function(progressEvent) {
-    var readResult = []
-    var lines = this.result.split(/\r\n|\n/)
-    lines.shift
-    for(var i = 0; i < lines.length; i++) {
-        readResult.push(lines[i].split(','))
-    }
-    return readResult
-  }
-  */
 
 
   function Model(modelName, publisher, result) {
@@ -806,10 +794,6 @@
     }
   }
   xmlhttprequest.send();
-
-
-  modelTest0.uploadModel("MAG-BERT","google",mag_bertFile)
-  modelTest0.uploadModel("MISA","not me",misaFile)
 
   //interaction
   function uploadResult() {
