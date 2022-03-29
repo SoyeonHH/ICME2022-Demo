@@ -61,7 +61,7 @@ function getModelCsv(modelName, dataset, isUpload) {
   console.log(`http://210.107.197.59:3000/csv${uploadPath}?name=${modelName}&dataset=${dataset}`);
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {
-      console.log(JSON.parse(xhr.responseText));
+      selectModel('temp', dataset, JSON.parse(xhr.responseText));
     }
   }
   xhr.send();

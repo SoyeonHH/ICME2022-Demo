@@ -999,7 +999,7 @@
   }
 
   function selectModel(model_name, model_dataset, model_file) {//after selecting a model, draw distribution chart, video accuracy table,
-    analysisTest.model = new Model(mode_name, model_dataset,jsonToResult(model_file))
+    analysisTest.model = new Model(model_name, model_dataset ,jsonToResult(model_file))
     analysisTest.updateGraph()
     analysisTest.updatePbarVideo()
     analysisTest.updatePbarSegment()  //reset
