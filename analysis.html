@@ -245,7 +245,7 @@
         var gold7class = [0,0,0,0,0,0,0]
         var pred7class = [0,0,0,0,0,0,0]
 
-        for (let s = 0; s < 400; s++) {
+        for (let s = 0; s < this.result.length; s++) {
           let resultline = this.result[s]
 
           switch(resultline[4]) {
@@ -494,10 +494,10 @@
     //return scores[ModelName, MAE, Corr, Acc-2, Acc-7, F1,]
   }
 
-  function Analysis(model) {
+  function Analysis(model, otherModels=[]) {
 
     this.model = model
-    this.otherModels = []
+    this.otherModels = otherModels
     this.canvasList = document.getElementById('canvasList')
     this.vidTable = document.getElementById('videoAcc');
     this.segTable = document.getElementById('segmentAcc');
@@ -614,6 +614,12 @@
     }
 
     this.updatePbarSegment = function(video_id) {//Draw Progress Bar of a single Segment
+      if(arguments.length == 0) {
+        this.segTable.innerHtml = ""
+        console.log("No video selected")
+        return
+      }
+
       //process this.result via video
       var segHitMap = this.model.getSegmentAcc(video_id)
       console.log(segHitMap)
@@ -633,11 +639,21 @@
     }
 
     this.updateScatterSegment = function(video_id, segment_id) {
+      if(arguments.length == 0) {
+        this.plotHolder.innerHtml = ""
+        console.log("No video and segment selected")
+        return
+      }
+
       //get Data
       var selectedSegment = this.model.searchSegment(video_id,segment_id)
       var ourPoint = 0
       if(selectedSegment[0]) {
         ourPoint = selectedSegment[6]
+      }
+
+      for (let i = 0; i < this.otherModels.length; i++) {
+        this.otherModels[i].searchSegment(video_id,segment_id)
       }
 
       //draw chart
@@ -859,7 +875,7 @@
       var jsonParsed = JSON.parse(xmlhttprequest.responseText)
       console.log(jsonToResult(jsonParsed))
 
-      var modelTest01 = new Model("newTest","hoons",jsonToResult(jsonParsed))
+      var modelTest01 = new Model("newTest","hoons",goldTestResult)
       console.log(modelTest01.getScores())
       //console.log(modelTest01.getClassPop())
       console.log(modelTest01.getVideoAcc())
@@ -867,7 +883,7 @@
       analysisTest.model = modelTest01
       analysisTest.updateGraph()
       analysisTest.updatePbarVideo()
-      analysisTest.updateGraph()
+      analysisTest.updatePbarSegment()
       analysisTest.updateScatterSegment("c7UH_rxdZv4",0)
 
       //var comparisonTest = new Comparison([modelTest01, modelCopy, modelTest01], [modelTest01], [modelTest01, modelCopy, modelTest01])
@@ -896,6 +912,14 @@
 
     //change View
     analysisTest.updateView(videoId.innerText)
+  }
+
+  function selectModel(model_name, model_publisher, model_file) {//after selecting a model, draw distribution chart, video accuracy table,
+    analysisTest.model = new Model(mode_name, model_publisher,jsonToResult(model_file))
+    analysisTest.updateGraph()
+    analysisTest.updatePbarVideo()
+    analysisTest.updatePbarSegment()  //reset
+    analysisTest.updateScatterSegment() //reset
   }
 
 
