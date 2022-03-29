@@ -209,34 +209,15 @@
     return returnResult
   }
 
-  var globalGoldMosei = jsonToResult(,true)
+  // load Global Gold Data
+  var globalGold_mosei, globalGold_mosi
 
-  function Model(modelName, publisher, result) {
+  function Model(modelName, datasetType, result) {
     this.modelName = modelName
-    this.publisher = publisher
+    this.datasetType = datasetType
+    this.publisher = ""
     this.result = result //result on every segment
 
-    this.uploadModel = function(modelName, publisher, inputFile) {
-      //update attributes
-      this.modelName = modelName
-      this.publisher = publisher
-
-      //process input file and make this.result
-      var fileReader = new FileReader()
-      fileReader.onload = function() {
-        var readResult = []
-        var lines = this.result.split(/\r\n|\n/)
-        lines.shift //remove header
-        for(let i = 0; i < lines.length; i++) {
-            readResult.push(lines[i].split(','))
-        }
-        return readResult
-
-      }
-      this.result = []
-
-
-    }
     this.searchSegment = function(video_id, segment_id) {//return a line of result
       for(let i = 0; i < this.result.length; i++) {
         if(this.result[i][0] == video_id && this.result[i][1] == segment_id) {
@@ -245,7 +226,7 @@
       }
       return [false]
     }
-    //if found return line of result ex) [video_id,segment_id,text, ...]
+    //if found return line of result ex) [video_id,segment_id,Pred, ...]
     //if not found return [false]
 
 
@@ -254,32 +235,39 @@
       let classPopulation = [[],[]] //[[gold2class, pred2class], [gold7class, pred2class]]
 
       let j,k,l,m = -1
+      let goldResult
+      if(this.datasetType == "mosi") {
+        goldResult = globalGold_mosi
+      } else if (this.datasetType == "mosei") {
+        goldResult = globalGold_mosei
+      }
 
       if(this.result) {//result exist.
         //2 class result
         var gold2class = [0,0]
         var pred2class = [0,0]
+
         var gold7class = [0,0,0,0,0,0,0]
         var pred7class = [0,0,0,0,0,0,0]
 
         for (let s = 0; s < this.result.length; s++) {
+          let goldLine = goldResult[s]
           let resultline = this.result[s]
-
-          switch(resultline[4]) {
+          switch(goldLine[3]) {
             case 'negative'         : j = 0; break;
             case 'positive'         : j = 1; break;
             default : j = -1; break; //err uknown class
           }
           gold2class[j] = gold2class[j] + 1
 
-          switch(resultline[7]) {
+          switch(resultline[3]) {
             case 'negative'         : k = 0; break;
             case 'positive'         : k = 1; break;
             default : k = -1; break; //err uknown class
           }
           pred2class[k] = pred2class[k] + 1
 
-          switch(resultline[5]) {
+          switch(goldLine[4]) {
             case 'very negative'    : l = 0; break;
             case 'negative'         : l = 1; break;
             case 'slightly negative': l = 2; break;
@@ -291,7 +279,7 @@
           }
           gold7class[l] = gold7class[l] + 1;
 
-          switch(resultline[8]) {
+          switch(resultline[4]) {
             case 'very negative'    : m = 0; break;
             case 'negative'         : m = 1; break;
             case 'slightly negative': m = 2; break;
@@ -299,17 +287,9 @@
             case 'slightly positive': m = 4; break;
             case 'positive'         : m = 5; break;
             case 'very positive'    : m = 6; break;
-            case 'very negative\r'    : m = 0; break;
-            case 'negative\r'         : m = 1; break;
-            case 'slightly negative\r': m = 2; break;
-            case 'Neutral\r'          : m = 3; break;
-            case 'slightly positive\r': m = 4; break;
-            case 'positive\r'         : m = 5; break;
-            case 'very positive\r'    : m = 6; break;
             default : m = -1; break; //err uknown class
           }
           pred7class[m] = pred7class[m] + 1;
-
 
         }
 
@@ -337,6 +317,13 @@
       var accVid2 = []
       var accVid7 = []
 
+      let goldResult
+      if(this.datasetType == "mosi") {
+        goldResult = globalGold_mosi
+      } else if (this.datasetType == "mosei") {
+        goldResult = globalGold_mosei
+      }
+
       if(this.result) {//when result exist count cnt and hit via video
         var tempVidName = ''
         var index = 0
@@ -362,10 +349,10 @@
           cntVid2[saveIndex] = cntVid2[saveIndex] + 1
           cntVid7[saveIndex] = cntVid7[saveIndex] + 1
 
-          if(this.result[i][4] == this.result[i][7]) {
+          if(this.result[i][3] == goldResult[i][3]) {
             hitVid2[saveIndex] = hitVid2[saveIndex] + 1
           }
-          if(this.result[i][5] == this.result[i][8] || this.result[i][5] + "\r"== this.result[i][8]) {
+          if(this.result[i][4] == goldResult[i][4]) {
             hitVid7[saveIndex] = hitVid7[saveIndex] + 1
           }
         }
@@ -391,16 +378,23 @@
       var hitMap2 = []
       var hitMap7 = []
 
+      let goldResult
+      if(this.datasetType == "mosi") {
+        goldResult = globalGold_mosi
+      } else if (this.datasetType == "mosei") {
+        goldResult = globalGold_mosei
+      }
+
       if(this.result) {
         for(let i = 0; i < this.result.length; i++) {
           console.log(videoId)
           console.log(this.result[i][0])
           if(this.result[i][0] == videoId) {//the correct video id
-            if(this.result[i][4] == this.result[i][7]) {//hit in 2 class
+            if(this.result[i][3] == goldResult[i][3]) {//hit in 2 class
               hitMap2.push(1)
             } else hitMap2.push(0) //miss in 2 class
 
-            if(this.result[i][5] == this.result[i][8] || this.result[i][5]+"\r" == this.result[i][8] ) {//hit in 7 class
+            if(this.result[i][4] == goldResult[i][4]) {//hit in 7 class
               hitMap7.push(1)
             } else hitMap7.push(0) //miss in 7 class
           }
@@ -415,10 +409,16 @@
     this.calMAE = function() {
       var sumErr = 0.0
 
+      let goldResult
+      if(this.datasetType == "mosi") {
+        goldResult = globalGold_mosi
+      } else if (this.datasetType == "mosei") {
+        goldResult = globalGold_mosei
+      }
 
       for(let i = 0; i< this.result.length; i++) { // | predi - labeli |
-        if(this.result[i][6])
-        var err = this.result[i][6] - this.result[i][3]
+        if(this.result[i][2])
+        var err = this.result[i][2] - goldResult[i][2]
         if(err > 0 ){
           sumErr = sumErr + err
         } else {
@@ -437,20 +437,28 @@
     this.calCorr = function() {
       var meanLabel = 0
       var meanPredi = 0
-
       var multSum = 0
+
+      let goldResult
+      if(this.datasetType == "mosi") {
+        goldResult = globalGold_mosi
+      } else if (this.datasetType == "mosei") {
+        goldResult = globalGold_mosei
+      }
+
+
       for (let i = 0; i < this.result.length; i++) {
-        multSum = multSum + (this.result[i][3] - meanLabel) * (this.result[i][6] - meanPredi)
+        multSum = multSum + (goldResult[i][2] - meanLabel) * (this.result[i][2] - meanPredi)
       }
 
       var labelDivSum = 0
       for (let i = 0; i < this.result.length; i++) {
-        labelDivSum = labelDivSum + (this.result[i][3] - meanLabel) * (this.result[i][3] - meanLabel)
+        labelDivSum = labelDivSum + (goldResult[i][2] - meanLabel) * (goldResult[i][2] - meanLabel)
       }
 
       var prediDivSum = 0
       for (let i = 0; i < this.result.length; i++) {
-        prediDivSum = prediDivSum + (this.result[i][6] - meanPredi) * (this.result[i][6] - meanPredi)
+        prediDivSum = prediDivSum + (this.result[i][2] - meanPredi) * (this.result[i][2] - meanPredi)
       }
 
       return multSum / (labelDivSum^0.5 * prediDivSum^0.5)
@@ -460,9 +468,16 @@
     this.calClassAcc = function() {
       var classHits = [0,0]
 
+      let goldResult
+      if(this.datasetType == "mosi") {
+        goldResult = globalGold_mosi
+      } else if (this.datasetType == "mosei") {
+        goldResult = globalGold_mosei
+      }
+
       for(let i = 0; i < this.result.length; i++) {
-        if(this.result[i][4] == this.result[i][7]) {classHits[0] = classHits[0] + 1}
-        if(this.result[i][5] == this.result[i][8] || this.result[i][5] +'\r' == this.result[i][8]) {classHits[1] = classHits[1] + 1}
+        if(this.result[i][3] == goldResult[i][3]) {classHits[0] = classHits[0] + 1}
+        if(this.result[i][4] == goldResult[i][4]) {classHits[1] = classHits[1] + 1}
       }
 
       return [100 * classHits[0]/this.result.length, 100 * classHits[1]/this.result.length]
@@ -474,14 +489,21 @@
       var falsePositive = 0
       var falseNegative = 0
 
+      let goldResult
+      if(this.datasetType == "mosi") {
+        goldResult = globalGold_mosi
+      } else if (this.datasetType == "mosei") {
+        goldResult = globalGold_mosei
+      }
+
       for(let i = 0; i < this.result.length; i++) {
-        if(this.result[i][7] == 'positive') {
-          if(this.result[i][4] == 'positive') {
+        if(this.result[i][3] == 'positive') {
+          if(goldResult[i][3] == 'positive') {
             truePositive = truePositive + 1
-          } else if(this.result[i][4] == 'negative') {
+          } else if(goldResult[i][3] == 'negative') {
             falsePositive = falsePositive + 1
           }
-        } else if (this.result[i][7] == 'negative' && this.result[i][4] == 'positive') {
+        } else if (this.result[i][3] == 'negative' && goldResult[i][3] == 'positive') {
           falseNegative = falseNegative + 1
         }
       }
@@ -505,8 +527,6 @@
       }
 
       return scores
-
-
     }
     //return scores[ModelName, MAE, Corr, Acc-2, Acc-7, F1,]
   }
@@ -862,10 +882,10 @@
                        ,["abcd",6,"text1", 1.0,'positive','positive',1.0,"positive",'positive']];
 
 
-  var newGoleTestResult = [["abcd",0,0.33,positive,Neutral]
-                           ["abcd",1,0.33,positive,Neutral]]
-  var newOurTestResult =  [["abcd",0,1.33,positive,positive]
-                           ["abcd",0,0.33,positive,Neutral]]
+  var newGoleTestResult = [["abcd",0,0.33,'positive','Neutral']
+                           ["abcd",1,0.33,'positive','Neutral']]
+  var newOurTestResult =  [["abcd",0,1.33,'positive','positive']
+                           ["abcd",0,0.33,'positive','Neutral']]
 
   var goldModel = new Model("GOLD", "donghoon", goldTestResult)
   var ourModel = new Model("OUR","notDonghoon",ourTestResult)
@@ -877,15 +897,38 @@
 
 
 
-  let xmlhttprequest = new XMLHttpRequest();
+  let xmlhttprequest0 = new XMLHttpRequest();
+  xmlhttprequest0.open('GET', 'http://localhost:3000/csv?name=gold&dataset=mosei');
+  xmlhttprequest0.onreadystatechange = function() {
+    if(this.readyState == 4) {
+      let jsonParsed = JSON.parse(xmlhttprequest0.responseText)
+      //console.log(jsonParsed)
+      //console.log(jsonToResult(jsonParsed,true))
+      globalGold_mosei = jsonToResult(jsonParsed,true)
+    }
+  }
+  xmlhttprequest0.send();
 
-  xmlhttprequest.open('GET', 'http://localhost:3000/csv?name=MAG-BERT_mosi_result&dataset=mosei');
+  let xmlhttprequest1 = new XMLHttpRequest();
+  xmlhttprequest1.open('GET', 'http://localhost:3000/csv?name=gold&dataset=mosi');
+  xmlhttprequest1.onreadystatechange = function() {
+    if(this.readyState == 4) {
+      let jsonParsed = JSON.parse(xmlhttprequest1.responseText)
+      //console.log(jsonToResult(jsonParsed,true))
+      globalGold_mosi = jsonToResult(jsonParsed,true)
+    }
+  }
+  xmlhttprequest1.send();
+
+
+  let xmlhttprequest = new XMLHttpRequest();
+  xmlhttprequest.open('GET', 'http://localhost:3000/csv?name=gold&dataset=mosi');
   xmlhttprequest.onreadystatechange = function() {
     if(this.readyState == 4) {
       var jsonParsed = JSON.parse(xmlhttprequest.responseText)
-      console.log(jsonToResult(jsonParsed))
+      console.log(jsonToResult(jsonParsed,true))
 
-      var modelTest01 = new Model("newTest","hoons",goldTestResult)
+      var modelTest01 = new Model("newTest","mosi",jsonToResult(jsonParsed,true))
       console.log(modelTest01.getScores())
       //console.log(modelTest01.getClassPop())
       console.log(modelTest01.getVideoAcc())
@@ -895,6 +938,7 @@
       analysisTest.updatePbarVideo()
       analysisTest.updatePbarSegment()
       analysisTest.updateScatterSegment("c7UH_rxdZv4",0)
+      
 
       //var comparisonTest = new Comparison([modelTest01, modelCopy, modelTest01], [modelTest01], [modelTest01, modelCopy, modelTest01])
       //comparisonTest.updateList()
