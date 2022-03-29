@@ -200,14 +200,12 @@
         var readResult = []
         var lines = this.result.split(/\r\n|\n/)
         lines.shift //remove header
-        for(var i = 0; i < lines.length; i++) {
+        for(let i = 0; i < lines.length; i++) {
             readResult.push(lines[i].split(','))
         }
         return readResult
 
       }
-
-      console.log()
       this.result = []
 
 
@@ -217,38 +215,33 @@
 
       let classPopulation = [[],[]] //[[gold2class, pred2class], [gold7class, pred2class]]
 
-      let gold2class = [0,0]
-      let pred2class = [0,0]
-      let gold7class = [0,0,0,0,0,0,0]
-      let pred7class = [0,0,0,0,0,0,0]
-
       let j,k,l,m = -1
 
       if(this.result) {//result exist.
         //2 class result
+        var gold2class = [0,0]
+        var pred2class = [0,0]
+        var gold7class = [0,0,0,0,0,0,0]
+        var pred7class = [0,0,0,0,0,0,0]
 
-        for (let s = 0; s < this.result.length; s++) {
-          //let j = -1
-          switch(this.result[s][4]) {
+        for (let s = 0; s < 400; s++) {
+          let resultline = this.result[s]
+
+          switch(resultline[4]) {
             case 'negative'         : j = 0; break;
             case 'positive'         : j = 1; break;
             default : j = -1; break; //err uknown class
           }
+          gold2class[j] = gold2class[j] + 1
 
-
-          //let k = -1
-          switch(this.result[s][7]) {
+          switch(resultline[7]) {
             case 'negative'         : k = 0; break;
             case 'positive'         : k = 1; break;
             default : k = -1; break; //err uknown class
           }
-
-          gold2class[j] = gold2class[j] + 1
           pred2class[k] = pred2class[k] + 1
 
-
-          //let l = -1
-          switch(this.result[s][5]) {
+          switch(resultline[5]) {
             case 'very negative'    : l = 0; break;
             case 'negative'         : l = 1; break;
             case 'slightly negative': l = 2; break;
@@ -260,8 +253,7 @@
           }
           gold7class[l] = gold7class[l] + 1;
 
-          //let m = -1
-          switch(this.result[s][8]) {
+          switch(resultline[8]) {
             case 'very negative'    : m = 0; break;
             case 'negative'         : m = 1; break;
             case 'slightly negative': m = 2; break;
@@ -280,7 +272,7 @@
           }
           pred7class[m] = pred7class[m] + 1;
 
-          console.log(j,k,l,m)
+
         }
 
 
@@ -319,7 +311,7 @@
         cntVid7.push(0)
         hitVid7.push(0)
 
-        for(var i = 0; i < this.result.length; i++) {
+        for(let i = 0; i < this.result.length; i++) {
           if(vidName[saveIndex] != this.result[i][0]) {//new video name
             saveIndex = saveIndex + 1
             vidName.push(this.result[i][0])
@@ -341,13 +333,13 @@
         }
       }
 
-      for(var i = 0; i < cntVid2.length; i++) {//calculate acc via video with hit and cnt
+      for(let i = 0; i < cntVid2.length; i++) {//calculate acc via video with hit and cnt
         accVid2.push(hitVid2[i]/cntVid2[i]*100)
         accVid7.push(hitVid7[i]/cntVid7[i]*100)
       }
 
       var returning = []
-      for(var i = 0; i < cntVid2.length; i++) {
+      for(let i = 0; i < cntVid2.length; i++) {
         returning.push([vidName[i],accVid2[i],accVid7[i]])
       }
       return returning
@@ -362,7 +354,7 @@
       var hitMap7 = []
 
       if(this.result) {
-        for(var i = 0; i < this.result.length; i++) {
+        for(let i = 0; i < this.result.length; i++) {
           console.log(videoId)
           console.log(this.result[i][0])
           if(this.result[i][0] == videoId) {//the correct video id
@@ -386,7 +378,7 @@
       var sumErr = 0.0
 
 
-      for(var i = 0; i< this.result.length; i++) { // | predi - labeli |
+      for(let i = 0; i< this.result.length; i++) { // | predi - labeli |
         if(this.result[i][6])
         var err = this.result[i][6] - this.result[i][3]
         if(err > 0 ){
@@ -409,17 +401,17 @@
       var meanPredi = 0
 
       var multSum = 0
-      for (var i = 0; i < this.result.length; i++) {
+      for (let i = 0; i < this.result.length; i++) {
         multSum = multSum + (this.result[i][3] - meanLabel) * (this.result[i][6] - meanPredi)
       }
 
       var labelDivSum = 0
-      for (var i = 0; i < this.result.length; i++) {
+      for (let i = 0; i < this.result.length; i++) {
         labelDivSum = labelDivSum + (this.result[i][3] - meanLabel) * (this.result[i][3] - meanLabel)
       }
 
       var prediDivSum = 0
-      for (var i = 0; i < this.result.length; i++) {
+      for (let i = 0; i < this.result.length; i++) {
         prediDivSum = prediDivSum + (this.result[i][6] - meanPredi) * (this.result[i][6] - meanPredi)
       }
 
@@ -430,7 +422,7 @@
     this.calClassAcc = function() {
       var classHits = [0,0]
 
-      for(var i = 0; i < this.result.length; i++) {
+      for(let i = 0; i < this.result.length; i++) {
         if(this.result[i][4] == this.result[i][7]) {classHits[0] = classHits[0] + 1}
         if(this.result[i][5] == this.result[i][8] || this.result[i][5] +'\r' == this.result[i][8]) {classHits[1] = classHits[1] + 1}
       }
@@ -444,7 +436,7 @@
       var falsePositive = 0
       var falseNegative = 0
 
-      for(var i = 0; i < this.result.length; i++) {
+      for(let i = 0; i < this.result.length; i++) {
         if(this.result[i][7] == 'positive') {
           if(this.result[i][4] == 'positive') {
             truePositive = truePositive + 1
@@ -499,7 +491,6 @@
 
       if(this.model) {//our model is uploaded
         var ourData = this.model.getClassPop()
-        console.log(ourData)
 
         analysisDataset2 = {
           labels: labels2class,
@@ -581,11 +572,9 @@
 
     this.updatePbarVideo = function(){//Draw Accuracy Bar of the Videos
       var modelAcc = this.model.getVideoAcc()
-      console.log(modelAcc)
-
 
       //add progess bar in table #videoAcc
-      for(var i = 0; i < modelAcc.length; i++) {
+      for(let i = 0; i < modelAcc.length; i++) {
         var tblBodyObj = this.vidTable.tBodies[0];
         var newVidTitle = tblBodyObj.rows[0].insertCell(-1);
         var newVidAcc_2 = tblBodyObj.rows[1].insertCell(-1);
@@ -607,7 +596,7 @@
 
       this.segTable.innerHTML = "<tr id='segName_segAcc'><td></td></tr><tr><td>2 Class</td></tr><tr><td>7 Class</td></tr>"
 
-      for(var i = 0; i < segHitMap[0].length; i++) {
+      for(let i = 0; i < segHitMap[0].length; i++) {
         var tblBodyObj = this.segTable.tBodies[0];
         var newSegTitle = tblBodyObj.rows[0].insertCell(-1);
         var newSegAcc_2 = tblBodyObj.rows[1].insertCell(-1);
@@ -643,7 +632,7 @@
     this.compTable = document.getElementById('compTable')
 
     this.updateTop = function() {
-      for(var i = 0; i < this.goldModels.length; i++) {
+      for(let i = 0; i < this.goldModels.length; i++) {
         var lastRow = this.compTable.rows.length;
         // if there's no header row in the table, then iteration = lastRow + 1
         var iteration = lastRow;
@@ -665,7 +654,7 @@
         cell_F1.innerHTML = '<div class="compTop">' + String(scores[4]) + '</div>'
       }
 
-      for(var i = 0; i < this.ourModels.length; i++) {
+      for(let i = 0; i < this.ourModels.length; i++) {
         var lastRow = this.compTable.rows.length;
         // if there's no header row in the table, then iteration = lastRow + 1
         var iteration = lastRow;
@@ -690,7 +679,7 @@
 
     this.updateList = function(){
       this.models.sort()
-      for(var i = 0; i < this.models.length; i++) {
+      for(let i = 0; i < this.models.length; i++) {
         var lastRow = this.compTable.rows.length;
         // if there's no header row in the table, then iteration = lastRow + 1
         var iteration = lastRow;
@@ -748,7 +737,7 @@
 
   function jsonToResult(jsonFile) {
     var returnResult = []
-    for(var i = 0; i < jsonFile.length; i++) {
+    for(let i = 0; i < jsonFile.length; i++) {
       returnResult.push([jsonFile[i]['Video_id'], parseInt(jsonFile[i]['Segment_id']), jsonFile[i]['Text'], parseFloat(jsonFile[i]['Label']), jsonFile[i]['Label_binary'], jsonFile[i]['Label_7'], parseFloat(jsonFile[i]['Pred']), jsonFile[i]['Pred_binary'], jsonFile[i]['Pred_7\r']])
       if(typeof(jsonFile[i]['Video_id']) == 'undefined') {
         console.log("found undefined!")
@@ -761,7 +750,7 @@
 
   let xmlhttprequest = new XMLHttpRequest();
 
-  xmlhttprequest.open('GET', 'http://localhost:3000/csv/upload?name=asdss_1648458801941&dataset=mosei');
+  xmlhttprequest.open('GET', 'http://localhost:3000/csv?name=MAG-BERT_mosi_result&dataset=mosei');
   xmlhttprequest.onreadystatechange = function() {
     if(this.readyState == 4) {
       var jsonParsed = JSON.parse(xmlhttprequest.responseText)
