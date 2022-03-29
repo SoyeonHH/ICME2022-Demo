@@ -213,67 +213,86 @@
 
     }
 
-    this.getClassAcc = function() {//return class accuracy from model's result file
-      var returnAcc2 = [0,0]
-      var returnAcc7 = [0,0,0,0,0,0,0]
+    this.getClassPop = function() {//return class accuracy from model's result file
+
+      let classPopulation = [[],[]] //[[gold2class, pred2class], [gold7class, pred2class]]
+
+      let gold2class = [0,0]
+      let pred2class = [0,0]
+      let gold7class = [0,0,0,0,0,0,0]
+      let pred7class = [0,0,0,0,0,0,0]
+
+      let j,k,l,m = -1
 
       if(this.result) {//result exist.
         //2 class result
-        var cnt2class = [0,0]
-        var hit2class = [0,0]
 
-        for (var i = 0; i < this.result.length; i++) {
-          var j = -1
-          switch(result[i][4]) {
+        for (let s = 0; s < this.result.length; s++) {
+          //let j = -1
+          switch(this.result[s][4]) {
             case 'negative'         : j = 0; break;
             case 'positive'         : j = 1; break;
-            default : break; //err uknown class
+            default : j = -1; break; //err uknown class
           }
 
-          cnt2class[j] = cnt2class[j] + 1
-          if(result[i][4] == result[i][7]) {//hit
-            hit2class[j] = hit2class[j] + 1
-          }
-        }
 
-        for (var i = 0; i <2; i++) {
-          returnAcc2[i] = hit2class[i] / cnt2class[i] * 100
-        }
-
-
-        var cnt7class = [0,0,0,0,0,0,0]
-        var hit7class = [0,0,0,0,0,0,0]
-
-        for (var i = 0; i < this.result.length; i++) {
-          var j = -1
-          switch(result[i][5]) {
-            case 'very negative'    : j = 0; break;
-            case 'negative'         : j = 1; break;
-            case 'slightly negative': j = 2; break;
-            case 'Neutral'          : j = 3; break;
-            case 'slightly positive': j = 4; break;
-            case 'positive'         : j = 5; break;
-            case 'very positive'    : j = 6; break;
-            default : break; //err uknown class
+          //let k = -1
+          switch(this.result[s][7]) {
+            case 'negative'         : k = 0; break;
+            case 'positive'         : k = 1; break;
+            default : k = -1; break; //err uknown class
           }
 
-          cnt7class[j] = cnt7class[j] + 1
-          //console.log(result[i][5])
-          //console.log(result[i][8])
-          if(result[i][5] == result[i][8] || result[i][5] + "\r" == result[i][8]) {
-            hit7class[j] = hit7class[j] + 1
-            console.log('hit')
+          gold2class[j] = gold2class[j] + 1
+          pred2class[k] = pred2class[k] + 1
+
+
+          //let l = -1
+          switch(this.result[s][5]) {
+            case 'very negative'    : l = 0; break;
+            case 'negative'         : l = 1; break;
+            case 'slightly negative': l = 2; break;
+            case 'Neutral'          : l = 3; break;
+            case 'slightly positive': l = 4; break;
+            case 'positive'         : l = 5; break;
+            case 'very positive'    : l = 6; break;
+            default : l = -1; break; //err uknown class
           }
+          gold7class[l] = gold7class[l] + 1;
+
+          //let m = -1
+          switch(this.result[s][8]) {
+            case 'very negative'    : m = 0; break;
+            case 'negative'         : m = 1; break;
+            case 'slightly negative': m = 2; break;
+            case 'Neutral'          : m = 3; break;
+            case 'slightly positive': m = 4; break;
+            case 'positive'         : m = 5; break;
+            case 'very positive'    : m = 6; break;
+            case 'very negative\r'    : m = 0; break;
+            case 'negative\r'         : m = 1; break;
+            case 'slightly negative\r': m = 2; break;
+            case 'Neutral\r'          : m = 3; break;
+            case 'slightly positive\r': m = 4; break;
+            case 'positive\r'         : m = 5; break;
+            case 'very positive\r'    : m = 6; break;
+            default : m = -1; break; //err uknown class
+          }
+          pred7class[m] = pred7class[m] + 1;
+
+          console.log(j,k,l,m)
         }
 
-        for (var i = 0; i <7; i++) {
-          returnAcc7[i] = hit7class[i] / cnt7class[i] * 100
-        }
+
+        classPopulation[0].push(gold2class)
+        classPopulation[0].push(pred2class)
+        classPopulation[1].push(gold7class)
+        classPopulation[1].push(pred7class)
       }
 
-      return [returnAcc2, returnAcc7]
+      return classPopulation
     }
-    //return [returnAcc2, returnAcc7]
+    //return [[gold2class, pred2class], [gold7class, pred7class]]
     //returnAcc2, list ofaccuracy of each 2 classes
     //returnAcc7, list ofaccuracy of each 7 classes
 
@@ -344,8 +363,8 @@
 
       if(this.result) {
         for(var i = 0; i < this.result.length; i++) {
-          //console.log(videoId)
-          //console.log(this.result[i][0])
+          console.log(videoId)
+          console.log(this.result[i][0])
           if(this.result[i][0] == videoId) {//the correct video id
             if(this.result[i][4] == this.result[i][7]) {//hit in 2 class
               hitMap2.push(1)
@@ -409,7 +428,6 @@
     //return Corr
 
     this.calClassAcc = function() {
-
       var classHits = [0,0]
 
       for(var i = 0; i < this.result.length; i++) {
@@ -463,14 +481,14 @@
     //return scores[ModelName, MAE, Corr, Acc-2, Acc-7, F1,]
   }
 
-  function Analysis(goldModel, model) {
+  function Analysis(model) {
 
-    this.goldModel = goldModel
     this.model = model
-    this.graph2 = document.getElementById('graph_class_2').getContext("2d");
-    this.graph7 = document.getElementById('graph_class_7').getContext("2d");
+    this.canvasList = document.getElementById('canvasList')
     this.vidTable = document.getElementById('videoAcc');
     this.segTable = document.getElementById('segmentAcc');
+    this.chart0 = new Chart()
+    this.chart1 = new Chart()
     this.currentVideo = 0
     this.currentClip = 0
 
@@ -480,8 +498,8 @@
       var analysisDataset7;
 
       if(this.model) {//our model is uploaded
-        var goldData = this.goldModel.getClassAcc()
-        var ourData = this.model.getClassAcc()
+        var ourData = this.model.getClassPop()
+        console.log(ourData)
 
         analysisDataset2 = {
           labels: labels2class,
@@ -489,13 +507,13 @@
             label: 'Gold',
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
-            data: goldData[0],
+            data: ourData[0][0],
           },
           {
             label: 'Our',
             backgroundColor: 'rgb(122, 99, 132)',
             borderColor: 'rgb(122, 99, 132)',
-            data: ourData[0],
+            data: ourData[0][1],
           }]
         };
 
@@ -505,46 +523,27 @@
             label: 'Gold',
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
-            data: goldData[1],
+            data: ourData[1][0],
           },
           {
             label: 'Our',
             backgroundColor: 'rgb(122, 99, 132)',
             borderColor: 'rgb(122, 99, 132)',
-            data: ourData[1],
+            data: ourData[1][1],
           }]
         };
 
-      } else {//no model has been uploaded show only gold Model results
-        var goldData = this.goldModel.getClassAcc()
-
-        analysisDataset2 = {
-          labels: labels2class,
-          datasets: [{
-            label: 'Gold',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: goldData[0],
-          }]
-        };
-
-        analysisDataset7 = {
-          labels: labels7class,
-          datasets: [{
-            label: 'Gold',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: goldData[1],
-          }]
-        };
       }
+      this.canvasList.innerHtml = ""
+      this.canvasList.innerHtml = "<canvas class='graph' id='graph_class_2'></canvas><canvas class='graph' id='graph_class_7'></canvas>"
 
       //clear canvas before new drawing
-      this.graph2.clearRect(0,0,50,50)
-      this.graph7.clearRect(0,0,50,50)
+      var graph2 = document.getElementById('graph_class_2').getContext("2d");
+      var graph7 = document.getElementById('graph_class_7').getContext("2d");
 
       //draw chart with new chart instance
-      var chart0 = new Chart(this.graph2, {
+      this.chart0.destroy()
+      this.chart0 = new Chart(graph2, {
         type: 'bar',
         data: analysisDataset2,
         options: {
@@ -553,16 +552,15 @@
           scales: {
             y: {
               beginAtZero: true,
-              suggestedMax: 100
+              //suggestedMax: 100
             }
           }
         },
         }
       );
 
-      console.log(chart0)
-
-      var chart1 = new Chart(this.graph7, {
+      this.chart1.destroy()
+      this.chart1 = new Chart(graph7, {
         type: 'bar',
         data: analysisDataset7,
         options: {
@@ -571,14 +569,13 @@
           scales: {
             y: {
               beginAtZero: true,
-              suggestedMax: 100
+              //suggestedMax: 100
             }
           }
         },
         }
       );
 
-      console.log(chart1)
 
     }
 
@@ -725,10 +722,10 @@
 
   var goldTestResult = [["abcd",0,"text1",-0.5,'negative','slightly negative',-0.4,"negative",'slightly negative']
                        ,["abcd",1,"text1",-1.5,'negative','negative',-0.3,"negative",'slightly negative']
-                       ,["abcd",2,"text1", 2.5,'positive','very positive',0,'positive',"neutral"]
+                       ,["abcd",2,"text1", 2.5,'positive','very positive',0,'positive',"Neutral"]
                        ,["abcd",3,"text1", 0.5,'positive','slightly positive',0.7,"positive",'slightly positive']
                        ,["abcd",4,"text1",-2.5,'negative','very negative',-2.4,"negative",'very negative']
-                       ,["abcd",5,"text1", 0.3,'positive','neutral',-0.4,"negative",'slightly negative']
+                       ,["abcd",5,"text1", 0.3,'positive','Neutral',-0.4,"negative",'slightly negative']
                        ,["abcd",6,"text1", 1.0,'positive','positive',1.0,"positive",'positive']];
 
   var ourTestResult =  [["abcd",0,"text1",-0.5,'negative','slightly negative',-0.4,"negative",'slightly negative']
@@ -736,17 +733,17 @@
                        ,["abcd",2,"text1", 2.5,'positive','very positive',-0.3,"negative",'slightly negative']
                        ,["abcd",3,"text1", 0.5,'positive','slightly positive',1.7,"positive",'positive']
                        ,["abcd",4,"text1",-2.5,'negative','very negative',-2.4,"negative",'very negative']
-                       ,["abcd",5,"text1", 0.3,'positive','neutral',-0.4,"negative",'slightly negative']
+                       ,["abcd",5,"text1", 0.3,'positive','Neutral',-0.4,"negative",'slightly negative']
                        ,["abcd",6,"text1", 1.0,'positive','positive',1.0,"positive",'positive']];
 
 
 
   var goldModel = new Model("GOLD", "donghoon", goldTestResult)
   var ourModel = new Model("OUR","notDonghoon",ourTestResult)
-  var analysis = new Analysis(goldModel,ourModel)
-
-  analysis.updateGraph()
-  analysis.updatePbarVideo()
+  //var analysis = new Analysis(goldModel)
+  var analysisTest = new Analysis()
+  //analysis.updateGraph()
+  //analysis.updatePbarVideo()
   //analysis.updatePbarSegment('abcd')
 
   function jsonToResult(jsonFile) {
@@ -764,26 +761,24 @@
 
   let xmlhttprequest = new XMLHttpRequest();
 
-  xmlhttprequest.open('GET', 'http://localhost:3000/csv');
+  xmlhttprequest.open('GET', 'http://localhost:3000/csv/upload?name=asdss_1648458801941&dataset=mosei');
   xmlhttprequest.onreadystatechange = function() {
     if(this.readyState == 4) {
       var jsonParsed = JSON.parse(xmlhttprequest.responseText)
-      console.log(jsonParsed)
       console.log(jsonToResult(jsonParsed))
 
       var modelTest01 = new Model("newTest","hoons",jsonToResult(jsonParsed))
       console.log(modelTest01.getScores())
-      console.log(modelTest01.getClassAcc())
+      //console.log(modelTest01.getClassPop())
       console.log(modelTest01.getVideoAcc())
 
-      var modelCopy = new Model("newCopy","hoons",jsonToResult(jsonParsed))
-
-      var analysisTest = new Analysis(modelTest01, modelCopy)
+      analysisTest.model = modelTest01
       analysisTest.updateGraph()
       analysisTest.updatePbarVideo()
+      analysisTest.updateGraph()
 
-      var comparisonTest = new Comparison([modelTest01, modelCopy, modelTest01], [modelTest01], [modelTest01, modelCopy, modelTest01])
-      comparisonTest.updateList()
+      //var comparisonTest = new Comparison([modelTest01, modelCopy, modelTest01], [modelTest01], [modelTest01, modelCopy, modelTest01])
+      //comparisonTest.updateList()
     }
   }
   xmlhttprequest.send();
@@ -800,14 +795,14 @@
 
   function selectVideo(videoId) { //update Segment Hit section when we click video_id in Video Accuracy section
     //change Segment Hit
-    analysis.updatePbarSegment(videoId.innerText)
-    
+    analysisTest.updatePbarSegment(videoId.innerText)
+
     //change segmentVidName
     var segmentTitle = document.getElementById('segmentVidName')
     segmentTitle.innerText = videoId.innerText
 
     //change View
-    analysis.updateView(videoId.innerText)
+    analysisTest.updateView(videoId.innerText)
   }
 
 
