@@ -86,7 +86,7 @@ module.exports = () => {
     else {
       try {
         data = fs.readFileSync(`./userUpload/${dataset}/${name}.csv`, {encoding: 'utf8'});
-        var rows = data.split('\n');
+        var rows = data.replace(/\r/gi, '').split('\n');
         var csv = [];
 
         for(var rowIndex in rows) {
@@ -118,8 +118,10 @@ module.exports = () => {
     }
     else{
       try {
-        data = fs.readFileSync(`./predict/${dataset}/${name}.csv`, {encoding: 'utf8'});
-        var rows = data.split('\n');
+        var data;
+        if(name == 'gold') data = fs.readFileSync(`./predict/${dataset}.csv`, {encoding: 'utf8'});
+        else data = fs.readFileSync(`./predict/${dataset}/${name}.csv`, {encoding: 'utf8'});
+        var rows = data.replace(/\r/gi, '').split('\n');
         var csv = [];
   
         for(var rowIndex in rows) {
