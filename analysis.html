@@ -86,8 +86,8 @@
       <div id="barGraph">
         <h2>Gold vs Our Distribution</h2>
         <div id="canvasList">
-          <canvas class="graph" id='graph_class_2'></canvas>
-          <canvas class="graph" id='graph_class_7'></canvas>
+          <div class='canvasHolder'><canvas class="graph" id='graph_class_2'></canvas></div>
+          <div class='canvasHolder'><canvas class="graph" id='graph_class_7'></canvas></div>
         </div>
       </div>
       <div id="p-barVideos">
@@ -123,8 +123,6 @@
         <h2>Plot Segment</h2>
         <div id=plotHolder>
           <canvas class='plot' id='scatter0'></canvas>
-          <div class='plotBackGround' id="plotBackGround_0"></div>
-          <div class='plotBackGround' id="plotBackGround_1"></div>
         </div>
       </div>
 
@@ -615,7 +613,7 @@
       }
 
       this.canvasList.innerHtml = ""
-      this.canvasList.innerHtml = "<canvas class='graph' id='graph_class_2'></canvas><canvas class='graph' id='graph_class_7'></canvas>"
+      this.canvasList.innerHtml = "<div class='canvasHolder'><canvas class='graph' id='graph_class_2'></canvas></div><div class='canvasHolder'><canvas class='graph' id='graph_class_7'></canvas></div>"
 
       //clear canvas before new drawing
       var graph2 = document.getElementById('graph_class_2').getContext("2d");
@@ -627,7 +625,7 @@
         type: 'bar',
         data: analysisDataset2,
         options: {
-          responsive: false,
+          responsive: true,
           maintainAspectRatio: true,
           scales: {
             y: {
@@ -644,7 +642,7 @@
         type: 'bar',
         data: analysisDataset7,
         options: {
-          responsive: false,
+          responsive: true,
           maintainAspectRatio: true,
           scales: {
             y: {
@@ -725,7 +723,7 @@
 
       //draw chart
       this.plotHolder.innerHtml = ""
-      this.plotHolder.innerHtml = "<canvas class='plot' id='scatter0'></canvas><div id='plotBackGround_0'></div><div id'plotBackGround_0'></div><div class='plotBackGround' id='plotBackGround_0'></div><div class='plotBackGround' id='plotBackGround_1'></div>"
+      this.plotHolder.innerHtml = "<canvas class='plot' id='scatter0'></canvas>"
       var scatter0 = document.getElementById('scatter0').getContext("2d");
 
       var segmentPlot = {
@@ -760,7 +758,7 @@
         type: 'bar',
         data: segmentPlot,
         options: {
-          responsive: false,
+          responsive: true,
           maintainAspectRatio: true,
           indexAxis: 'y',
           plugins: {
@@ -785,7 +783,17 @@
             x: {
               max: 3,
               min: -3,
-              grid: {color:'grey'},
+              grid: {
+                drawBorder: false,
+                color: function(context) {
+                  if (context.tick.value > 0) {
+                    return '#00ff00';
+                  } else if (context.tick.value < 0) {
+                    return '#ff0000';
+                  }
+                  return '#000000';
+                },
+              },
 
             }
           }
@@ -964,6 +972,7 @@
       console.log(modelTest01.getVideoAcc())
 
       analysisTest.model = modelTest01
+      analysisTest.updateGraph()
       analysisTest.updateGraph()
       analysisTest.updatePbarVideo()
       analysisTest.updatePbarSegment()
