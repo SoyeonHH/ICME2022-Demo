@@ -77,7 +77,7 @@
 
       </div>
       <div id="barGraph">
-        <h2>Gold vs Our Accuracy</h2>
+        <h2>Gold vs Our Distribution</h2>
         <div id="canvasList">
           <canvas class="graph" id='graph_class_2'></canvas>
           <canvas class="graph" id='graph_class_7'></canvas>
@@ -112,6 +112,16 @@
           </tr>
         </table>
       </div>
+      <div id="plotSegment">
+        <h2>Plot Segment</h2>
+        <div id=plotHolder>
+          <canvas class='graph' id='scatter0'></canvas>
+          <div class='plotBackGround' id="plotBackGround_0"></div>
+          <div class='plotBackGround' id="plotBackGround_1"></div>
+        </div>
+      </div>
+
+
       <div id="viewSegment">
         <h2>View Segment</h2>
         <h3>Video_0 id_0</h3>
@@ -210,6 +220,17 @@
 
 
     }
+    this.searchSegment = function(video_id, segment_id) {//return a line of result
+      for(let i = 0; i < this.result.length; i++) {
+        if(this.result[i][0] == video_id && this.result[i][1] == segment_id) {
+          return this.result[i]
+        }
+      }
+      return [false]
+    }
+    //if found return line of result ex) [video_id,segment_id,text, ...]
+    //if not found return [false]
+
 
     this.getClassPop = function() {//return class accuracy from model's result file
 
@@ -476,11 +497,14 @@
   function Analysis(model) {
 
     this.model = model
+    this.otherModels = []
     this.canvasList = document.getElementById('canvasList')
     this.vidTable = document.getElementById('videoAcc');
     this.segTable = document.getElementById('segmentAcc');
-    this.chart0 = new Chart()
-    this.chart1 = new Chart()
+    this.plotHolder = document.getElementById('plotHolder');
+    this.chart_binary_distribution = new Chart()
+    this.chart_7class_distribution = new Chart()
+    this.chart_segment_plot = new Chart()
     this.currentVideo = 0
     this.currentClip = 0
 
@@ -523,8 +547,8 @@
             data: ourData[1][1],
           }]
         };
-
       }
+
       this.canvasList.innerHtml = ""
       this.canvasList.innerHtml = "<canvas class='graph' id='graph_class_2'></canvas><canvas class='graph' id='graph_class_7'></canvas>"
 
@@ -533,8 +557,8 @@
       var graph7 = document.getElementById('graph_class_7').getContext("2d");
 
       //draw chart with new chart instance
-      this.chart0.destroy()
-      this.chart0 = new Chart(graph2, {
+      this.chart_binary_distribution.destroy()
+      this.chart_binary_distribution = new Chart(graph2, {
         type: 'bar',
         data: analysisDataset2,
         options: {
@@ -550,8 +574,8 @@
         }
       );
 
-      this.chart1.destroy()
-      this.chart1 = new Chart(graph7, {
+      this.chart_7class_distribution.destroy()
+      this.chart_7class_distribution = new Chart(graph7, {
         type: 'bar',
         data: analysisDataset7,
         options: {
@@ -606,6 +630,85 @@
         newSegAcc_2.innerHTML = '<progress value=' + String(segHitMap[0][i]*100) + ' max="100">'
         newSegAcc_7.innerHTML = '<progress value=' + String(segHitMap[1][i]*100) + ' max="100">'
       }
+    }
+
+    this.updateScatterSegment = function(video_id, segment_id) {
+      //get Data
+      var selectedSegment = this.model.searchSegment(video_id,segment_id)
+      var ourPoint = 0
+      if(selectedSegment[0]) {
+        ourPoint = selectedSegment[6]
+      }
+
+      //draw chart
+      this.plotHolder.innerHtml = ""
+      this.plotHolder.innerHtml = "<canvas class='graph' id='scatter0'></canvas><div id='plotBackGround_0'></div><div id'plotBackGround_0'></div><div class='plotBackGround' id='plotBackGround_0'></div><div class='plotBackGround' id='plotBackGround_1'></div>"
+      var scatter0 = document.getElementById('scatter0').getContext("2d");
+
+      var segmentPlot = {
+        labels: [''],
+        datasets: [{
+          label: 'Gold',
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
+          data: [[-2+0.02, -2-0.02]],
+        },{
+          label: 'Gold0',
+          backgroundColor: 'rgb(255, 99, 66)',
+          borderColor: 'rgb(255, 99, 66)',
+          data: [[0+0.02, 0-0.02]],
+        },{
+          label: 'Gold1',
+          backgroundColor: 'rgb(120, 50, 132)',
+          borderColor: 'rgb(120, 50, 132)',
+          data: [[1+0.02, 1-0.02]],
+        },
+        {
+          label: 'Our',
+          backgroundColor: 'rgb(60, 99, 132)',
+          borderColor: 'rgb(60, 99, 132)',
+          data: [[ourPoint+0.02, ourPoint-0.02]],
+        }]
+      };
+
+
+      this.chart_segment_plot.destroy()
+      this.chart_segment_plot = new Chart(scatter0, {
+        type: 'bar',
+        data: segmentPlot,
+        options: {
+          responsive: false,
+          maintainAspectRatio: true,
+          indexAxis: 'y',
+          plugins: {
+            legend: {
+              display: true
+            },
+            /*
+            tooltip: {
+              callbacks: {
+                label: ctx => data[ctx.datasetIndex]
+              }
+            }*/
+          },
+          interaction: {
+            mode: 'x',
+          },
+          scales: {
+            y: {
+              stacked: true,
+              grid: {color:'white'},
+            },
+            x: {
+              max: 3,
+              min: -3,
+              grid: {color:'grey'},
+
+            }
+          }
+        }
+      });
+
     }
 
     this.updateView = function(video_id) { //Show Video's video, sound, text
@@ -765,6 +868,7 @@
       analysisTest.updateGraph()
       analysisTest.updatePbarVideo()
       analysisTest.updateGraph()
+      analysisTest.updateScatterSegment("c7UH_rxdZv4",0)
 
       //var comparisonTest = new Comparison([modelTest01, modelCopy, modelTest01], [modelTest01], [modelTest01, modelCopy, modelTest01])
       //comparisonTest.updateList()
