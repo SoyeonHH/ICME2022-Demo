@@ -57,11 +57,36 @@
 
 }
 
-#uploadTable {
+
+#upload-description {
   width: 50%;
+  vertical-align: top;
+  padding-top: 30px;
+  display: inline-block;
+  white-space: normal;
 }
-#uploadTable td:first-child {
-  width: 15%;
+#upload-description img {
+  width: 96%;
+  margin-right: 4%;
+}
+
+#upload-table-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+  border: 4px dashed #e0e0e0;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+#upload-table {
+  width: 50%;
+  padding: 4%;
+  padding-left: 2%;
+  white-space: normal;
+  display: inline-block;
+}
+#upload-table td:first-child {
+  width: 18%;
 }
 #uploadButton {
   float: right;
