@@ -1,6 +1,6 @@
-#barGraph, #p-barVideos, #p-barSengment, #viewSegment{
+#barGraph, #p-barVideos, #p-barSengment, #viewSegment {
   width: 100%;
-  padding-bottom: 150px;
+  padding-bottom: 40px;
   display:block;
 }
 
@@ -97,11 +97,19 @@
   width: 50%;
   text-align: center;
   vertical-align: top;
+  font-size: 16pt;
+  font-weight: 600;
 }
 
 #mosei-table, #mosi-table {
   width: 90%;
   margin: 0 auto;
+  font-size: 12pt;
+}
+
+#mosei-table tr:first-child, #mosi-table tr:first-child {
+  font-weight: 800;
+  font-size: 12pt;
 }
 
 #mosei-table table, #mosi-table table {
@@ -115,8 +123,12 @@
 #mosei-table table tr td, #mosi-table table tr td {
   width: 10%;
   border: 1px solid #000000;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 #mosei-table table tr td:first-child, #mosi-table table tr td:first-child {
   width: 50% !important;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }

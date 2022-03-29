@@ -8,7 +8,7 @@ selectBox.id = 'selectBox';
 var selectTitle = document.createElement('h3');
 selectTitle.className = 'title';
 selectTitle.id = 'selectTitle';
-selectTitle.innerText = 'select';
+selectTitle.innerText = 'video ids';
 var selectWrapper = document.createElement('div');
 selectWrapper.className = 'selectWrapper';
 selectWrapper.id = 'selectWrapper';
@@ -23,7 +23,7 @@ clipSelectBox.id = 'clipSelectBox';
 var clipSelectTitle = document.createElement('h3');
 clipSelectTitle.className = 'title';
 clipSelectTitle.id = 'clipSelectTitle';
-clipSelectTitle.innerText = 'select';
+clipSelectTitle.innerText = 'clip ids';
 var clipSelectWrapper = document.createElement('div');
 clipSelectWrapper.className = 'selectWrapper';
 clipSelectWrapper.id = 'clipSelectWrapper';
@@ -37,8 +37,7 @@ let fileXHR = new XMLHttpRequest();
 fileXHR.open('GET', 'http://210.107.197.59:3000/text');
 fileXHR.onreadystatechange = function() {
   if(this.readyState == 4) {
-    // console.log(JSON.parse(fileXHR.responseText));
-    setItem(JSON.parse(fileXHR.responseText));  
+    setItem(JSON.parse(fileXHR.responseText));
   }
 }
 fileXHR.send();
