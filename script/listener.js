@@ -10,7 +10,7 @@ function clickListener(name) {
   }
 
   let xhr = new XMLHttpRequest();
-  xhr.open('GET', `/data/text/${name}.txt`);
+  xhr.open('GET', `./dataset/text/${name}.txt`);
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {
       setText(xhr.responseText);
@@ -33,11 +33,11 @@ function clickClipListener(name) {
   }
 
   let xhr = new XMLHttpRequest();
-  xhr.open('GET', `/data/text/${name}.txt`);
+  xhr.open('GET', `./dataset/segment/text/${name}.txt`);
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {
       setText(xhr.responseText);
-      setAudioVideo(name);
+      setAudioVideo(name, {isClip: true});
     }
   }
   xhr.send();
@@ -48,19 +48,21 @@ function setText(text) {
   textView.innerText = text;
 }
 
-function setAudioVideo(name) {
+function setAudioVideo(name, isClip=false) {
   var audioView = document.querySelectorAll('#audioView')[0];
   audioView.replaceWith(audioView.cloneNode(true));
   audioView = document.querySelectorAll('#audioView')[0];
   audioView.style = 'display: block';
-  audioView.src = `/data/audio/${name}.wav`;
+  if(!isClip) audioView.src = `./dataset/audio/${name}.wav`;
+  else audioView.src = `./dataset/segment/audio/${name}.wav`;
   audioView.load();
 
   var videoView = document.querySelectorAll('#videoView')[0];
   videoView.replaceWith(videoView.cloneNode(true));
   videoView = document.querySelectorAll('#videoView')[0];
   videoView.style = 'display: block';
-  videoView.src = `/data/video/${name}.mp4`;
+  if(!isClip) videoView.src = `./dataset/video/${name}.mp4`;
+  else videoView.src = `./dataset/segment/video/${name}.mp4`;
   videoView.load();
 
   audioView.addEventListener('play', function() {

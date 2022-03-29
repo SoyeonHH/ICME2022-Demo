@@ -4,7 +4,7 @@ module.exports = () => {
   const path = require('path');
   
   router.get('/', (req, res) => {
-    var files = fs.readdirSync('./data/text');
+    var files = fs.readdirSync('./dataset/text');
     var fileList = [];
     for(var i=0; files[i]; i++) {
       fileList.push(files[i].split('.')[0])
@@ -14,7 +14,7 @@ module.exports = () => {
 
   router.get('/clip', (req, res) => {
     var title = req.query.title;
-    var files = fs.readdirSync('./data/text');
+    var files = fs.readdirSync('./dataset/segment/text');
     var fileList = [];
     for(var i = 0; files[i]; i++) {
       if(files[i].includes(title)) {

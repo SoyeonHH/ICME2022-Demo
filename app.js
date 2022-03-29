@@ -13,6 +13,7 @@ app.use('/script', express.static(__dirname + '/script'));
 app.use('/style', express.static(__dirname + '/style'));
 app.use('/data', express.static(__dirname + '/data'));
 app.use('/image', express.static(__dirname + '/image'));
+app.use('/dataset', express.static(__dirname + '/dataset'));
 
 var server = http.createServer(app).listen(port, function() {
   console.log('Server run');
@@ -31,9 +32,6 @@ app.get('/analysis', function(req, res) {
     res.end(data);
   });
 });
-
-var localFileSystem = require('./routes/localFileSystem')();
-app.use('/file', localFileSystem);
 
 var localFileText = require('./routes/localFileText')();
 app.use('/text', localFileText);
