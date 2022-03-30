@@ -86,8 +86,8 @@
       <div id="barGraph">
         <h2>Gold vs Our Distribution</h2>
         <div id="canvasList">
-          <canvas class="graph" id='graph_class_2'></canvas>
-          <canvas class="graph" id='graph_class_7'></canvas>
+          <div class='canvasHolder'><canvas class="graph" id='graph_class_2'></canvas></div>
+          <div class='canvasHolder'><canvas class="graph" id='graph_class_7'></canvas></div>
         </div>
       </div>
       <div id="p-barVideos">
@@ -122,9 +122,7 @@
       <div id="plotSegment">
         <h2>Plot Segment</h2>
         <div id=plotHolder>
-          <canvas class='graph' id='scatter0'></canvas>
-          <div class='plotBackGround' id="plotBackGround_0"></div>
-          <div class='plotBackGround' id="plotBackGround_1"></div>
+          <canvas class='plot' id='scatter0'></canvas>
         </div>
       </div>
 
@@ -176,7 +174,7 @@
   const labels2class = [
     'Negative',
     'Positive'
-  ]
+  ];
   const labels7class = [
     "Very Negative",
     "Negative",
@@ -185,7 +183,7 @@
     "Slightly Positive",
     "Positive",
     "Very Positive",
-  ]
+  ];
 
   const config = {
     options: {
@@ -208,7 +206,7 @@
         returnResult.push([jsonFile[i]['Video_id'], parseInt(jsonFile[i]['Segment_id']),parseFloat(jsonFile[i]['Label']), jsonFile[i]['Label_binary'], jsonFile[i]['Label_7']])}
       else {
         returnResult.push([jsonFile[i]['Video_id'], parseInt(jsonFile[i]['Segment_id']),parseFloat(jsonFile[i]['Pred']), jsonFile[i]['Pred_binary'], jsonFile[i]['Pred_7']])}
-      if(typeof(jsonFile[i]['Video_id']) == 'undefined') {
+      if(typeof(jsonFile[i]['Video_id']) == 'undefined' || jsonFile[i]['Video_id'] =="" ) {
         console.log("found undefined!")
         returnResult.pop()
       }
@@ -394,8 +392,8 @@
 
       if(this.result) {
         for(let i = 0; i < this.result.length; i++) {
-          console.log(videoId)
-          console.log(this.result[i][0])
+          //console.log(videoId)
+          //console.log(this.result[i][0])
           if(this.result[i][0] == videoId) {//the correct video id
             if(this.result[i][3] == goldResult[i][3]) {//hit in 2 class
               hitMap2.push(1)
@@ -453,22 +451,34 @@
         goldResult = globalGold_mosei
       }
 
+      for(let i = 0; i < this.result.length; i++) {
+        meanLabel = meanLabel + goldResult[i][2]
+        meanPredi = meanPredi + this.result[i][2]
+      }
+
+      meanLabel = meanLabel / this.result.length
+      meanPredi = meanPredi / this.result.length
+      //console.log(meanLabel)
+      //console.log(meanPredi)
 
       for (let i = 0; i < this.result.length; i++) {
-        multSum = multSum + (goldResult[i][2] - meanLabel) * (this.result[i][2] - meanPredi)
+        multSum = multSum + (goldResult[i][2] - meanLabel)* (this.result[i][2] - meanPredi)
       }
+      //console.log(multSum)
 
       var labelDivSum = 0
       for (let i = 0; i < this.result.length; i++) {
-        labelDivSum = labelDivSum + (goldResult[i][2] - meanLabel) * (goldResult[i][2] - meanLabel)
+        labelDivSum = labelDivSum + ((goldResult[i][2] - meanLabel)*(goldResult[i][2] - meanLabel))
       }
+      //console.log(labelDivSum)
 
       var prediDivSum = 0
       for (let i = 0; i < this.result.length; i++) {
-        prediDivSum = prediDivSum + (this.result[i][2] - meanPredi) * (this.result[i][2] - meanPredi)
+        prediDivSum = prediDivSum + ((this.result[i][2] - meanPredi) * (this.result[i][2] - meanPredi))
       }
+      //console.log(prediDivSum)
 
-      return multSum / (labelDivSum^0.5 * prediDivSum^0.5)
+      return multSum / (Math.pow(labelDivSum,0.5) * (prediDivSum**0.5))
     }
     //return Corr
 
@@ -495,6 +505,8 @@
       var truePositive = 0
       var falsePositive = 0
       var falseNegative = 0
+      var numPositive = 0
+      var numNegative = 0
 
       let goldResult
       if(this.datasetType == "mosi") {
@@ -505,18 +517,24 @@
 
       for(let i = 0; i < this.result.length; i++) {
         if(this.result[i][3] == 'positive') {
+          numPositive = numPositive + 1
           if(goldResult[i][3] == 'positive') {
             truePositive = truePositive + 1
           } else if(goldResult[i][3] == 'negative') {
             falsePositive = falsePositive + 1
           }
-        } else if (this.result[i][3] == 'negative' && goldResult[i][3] == 'positive') {
-          falseNegative = falseNegative + 1
+        } else if (this.result[i][3] == 'negative'){
+          numNegative = numNegative + 1
+          if (goldResult[i][3] == 'positive') {
+            falseNegative = falseNegative + 1
+          }
         }
       }
 
-      var precision = truePositive / (truePositive + falsePositive)
-      var recall = truePositive / (truePositive + falseNegative)
+      //console.log(truePositive,falsePositive,falseNegative);
+
+      var precision = truePositive / (truePositive + falsePositive) * 100
+      var recall = truePositive / (truePositive + falseNegative) * 100
 
       var f1 = 2 * precision * recall / (precision + recall)
 
@@ -559,6 +577,7 @@
 
       if(this.model) {//our model is uploaded
         var ourData = this.model.getClassPop()
+        console.log(this.model.modelName + " is being drawn")
 
         analysisDataset2 = {
           labels: labels2class,
@@ -594,7 +613,7 @@
       }
 
       this.canvasList.innerHtml = ""
-      this.canvasList.innerHtml = "<canvas class='graph' id='graph_class_2'></canvas><canvas class='graph' id='graph_class_7'></canvas>"
+      this.canvasList.innerHtml = "<div class='canvasHolder'><canvas class='graph' id='graph_class_2'></canvas></div><div class='canvasHolder'><canvas class='graph' id='graph_class_7'></canvas></div>"
 
       //clear canvas before new drawing
       var graph2 = document.getElementById('graph_class_2').getContext("2d");
@@ -606,7 +625,7 @@
         type: 'bar',
         data: analysisDataset2,
         options: {
-          responsive: false,
+          responsive: true,
           maintainAspectRatio: true,
           scales: {
             y: {
@@ -623,7 +642,7 @@
         type: 'bar',
         data: analysisDataset7,
         options: {
-          responsive: false,
+          responsive: true,
           maintainAspectRatio: true,
           scales: {
             y: {
@@ -689,20 +708,22 @@
         return
       }
 
+      console.log("Video and segment selected")
       //get Data
       var selectedSegment = this.model.searchSegment(video_id,segment_id)
       var ourPoint = 0
       if(selectedSegment[0]) {
-        ourPoint = selectedSegment[6]
+        ourPoint = selectedSegment[2]
       }
 
+      var otherDatas = [] //[[modelName, predi],[modelName, Predi],[modelName, Predi]]
       for (let i = 0; i < this.otherModels.length; i++) {
-        this.otherModels[i].searchSegment(video_id,segment_id)
+        otherDatas.push([this.otherModels[i].modelName, this.otherModels[i].searchSegment(video_id,segment_id)[2]])
       }
 
       //draw chart
       this.plotHolder.innerHtml = ""
-      this.plotHolder.innerHtml = "<canvas class='graph' id='scatter0'></canvas><div id='plotBackGround_0'></div><div id'plotBackGround_0'></div><div class='plotBackGround' id='plotBackGround_0'></div><div class='plotBackGround' id='plotBackGround_1'></div>"
+      this.plotHolder.innerHtml = "<canvas class='plot' id='scatter0'></canvas>"
       var scatter0 = document.getElementById('scatter0').getContext("2d");
 
       var segmentPlot = {
@@ -737,7 +758,7 @@
         type: 'bar',
         data: segmentPlot,
         options: {
-          responsive: false,
+          responsive: true,
           maintainAspectRatio: true,
           indexAxis: 'y',
           plugins: {
@@ -762,7 +783,17 @@
             x: {
               max: 3,
               min: -3,
-              grid: {color:'grey'},
+              grid: {
+                drawBorder: false,
+                color: function(context) {
+                  if (context.tick.value > 0) {
+                    return '#00ff00';
+                  } else if (context.tick.value < 0) {
+                    return '#ff0000';
+                  }
+                  return '#000000';
+                },
+              },
 
             }
           }
@@ -890,9 +921,9 @@
 
 
   var newGoleTestResult = [["abcd",0,0.33,'positive','Neutral']
-                           ["abcd",1,0.33,'positive','Neutral']]
+                           ["abcd",1,0.33,'positive','Neutral']];
   var newOurTestResult =  [["abcd",0,1.33,'positive','positive']
-                           ["abcd",0,0.33,'positive','Neutral']]
+                           ["abcd",0,0.33,'positive','Neutral']];
 
   var goldModel = new Model("GOLD", "donghoon", goldTestResult)
   var ourModel = new Model("OUR","notDonghoon",ourTestResult)
@@ -929,23 +960,24 @@
 
 
   let xmlhttprequest = new XMLHttpRequest();
-  xmlhttprequest.open('GET', 'http://210.107.197.59:3000/csv?name=gold&dataset=mosi');
+  xmlhttprequest.open('GET', 'http://210.107.197.59:3000/csv?name=MAG-BERT_mosi_result&dataset=mosi');
   xmlhttprequest.onreadystatechange = function() {
     if(this.readyState == 4) {
       var jsonParsed = JSON.parse(xmlhttprequest.responseText)
-      console.log(jsonToResult(jsonParsed,true))
+      console.log(jsonToResult(jsonParsed,false))
 
-      var modelTest01 = new Model("newTest","mosi",jsonToResult(jsonParsed,true))
+      var modelTest01 = new Model("newTest","mosi",jsonToResult(jsonParsed,false))
       console.log(modelTest01.getScores())
       //console.log(modelTest01.getClassPop())
       console.log(modelTest01.getVideoAcc())
 
       analysisTest.model = modelTest01
       analysisTest.updateGraph()
+      analysisTest.updateGraph()
       analysisTest.updatePbarVideo()
       analysisTest.updatePbarSegment()
       analysisTest.updateScatterSegment("c7UH_rxdZv4",0)
-      
+
 
       //var comparisonTest = new Comparison([modelTest01, modelCopy, modelTest01], [modelTest01], [modelTest01, modelCopy, modelTest01])
       //comparisonTest.updateList()
@@ -975,15 +1007,14 @@
     analysisTest.updateView(videoId.innerText)
   }
 
-  function selectModel(model_name, model_publisher, model_file) {//after selecting a model, draw distribution chart, video accuracy table,
-    analysisTest.model = new Model(mode_name, model_publisher,jsonToResult(model_file))
+  function selectModel(model_name, model_dataset, model_file) {//after selecting a model, draw distribution chart, video accuracy table,
+    analysisTest.model = new Model(model_name, model_dataset ,jsonToResult(model_file))
     analysisTest.updateGraph()
     analysisTest.updatePbarVideo()
     analysisTest.updatePbarSegment()  //reset
     analysisTest.updateScatterSegment() //reset
   }
 
-
-  </script>
+    </script>
   </body>
 </html>
