@@ -125,26 +125,6 @@
           <canvas class='plot' id='scatter0'></canvas>
         </div>
       </div>
-
-
-      <div id="viewSegment">
-        <h2>View Segment</h2>
-        <h3>Video_0 id_0</h3>
-      </div>
-      <div id="compSegment">
-        <h2>Comparison</h2>
-        <table id="compTable">
-          <tr>
-            <th>Model</th>
-            <th>MAE</th>
-            <th>Corr</th>
-            <th>Accuracy 2-Class</th>
-            <th>Accuracy 7-Class</th>
-            <th>F1</th>
-          </tr>
-
-        </table>
-      </div>
     </div>
 
     <div class="footer">
@@ -659,6 +639,7 @@
 
     this.updatePbarVideo = function(){//Draw Accuracy Bar of the Videos
       var modelAcc = this.model.getVideoAcc()
+      this.segTable.innerHtml = "<tr id='vidName_vidAcc'><td></td></tr><tr><td>2 Class</td></tr><tr><td>7 Class</td></tr>"
 
       //add progess bar in table #videoAcc
       for(let i = 0; i < modelAcc.length; i++) {
@@ -695,7 +676,7 @@
         var newSegAcc_2 = tblBodyObj.rows[1].insertCell(-1);
         var newSegAcc_7 = tblBodyObj.rows[2].insertCell(-1);
 
-        newSegTitle.innerHTML = String(i)
+        newSegTitle.innerHTML = "<div class='segmentName' onclick=selectSegment(this)>"+ String(i)+"</div>"
         newSegAcc_2.innerHTML = '<progress value=' + String(segHitMap[0][i]*100) + ' max="100">'
         newSegAcc_7.innerHTML = '<progress value=' + String(segHitMap[1][i]*100) + ' max="100">'
       }
@@ -751,6 +732,8 @@
           data: [[ourPoint+0.02, ourPoint-0.02]],
         }]
       };
+
+      console.log(segmentPlot["datasets"])
 
 
       this.chart_segment_plot.destroy()
@@ -818,7 +801,7 @@
 
     }
   }
-
+ /*
   function Comparison(goldModels, ourModels, modelList) {
     this.goldModels = goldModels
     this.ourModels = ourModels
@@ -901,7 +884,7 @@
       this.updateList()
     }//use this to draw Comparison table
   }
-
+ */
 
   var goldTestResult = [["abcd",0,"text1",-0.5,'negative','slightly negative',-0.4,"negative",'slightly negative']
                        ,["abcd",1,"text1",-1.5,'negative','negative',-0.3,"negative",'slightly negative']
@@ -1002,9 +985,16 @@
     //change segmentVidName
     var segmentTitle = document.getElementById('segmentVidName')
     segmentTitle.innerText = videoId.innerText
+  }
 
-    //change View
-    analysisTest.updateView(videoId.innerText)
+  function selectSegment(segmentId) { //update Segment Hit section when we click video_id in Video Accuracy section
+    //change Scatter Plot
+    let segmentTableVideo = document.getElementById('segmentVidName').innerText
+    if(segmentTableVideo == "no video selected") {
+      console.log('no video or segment selected selected')
+      return
+    }
+    analysisTest.updateScatterSegment(segmentTableVideo, segmentId.innerText)
   }
 
   function selectModel(model_name, model_dataset, model_file) {//after selecting a model, draw distribution chart, video accuracy table,
@@ -1013,6 +1003,14 @@
     analysisTest.updatePbarVideo()
     analysisTest.updatePbarSegment()  //reset
     analysisTest.updateScatterSegment() //reset
+  }
+
+  function registerCompModel(compModelList) { //[[model_name, model_dataset, model_file], [model_name, model_dataset, model_file]]
+    let otherModelList = []
+    for(let i = 0; i < compModelList.length; i++) {
+      otherModelList.push(new Model(compModelList[i][0], compModelList[i][1], compModelList[i][2]))
+    }
+    analysisTest.otherModels = otherModelList
   }
 
     </script>
