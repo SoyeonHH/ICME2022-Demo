@@ -412,7 +412,7 @@
       }
 
       if(this.result.length > 0) {
-        return sumErr / this.result.length
+        return (sumErr / this.result.length).toFixed(2)
       } else {
         return -1
       }
@@ -458,7 +458,7 @@
       }
       //console.log(prediDivSum)
 
-      return multSum / (Math.pow(labelDivSum,0.5) * (prediDivSum**0.5))
+      return (multSum / (Math.pow(labelDivSum,0.5) * (prediDivSum**0.5))).toFixed(2)
     }
     //return Corr
 
@@ -477,7 +477,7 @@
         if(this.result[i][4] == goldResult[i][4]) {classHits[1] = classHits[1] + 1}
       }
 
-      return [100 * classHits[0]/this.result.length, 100 * classHits[1]/this.result.length]
+      return [(100 * classHits[0]/this.result.length).toFixed(2), (100 * classHits[1]/this.result.length).toFixed(2)]
     }
     //return [2classAcc, 7classAcc]
 
@@ -518,7 +518,7 @@
 
       var f1 = 2 * precision * recall / (precision + recall)
 
-      return f1
+      return f1.toFixed(2)
     }
     //return F1
 

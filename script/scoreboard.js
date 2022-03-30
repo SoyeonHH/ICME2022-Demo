@@ -33,7 +33,7 @@ function loadMoseiScoreboard(isUpload=false) {
   moseiHTTPRequest.send();
 }
 
-var scoreboardRowList = ['Model', 'MAE', 'Corr', 'Acc-7', 'Acc-2', 'F1'];
+var scoreboardRowList = ['Model', 'MAE', 'Corr', 'Acc-2', 'Acc-7', 'F1'];
 
 function setScoreboard(modelList, dataset, isUpload) {
   var table = document.querySelectorAll(`#${dataset}-table tbody`)[0];
@@ -49,9 +49,11 @@ function setScoreboard(modelList, dataset, isUpload) {
         });
       }
       else modelTd.innerText = '0%';
+      modelTd.className = `td-${dataset} ${model}`;
       modelColumn.appendChild(modelTd);
     });
     table.appendChild(modelColumn);
+    getScoreText(dataset, model);
   });
 }
 
@@ -59,7 +61,6 @@ function getModelCsv(modelName, dataset, isUpload) {
   var xhr = new XMLHttpRequest();
   let uploadPath = isUpload ? '/upload' : '';
   xhr.open('GET', `http://210.107.197.59:3000/csv${uploadPath}?name=${modelName}&dataset=${dataset}`);
-  console.log(`http://210.107.197.59:3000/csv${uploadPath}?name=${modelName}&dataset=${dataset}`);
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {
       selectModel('temp', dataset, JSON.parse(xhr.responseText));
@@ -80,7 +81,14 @@ function getScoreText(dataset, name) {
   xhr.open('GET', `./score/${dataset}/${name}.txt`);
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {
-      console.log(xhr.responseText);
+      let scores = xhr.responseText.split(',');
+      if(scores.length == 5) {
+        let tdList = Array.from(document.querySelectorAll(`.td-${dataset}.${name}`));
+        tdList.shift();
+        for(let i = 0; i < 5; i++) {
+          tdList[i].innerText = `${scores[i]}%`;
+        }
+      }
     }
   }
   xhr.send();
@@ -91,8 +99,9 @@ function postScoreText(dataset, name, score) {
   xhr.open('GET', `http://210.107.197.59:3000/score?dataset=${dataset}&name=${name}&score=${score}`);
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {
+      console.log(xhr.responseText);
       getScoreText(dataset, name);
     }
-    xhr.send();
   }
+  xhr.send();
 }
