@@ -637,9 +637,10 @@
 
     }
 
+
     this.updatePbarVideo = function(){//Draw Accuracy Bar of the Videos
       var modelAcc = this.model.getVideoAcc()
-      this.segTable.innerHtml = "<tr id='vidName_vidAcc'><td></td></tr><tr><td>2 Class</td></tr><tr><td>7 Class</td></tr>"
+      document.getElementById('videoAcc').innerHTML = "<tr id='segName_segAcc'><td></td></tr><tr><td>2 Class</td></tr><tr><td>7 Class</td></tr>"
 
       //add progess bar in table #videoAcc
       for(let i = 0; i < modelAcc.length; i++) {
@@ -652,9 +653,6 @@
         newVidAcc_2.innerHTML = '<progress value=' + String(modelAcc[i][1]) + ' max="100">'
         newVidAcc_7.innerHTML = '<progress value=' + String(modelAcc[i][2]) + ' max="100">'
       }
-
-
-
     }
 
     this.updatePbarSegment = function(video_id) {//Draw Progress Bar of a single Segment
@@ -668,7 +666,6 @@
       var segHitMap = this.model.getSegmentAcc(video_id)
       console.log(segHitMap)
 
-      this.segTable.innerHTML = "<tr id='segName_segAcc'><td></td></tr><tr><td>2 Class</td></tr><tr><td>7 Class</td></tr>"
 
       for(let i = 0; i < segHitMap[0].length; i++) {
         var tblBodyObj = this.segTable.tBodies[0];
