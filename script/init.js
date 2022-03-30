@@ -1,7 +1,7 @@
 var workspace = document.querySelectorAll('#workspace')[0];
 var result = document.querySelectorAll('#result')[0];
 
-// draw frame for selection
+// draw frame for Data Selection
 var selectBox = document.createElement('div');
 selectBox.className = 'box';
 selectBox.id = 'selectBox';
@@ -32,7 +32,7 @@ clipSelectBox.appendChild(clipSelectTitle);
 clipSelectBox.appendChild(clipSelectWrapper);
 workspace.appendChild(clipSelectBox);
 
-// draw items for selection
+// draw items for selection of video ids
 let fileXHR = new XMLHttpRequest();
 fileXHR.open('GET', 'http://210.107.197.59:3000/text');
 fileXHR.onreadystatechange = function() {
@@ -59,6 +59,7 @@ function setItem(fileList) {
   });
 }
 
+// draw items for selection of clip ids
 function setClipItem(name) {
   let secondFileXHR = new XMLHttpRequest();
   secondFileXHR.open('GET', `http://210.107.197.59:3000/text/clip?title=${name}`);
@@ -83,7 +84,7 @@ function setClipItem(name) {
   secondFileXHR.send();
 }
 
-// draw frame for output result
+// draw frame for Data Observation
 var items = ['video', 'audio', 'text']
 items.map((e) => {
   var tempBox = document.createElement('div');

@@ -1,4 +1,4 @@
-// item select listener
+// item(video id) select listener
 function clickListener(name) {
   let prev = document.querySelectorAll('.selectWrapper .selectItem.clicked');
   for(var i=0; prev[i]; i++) {
@@ -22,6 +22,7 @@ function clickListener(name) {
   setClipItem(name);
 }
 
+// item(clip id) select listener
 function clickClipListener(name) {
   let prev = document.querySelectorAll('#clipSelectWrapper .selectItem.clicked');
   for(var i=0; prev[i]; i++) {
@@ -43,11 +44,13 @@ function clickClipListener(name) {
   xhr.send();
 }
 
+// set Data Observation text
 function setText(text) {
   var textView = document.querySelectorAll('#textView')[0];
   textView.innerText = text;
 }
 
+// set Data Observation audio & video
 function setAudioVideo(name, isClip=false) {
   var audioView = document.querySelectorAll('#audioView')[0];
   audioView.replaceWith(audioView.cloneNode(true));
@@ -65,32 +68,31 @@ function setAudioVideo(name, isClip=false) {
   else videoView.src = `./dataset/segment/video/${name}.mp4`;
   videoView.load();
 
-  audioView.addEventListener('play', function() {
-    videoView.play();
-    videoView.currentTime = audioView.currentTime;
-  });
-  audioView.addEventListener('pause', function() {
-    videoView.pause();
-  });
-  audioView.addEventListener('ended', function() {
-    videoView.ended();
-  });
+  // DEPRECATED: video & audio sync parallel
+  // audioView.addEventListener('play', function() {
+  //   videoView.play();
+  //   videoView.currentTime = audioView.currentTime;
+  // });
+  // audioView.addEventListener('pause', function() {
+  //   videoView.pause();
+  // });
+  // audioView.addEventListener('ended', function() {
+  //   videoView.ended();
+  // });
 
-  videoView.addEventListener('play', function() {
-    audioView.play();
-    audioView.currentTime = videoView.currentTime;
-  });
-  videoView.addEventListener('pause', function() {
-    audioView.pause();
-  });
-  videoView.addEventListener('ended', function() {
-    audioView.ended();
-  });
+  // videoView.addEventListener('play', function() {
+  //   audioView.play();
+  //   audioView.currentTime = videoView.currentTime;
+  // });
+  // videoView.addEventListener('pause', function() {
+  //   audioView.pause();
+  // });
+  // videoView.addEventListener('ended', function() {
+  //   audioView.ended();
+  // });
 }
 
-// select second section
-var workspace = document.querySelectorAll('#workspace')[0]
-
+// DEPRECATED: selected tab changed font weight
 // header select listener
 // var headerItemList = document.querySelectorAll('.header-item');
 // for(let i=0; headerItemList[i]; i++) {
