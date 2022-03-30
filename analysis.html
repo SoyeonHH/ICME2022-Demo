@@ -676,7 +676,7 @@
         var newSegAcc_2 = tblBodyObj.rows[1].insertCell(-1);
         var newSegAcc_7 = tblBodyObj.rows[2].insertCell(-1);
 
-        newSegTitle.innerHTML = String(i)
+        newSegTitle.innerHTML = "<div class='segmentName' onclick=selectSegment(this)>"+ String(i)+"</div>"
         newSegAcc_2.innerHTML = '<progress value=' + String(segHitMap[0][i]*100) + ' max="100">'
         newSegAcc_7.innerHTML = '<progress value=' + String(segHitMap[1][i]*100) + ' max="100">'
       }
@@ -989,7 +989,7 @@
 
   function selectSegment(segmentId) { //update Segment Hit section when we click video_id in Video Accuracy section
     //change Scatter Plot
-    let segmentTableVideo = document.getElementById(segmentVidName).innerText
+    let segmentTableVideo = document.getElementById('segmentVidName').innerText
     if(segmentTableVideo == "no video selected") {
       console.log('no video or segment selected selected')
       return
