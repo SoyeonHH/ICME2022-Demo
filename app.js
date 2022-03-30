@@ -14,6 +14,7 @@ app.use('/style', express.static(__dirname + '/style'));
 app.use('/data', express.static(__dirname + '/data'));
 app.use('/image', express.static(__dirname + '/image'));
 app.use('/dataset', express.static(__dirname + '/dataset'));
+app.use('/score', express.static(__dirname + '/score'));
 
 var server = http.createServer(app).listen(port, function() {
   console.log('Server run');
@@ -38,3 +39,6 @@ app.use('/text', localFileText);
 
 var localFileCsv = require('./routes/localFileCsv')();
 app.use('/csv', localFileCsv);
+
+var localFileScore = require('./routes/localFileScore')();
+app.use('/score', localFileScore);

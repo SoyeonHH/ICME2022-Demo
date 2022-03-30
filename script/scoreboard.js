@@ -1,6 +1,7 @@
 var mosiTable = document.querySelectorAll('#mosi-table tbody');
 var moseiTable = document.querySelectorAll('#mosei-table tbody');
 
+// initialize scoreboard
 loadMosiScoreboard();
 loadMoseiScoreboard();
 
@@ -71,5 +72,27 @@ function removeScoreboard(dataset) {
   var trList = document.querySelectorAll(`.tr-${dataset}`);
   for(var i=0; trList[i]; i++) {
     trList[i].parentElement.removeChild(trList[i]);
+  }
+}
+
+function getScoreText(dataset, name) {
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', `./score/${dataset}/${name}.txt`);
+  xhr.onreadystatechange = function() {
+    if(this.readyState == 4) {
+      console.log(xhr.responseText);
+    }
+  }
+  xhr.send();
+}
+
+function postScoreText(dataset, name, score) {
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', `http://210.107.197.59:3000/score?dataset=${dataset}&name=${name}&score=${score}`);
+  xhr.onreadystatechange = function() {
+    if(this.readyState == 4) {
+      getScoreText(dataset, name);
+    }
+    xhr.send();
   }
 }
