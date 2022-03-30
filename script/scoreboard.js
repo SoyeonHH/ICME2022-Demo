@@ -48,7 +48,7 @@ function setScoreboard(modelList, dataset, isUpload) {
           getModelCsv(model, dataset, isUpload);
         });
       }
-      else modelTd.innerText = '0%';
+      else modelTd.innerText = '-';
       modelTd.className = `td-${dataset} ${model}`;
       modelColumn.appendChild(modelTd);
     });
@@ -63,6 +63,7 @@ function getModelCsv(modelName, dataset, isUpload) {
   xhr.open('GET', `http://210.107.197.59:3000/csv${uploadPath}?name=${modelName}&dataset=${dataset}`);
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {
+      readCsv(modelName, dataset);
       selectModel('temp', dataset, JSON.parse(xhr.responseText));
     }
   }
@@ -86,7 +87,7 @@ function getScoreText(dataset, name) {
         let tdList = Array.from(document.querySelectorAll(`.td-${dataset}.${name}`));
         tdList.shift();
         for(let i = 0; i < 5; i++) {
-          tdList[i].innerText = `${scores[i]}%`;
+          tdList[i].innerText = scores[i];
         }
       }
     }
