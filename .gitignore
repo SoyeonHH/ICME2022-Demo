@@ -16,3 +16,4 @@ wandb
 checkpoints
 
 *.csv
+*.txt

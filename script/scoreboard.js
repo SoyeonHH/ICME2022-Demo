@@ -73,3 +73,25 @@ function removeScoreboard(dataset) {
     trList[i].parentElement.removeChild(trList[i]);
   }
 }
+
+function getScoreText(dataset, name) {
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', `./score/${dataset}/${name}.txt`);
+  xhr.onreadystatechange = function() {
+    if(this.readyState == 4) {
+      console.log(xhr.responseText);
+    }
+  }
+  xhr.send();
+}
+
+function postScoreText(dataset, name, score) {
+  let xhr = new XMLHttpRequest();
+  xhr.open('GET', `http://localhost:3000/score?dataset=${dataset}&name=${name}&score=${score}`);
+  xhr.onreadystatechange = function() {
+    if(this.readyState == 4) {
+      getScoreText(dataset, name);
+    }
+    xhr.send();
+  }
+}
