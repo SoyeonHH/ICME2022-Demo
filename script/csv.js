@@ -40,7 +40,7 @@ function postCsv() {
   formData.append('file', files[0]);
 
   var xhr = new XMLHttpRequest();
-  xhr.open('POST', `http://210.107.197.59:3000/csv?name=${fileName}&dataset=${dataset}`);
+  xhr.open('POST', `http://210.107.197.59:80/csv?name=${fileName}&dataset=${dataset}`);
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {   
       let filename = JSON.parse(xhr.responseText)['filename'].split('.')[0];
@@ -60,7 +60,7 @@ uploadButton.addEventListener('click', postCsv);
 
 function readCsv(filename, dataset) {
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', `http://210.107.197.59:3000/csv/upload?name=${filename}&dataset=${dataset}`);
+  xhr.open('GET', `http://210.107.197.59:80/csv/upload?name=${filename}&dataset=${dataset}`);
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {
       var model = new Model('temp', dataset, jsonToResult(JSON.parse(xhr.responseText)));

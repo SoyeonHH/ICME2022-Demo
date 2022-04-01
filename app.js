@@ -5,7 +5,7 @@ var cors = require('cors');
 var http = require('http');
 var fs = require('fs');
 
-const port = 3000;
+const port = 80;
 
 app.use(express.urlencoded({extended: true}));
 app.use(cors());

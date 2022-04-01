@@ -34,7 +34,7 @@ workspace.appendChild(clipSelectBox);
 
 // draw items for selection of video ids
 let fileXHR = new XMLHttpRequest();
-fileXHR.open('GET', 'http://210.107.197.59:3000/text');
+fileXHR.open('GET', 'http://210.107.197.59:80/text');
 fileXHR.onreadystatechange = function() {
   if(this.readyState == 4) {
     setItem(JSON.parse(fileXHR.responseText));
@@ -62,7 +62,7 @@ function setItem(fileList) {
 // draw items for selection of clip ids
 function setClipItem(name) {
   let secondFileXHR = new XMLHttpRequest();
-  secondFileXHR.open('GET', `http://210.107.197.59:3000/text/clip?title=${name}`);
+  secondFileXHR.open('GET', `http://210.107.197.59:80/text/clip?title=${name}`);
   secondFileXHR.onreadystatechange = function() {
     if(this.readyState == 4) {
       responseJson = JSON.parse(secondFileXHR.responseText);

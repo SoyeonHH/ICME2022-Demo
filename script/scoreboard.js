@@ -9,7 +9,7 @@ function loadMosiScoreboard(isUpload=false) {
   var mosiHTTPRequest = new XMLHttpRequest();
   if(!isUpload) removeScoreboard('mosi');
   var uploadPath = isUpload ? '/upload' : '';
-  mosiHTTPRequest.open('GET', `http://210.107.197.59:3000/csv${uploadPath}/list?dataset=mosi`);
+  mosiHTTPRequest.open('GET', `http://210.107.197.59:80/csv${uploadPath}/list?dataset=mosi`);
   mosiHTTPRequest.onreadystatechange = function() {
     if(this.readyState == 4) {
       setScoreboard(JSON.parse(mosiHTTPRequest.responseText), 'mosi', isUpload);
@@ -23,7 +23,7 @@ function loadMoseiScoreboard(isUpload=false) {
   var moseiHTTPRequest = new XMLHttpRequest();
   if(!isUpload) removeScoreboard('mosei');
   var uploadPath = isUpload ? '/upload' : '';
-  moseiHTTPRequest.open('GET', `http://210.107.197.59:3000/csv${uploadPath}/list?dataset=mosei`);
+  moseiHTTPRequest.open('GET', `http://210.107.197.59:80/csv${uploadPath}/list?dataset=mosei`);
   moseiHTTPRequest.onreadystatechange = function() {
     if(this.readyState == 4) {
       setScoreboard(JSON.parse(moseiHTTPRequest.responseText), 'mosei', isUpload);
@@ -43,7 +43,7 @@ function setScoreboard(modelList, dataset, isUpload) {
     scoreboardRowList.map((e) => {
       let modelTd = document.createElement('td');
       if(e == 'Model') {
-        modelTd.innerText = model;
+        modelTd.innerText = model; 
         modelTd.addEventListener('click', function() {
           getModelCsv(model, dataset, isUpload);
         });
@@ -60,10 +60,10 @@ function setScoreboard(modelList, dataset, isUpload) {
 function getModelCsv(modelName, dataset, isUpload) {
   var xhr = new XMLHttpRequest();
   let uploadPath = isUpload ? '/upload' : '';
-  xhr.open('GET', `http://210.107.197.59:3000/csv${uploadPath}?name=${modelName}&dataset=${dataset}`);
+  xhr.open('GET', `http://210.107.197.59:80/csv${uploadPath}?name=${modelName}&dataset=${dataset}`);
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {
-      readCsv(modelName, dataset);
+      if(isUpload) readCsv(modelName, dataset);
       selectModel('temp', dataset, JSON.parse(xhr.responseText));
     }
   }
@@ -97,7 +97,7 @@ function getScoreText(dataset, name) {
 
 function postScoreText(dataset, name, score) {
   let xhr = new XMLHttpRequest();
-  xhr.open('GET', `http://210.107.197.59:3000/score?dataset=${dataset}&name=${name}&score=${score}`);
+  xhr.open('GET', `http://210.107.197.59:80/score?dataset=${dataset}&name=${name}&score=${score}`);
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {
       console.log(xhr.responseText);
