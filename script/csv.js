@@ -22,17 +22,25 @@ function postCsv() {
   console.log(files);
   var fileName = document.getElementById('inputModelName').value;
   if(fileName == '') {
-    alert('no file name');
-    return
+    alert('file name cannot be an empty string');
+    return;
+  }
+  else if(fileName.includes(' ')) {
+    alert('file name should not contain any blank');
+    return;
+  }
+  else if(fileName[0] >= 0 && fileName[0] <= 9) {
+    alert('file name should not start with number');
+    return;
   }
   var files = document.getElementById('inputModelFile').files;
   if(files.length == 0) {
     alert('no file');
-    return
+    return;
   }
   if(radioMosei.checked == false && radioMosi.checked == false) {
     alert('no dataset');
-    return
+    return;
   }
   var dataset = radioMosi.checked ? 'mosi' : 'mosei';
 
