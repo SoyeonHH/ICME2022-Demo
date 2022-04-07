@@ -44,7 +44,7 @@ function postCsv() {
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {   
       let filename = JSON.parse(xhr.responseText)['filename'].split('.')[0];
-      readCsv(filename, dataset);
+      readCsv(filename, dataset, true);
       alert(`filename: ${filename}`);
       if(dataset == 'mosi') {
         loadMosiScoreboard();
@@ -58,14 +58,14 @@ function postCsv() {
 }
 uploadButton.addEventListener('click', postCsv);
 
-function readCsv(filename, dataset) {
+function readCsv(filename, dataset, isUpload) {
+  var uploadPath = isUpload ? '/upload' : ''
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', `http://210.107.197.59:80/csv/upload?name=${filename}&dataset=${dataset}`);
+  xhr.open('GET', `http://210.107.197.59:80/csv${uploadPath}?name=${filename}&dataset=${dataset}`);
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {
       var model = new Model('temp', dataset, jsonToResult(JSON.parse(xhr.responseText)));
       var score = model.getScores().toString().substr(5);
-      console.log(score);
       postScoreText(dataset, filename, score);
     }
   }

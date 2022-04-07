@@ -63,7 +63,7 @@ function getModelCsv(modelName, dataset, isUpload) {
   xhr.open('GET', `http://210.107.197.59:80/csv${uploadPath}?name=${modelName}&dataset=${dataset}`);
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {
-      if(isUpload) readCsv(modelName, dataset);
+      readCsv(modelName, dataset, isUpload);
       selectModel('temp', dataset, JSON.parse(xhr.responseText));
     }
   }
@@ -100,7 +100,6 @@ function postScoreText(dataset, name, score) {
   xhr.open('GET', `http://210.107.197.59:80/score?dataset=${dataset}&name=${name}&score=${score}`);
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {
-      console.log(xhr.responseText);
       getScoreText(dataset, name);
     }
   }
