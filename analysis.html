@@ -657,6 +657,7 @@
     }
 
     this.updatePbarSegment = function(video_id) {//Draw Progress Bar of a single Segment
+      this.segTable.innerHtml = ""
       if(arguments.length == 0) {
         this.segTable.innerHtml = ""
         console.log("No video selected")
