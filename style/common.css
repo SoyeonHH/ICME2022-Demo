@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil&display=swap');
+
 * {
   font-family: sans-serif;
 }
@@ -141,13 +143,20 @@ a {
   font-size: 24px;
   text-align: center;
   padding-top: 6px !important;
-  margin-bottom: 2px !important;
+  margin-bottom: 8px !important;
   font-weight: 500;
-  color: #00ffff;
+  color: #ffffff;
 }
 .footer-info div, .footer-info div a{
   font-size: 14px;
   color: #ffffff;
   text-align: center;
   margin-top: 2px;
+}
+
+.descript{
+  font-size: 20px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  font-family: 'Anek Tamil';
 }

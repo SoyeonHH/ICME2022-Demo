@@ -40,12 +40,17 @@
             </tr>
           </table>
           <div id="upload-description">
-            <h3>Select a csv file such as image below</h4>
             <img src="./image/upload_file_example2.png" />
+            <div class="descript" style="color: #878787">
+              → Select a csv file with the above columns
+            </div>
           </div>
         </div>
         <div style="height: 8px;"></div>
         <h2>Scoreboard</h2>
+        <div class="descript">
+          Click the model name that you want to analysis in Scoreboard, and enjoy the observation below !
+        </div>
         <table id="scoreboard">
           <tr>
             <td class="scoreboard-left">CMU-MOSI</td>
@@ -82,13 +87,12 @@
             </td>
           </tr>
         </table>
-        <div style="margin-top: 12px; font-weight: 500; font-size: 22px;">
-          Click the model name that you want to analysis in Scoreboard, and enjoy the observation !
-        </div>
-
       </div>
       <div id="barGraph">
         <h2>Predict Results Distribution</h2>
+        <div class="descript">
+          You can compare the distributions between gold dataset classes and model prediction result classes !
+        </div>
         <div id="canvasList">
           <div class='canvasHolder'><canvas class="graph" id='graph_class_2'></canvas></div>
           <div class='canvasHolder'><canvas class="graph" id='graph_class_7'></canvas></div>
@@ -96,6 +100,9 @@
       </div>
       <div id="p-barVideos">
         <h2>Video Accuracy</h2>
+        <div class="descript">
+          If you click the video id, you can observe utterance-level prediction results below !
+        </div>
         <table id="videoAcc">
           <tr id="vidName_vidAcc">
             <td></td>
@@ -110,7 +117,7 @@
       </div>
       <div id="p-barSengment">
         <h2>Segment Hit</h2>
-        <h3 id="segmentVidName">no video selected<h3>
+        <div id="segmentVidName" class="descript">no video selected</div>
         <table id="segmentAcc">
           <tr id="segName_segAcc">
             <td></td>
@@ -653,7 +660,7 @@
         var newVidAcc_2 = tblBodyObj.rows[1].insertCell(-1);
         var newVidAcc_7 = tblBodyObj.rows[2].insertCell(-1);
 
-        newVidTitle.innerHTML = '<div class="videoId_in_vidTable" onclick="selectVideo(this)">' + modelAcc[i][0] + '</div>'
+        newVidTitle.innerHTML = '<div class="descript" style="margin-bottom: 2px; font-size: 18px; cursor: pointer;" onclick="selectVideo(this)">' + modelAcc[i][0] + '</div>'
         newVidAcc_2.innerHTML = '<progress value=' + String(modelAcc[i][1]) + ' max="100">'
         newVidAcc_7.innerHTML = '<progress value=' + String(modelAcc[i][2]) + ' max="100">'
       }
