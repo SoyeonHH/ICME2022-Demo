@@ -121,14 +121,14 @@
 }
 
 #mosei-table table tr td, #mosi-table table tr td {
-  min-width: 68px;
+  min-width: 76px;
   border: 1px solid #000000;
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
 #mosei-table table tr td:first-child, #mosi-table table tr td:first-child {
-  width: 50% !important;
+  width: 40% !important;
   padding-top: 4px;
   padding-bottom: 4px;
 }
