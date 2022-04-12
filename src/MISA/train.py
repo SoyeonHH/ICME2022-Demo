@@ -6,6 +6,7 @@ from random import random
 from config import get_config, activation_dict
 from data_loader import get_loader
 from solver import Solver
+from test_instance import TestMOSI, TestMOSEI
 
 import torch
 import torch.nn as nn
@@ -41,9 +42,12 @@ if __name__ == '__main__':
     solver = solver(train_config, dev_config, test_config, train_data_loader, dev_data_loader, test_data_loader, is_train=True)
 
     # Build the model
-    solver.build()
+    model = solver.build()
 
     # Train the model (test scores will be returned based on dev performance)
     solver.train()
 
-    solver.test_instance()
+    # Make test result file by instance
+    tester = TestMOSI
+    tester = tester(model)
+    tester.start()
