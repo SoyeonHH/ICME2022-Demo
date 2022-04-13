@@ -1,0 +1,686 @@
+Video_id,Segment_id,Pred,Pred_binary,Pred_7
+c7UH_rxdZv4,0,-0.03,negative,Neutral
+c7UH_rxdZv4,1,-0.21,negative,Neutral
+c7UH_rxdZv4,2,-2.43,negative,very negative
+c7UH_rxdZv4,3,-1.11,negative,slightly negative
+c7UH_rxdZv4,4,1.6,positive,positive
+c7UH_rxdZv4,5,-0.45,negative,slightly negative
+c7UH_rxdZv4,6,-2.92,negative,very negative
+c7UH_rxdZv4,7,0.88,positive,slightly positive
+c7UH_rxdZv4,8,2.4,positive,very positive
+c7UH_rxdZv4,9,-0.23,negative,Neutral
+c7UH_rxdZv4,10,0.29,positive,Neutral
+c7UH_rxdZv4,11,2.86,positive,very positive
+c7UH_rxdZv4,12,-0.3,negative,Neutral
+c7UH_rxdZv4,13,1.73,positive,positive
+c7UH_rxdZv4,14,2.32,positive,very positive
+c7UH_rxdZv4,15,-1.16,negative,slightly negative
+c7UH_rxdZv4,16,1.46,positive,positive
+c7UH_rxdZv4,17,0.75,positive,slightly positive
+c7UH_rxdZv4,18,-1.18,negative,slightly negative
+c7UH_rxdZv4,19,-1.45,negative,negative
+c7UH_rxdZv4,20,2.23,positive,very positive
+c7UH_rxdZv4,21,-0.93,negative,slightly negative
+c7UH_rxdZv4,22,2.47,positive,very positive
+c7UH_rxdZv4,23,-0.86,negative,slightly negative
+c7UH_rxdZv4,24,0.13,positive,Neutral
+c7UH_rxdZv4,25,-1.23,negative,slightly negative
+c7UH_rxdZv4,26,-1.71,negative,negative
+c7UH_rxdZv4,27,0.96,positive,slightly positive
+c7UH_rxdZv4,28,-2.49,negative,very negative
+c7UH_rxdZv4,29,0.9,positive,slightly positive
+c7UH_rxdZv4,30,-2.56,negative,very negative
+c7UH_rxdZv4,31,0.95,positive,slightly positive
+c7UH_rxdZv4,32,1.9,positive,positive
+cM3Yna7AavY,0,0.13,positive,Neutral
+cM3Yna7AavY,1,1.05,positive,slightly positive
+cM3Yna7AavY,2,-2.92,negative,very negative
+cM3Yna7AavY,3,2.52,positive,very positive
+cM3Yna7AavY,4,-2.5,negative,very negative
+cM3Yna7AavY,5,-0.26,negative,Neutral
+cM3Yna7AavY,6,0.69,positive,slightly positive
+cM3Yna7AavY,7,1.61,positive,positive
+cM3Yna7AavY,8,-2.03,negative,negative
+cM3Yna7AavY,9,2.66,positive,very positive
+cM3Yna7AavY,10,2.96,positive,very positive
+cM3Yna7AavY,11,-1.22,negative,slightly negative
+cM3Yna7AavY,12,1.16,positive,slightly positive
+cM3Yna7AavY,13,0.47,positive,slightly positive
+cM3Yna7AavY,14,0.45,positive,slightly positive
+cM3Yna7AavY,15,-1.45,negative,negative
+cW1FSBF59ik,0,-0.64,negative,slightly negative
+cW1FSBF59ik,1,-2.46,negative,very negative
+cW1FSBF59ik,2,1.32,positive,positive
+cW1FSBF59ik,3,1.35,positive,positive
+cW1FSBF59ik,4,0.5,positive,slightly positive
+cW1FSBF59ik,5,1.69,positive,positive
+cW1FSBF59ik,6,-1.6,negative,negative
+cW1FSBF59ik,7,0.36,positive,Neutral
+cW1FSBF59ik,8,-2.6,negative,very negative
+cW1FSBF59ik,9,1.53,positive,positive
+cW1FSBF59ik,10,-0.61,negative,slightly negative
+cW1FSBF59ik,11,-2.96,negative,very negative
+cW1FSBF59ik,12,-1.51,negative,negative
+cW1FSBF59ik,13,0.35,positive,Neutral
+cW1FSBF59ik,14,-1.49,negative,negative
+cW1FSBF59ik,15,2.11,positive,positive
+cW1FSBF59ik,16,-0.05,negative,Neutral
+cW1FSBF59ik,17,0.14,positive,Neutral
+cW1FSBF59ik,18,-0.11,negative,Neutral
+cW1FSBF59ik,19,1.74,positive,positive
+cW1FSBF59ik,20,-1.24,negative,slightly negative
+cW1FSBF59ik,21,-0.48,negative,slightly negative
+cW1FSBF59ik,22,-1.5,negative,negative
+cW1FSBF59ik,23,-1.22,negative,slightly negative
+cXypl4FnoZo,0,-0.22,negative,Neutral
+cXypl4FnoZo,1,-1.18,negative,slightly negative
+cXypl4FnoZo,2,-1.5,negative,negative
+cXypl4FnoZo,3,2.45,positive,very positive
+cXypl4FnoZo,4,-1.22,negative,slightly negative
+cXypl4FnoZo,5,2.52,positive,very positive
+cXypl4FnoZo,6,-2.37,negative,very negative
+cXypl4FnoZo,7,-0.86,negative,slightly negative
+cXypl4FnoZo,8,-1.88,negative,negative
+cXypl4FnoZo,9,1.57,positive,positive
+cXypl4FnoZo,10,1.26,positive,slightly positive
+cXypl4FnoZo,11,0.81,positive,slightly positive
+cXypl4FnoZo,12,-2.17,negative,very negative
+cXypl4FnoZo,13,1.74,positive,positive
+cXypl4FnoZo,14,-2.72,negative,very negative
+cXypl4FnoZo,15,-0.93,negative,slightly negative
+cXypl4FnoZo,16,-2.07,negative,negative
+cXypl4FnoZo,17,-0.84,negative,slightly negative
+cXypl4FnoZo,18,-2.5,negative,very negative
+cXypl4FnoZo,19,-0.06,negative,Neutral
+cXypl4FnoZo,20,-1.07,negative,slightly negative
+cXypl4FnoZo,21,2.73,positive,very positive
+cXypl4FnoZo,22,-0.26,negative,Neutral
+cXypl4FnoZo,23,-1.2,negative,slightly negative
+cXypl4FnoZo,24,0.34,positive,Neutral
+cXypl4FnoZo,25,-1.07,negative,slightly negative
+cXypl4FnoZo,26,-1.91,negative,negative
+cXypl4FnoZo,27,-1.3,negative,negative
+cXypl4FnoZo,28,1.88,positive,positive
+d3_k5Xpfmik,0,-2.28,negative,very negative
+d3_k5Xpfmik,1,-1.14,negative,slightly negative
+d3_k5Xpfmik,2,0.65,positive,slightly positive
+d3_k5Xpfmik,3,-2.93,negative,very negative
+d3_k5Xpfmik,4,-0.34,negative,Neutral
+d3_k5Xpfmik,5,-1.52,negative,negative
+d3_k5Xpfmik,6,1.5,positive,positive
+d3_k5Xpfmik,7,0.01,positive,Neutral
+d3_k5Xpfmik,8,-2.89,negative,very negative
+d3_k5Xpfmik,9,1.0,positive,slightly positive
+d3_k5Xpfmik,10,-2.25,negative,very negative
+d3_k5Xpfmik,11,0.98,positive,slightly positive
+d3_k5Xpfmik,12,-2.24,negative,very negative
+d3_k5Xpfmik,13,-1.14,negative,slightly negative
+d3_k5Xpfmik,14,0.11,positive,Neutral
+d3_k5Xpfmik,15,-1.32,negative,negative
+d3_k5Xpfmik,16,2.41,positive,very positive
+d3_k5Xpfmik,17,1.43,positive,positive
+d3_k5Xpfmik,18,2.27,positive,very positive
+d6hH302o4v8,0,1.94,positive,positive
+d6hH302o4v8,1,2.05,positive,positive
+d6hH302o4v8,2,-2.32,negative,very negative
+d6hH302o4v8,3,2.48,positive,very positive
+d6hH302o4v8,4,-1.61,negative,negative
+d6hH302o4v8,5,-2.36,negative,very negative
+d6hH302o4v8,6,-0.98,negative,slightly negative
+d6hH302o4v8,7,-1.7,negative,negative
+d6hH302o4v8,8,0.56,positive,slightly positive
+d6hH302o4v8,9,-1.34,negative,negative
+d6hH302o4v8,10,1.0,positive,slightly positive
+d6hH302o4v8,11,-1.28,negative,slightly negative
+d6hH302o4v8,12,0.74,positive,slightly positive
+d6hH302o4v8,13,2.21,positive,very positive
+d6hH302o4v8,14,1.58,positive,positive
+d6hH302o4v8,15,-2.31,negative,very negative
+d6hH302o4v8,16,2.88,positive,very positive
+d6hH302o4v8,17,-2.33,negative,very negative
+d6hH302o4v8,18,-0.51,negative,slightly negative
+d6hH302o4v8,19,-0.43,negative,Neutral
+d6hH302o4v8,20,-2.22,negative,very negative
+d6hH302o4v8,21,-0.81,negative,slightly negative
+d6hH302o4v8,22,2.21,positive,very positive
+d6hH302o4v8,23,-1.1,negative,slightly negative
+d6hH302o4v8,24,-2.64,negative,very negative
+d6hH302o4v8,25,-1.47,negative,negative
+d6hH302o4v8,26,-1.41,negative,negative
+d6hH302o4v8,27,-0.92,negative,slightly negative
+d6hH302o4v8,28,1.16,positive,slightly positive
+d6hH302o4v8,29,2.15,positive,very positive
+d6hH302o4v8,30,-0.08,negative,Neutral
+d6hH302o4v8,31,-2.95,negative,very negative
+d6hH302o4v8,32,-1.79,negative,negative
+d6hH302o4v8,33,0.73,positive,slightly positive
+d6hH302o4v8,34,0.85,positive,slightly positive
+d6hH302o4v8,35,-2.28,negative,very negative
+d6hH302o4v8,36,-1.73,negative,negative
+d6hH302o4v8,37,-1.45,negative,negative
+d6hH302o4v8,38,0.87,positive,slightly positive
+d6hH302o4v8,39,2.58,positive,very positive
+d6hH302o4v8,40,1.79,positive,positive
+d6hH302o4v8,41,-2.2,negative,very negative
+d6hH302o4v8,42,0.22,positive,Neutral
+dq3Nf_lMPnE,0,-2.52,negative,very negative
+dq3Nf_lMPnE,1,-0.63,negative,slightly negative
+dq3Nf_lMPnE,2,-1.47,negative,negative
+dq3Nf_lMPnE,3,-1.18,negative,slightly negative
+dq3Nf_lMPnE,4,-0.59,negative,slightly negative
+dq3Nf_lMPnE,5,-2.92,negative,very negative
+dq3Nf_lMPnE,6,-3.0,negative,very negative
+dq3Nf_lMPnE,7,1.65,positive,positive
+dq3Nf_lMPnE,8,1.94,positive,positive
+dq3Nf_lMPnE,9,-1.9,negative,negative
+dq3Nf_lMPnE,10,-2.83,negative,very negative
+dq3Nf_lMPnE,11,2.75,positive,very positive
+dq3Nf_lMPnE,12,1.88,positive,positive
+dq3Nf_lMPnE,13,0.95,positive,slightly positive
+dq3Nf_lMPnE,14,-2.97,negative,very negative
+etzxEpPuc6I,0,2.92,positive,very positive
+etzxEpPuc6I,1,-2.04,negative,negative
+etzxEpPuc6I,2,-0.85,negative,slightly negative
+etzxEpPuc6I,3,2.95,positive,very positive
+etzxEpPuc6I,4,-1.71,negative,negative
+etzxEpPuc6I,5,-1.16,negative,slightly negative
+etzxEpPuc6I,6,-0.83,negative,slightly negative
+etzxEpPuc6I,7,-1.07,negative,slightly negative
+etzxEpPuc6I,8,2.01,positive,positive
+etzxEpPuc6I,9,1.1,positive,slightly positive
+etzxEpPuc6I,10,-2.95,negative,very negative
+etzxEpPuc6I,11,-1.94,negative,negative
+etzxEpPuc6I,12,-1.13,negative,slightly negative
+etzxEpPuc6I,13,0.05,positive,Neutral
+etzxEpPuc6I,14,2.94,positive,very positive
+etzxEpPuc6I,15,-1.27,negative,slightly negative
+etzxEpPuc6I,16,1.14,positive,slightly positive
+etzxEpPuc6I,17,-0.57,negative,slightly negative
+etzxEpPuc6I,18,1.17,positive,slightly positive
+f9O3YtZ2VfI,0,-0.84,negative,slightly negative
+f9O3YtZ2VfI,1,-0.12,negative,Neutral
+f9O3YtZ2VfI,2,0.23,positive,Neutral
+f9O3YtZ2VfI,3,-1.96,negative,negative
+f9O3YtZ2VfI,4,1.44,positive,positive
+f9O3YtZ2VfI,5,1.97,positive,positive
+f9O3YtZ2VfI,6,2.5,positive,very positive
+f9O3YtZ2VfI,7,-0.39,negative,Neutral
+f9O3YtZ2VfI,8,1.86,positive,positive
+f9O3YtZ2VfI,9,-2.28,negative,very negative
+f9O3YtZ2VfI,10,-0.74,negative,slightly negative
+f9O3YtZ2VfI,11,1.09,positive,slightly positive
+f9O3YtZ2VfI,12,0.75,positive,slightly positive
+f9O3YtZ2VfI,13,2.92,positive,very positive
+f9O3YtZ2VfI,14,2.86,positive,very positive
+f9O3YtZ2VfI,15,0.09,positive,Neutral
+f9O3YtZ2VfI,16,-0.99,negative,slightly negative
+f9O3YtZ2VfI,17,1.55,positive,positive
+f9O3YtZ2VfI,18,-1.63,negative,negative
+f9O3YtZ2VfI,19,-1.42,negative,negative
+f9O3YtZ2VfI,20,0.42,positive,Neutral
+f9O3YtZ2VfI,21,-1.58,negative,negative
+f9O3YtZ2VfI,22,0.59,positive,slightly positive
+f9O3YtZ2VfI,23,2.2,positive,very positive
+f9O3YtZ2VfI,24,-2.24,negative,very negative
+f9O3YtZ2VfI,25,-0.57,negative,slightly negative
+f9O3YtZ2VfI,26,-0.79,negative,slightly negative
+f9O3YtZ2VfI,27,-0.87,negative,slightly negative
+f9O3YtZ2VfI,28,2.75,positive,very positive
+f9O3YtZ2VfI,29,-1.99,negative,negative
+f_pcplsH_V0,0,2.52,positive,very positive
+f_pcplsH_V0,1,1.98,positive,positive
+f_pcplsH_V0,2,1.35,positive,positive
+f_pcplsH_V0,3,2.51,positive,very positive
+f_pcplsH_V0,4,1.22,positive,slightly positive
+f_pcplsH_V0,5,-2.98,negative,very negative
+f_pcplsH_V0,6,1.84,positive,positive
+f_pcplsH_V0,7,1.55,positive,positive
+f_pcplsH_V0,8,-2.05,negative,negative
+f_pcplsH_V0,9,2.16,positive,very positive
+f_pcplsH_V0,10,2.75,positive,very positive
+f_pcplsH_V0,11,2.39,positive,very positive
+f_pcplsH_V0,12,2.81,positive,very positive
+f_pcplsH_V0,13,-0.55,negative,slightly negative
+f_pcplsH_V0,14,-2.4,negative,very negative
+fvVhgmXxadc,0,-2.7,negative,very negative
+fvVhgmXxadc,1,1.1,positive,slightly positive
+fvVhgmXxadc,2,-2.24,negative,very negative
+fvVhgmXxadc,3,2.83,positive,very positive
+fvVhgmXxadc,4,-2.05,negative,negative
+fvVhgmXxadc,5,0.31,positive,Neutral
+fvVhgmXxadc,6,-0.11,negative,Neutral
+fvVhgmXxadc,7,1.2,positive,slightly positive
+fvVhgmXxadc,8,-1.05,negative,slightly negative
+fvVhgmXxadc,9,-2.96,negative,very negative
+fvVhgmXxadc,10,1.98,positive,positive
+fvVhgmXxadc,11,2.13,positive,positive
+fvVhgmXxadc,12,0.08,positive,Neutral
+fvVhgmXxadc,13,2.33,positive,very positive
+iiK8YX8oH1E,0,-0.44,negative,slightly negative
+iiK8YX8oH1E,1,-1.75,negative,negative
+iiK8YX8oH1E,2,2.83,positive,very positive
+iiK8YX8oH1E,3,-1.98,negative,negative
+iiK8YX8oH1E,4,-1.66,negative,negative
+iiK8YX8oH1E,5,0.09,positive,Neutral
+iiK8YX8oH1E,6,0.47,positive,slightly positive
+iiK8YX8oH1E,7,-1.49,negative,negative
+iiK8YX8oH1E,8,-0.41,negative,Neutral
+iiK8YX8oH1E,9,2.12,positive,positive
+iiK8YX8oH1E,10,-1.18,negative,slightly negative
+iiK8YX8oH1E,11,0.18,positive,Neutral
+iiK8YX8oH1E,12,-0.55,negative,slightly negative
+iiK8YX8oH1E,13,0.09,positive,Neutral
+iiK8YX8oH1E,14,2.33,positive,very positive
+iiK8YX8oH1E,15,0.49,positive,slightly positive
+iiK8YX8oH1E,16,-2.11,negative,negative
+iiK8YX8oH1E,17,-1.74,negative,negative
+jUzDDGyPkXU,0,1.21,positive,slightly positive
+jUzDDGyPkXU,1,2.11,positive,positive
+jUzDDGyPkXU,2,-1.49,negative,negative
+jUzDDGyPkXU,3,-1.16,negative,slightly negative
+jUzDDGyPkXU,4,-2.49,negative,very negative
+jUzDDGyPkXU,5,-0.7,negative,slightly negative
+jUzDDGyPkXU,6,-1.58,negative,negative
+jUzDDGyPkXU,7,0.35,positive,Neutral
+jUzDDGyPkXU,8,-1.14,negative,slightly negative
+jUzDDGyPkXU,9,-0.63,negative,slightly negative
+jUzDDGyPkXU,10,0.11,positive,Neutral
+jUzDDGyPkXU,11,1.34,positive,positive
+jUzDDGyPkXU,12,1.36,positive,positive
+jUzDDGyPkXU,13,-1.29,negative,slightly negative
+jUzDDGyPkXU,14,1.69,positive,positive
+jUzDDGyPkXU,15,-2.83,negative,very negative
+jUzDDGyPkXU,16,-0.01,negative,Neutral
+jUzDDGyPkXU,17,-2.74,negative,very negative
+jUzDDGyPkXU,18,1.73,positive,positive
+jUzDDGyPkXU,19,2.84,positive,very positive
+jUzDDGyPkXU,20,0.86,positive,slightly positive
+jUzDDGyPkXU,21,2.33,positive,very positive
+jUzDDGyPkXU,22,0.1,positive,Neutral
+jUzDDGyPkXU,23,1.82,positive,positive
+jUzDDGyPkXU,24,-2.32,negative,very negative
+jUzDDGyPkXU,25,-1.17,negative,slightly negative
+jUzDDGyPkXU,26,1.76,positive,positive
+k5Y_838nuGo,0,2.95,positive,very positive
+k5Y_838nuGo,1,0.41,positive,Neutral
+k5Y_838nuGo,2,-1.86,negative,negative
+k5Y_838nuGo,3,0.84,positive,slightly positive
+k5Y_838nuGo,4,2.41,positive,very positive
+k5Y_838nuGo,5,0.44,positive,slightly positive
+k5Y_838nuGo,6,-0.32,negative,Neutral
+k5Y_838nuGo,7,1.82,positive,positive
+k5Y_838nuGo,8,1.92,positive,positive
+k5Y_838nuGo,9,0.73,positive,slightly positive
+k5Y_838nuGo,10,-2.69,negative,very negative
+k5Y_838nuGo,11,-1.54,negative,negative
+k5Y_838nuGo,12,0.62,positive,slightly positive
+k5Y_838nuGo,13,-0.74,negative,slightly negative
+k5Y_838nuGo,14,3.0,positive,very positive
+k5Y_838nuGo,15,1.82,positive,positive
+k5Y_838nuGo,16,-2.1,negative,negative
+k5Y_838nuGo,17,-2.1,negative,negative
+k5Y_838nuGo,18,2.32,positive,very positive
+k5Y_838nuGo,19,-0.34,negative,Neutral
+k5Y_838nuGo,20,-0.41,negative,Neutral
+k5Y_838nuGo,21,2.85,positive,very positive
+k5Y_838nuGo,22,1.42,positive,positive
+k5Y_838nuGo,23,1.64,positive,positive
+k5Y_838nuGo,24,2.81,positive,very positive
+k5Y_838nuGo,25,0.57,positive,slightly positive
+k5Y_838nuGo,26,1.95,positive,positive
+k5Y_838nuGo,27,-2.72,negative,very negative
+k5Y_838nuGo,28,-0.58,negative,slightly negative
+k5Y_838nuGo,29,1.36,positive,positive
+k5Y_838nuGo,30,-1.58,negative,negative
+lXPQBPVc5Cw,0,2.36,positive,very positive
+lXPQBPVc5Cw,1,2.4,positive,very positive
+lXPQBPVc5Cw,2,-1.49,negative,negative
+lXPQBPVc5Cw,3,-0.04,negative,Neutral
+lXPQBPVc5Cw,4,0.1,positive,Neutral
+lXPQBPVc5Cw,5,-1.59,negative,negative
+lXPQBPVc5Cw,6,-0.24,negative,Neutral
+lXPQBPVc5Cw,7,-1.17,negative,slightly negative
+lXPQBPVc5Cw,8,-1.85,negative,negative
+lXPQBPVc5Cw,9,-2.95,negative,very negative
+lXPQBPVc5Cw,10,-1.42,negative,negative
+lXPQBPVc5Cw,11,1.72,positive,positive
+lXPQBPVc5Cw,12,-2.62,negative,very negative
+lXPQBPVc5Cw,13,0.01,positive,Neutral
+lXPQBPVc5Cw,14,-1.73,negative,negative
+lXPQBPVc5Cw,15,-0.18,negative,Neutral
+lXPQBPVc5Cw,16,-0.98,negative,slightly negative
+lXPQBPVc5Cw,17,-0.2,negative,Neutral
+lXPQBPVc5Cw,18,1.67,positive,positive
+lXPQBPVc5Cw,19,2.14,positive,positive
+lXPQBPVc5Cw,20,0.49,positive,slightly positive
+lXPQBPVc5Cw,21,-2.5,negative,very negative
+lXPQBPVc5Cw,22,-2.67,negative,very negative
+lXPQBPVc5Cw,23,-0.01,negative,Neutral
+lXPQBPVc5Cw,24,2.75,positive,very positive
+lXPQBPVc5Cw,25,0.91,positive,slightly positive
+lXPQBPVc5Cw,26,-2.77,negative,very negative
+lXPQBPVc5Cw,27,-0.61,negative,slightly negative
+lXPQBPVc5Cw,28,-0.38,negative,Neutral
+nbWiPyCm4g0,0,1.15,positive,slightly positive
+nbWiPyCm4g0,1,1.02,positive,slightly positive
+nbWiPyCm4g0,2,-0.37,negative,Neutral
+nbWiPyCm4g0,3,-1.68,negative,negative
+nbWiPyCm4g0,4,2.25,positive,very positive
+nbWiPyCm4g0,5,0.28,positive,Neutral
+nbWiPyCm4g0,6,2.39,positive,very positive
+nbWiPyCm4g0,7,1.27,positive,slightly positive
+nbWiPyCm4g0,8,0.77,positive,slightly positive
+nbWiPyCm4g0,9,2.95,positive,very positive
+nzpVDcQ0ywM,0,-0.57,negative,slightly negative
+nzpVDcQ0ywM,1,0.46,positive,slightly positive
+nzpVDcQ0ywM,2,0.47,positive,slightly positive
+nzpVDcQ0ywM,3,-0.14,negative,Neutral
+nzpVDcQ0ywM,4,-1.35,negative,negative
+nzpVDcQ0ywM,5,-0.23,negative,Neutral
+nzpVDcQ0ywM,6,-0.85,negative,slightly negative
+nzpVDcQ0ywM,7,2.6,positive,very positive
+nzpVDcQ0ywM,8,2.54,positive,very positive
+nzpVDcQ0ywM,9,-1.15,negative,slightly negative
+nzpVDcQ0ywM,10,-0.93,negative,slightly negative
+nzpVDcQ0ywM,11,0.6,positive,slightly positive
+nzpVDcQ0ywM,12,0.0,positive,Neutral
+nzpVDcQ0ywM,13,-0.71,negative,slightly negative
+nzpVDcQ0ywM,14,1.5,positive,positive
+nzpVDcQ0ywM,15,-2.11,negative,negative
+nzpVDcQ0ywM,16,0.97,positive,slightly positive
+nzpVDcQ0ywM,17,-2.0,negative,negative
+nzpVDcQ0ywM,18,1.21,positive,slightly positive
+nzpVDcQ0ywM,19,-1.41,negative,negative
+nzpVDcQ0ywM,20,-1.5,negative,negative
+nzpVDcQ0ywM,21,0.99,positive,slightly positive
+nzpVDcQ0ywM,22,-1.09,negative,slightly negative
+nzpVDcQ0ywM,23,-1.38,negative,negative
+ob23OKe5a9Q,0,-2.75,negative,very negative
+ob23OKe5a9Q,1,2.34,positive,very positive
+ob23OKe5a9Q,2,1.63,positive,positive
+ob23OKe5a9Q,3,-2.81,negative,very negative
+ob23OKe5a9Q,4,-0.24,negative,Neutral
+ob23OKe5a9Q,5,-0.17,negative,Neutral
+ob23OKe5a9Q,6,-2.8,negative,very negative
+ob23OKe5a9Q,7,-1.6,negative,negative
+ob23OKe5a9Q,8,2.52,positive,very positive
+ob23OKe5a9Q,9,1.83,positive,positive
+ob23OKe5a9Q,10,-1.99,negative,negative
+ob23OKe5a9Q,11,2.16,positive,very positive
+ob23OKe5a9Q,12,0.83,positive,slightly positive
+ob23OKe5a9Q,13,1.78,positive,positive
+pLTX3ipuDJI,0,-0.65,negative,slightly negative
+pLTX3ipuDJI,1,2.33,positive,very positive
+pLTX3ipuDJI,2,0.98,positive,slightly positive
+pLTX3ipuDJI,3,-1.34,negative,negative
+pLTX3ipuDJI,4,-2.07,negative,negative
+pLTX3ipuDJI,5,-2.86,negative,very negative
+pLTX3ipuDJI,6,-0.43,negative,Neutral
+pLTX3ipuDJI,7,2.1,positive,positive
+pLTX3ipuDJI,8,1.37,positive,positive
+pLTX3ipuDJI,9,-1.83,negative,negative
+pLTX3ipuDJI,10,-1.23,negative,slightly negative
+pLTX3ipuDJI,11,-0.95,negative,slightly negative
+pLTX3ipuDJI,12,0.5,positive,slightly positive
+pLTX3ipuDJI,13,1.29,positive,positive
+pLTX3ipuDJI,14,1.65,positive,positive
+pLTX3ipuDJI,15,0.06,positive,Neutral
+phBUpBr1hSo,0,1.66,positive,positive
+phBUpBr1hSo,1,0.38,positive,Neutral
+phBUpBr1hSo,2,2.07,positive,positive
+phBUpBr1hSo,3,1.21,positive,slightly positive
+phBUpBr1hSo,4,1.21,positive,slightly positive
+phBUpBr1hSo,5,0.13,positive,Neutral
+phBUpBr1hSo,6,-0.0,negative,Neutral
+phBUpBr1hSo,7,2.83,positive,very positive
+phBUpBr1hSo,8,-0.57,negative,slightly negative
+phBUpBr1hSo,9,-0.25,negative,Neutral
+phBUpBr1hSo,10,0.04,positive,Neutral
+phBUpBr1hSo,11,-0.36,negative,Neutral
+phBUpBr1hSo,12,2.1,positive,positive
+phBUpBr1hSo,13,-2.68,negative,very negative
+phBUpBr1hSo,14,2.9,positive,very positive
+phBUpBr1hSo,15,1.85,positive,positive
+phBUpBr1hSo,16,-2.87,negative,very negative
+phBUpBr1hSo,17,-0.31,negative,Neutral
+phBUpBr1hSo,18,-0.1,negative,Neutral
+phBUpBr1hSo,19,2.58,positive,very positive
+phBUpBr1hSo,20,2.28,positive,very positive
+rnaNMUZpvvg,0,0.73,positive,slightly positive
+rnaNMUZpvvg,1,1.81,positive,positive
+rnaNMUZpvvg,2,-1.03,negative,slightly negative
+rnaNMUZpvvg,3,-0.68,negative,slightly negative
+rnaNMUZpvvg,4,2.1,positive,positive
+rnaNMUZpvvg,5,-1.74,negative,negative
+rnaNMUZpvvg,6,1.64,positive,positive
+rnaNMUZpvvg,7,-1.62,negative,negative
+rnaNMUZpvvg,8,0.93,positive,slightly positive
+rnaNMUZpvvg,9,2.93,positive,very positive
+rnaNMUZpvvg,10,2.13,positive,positive
+rnaNMUZpvvg,11,1.54,positive,positive
+rnaNMUZpvvg,12,-2.94,negative,very negative
+rnaNMUZpvvg,13,2.16,positive,very positive
+rnaNMUZpvvg,14,0.06,positive,Neutral
+rnaNMUZpvvg,15,-1.64,negative,negative
+rnaNMUZpvvg,16,-2.42,negative,very negative
+rnaNMUZpvvg,17,2.89,positive,very positive
+rnaNMUZpvvg,18,2.98,positive,very positive
+rnaNMUZpvvg,19,0.96,positive,slightly positive
+rnaNMUZpvvg,20,-1.26,negative,slightly negative
+rnaNMUZpvvg,21,-2.83,negative,very negative
+tIrG4oNLFzE,0,0.4,positive,Neutral
+tIrG4oNLFzE,1,0.48,positive,slightly positive
+tIrG4oNLFzE,2,0.75,positive,slightly positive
+tIrG4oNLFzE,3,2.98,positive,very positive
+tIrG4oNLFzE,4,1.31,positive,positive
+tIrG4oNLFzE,5,-0.47,negative,slightly negative
+tIrG4oNLFzE,6,-1.79,negative,negative
+tIrG4oNLFzE,7,-2.35,negative,very negative
+tIrG4oNLFzE,8,-0.32,negative,Neutral
+tIrG4oNLFzE,9,1.6,positive,positive
+tIrG4oNLFzE,10,1.19,positive,slightly positive
+tIrG4oNLFzE,11,-2.08,negative,negative
+tIrG4oNLFzE,12,1.37,positive,positive
+tIrG4oNLFzE,13,-2.41,negative,very negative
+tIrG4oNLFzE,14,2.64,positive,very positive
+tIrG4oNLFzE,15,-2.88,negative,very negative
+tIrG4oNLFzE,16,-2.02,negative,negative
+tIrG4oNLFzE,17,-2.85,negative,very negative
+tStelxIAHjw,0,2.64,positive,very positive
+tStelxIAHjw,1,2.27,positive,very positive
+tStelxIAHjw,2,-1.33,negative,negative
+tStelxIAHjw,3,0.73,positive,slightly positive
+tStelxIAHjw,4,-2.52,negative,very negative
+tStelxIAHjw,5,-1.38,negative,negative
+tStelxIAHjw,6,-1.22,negative,slightly negative
+tStelxIAHjw,7,-1.84,negative,negative
+tStelxIAHjw,8,1.06,positive,slightly positive
+tStelxIAHjw,9,2.91,positive,very positive
+tStelxIAHjw,10,-1.99,negative,negative
+tStelxIAHjw,11,-0.03,negative,Neutral
+tStelxIAHjw,12,-2.23,negative,very negative
+tStelxIAHjw,13,-0.59,negative,slightly negative
+tStelxIAHjw,14,2.21,positive,very positive
+tStelxIAHjw,15,2.09,positive,positive
+tmZoasNr4rU,0,2.91,positive,very positive
+tmZoasNr4rU,1,-0.78,negative,slightly negative
+tmZoasNr4rU,2,2.65,positive,very positive
+tmZoasNr4rU,3,0.36,positive,Neutral
+tmZoasNr4rU,4,-1.75,negative,negative
+tmZoasNr4rU,5,-2.26,negative,very negative
+tmZoasNr4rU,6,-1.02,negative,slightly negative
+tmZoasNr4rU,7,1.43,positive,positive
+tmZoasNr4rU,8,2.61,positive,very positive
+tmZoasNr4rU,9,-1.49,negative,negative
+tmZoasNr4rU,10,2.93,positive,very positive
+tmZoasNr4rU,11,1.69,positive,positive
+tmZoasNr4rU,12,1.14,positive,slightly positive
+tmZoasNr4rU,13,-1.05,negative,slightly negative
+tmZoasNr4rU,14,0.04,positive,Neutral
+tmZoasNr4rU,15,-0.56,negative,slightly negative
+tmZoasNr4rU,16,3.0,positive,very positive
+tmZoasNr4rU,17,1.6,positive,positive
+tmZoasNr4rU,18,-2.65,negative,very negative
+tmZoasNr4rU,19,-0.94,negative,slightly negative
+v0zCBqDeKcE,0,-0.59,negative,slightly negative
+v0zCBqDeKcE,1,-1.07,negative,slightly negative
+v0zCBqDeKcE,2,2.09,positive,positive
+v0zCBqDeKcE,3,-1.04,negative,slightly negative
+v0zCBqDeKcE,4,0.02,positive,Neutral
+v0zCBqDeKcE,5,-0.9,negative,slightly negative
+v0zCBqDeKcE,6,-2.17,negative,very negative
+v0zCBqDeKcE,7,-2.57,negative,very negative
+v0zCBqDeKcE,8,0.73,positive,slightly positive
+v0zCBqDeKcE,9,-0.81,negative,slightly negative
+v0zCBqDeKcE,10,0.57,positive,slightly positive
+v0zCBqDeKcE,11,-0.36,negative,Neutral
+v0zCBqDeKcE,12,2.38,positive,very positive
+v0zCBqDeKcE,13,-2.78,negative,very negative
+v0zCBqDeKcE,14,1.36,positive,positive
+v0zCBqDeKcE,15,-1.44,negative,negative
+vvZ4IcEtiZc,0,-0.53,negative,slightly negative
+vvZ4IcEtiZc,1,2.65,positive,very positive
+vvZ4IcEtiZc,2,-0.85,negative,slightly negative
+vvZ4IcEtiZc,3,-1.16,negative,slightly negative
+vvZ4IcEtiZc,4,-1.56,negative,negative
+vvZ4IcEtiZc,5,2.15,positive,very positive
+vvZ4IcEtiZc,6,-1.77,negative,negative
+vvZ4IcEtiZc,7,1.39,positive,positive
+vvZ4IcEtiZc,8,-0.03,negative,Neutral
+vvZ4IcEtiZc,9,-2.48,negative,very negative
+vvZ4IcEtiZc,10,0.25,positive,Neutral
+vvZ4IcEtiZc,11,-1.56,negative,negative
+vyB00TXsimI,0,-1.6,negative,negative
+vyB00TXsimI,1,0.65,positive,slightly positive
+vyB00TXsimI,2,0.31,positive,Neutral
+vyB00TXsimI,3,-0.3,negative,Neutral
+vyB00TXsimI,4,-0.91,negative,slightly negative
+vyB00TXsimI,5,2.65,positive,very positive
+vyB00TXsimI,6,-0.73,negative,slightly negative
+vyB00TXsimI,7,-1.1,negative,slightly negative
+vyB00TXsimI,8,-1.12,negative,slightly negative
+vyB00TXsimI,9,-2.16,negative,very negative
+vyB00TXsimI,10,-2.81,negative,very negative
+vyB00TXsimI,11,-1.39,negative,negative
+vyB00TXsimI,12,1.69,positive,positive
+vyB00TXsimI,13,0.52,positive,slightly positive
+vyB00TXsimI,14,2.27,positive,very positive
+vyB00TXsimI,15,0.91,positive,slightly positive
+vyB00TXsimI,16,0.5,positive,slightly positive
+vyB00TXsimI,17,2.96,positive,very positive
+vyB00TXsimI,18,1.72,positive,positive
+vyB00TXsimI,19,-2.12,negative,negative
+vyB00TXsimI,20,-2.79,negative,very negative
+vyB00TXsimI,21,0.16,positive,Neutral
+wMbj6ajWbic,0,0.71,positive,slightly positive
+wMbj6ajWbic,1,1.74,positive,positive
+wMbj6ajWbic,2,-1.69,negative,negative
+wMbj6ajWbic,3,-2.76,negative,very negative
+wMbj6ajWbic,4,1.03,positive,slightly positive
+wMbj6ajWbic,5,0.73,positive,slightly positive
+wMbj6ajWbic,6,0.74,positive,slightly positive
+wMbj6ajWbic,7,1.6,positive,positive
+wMbj6ajWbic,8,1.86,positive,positive
+wMbj6ajWbic,9,-0.62,negative,slightly negative
+wMbj6ajWbic,10,-2.06,negative,negative
+wMbj6ajWbic,11,-2.08,negative,negative
+wMbj6ajWbic,12,-0.43,negative,Neutral
+wMbj6ajWbic,13,-2.18,negative,very negative
+wMbj6ajWbic,14,-2.22,negative,very negative
+wMbj6ajWbic,15,-2.59,negative,very negative
+wMbj6ajWbic,16,2.32,positive,very positive
+wMbj6ajWbic,17,-2.42,negative,very negative
+wMbj6ajWbic,18,-1.77,negative,negative
+wMbj6ajWbic,19,-1.92,negative,negative
+wMbj6ajWbic,20,2.7,positive,very positive
+wMbj6ajWbic,21,1.33,positive,positive
+wMbj6ajWbic,22,2.11,positive,positive
+wMbj6ajWbic,23,-1.4,negative,negative
+wMbj6ajWbic,24,-2.43,negative,very negative
+wMbj6ajWbic,25,-1.73,negative,negative
+wMbj6ajWbic,26,-0.84,negative,slightly negative
+wMbj6ajWbic,27,-0.69,negative,slightly negative
+wMbj6ajWbic,28,-1.11,negative,slightly negative
+wMbj6ajWbic,29,-0.97,negative,slightly negative
+yDtzw_Y-7RU,0,-0.24,negative,Neutral
+yDtzw_Y-7RU,1,0.44,positive,slightly positive
+yDtzw_Y-7RU,2,-1.06,negative,slightly negative
+yDtzw_Y-7RU,3,-1.13,negative,slightly negative
+yDtzw_Y-7RU,4,-2.82,negative,very negative
+yDtzw_Y-7RU,5,-2.94,negative,very negative
+yDtzw_Y-7RU,6,2.56,positive,very positive
+yDtzw_Y-7RU,7,0.95,positive,slightly positive
+yDtzw_Y-7RU,8,-2.43,negative,very negative
+yDtzw_Y-7RU,9,-2.65,negative,very negative
+yDtzw_Y-7RU,10,0.79,positive,slightly positive
+yDtzw_Y-7RU,11,0.26,positive,Neutral
+yDtzw_Y-7RU,12,-2.93,negative,very negative
+yDtzw_Y-7RU,13,2.73,positive,very positive
+yDtzw_Y-7RU,14,-2.42,negative,very negative
+yDtzw_Y-7RU,15,1.25,positive,slightly positive
+yDtzw_Y-7RU,16,-2.75,negative,very negative
+yDtzw_Y-7RU,17,1.81,positive,positive
+yDtzw_Y-7RU,18,-1.01,negative,slightly negative
+yDtzw_Y-7RU,19,2.45,positive,very positive
+yDtzw_Y-7RU,20,1.32,positive,positive
+yDtzw_Y-7RU,21,2.23,positive,very positive
+yDtzw_Y-7RU,22,-1.07,negative,slightly negative
+yDtzw_Y-7RU,23,1.7,positive,positive
+yvsjCA6Y5Fc,0,2.37,positive,very positive
+yvsjCA6Y5Fc,1,-1.53,negative,negative
+yvsjCA6Y5Fc,2,0.16,positive,Neutral
+yvsjCA6Y5Fc,3,0.02,positive,Neutral
+yvsjCA6Y5Fc,4,1.91,positive,positive
+yvsjCA6Y5Fc,5,1.99,positive,positive
+yvsjCA6Y5Fc,6,1.63,positive,positive
+yvsjCA6Y5Fc,7,1.01,positive,slightly positive
+yvsjCA6Y5Fc,8,1.89,positive,positive
+yvsjCA6Y5Fc,9,1.15,positive,slightly positive
+yvsjCA6Y5Fc,10,-0.74,negative,slightly negative
+yvsjCA6Y5Fc,11,1.54,positive,positive
+yvsjCA6Y5Fc,12,-0.39,negative,Neutral
+yvsjCA6Y5Fc,13,-0.35,negative,Neutral
+yvsjCA6Y5Fc,14,1.12,positive,slightly positive
+yvsjCA6Y5Fc,15,2.89,positive,very positive
+yvsjCA6Y5Fc,16,-2.55,negative,very negative
+yvsjCA6Y5Fc,17,-1.13,negative,slightly negative
+yvsjCA6Y5Fc,18,-0.26,negative,Neutral
+yvsjCA6Y5Fc,19,-2.87,negative,very negative
+yvsjCA6Y5Fc,20,2.17,positive,very positive
+yvsjCA6Y5Fc,21,-0.17,negative,Neutral
+yvsjCA6Y5Fc,22,2.08,positive,positive
+zhpQhgha_KU,0,-0.44,negative,slightly negative
+zhpQhgha_KU,1,-1.16,negative,slightly negative
+zhpQhgha_KU,2,0.45,positive,slightly positive
+zhpQhgha_KU,3,0.23,positive,Neutral
+zhpQhgha_KU,4,-2.43,negative,very negative
+zhpQhgha_KU,5,1.74,positive,positive
+zhpQhgha_KU,6,1.37,positive,positive
+zhpQhgha_KU,7,2.17,positive,very positive
+zhpQhgha_KU,8,2.62,positive,very positive
+zhpQhgha_KU,9,1.23,positive,slightly positive
+zhpQhgha_KU,10,-2.63,negative,very negative
+zhpQhgha_KU,11,1.73,positive,positive
+zhpQhgha_KU,12,0.22,positive,Neutral
+zhpQhgha_KU,13,0.24,positive,Neutral
+zhpQhgha_KU,14,-1.54,negative,negative
+zhpQhgha_KU,15,2.47,positive,very positive
+zhpQhgha_KU,16,1.98,positive,positive
+zhpQhgha_KU,17,2.25,positive,very positive
+zhpQhgha_KU,18,-0.31,negative,Neutral
+zhpQhgha_KU,19,-2.21,negative,very negative
+zhpQhgha_KU,20,1.59,positive,positive
+zhpQhgha_KU,21,-1.58,negative,negative
+zhpQhgha_KU,22,-0.95,negative,slightly negative
+zhpQhgha_KU,23,2.02,positive,positive
+zhpQhgha_KU,24,-2.63,negative,very negative
+zhpQhgha_KU,25,-0.14,negative,Neutral
+zhpQhgha_KU,26,-2.36,negative,very negative
+zhpQhgha_KU,27,-1.93,negative,negative
+zhpQhgha_KU,28,-2.06,negative,negative
+zhpQhgha_KU,29,-2.27,negative,very negative
+zhpQhgha_KU,30,-2.58,negative,very negative
+zhpQhgha_KU,31,2.12,positive,positive
+zhpQhgha_KU,32,-1.37,negative,negative
+zhpQhgha_KU,33,-0.12,negative,Neutral
+zhpQhgha_KU,34,1.48,positive,positive
