@@ -162,7 +162,7 @@
       <div id="plotComparison">
         <h2>Utterance-level Comparison</h2>
         <div id="segmentVidName" class="descript">no video selected</div>
-        <select id="segment-number-list" onchange="selectSegment(this);"></select>
+        <div class="selectWrapper" id="selectWrapper"></div>
       </div>
 
 
@@ -727,7 +727,7 @@
       //process this.result via video
       var segHitMap = this.model.getSegmentAcc(video_id)
 
-      var segNumberList = document.getElementById('segment-number-list');
+      var segNumberList = document.getElementById('selectWrapper');
       segNumberList.innerHTML = '';
       for(let i = 0; i < segHitMap[0].length; i++) {
         var tblBodyObj = this.segTable.tBodies[0];
@@ -736,9 +736,20 @@
         var newSegAcc_7 = tblBodyObj.rows[2].insertCell(-1);
 
 
-        let tempSegment = document.createElement('option');
+        let tempSegment = document.createElement('div');
         tempSegment.innerText = String(i);
-        tempSegment.value = i;
+        tempSegment.className = `selectItem item${i}`;
+        tempSegment.addEventListener('click', function() {
+          selectSegment(this);
+          let prev = document.querySelectorAll('.selectWrapper .selectItem.clicked');
+          for(var j=0; prev[j]; j++) {
+            prev[j].classList.remove('clicked');
+          }
+          let next = document.querySelectorAll(`.selectWrapper .selectItem.item${i}`);
+          for(var j=0; next[j]; j++) {
+            next[j].classList.add('clicked');
+          }
+        });
         segNumberList.appendChild(tempSegment);
 
         newSegTitle.innerHTML = "<div class='segmentName' onclick=selectSegment(this)>"+ String(i)+"</div>"

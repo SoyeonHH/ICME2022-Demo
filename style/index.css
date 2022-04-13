@@ -10,36 +10,8 @@
   margin-top: 48px;
 }
 
-.selectWrapper {
-  height: 160px;
-  box-sizing: border-box;
-  border: 4px solid #e8e8e8;
-  overflow: auto;
-}
-
 #selectTitle, #clipSelectTitle {
   margin-bottom: 10px;
-}
-
-.selectItem {
-  display: inline-block;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.selectItem.clicked {
-  color: #ffffff;
-  background-color: #000000;
 }
 
 .resultTitle {
