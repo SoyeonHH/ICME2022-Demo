@@ -609,6 +609,7 @@
     this.chart_binary_distribution = new Chart()
     this.chart_7class_distribution = new Chart()
     this.chart_segment_plot = new Chart()
+    this.chart_segment_plot1 = new Chart()
     this.currentVideo = 0
     this.currentClip = 0
 
@@ -785,6 +786,7 @@
       this.plotHolder.innerHtml = ""
       this.plotHolder.innerHtml = "<canvas class='plot' id='scatter0'></canvas>"
       var scatter0 = document.getElementById('scatter0').getContext("2d");
+      var scatter1 = document.getElementById('scatter1').getContext("2d");
 
       var segmentPlot = {
         labels: [''],
@@ -811,14 +813,85 @@
           data: [[ourPoint+0.02, ourPoint-0.02]],
         }]
       };
+      
+      // mosei
+      var segmentPlot1 = {
+        labels: [''],
+        datasets: [{
+          label: otherDatas[3][0],
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
+          data: [[otherDatas[3][1]+0.02, otherDatas[3][1]-0.02]],
+        },{
+          label: 'Our',
+          backgroundColor: 'rgb(60, 99, 132)',
+          borderColor: 'rgb(60, 99, 132)',
+          data: [[ourPoint+0.02, ourPoint-0.02]],
+        }]
+      }
 
       console.log(segmentPlot["datasets"])
 
+      if(this.model.datasets == "mosi"){
+        this.chart_segment_plot.destroy()
+      }
+      else{
+        this.chart_segment_plot1.destroy()
+      }
 
-      this.chart_segment_plot.destroy()
+
+      // this.chart_segment_plot.destroy()
       this.chart_segment_plot = new Chart(scatter0, {
         type: 'bar',
         data: segmentPlot,
+        options: {
+          responsive: true,
+          maintainAspectRatio: true,
+          indexAxis: 'y',
+          plugins: {
+            legend: {
+              display: true
+            },
+            /*
+            tooltip: {
+              callbacks: {
+                label: ctx => data[ctx.datasetIndex]
+              }
+            }*/
+          },
+          interaction: {
+            mode: 'x',
+          },
+          scales: {
+            y: {
+              stacked: true,
+              grid: {color:'white'},
+            },
+            x: {
+              max: 3,
+              min: -3,
+              grid: {
+                drawBorder: false,
+                color: function(context) {
+                  if (context.tick.value > 0) {
+                    return '#00ff00';
+                  } else if (context.tick.value < 0) {
+                    return '#ff0000';
+                  }
+                  return '#000000';
+                },
+              },
+
+            }
+          }
+        }
+      });
+
+      // mosei
+      // this.chart_segment_plot1.destroy()
+      this.chart_segment_plot1 = new Chart(scatter1, {
+        type: 'bar',
+        data: segmentPlot1,
         options: {
           responsive: true,
           maintainAspectRatio: true,
@@ -958,7 +1031,7 @@
   xmlhttprequest.send();
 
   // Construct other model list
-  let otherModelList = [null, null, null];
+  let otherModelList = [null, null, null, null];
 
   let xmlhttprequest2 = new XMLHttpRequest();
   xmlhttprequest2.open('GET', 'http://210.107.197.59:80/csv?name=MAG-BERT_mosi_result&dataset=mosi');
@@ -990,6 +1063,17 @@
   }
   xmlhttprequest4.send();
 
+  let xmlhttprequest5 = new XMLHttpRequest();
+  xmlhttprequest5.open('GET', 'http://210.107.197.59:80/csv?name=MAG-BERT_mosei_result&dataset=mosei');
+  xmlhttprequest5.onreadystatechange = function(){
+    if(this.readyState == 4){
+      var jsonParsed = JSON.parse(xmlhttprequest5.responseText)
+      otherModelList[3] = (new Model("MAG","mosei",jsonToResult(jsonParsed,false)));
+    }
+  }
+  xmlhttprequest5.send();
+
+  // otherModels = [[model_name, model_dataset, model_file], [model_name, model_dataset, model_file]]
   analysisTest.otherModels = otherModelList
 
 
