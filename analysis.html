@@ -162,13 +162,12 @@
       <div id="plotComparison">
         <h2>Utterance-level Comparison</h2>
         <div id="segmentVidName" class="descript">no video selected</div>
-        
+        <select id="segment-number-list" onchange="selectSegment(this);"></select>
       </div>
 
 
       <div id="p-barSengment">
         <h2>Segment Hit</h2>
-        <div id="segmentVidName" class="descript">no video selected</div>
         <table id="segmentAcc">
           <tr id="segName_segAcc">
             <td></td>
@@ -727,14 +726,20 @@
 
       //process this.result via video
       var segHitMap = this.model.getSegmentAcc(video_id)
-      console.log(segHitMap)
 
-
+      var segNumberList = document.getElementById('segment-number-list');
+      segNumberList.innerHTML = '';
       for(let i = 0; i < segHitMap[0].length; i++) {
         var tblBodyObj = this.segTable.tBodies[0];
         var newSegTitle = tblBodyObj.rows[0].insertCell(-1);
         var newSegAcc_2 = tblBodyObj.rows[1].insertCell(-1);
         var newSegAcc_7 = tblBodyObj.rows[2].insertCell(-1);
+
+
+        let tempSegment = document.createElement('option');
+        tempSegment.innerText = String(i);
+        tempSegment.value = i;
+        segNumberList.appendChild(tempSegment);
 
         newSegTitle.innerHTML = "<div class='segmentName' onclick=selectSegment(this)>"+ String(i)+"</div>"
         newSegAcc_2.innerHTML = '<progress value=' + String(segHitMap[0][i]*100) + ' max="100">'
