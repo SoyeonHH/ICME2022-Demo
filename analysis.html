@@ -162,7 +162,7 @@
       <div id="plotComparison">
         <h2>Utterance-level Comparison</h2>
         <div id="segmentVidName" class="descript">no video selected</div>
-        <div class="selectWrapper" id="selectWrapper"></div>
+        <div class="selectWrapper analysis-selectWrapper" id="selectWrapper"></div>
       </div>
 
 
@@ -238,7 +238,6 @@
       }
     },
   };
-
 
   function jsonToResult(jsonFile, goldYes=false) {
     var returnResult = []
@@ -756,6 +755,7 @@
         newSegAcc_2.innerHTML = '<progress value=' + String(segHitMap[0][i]*100) + ' max="100">'
         newSegAcc_7.innerHTML = '<progress value=' + String(segHitMap[1][i]*100) + ' max="100">'
       }
+      segNumberList.firstChild.click();
     }
 
     this.updateScatterSegment = function(video_id, segment_id) {
@@ -877,90 +877,6 @@
 
     }
   }
- /*
-  function Comparison(goldModels, ourModels, modelList) {
-    this.goldModels = goldModels
-    this.ourModels = ourModels
-    this.models = modelList
-    this.compTable = document.getElementById('compTable')
-
-    this.updateTop = function() {
-      for(let i = 0; i < this.goldModels.length; i++) {
-        var lastRow = this.compTable.rows.length;
-        // if there's no header row in the table, then iteration = lastRow + 1
-        var iteration = lastRow;
-        var row = this.compTable.insertRow(lastRow);
-
-        var scores = this.goldModels[i].getScores()
-
-        var cell_model = row.insertCell(0);
-        cell_model.innerHTML = '<div class="compTop">' + this.goldModels[i].modelName + '</div>'
-        var cell_MAE = row.insertCell(1);
-        cell_MAE.innerHTML = '<div class="compTop">' + String(scores[0]) + '</div>'
-        var cell_Corr = row.insertCell(2);
-        cell_Corr.innerHTML = '<div class="compTop">' + String(scores[1]) + '</div>'
-        var cell_Acc2  = row.insertCell(3);
-        cell_Acc2.innerHTML = '<div class="compTop">' + String(scores[2]) + '</div>'
-        var cell_Acc7 = row.insertCell(4);
-        cell_Acc7.innerHTML = '<div class="compTop">' + String(scores[3]) + '</div>'
-        var cell_F1 = row.insertCell(5);
-        cell_F1.innerHTML = '<div class="compTop">' + String(scores[4]) + '</div>'
-      }
-
-      for(let i = 0; i < this.ourModels.length; i++) {
-        var lastRow = this.compTable.rows.length;
-        // if there's no header row in the table, then iteration = lastRow + 1
-        var iteration = lastRow;
-        var row = this.compTable.insertRow(lastRow);
-
-        var scores = this.ourModels[i].getScores()
-
-        var cell_model = row.insertCell(0);
-        cell_model.innerHTML = '<div class="compOur">'+ this.ourModels[i].modelName + '</div>'
-        var cell_MAE = row.insertCell(1);
-        cell_MAE.innerHTML = '<div class="compOur">' + String(scores[0]) + '</div>'
-        var cell_Corr = row.insertCell(2);
-        cell_Corr.innerHTML = '<div class="compOur">' + String(scores[1]) + '</div>'
-        var cell_Acc2  = row.insertCell(3);
-        cell_Acc2.innerHTML = '<div class="compOur">' + String(scores[2]) + '</div>'
-        var cell_Acc7 = row.insertCell(4);
-        cell_Acc7.innerHTML = '<div class="compOur">' + String(scores[3]) + '</div>'
-        var cell_F1 = row.insertCell(5);
-        cell_F1.innerHTML = '<div class="compOur">' + String(scores[4]) + '</div>'
-      }
-    }
-
-    this.updateList = function(){
-      this.models.sort()
-      for(let i = 0; i < this.models.length; i++) {
-        var lastRow = this.compTable.rows.length;
-        // if there's no header row in the table, then iteration = lastRow + 1
-        var iteration = lastRow;
-        var row = this.compTable.insertRow(lastRow);
-
-        var scores = this.models[i].getScores()
-
-        var cell_model = row.insertCell(0);
-        cell_model.innerHTML = this.models[i].modelName
-        var cell_MAE = row.insertCell(1);
-        cell_MAE.innerHTML = String(scores[1])
-        var cell_Corr = row.insertCell(2);
-        cell_Corr.innerHTML = String(scores[2])
-        var cell_Acc2  = row.insertCell(3);
-        cell_Acc2.innerHTML = String(scores[3])
-        var cell_Acc7 = row.insertCell(4);
-        cell_Acc7.innerHTML = String(scores[4])
-        var cell_F1 = row.insertCell(5);
-        cell_F1.innerHTML = String(scores[5])
-      }
-    }
-
-    this.drawCompTable = function() {
-      this.updateTop()
-      this.updateList()
-    }//use this to draw Comparison table
-  }
- */
 
   var goldTestResult = [["abcd",0,"text1",-0.5,'negative','slightly negative',-0.4,"negative",'slightly negative']
                        ,["abcd",1,"text1",-1.5,'negative','negative',-0.3,"negative",'slightly negative']
@@ -986,13 +902,7 @@
 
   var goldModel = new Model("GOLD", "donghoon", goldTestResult)
   var ourModel = new Model("OUR","notDonghoon",ourTestResult)
-  //var analysis = new Analysis(goldModel)
   var analysisTest = new Analysis()
-  //analysis.updateGraph()
-  //analysis.updatePbarVideo()
-  //analysis.updatePbarSegment('abcd')
-
-
 
   let xmlhttprequest0 = new XMLHttpRequest();
   xmlhttprequest0.open('GET', 'http://210.107.197.59:80/csv?name=gold&dataset=mosei');

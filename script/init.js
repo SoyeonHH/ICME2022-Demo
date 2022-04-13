@@ -38,6 +38,7 @@ fileXHR.open('GET', 'http://210.107.197.59:80/text');
 fileXHR.onreadystatechange = function() {
   if(this.readyState == 4) {
     setItem(JSON.parse(fileXHR.responseText));
+    let selectWrapper = document.querySelectorAll('#selectWrapper')[0];
   }
 }
 fileXHR.send();
@@ -57,6 +58,7 @@ function setItem(fileList) {
     });
     selectWrapper.appendChild(item);
   });
+  selectWrapper.firstChild.click();
 }
 
 // draw items for selection of clip ids
@@ -79,6 +81,7 @@ function setClipItem(name) {
         });
         clipSelectWrapper.appendChild(item);
       });
+      clipSelectWrapper.firstChild.click();
     }
   }
   secondFileXHR.send();
