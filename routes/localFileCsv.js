@@ -26,7 +26,6 @@ module.exports = () => {
   const fs = require('fs');
   const path = require('path');
   const multer = require('multer');
-  let d = new Date().toISOString();
 
   var storage = multer.diskStorage({
     destination: function(req, file, callback) {
@@ -35,7 +34,7 @@ module.exports = () => {
     filename: function(req, file, callback) {
       let extension = path.extname(file.originalname);
       let basename = path.basename(file.originalname, extension);
-      callback(null, basename + "-" + d + extension);
+      callback(null, `${basename}-${Date.now()}${extension}`);
     }
   });
   var upload = multer({
@@ -146,11 +145,17 @@ module.exports = () => {
     }
   });
 
+  var dateContainList = [5,6,8,9,10,11,12,14,15,17,18];
+
   router.post('/', upload.single('file'), (req, res) => {
     var name = req.query.name;
     var dataset = req.query.dataset;
-    let d = new Date().toISOString();
-    var newFileName = `${name}_${d}.csv`;
+    var nowISODate = new Date().toISOString();
+    var dateTime = '';
+    dateContainList.map((e) => {
+      dateTime = dateTime + nowISODate[e];
+    });
+    var newFileName = `${name}_${dateTime}.csv`;
     fs.renameSync(req.file.path, `${req.file.destination}/${dataset}/${newFileName}`);
     res.json({
       'filename': newFileName
