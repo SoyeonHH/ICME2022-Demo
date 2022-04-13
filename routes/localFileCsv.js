@@ -153,7 +153,12 @@ module.exports = () => {
     var nowISODate = new Date().toISOString();
     var dateTime = '';
     dateContainList.map((e) => {
-      dateTime = dateTime + nowISODate[e];
+      if(nowISODate[e] == 'T') {
+        dateTime = dateTime + '-';
+      }
+      else {
+        dateTime = dateTime + nowISODate[e];
+      }
     });
     var newFileName = `${name}_${dateTime}.csv`;
     fs.renameSync(req.file.path, `${req.file.destination}/${dataset}/${newFileName}`);
