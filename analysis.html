@@ -780,6 +780,7 @@
         otherDatas.push([this.otherModels[i].modelName, this.otherModels[i].searchSegment(video_id,segment_id)[2]])
       }
 
+
       //draw chart
       this.plotHolder.innerHtml = ""
       this.plotHolder.innerHtml = "<canvas class='plot' id='scatter0'></canvas>"
@@ -788,20 +789,20 @@
       var segmentPlot = {
         labels: [''],
         datasets: [{
-          label: 'Gold',
+          label: otherDatas[0][0],
           backgroundColor: 'rgb(255, 99, 132)',
           borderColor: 'rgb(255, 99, 132)',
-          data: [[-2+0.02, -2-0.02]],
+          data: [[otherDatas[0][1]+0.02, otherDatas[0][1]-0.02]],
         },{
-          label: 'Gold0',
+          label: otherDatas[1][0],
           backgroundColor: 'rgb(255, 99, 66)',
           borderColor: 'rgb(255, 99, 66)',
-          data: [[0+0.02, 0-0.02]],
+          data: [[otherDatas[1][1]+0.02, otherDatas[1][1]-0.02]],
         },{
-          label: 'Gold1',
+          label: otherDatas[2][0],
           backgroundColor: 'rgb(120, 50, 132)',
           borderColor: 'rgb(120, 50, 132)',
-          data: [[1+0.02, 1-0.02]],
+          data: [[otherDatas[2][1]+0.02, otherDatas[2][1]-0.02]],
         },
         {
           label: 'Our',
@@ -955,6 +956,42 @@
     }
   }
   xmlhttprequest.send();
+
+  // Construct other model list
+  let otherModelList = [null, null, null];
+
+  let xmlhttprequest2 = new XMLHttpRequest();
+  xmlhttprequest2.open('GET', 'http://210.107.197.59:80/csv?name=MAG-BERT_mosi_result&dataset=mosi');
+  xmlhttprequest2.onreadystatechange = function(){
+    if(this.readyState == 4){
+      var jsonParsed = JSON.parse(xmlhttprequest2.responseText)
+      otherModelList[0] = new Model("MAG","mosi",jsonToResult(jsonParsed,false));
+    }
+  }
+  xmlhttprequest2.send();
+
+  let xmlhttprequest3 = new XMLHttpRequest();
+  xmlhttprequest3.open('GET', 'http://210.107.197.59:80/csv?name=MISA_mosi_result&dataset=mosi');
+  xmlhttprequest3.onreadystatechange = function(){
+    if(this.readyState == 4){
+      var jsonParsed = JSON.parse(xmlhttprequest3.responseText)
+      otherModelList[1] = (new Model("MISA","mosi",jsonToResult(jsonParsed,false)));
+    }
+  }
+  xmlhttprequest3.send();
+
+  let xmlhttprequest4 = new XMLHttpRequest();
+  xmlhttprequest4.open('GET', 'http://210.107.197.59:80/csv?name=MMIM_mosi_result&dataset=mosi');
+  xmlhttprequest4.onreadystatechange = function(){
+    if(this.readyState == 4){
+      var jsonParsed = JSON.parse(xmlhttprequest4.responseText)
+      otherModelList[2] = (new Model("MMIM","mosi",jsonToResult(jsonParsed,false)));
+    }
+  }
+  xmlhttprequest4.send();
+
+  analysisTest.otherModels = otherModelList
+
 
   //interaction
   function uploadResult() {
