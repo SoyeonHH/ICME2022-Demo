@@ -773,6 +773,10 @@
         ourPoint = selectedSegment[2]
       }
 
+
+      // Donghoon analysis.otherModels 에 비교하는 모델이 등록되어 있을때 다른 것들을 그릴 수 있어요
+      // 만약 otherModels 에 등록시키지 않았다면 새롭게 구연할 필요가 있습니다.
+      // 일단은 할려는 것은 아래 var segmentPlot 안에 data 에 해당하는 값을 바꿔줘야 합니다.
       var otherDatas = [] //[[modelName, predi],[modelName, Predi],[modelName, Predi]]
       for (let i = 0; i < this.otherModels.length; i++) {
         otherDatas.push([this.otherModels[i].modelName, this.otherModels[i].searchSegment(video_id,segment_id)[2]])
@@ -789,17 +793,19 @@
           label: 'Gold',
           backgroundColor: 'rgb(255, 99, 132)',
           borderColor: 'rgb(255, 99, 132)',
-          data: [[-2+0.02, -2-0.02]],
         },{
+          //바꿔야 하는거 여기 아래있는 data, 이 값만 알맞게 바꿔주면 수직선위에 다른 위치에 표현
+          //현재는 총 3개가 default로 되어 있어요.
+          data: [[-2+0.02, -2-0.02]], //Donghoon -> [[otherDatas[0]+0.02, otherDatas[0]+0.02]]
           label: 'Gold0',
           backgroundColor: 'rgb(255, 99, 66)',
           borderColor: 'rgb(255, 99, 66)',
-          data: [[0+0.02, 0-0.02]],
+          data: [[0+0.02, 0-0.02]], //Donghoon -> [[otherDatas[1]+0.02, otherDatas[1]+0.02]]
         },{
           label: 'Gold1',
           backgroundColor: 'rgb(120, 50, 132)',
           borderColor: 'rgb(120, 50, 132)',
-          data: [[1+0.02, 1-0.02]],
+          data: [[1+0.02, 1-0.02]], //Donghoon -> [[otherDatas[2]+0.02, otherDatas[2]+0.02]]
         },
         {
           label: 'Our',
