@@ -164,6 +164,18 @@ a {
   font-family: 'Anek Tamil';
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
 .selectWrapper {
   height: 160px;
   box-sizing: border-box;

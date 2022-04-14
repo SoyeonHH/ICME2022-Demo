@@ -101,10 +101,28 @@
         <div class="descript">
           You can compare the distributions between gold dataset classes and model prediction result classes !
         </div>
+        <div class="grid-container">
+          <h3 style="text-align: center; margin: 20px;">Gold Binary</h3>
+          <h3 style="text-align: center; margin: 20px;">Predicted Binary</h3>
+          <h3 style="text-align: center; margin: 20px;">Gold 7-Class</h3>
+          <h3 style="text-align: center; margin: 20px;">Predicted 7-Class</h3>
+        </div>
         <div id="canvasList">
           <div class='canvasHolder'><canvas class="graph" id='graph_class_2'></canvas></div>
+          <div class='canvasHolder'><canvas class="graph" id='graph_class_2_pred'></canvas></div>
           <div class='canvasHolder'><canvas class="graph" id='graph_class_7'></canvas></div>
+          <div class='canvasHolder'><canvas class="graph" id='graph_class_7_pred'></canvas></div>
         </div>
+        <!-- <div class="grid-container-2">
+          <h3 style="text-align: center; margin: 20px;">Binary</h3>
+          <h3 style="text-align: center; margin: 20px;">7-Class</h3>
+        </div>
+        <div class="grid-container">
+          <div id="graph_class_2"></div>
+          <div id="chartBinary"></div>
+          <div id="chart7Gold"></div>
+          <div id="chart7"></div>
+        </div> -->
       </div>
       <div id="p-barVideos">
         <h2>Video Accuracy</h2>
@@ -176,6 +194,7 @@
     <script type="text/javascript" src="./script/csv.js"></script>
     <script type="text/javascript" src="./script/scoreboard.js"></script>
     <script type="text/javascript" src="./script/chart.js-3.7.1/package/dist/chart.js"></script>
+    <script type="text/javascript" src="./script/canvasjs-3.6.1/canvasjs.min.js"></script>
     <script>
   const labels2class = [
     'Negative',
@@ -572,6 +591,8 @@
     this.plotHolder = document.getElementById('plotHolder');
     this.chart_binary_distribution = new Chart()
     this.chart_7class_distribution = new Chart()
+    this.chart_binary_distribution_pred = new Chart()
+    this.chart_7class_distribution_pred = new Chart()
     this.chart_segment_plot = new Chart()
     this.chart_segment_plot1 = new Chart()
     this.currentVideo = 0
@@ -579,87 +600,303 @@
 
     this.updateGraph = function(){
       //create class accuray bar-graph
-      var analysisDataset2;
-      var analysisDataset7;
+      // var analysisDataset2;
+      // var analysisDataset7;
 
       if(this.model) {//our model is uploaded
         var ourData = this.model.getClassPop()
         console.log(this.model.modelName + " is being drawn")
 
-        analysisDataset2 = {
-          labels: labels2class,
-          datasets: [{
-            label: 'Gold',
-            backgroundColor: 'rgb(122, 99, 132)',
-            borderColor: 'rgb(122, 99, 132)',
-            data: ourData[0][0],
-          },
-          {
-            label: this.model.modelName,
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: ourData[0][1],
-          }]
-        };
+      //   analysisDataset2 = {
+      //     labels: labels2class,
+      //     datasets: [{
+      //       label: 'Gold',
+      //       backgroundColor: 'rgb(122, 99, 132)',
+      //       borderColor: 'rgb(122, 99, 132)',
+      //       data: ourData[0][0],
+      //     },
+      //     {
+      //       label: this.model.modelName,
+      //       backgroundColor: 'rgb(255, 99, 132)',
+      //       borderColor: 'rgb(255, 99, 132)',
+      //       data: ourData[0][1],
+      //     }]
+      //   };
 
-        analysisDataset7 = {
-          labels: labels7class,
-          datasets: [{
-            label: 'Gold',
-            backgroundColor: 'rgb(122, 99, 132)',
-            borderColor: 'rgb(122, 99, 132)',
-            data: ourData[1][0],
-          },
-          {
-            label: this.model.modelName,
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: ourData[1][1],
-          }]
-        };
+      //   analysisDataset7 = {
+      //     labels: labels7class,
+      //     datasets: [{
+      //       label: 'Gold',
+      //       backgroundColor: 'rgb(122, 99, 132)',
+      //       borderColor: 'rgb(122, 99, 132)',
+      //       data: ourData[1][0],
+      //     },
+      //     {
+      //       label: this.model.modelName,
+      //       backgroundColor: 'rgb(255, 99, 132)',
+      //       borderColor: 'rgb(255, 99, 132)',
+      //       data: ourData[1][1],
+      //     }]
+      //   };
       }
 
       this.canvasList.innerHtml = ""
-      this.canvasList.innerHtml = "<div class='canvasHolder'><canvas class='graph' id='graph_class_2'></canvas></div><div class='canvasHolder'><canvas class='graph' id='graph_class_7'></canvas></div>"
+      this.canvasList.innerHtml = "<div class='canvasHolder'><canvas class='graph' id='graph_class_2'></canvas></div><div class='canvasHolder'><canvas class='graph' id='graph_class_2_pred'></canvas></div><div class='canvasHolder'><canvas class='graph' id='graph_class_7'></canvas></div><div class='canvasHolder'><canvas class='graph' id='graph_class_7_pred'></canvas></div>"
 
       //clear canvas before new drawing
       var graph2 = document.getElementById('graph_class_2').getContext("2d");
+      var graph2_pred = document.getElementById('graph_class_2_pred').getContext("2d");
       var graph7 = document.getElementById('graph_class_7').getContext("2d");
+      var graph7_pred = document.getElementById('graph_class_7_pred').getContext("2d");
 
-      //draw chart with new chart instance
+      // draw pie chart - binary class
+      // var pie_binary_distribution_gold = new CanvasJS.Chart("chartBinaryGold",
+      // {
+      //   theme: "light2",
+      //   title:{
+      //     text: "Gold"
+      //   },
+      //   data:[{
+      //     type: "pie",
+      //     showInLegend: true,
+      //     legendText: "{indexLabel}",
+      //     legend: {
+      //       maxWidth: 350,
+      //       itemWidth: 120
+      //     },
+      //     dataPoints:[
+      //       {y: ourData[0][0][0], indexLabel: "Positive"},
+      //       {y: ourData[0][0][1], indexLabel: "Negative"}
+      //     ]
+      //   }]
+      // })
+      // pie_binary_distribution_gold.render();
+
+
+      // var pie_binary_distribution = new CanvasJS.Chart("chartBinary",
+      // {
+      //   theme: "light2",
+      //   title:{
+      //     text: this.model.modelName
+      //   },
+      //   data:[{
+      //     type: "pie",
+      //     legend: {
+      //       maxWidth: 350,
+      //       itemWidth: 120
+      //     },
+      //     dataPoints:[
+      //       {y: ourData[0][1][0], indexLabel: "Positive"},
+      //       {y: ourData[0][1][1], indexLabel: "Negative"}
+      //     ]
+      //   }]
+      // })
+      // pie_binary_distribution.render();
+      // console.log(ourData)
+
+      
+      // // draw pie chart - 7-class
+      // var pie_7_distribution_gold = new CanvasJS.Chart("chart7Gold",
+      // {
+      //   theme: "light2",
+      //   title:{
+      //     text: "Gold"
+      //   },
+      //   data:[{
+      //     type: "pie",
+      //     showInLegend: true,
+      //     legendText: "{indexLabel}",
+      //     legend: {
+      //       maxWidth: 350,
+      //       itemWidth: 120
+      //     },
+      //     dataPoints:[
+      //       {y: ourData[1][0][0], indexLabel: "very negative"},
+      //       {y: ourData[1][0][1], indexLabel: "negative"},
+      //       {y: ourData[1][0][2], indexLabel: "slightly negative"},
+      //       {y: ourData[1][0][3], indexLabel: "Neutral"},
+      //       {y: ourData[1][0][4], indexLabel: "slightly positive"},
+      //       {y: ourData[1][0][5], indexLabel: "positive"},
+      //       {y: ourData[1][0][6], indexLabel: "very positive"}
+      //     ]
+      //   }]
+      // })
+      // pie_7_distribution_gold.render();
+
+      // var pie_7_distribution = new CanvasJS.Chart("chart7",
+      // {
+      //   theme: "light2",
+      //   title:{
+      //     text: this.model.modelName
+      //   },
+      //   data:[{
+      //     type: "pie",
+      //     legend: {
+      //       maxWidth: 350,
+      //       itemWidth: 120
+      //     },
+      //     dataPoints:[
+      //       {y: ourData[1][1][0], indexLabel: "very negative"},
+      //       {y: ourData[1][1][1], indexLabel: "negative"},
+      //       {y: ourData[1][1][2], indexLabel: "slightly negative"},
+      //       {y: ourData[1][1][3], indexLabel: "Neutral"},
+      //       {y: ourData[1][1][4], indexLabel: "slightly positive"},
+      //       {y: ourData[1][1][5], indexLabel: "positive"},
+      //       {y: ourData[1][1][6], indexLabel: "very positive"}
+      //     ]
+      //   }]
+      // })
+      // pie_7_distribution.render();
+
       this.chart_binary_distribution.destroy()
       this.chart_binary_distribution = new Chart(graph2, {
-        type: 'bar',
-        data: analysisDataset2,
-        options: {
-          responsive: true,
-          maintainAspectRatio: true,
-          scales: {
-            y: {
-              beginAtZero: true,
-              //suggestedMax: 100
+        type: 'pie',
+        data: {
+          labels: labels2class,
+          datasets: [{
+            label: 'Gold',
+            data: ourData[0][0],
+            backgroundColor: ['#1675ff', '#f66384'],
+          }],
+          options:{
+            responsive: true,
+            plugins:{
+              legend: {
+                position: 'bottom',
+              },
+              title: {
+                display: true,
+                text: 'Gold',
+              }
             }
           }
-        },
         }
-      );
+      });
+
+      this.chart_binary_distribution_pred.destroy()
+      this.chart_binary_distribution_pred = new Chart(graph2_pred, {
+        type: 'pie',
+        data: {
+          labels: labels2class,
+          datasets: [{
+            label: 'Gold',
+            data: ourData[0][1],
+            backgroundColor: ['#1675ff', '#f66384'],
+          }],
+          options:{
+            responsive: true,
+            plugins:{
+              legend: {
+                position: 'bottom',
+              },
+              title: {
+                display: true,
+                text: 'Gold',
+              }
+            }
+          }
+        }
+      });
 
       this.chart_7class_distribution.destroy()
       this.chart_7class_distribution = new Chart(graph7, {
-        type: 'bar',
-        data: analysisDataset7,
-        options: {
-          responsive: true,
-          maintainAspectRatio: true,
-          scales: {
-            y: {
-              beginAtZero: true,
-              //suggestedMax: 100
+        type: 'pie',
+        data: {
+          labels: labels7class,
+          datasets: [{
+            data: ourData[1][0],
+            backgroundColor: ['#0C3BAA', '#36a2eb', '#4bc0c0', '#A03CAE', '#f66384', '#f99f40', '#fccd56'],
+          }],
+          options:{
+            responsive: true,
+            plugins:{
+              legend: {
+                position: 'top',
+              },
+              title:{
+                display: true,
+                text: 'Gold',
+              }
             }
           }
-        },
         }
-      );
+      });
+
+      this.chart_7class_distribution_pred.destroy()
+      this.chart_7class_distribution_pred = new Chart(graph7_pred, {
+        type: 'pie',
+        data: {
+          labels: labels7class,
+          datasets: [{
+            data: ourData[1][1],
+            backgroundColor: ['#0C3BAA', '#36a2eb', '#4bc0c0', '#A03CAE', '#f66384', '#f99f40', '#fccd56'],
+          }],
+          options:{
+            responsive: true,
+            plugins:{
+              legend: {
+                position: 'top',
+              },
+              title:{
+                display: true,
+                text: 'Gold',
+              }
+            }
+          }
+        }
+      });
+      
+
+      //draw chart with new chart instance
+      // this.chart_binary_distribution.destroy()
+      // this.chart_binary_distribution = new CanvasJS.Chart('graph2', {
+      //   title:{
+      //     text: "Gold"
+      //   },
+      //   data:[{
+      //     type: "pie",
+      //     showInLegend: true,
+      //     legnedText: labels2class,
+      //     dataPoints: [
+      //       {y: ourData[0][0][0], indexLabel: "Positive"},
+      //       {y: ourData[0][0][1], indexLabel: "Negative"}
+      //     ]
+      //   }]
+      // })
+      // console.log(ourData[0][0])
+
+      // this.chart_binary_distribution = new Chart(graph2, {
+      //   type: 'bar',
+      //   data: analysisDataset2,
+      //   options: {
+      //     responsive: true,
+      //     maintainAspectRatio: true,
+      //     scales: {
+      //       y: {
+      //         beginAtZero: true,
+      //         //suggestedMax: 100
+      //       }
+      //     }
+      //   },
+      //   }
+      // );
+
+      // this.chart_7class_distribution.destroy()
+      // this.chart_7class_distribution = new Chart(graph7, {
+      //   type: 'bar',
+      //   data: analysisDataset7,
+      //   options: {
+      //     responsive: true,
+      //     maintainAspectRatio: true,
+      //     scales: {
+      //       y: {
+      //         beginAtZero: true,
+      //         //suggestedMax: 100
+      //       }
+      //     }
+      //   },
+      //   }
+      // );
 
 
     }
@@ -998,7 +1235,7 @@
       var jsonParsed = JSON.parse(xmlhttprequest.responseText)
       console.log(jsonToResult(jsonParsed,false))
 
-      var modelTest01 = new Model("newTest","mosi",jsonToResult(jsonParsed,false))
+      var modelTest01 = new Model("-","mosi",jsonToResult(jsonParsed,false))
       console.log(modelTest01.getScores())
       //console.log(modelTest01.getClassPop())
       console.log(modelTest01.getVideoAcc())

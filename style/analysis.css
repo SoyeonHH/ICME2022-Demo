@@ -150,3 +150,7 @@
 #p-barSengment {
   display: none;
 }
+
+.grid-container div {
+  height: 300px;
+}
