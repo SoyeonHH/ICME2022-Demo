@@ -632,7 +632,7 @@
             data: ourData[0][0],
           },
           {
-            label: 'Predicted',
+            label: this.model.modelName,
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
             data: ourData[0][1],
@@ -648,7 +648,7 @@
             data: ourData[1][0],
           },
           {
-            label: 'Predicted',
+            label: this.model.modelName,
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
             data: ourData[1][1],
@@ -801,7 +801,7 @@
       var segmentPlot = {
         labels: [''],
         datasets: [{
-          label: 'gold',
+          label: 'Gold',
           backgroundColor: 'black',
           borderColor: 'black',
           data: [[goldDatas[1][1]+0.02, goldDatas[1][1]-0.02]],
@@ -830,23 +830,29 @@
       };
       
       // mosei
-      // var segmentPlot1 = {
-      //   labels: [''],
-      //   datasets: [{
-      //     label: otherDatas[3][0],
-      //     backgroundColor: 'rgb(255, 99, 132)',
-      //     borderColor: 'rgb(255, 99, 132)',
-      //     data: [[otherDatas[3][1]+0.02, otherDatas[3][1]-0.02]],
-      //   },{
-      //     label: 'Our',
-      //     backgroundColor: 'rgb(60, 99, 132)',
-      //     borderColor: 'rgb(60, 99, 132)',
-      //     data: [[ourPoint+0.02, ourPoint-0.02]],
-      //   }]
-      // }
+      var segmentPlot1 = {
+        labels: [''],
+        datasets: [{
+          label: 'Gold',
+          backgroundColor: 'black',
+          borderColor: 'black',
+          data: [[goldDatas[0][1]+0.02, goldDatas[0][1]-0.02]],
+        },{
+          label: otherDatas[3][0],
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
+          data: [[otherDatas[3][1]+0.02, otherDatas[3][1]-0.02]],
+        },{
+          label: 'Our',
+          backgroundColor: 'rgb(60, 99, 132)',
+          borderColor: 'rgb(60, 99, 132)',
+          data: [[ourPoint+0.02, ourPoint-0.02]],
+        }]
+      }
 
       console.log(segmentPlot["datasets"])
 
+      // mosi
       this.chart_segment_plot.destroy()
       this.chart_segment_plot = new Chart(scatter0, {
         type: 'bar',
