@@ -39,19 +39,23 @@ function setScoreboard(modelList, dataset, isUpload) {
   var table = document.querySelectorAll(`#${dataset}-table tbody`)[0];
   modelList.map((model) => {
     let modelColumn = document.createElement('tr');
-    modelColumn.className = `tr-${dataset}`
+    modelColumn.className = `tr-${dataset} ${model}`
     scoreboardRowList.map((e) => {
       let modelTd = document.createElement('td');
       if(e == 'Model') {
         modelTd.innerText = model; 
-        modelTd.addEventListener("mouseover", function( event ){
-          event.target.style.color = "rgb(255, 99, 132)";
-        })
-        modelTd.addEventListener("mouseleave", function(event){
-          event.target.style.color = "black"
-        })
         modelTd.addEventListener('click', function() {
           getModelCsv(model, dataset, isUpload);
+
+          let prev_mosi = document.querySelectorAll('.tr-mosi.clicked');
+          for(var i=0; prev_mosi[i]; i++) {
+            prev_mosi[i].classList.remove('clicked');
+          }
+          let prev_mosei = document.querySelectorAll('.tr-mosei.clicked');
+          for(var i=0; prev_mosei[i]; i++) {
+            prev_mosei[i].classList.remove('clicked');
+          }
+          document.querySelectorAll(`.tr-${dataset}.${model}`)[0].classList.add('clicked');
         });
       }
       else modelTd.innerText = '-';

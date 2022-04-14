@@ -107,7 +107,21 @@
   font-size: 12pt;
 }
 
+#mosi-table tr.clicked td, #mosi-table tr.clicked:hover td,
+#mosei-table tr.clicked td, #mosei-table tr.clicked:hover td {
+  color: #008000;
+}
+
+#mosei-table tr:hover td, #mosi-table tr:hover td {
+  color: rgb(255, 99, 132);
+}
+
+#mosei-table tr:first-child:hover td, #mosi-table tr:first-child:hover td{
+  color: #000000;
+}
+
 #mosei-table tr:first-child, #mosi-table tr:first-child {
+  color: #000000 !important;
   font-weight: 800;
   font-size: 12pt;
 }
