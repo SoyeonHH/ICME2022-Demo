@@ -70,7 +70,7 @@ function getModelCsv(modelName, dataset, isUpload) {
   xhr.onreadystatechange = function() {
     if(this.readyState == 4) {
       readCsv(modelName, dataset, isUpload);
-      selectModel('temp', dataset, JSON.parse(xhr.responseText));
+      selectModel(modelName, dataset, JSON.parse(xhr.responseText));
     }
   }
   xhr.send();

@@ -615,7 +615,7 @@
     this.currentClip = 0
 
     this.updateGraph = function(){
-      //create class accuracy bar-graph
+      //create class accuray bar-graph
       var analysisDataset2;
       var analysisDataset7;
 
@@ -1125,6 +1125,7 @@
 
   function selectModel(model_name, model_dataset, model_file) {//after selecting a model, draw distribution chart, video accuracy table,
     analysisTest.model = new Model(model_name, model_dataset ,jsonToResult(model_file))
+    console.log(analysisTest.model.modelName)
     analysisTest.updateGraph()
     analysisTest.updatePbarVideo()
     analysisTest.updatePbarSegment()  //reset
