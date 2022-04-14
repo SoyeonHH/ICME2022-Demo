@@ -109,11 +109,11 @@
 
 #mosi-table tr.clicked td, #mosi-table tr.clicked:hover td,
 #mosei-table tr.clicked td, #mosei-table tr.clicked:hover td {
-  color: #008000;
+  color: rgb(255, 99, 132);
 }
 
 #mosei-table tr:hover td, #mosi-table tr:hover td {
-  color: rgb(255, 99, 132);
+  color: #1675ff;
 }
 
 #mosei-table tr:first-child:hover td, #mosi-table tr:first-child:hover td{
