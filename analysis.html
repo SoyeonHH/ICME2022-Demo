@@ -48,7 +48,7 @@
             Input your predict result file that has above csv format !</a>
           </div>
           <div class="descript" style="color: #878787; text-align: center;">
-            If you want to test using an example random result file, please download our <a id="link1" href="./data/mosi.pkl" style="font-family: Anek Tamil; color:#1675ff;" download>example.csv file</a>
+            If you want to test using an example random result file, please download the file <a id="link1" href="./data/example_mosi.csv" style="font-family: Anek Tamil; color:#1675ff;" download>example_mosi.csv</a> or <a id="link1" href="./data/example_mosei.csv" style="font-family: Anek Tamil; color:#1675ff;" download>example_mosei.csv</a>
           </div>
           <div class="descript" style="color: #878787; text-align: center;">
             If you need datasets for training or testing models, please see the page of <a href="https://github.com/A2Zadeh/CMU-MultimodalSDK" style="font-family: Anek Tamil; color:#1675ff;">https://github.com/A2Zadeh/CMU-MultimodalSDK</a>
@@ -145,8 +145,9 @@
         </table>
       </div>
       <div id="plotSegment">
-        <h2>Plot Segment</h2>
-        <div id=plotHolder>
+        <div style="height: 40px;"></div>
+        <div class="descript" style="font-size: 24px; text-align: center; color: #878787;">↓ Return Sentiment Intensity Plot Results below ↓</div>
+        <div id=plotHolder style="margin: 32px; margin-right: auto; margin-left: auto;">
           <canvas class='plot' id='scatter0'></canvas>
         </div>
       </div>
@@ -758,9 +759,8 @@
       this.plotHolder.innerHtml = ""
       this.plotHolder.innerHtml = "<canvas class='plot' id='scatter0'></canvas>"
       var scatter0 = document.getElementById('scatter0').getContext("2d");
-      // var scatter1 = document.getElementById('scatter1').getContext("2d");
 
-      var segmentPlot = {
+      var segmentPlot_mosi = {
         labels: [''],
         datasets: [{
           label: 'Gold',
@@ -792,7 +792,7 @@
       };
       
       // mosei
-      var segmentPlot1 = {
+      var segmentPlot_mosei = {
         labels: [''],
         datasets: [{
           label: 'Gold',
@@ -805,11 +805,17 @@
           borderColor: 'rgb(255, 99, 132)',
           data: [[otherDatas[3][1]+0.02, otherDatas[3][1]-0.02]],
         },{
-          label: 'Our',
+          label: this.model.modelName,
           backgroundColor: 'rgb(60, 99, 132)',
           borderColor: 'rgb(60, 99, 132)',
           data: [[ourPoint+0.02, ourPoint-0.02]],
         }]
+      }
+
+      if(this.model.datasetType == "mosi"){
+        var segmentPlot = segmentPlot_mosi
+      } else{
+        var segmentPlot = segmentPlot_mosei
       }
 
       console.log(segmentPlot["datasets"])
