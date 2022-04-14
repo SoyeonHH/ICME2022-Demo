@@ -45,54 +45,16 @@
             <img src="./image/upload_file_example2.png" />
           </div>
           <div class="descript" style="color: #878787; text-align: center;">
-            Input your predict result file that has above csv format !
+            Input your predict result file that has above csv format !</a>
+          </div>
+          <div class="descript" style="color: #878787; text-align: center;">
+            If you want to test using an example random result file, please download our <a id="link1" href="./data/mosi.pkl" style="font-family: Anek Tamil; color:#1675ff;" download>example.csv file</a>
+          </div>
+          <div class="descript" style="color: #878787; text-align: center;">
+            If you need datasets for training or testing models, please see the page of <a href="https://github.com/A2Zadeh/CMU-MultimodalSDK" style="font-family: Anek Tamil; color:#1675ff;">https://github.com/A2Zadeh/CMU-MultimodalSDK</a>
           </div>
         </div>
         <div style="height: 24px;"></div>
-        <div id="download-set">
-          <div>
-            <a id="link1" onmouseover="mouseOver1()" onmouseout="mouseOut()" href="./data/mosi.pkl" style="font-family: Anek Tamil;" download>
-            Download cmu_mosi.pkl</a>
-          </div>
-          <div>
-            <a id="link2" onmouseover="mouseOver2()" onmouseout="mouseOut()" href="./data/mosei.pkl" style="font-family: Anek Tamil;" download>
-            Download cmu_mosei.pkl</a>
-          </div>
-          <div>
-            <a id="link3" onmouseover="mouseOver3()" onmouseout="mouseOut()" href="./data/example_mosi.csv" style="font-family: Anek Tamil;" download>
-            Download example_mosi.csv</a>
-          </div>
-          <div>
-            <a id="link4" onmouseover="mouseOver4()" onmouseout="mouseOut()" href="./data/example_mosei.csv" style="font-family: Anek Tamil;" download>
-            Download example_mosei.csv</a>
-          </div>
-          <script>
-            function mouseOver1(){
-              document.getElementById("link1").style.color = "rgb(255, 99, 132)"
-            }
-
-            function mouseOver2(){
-              document.getElementById("link2").style.color = "rgb(255, 99, 132)";
-            }
-
-            function mouseOver3(){
-              document.getElementById("link3").style.color = "rgb(255, 99, 132)";
-            }
-
-            function mouseOver4(){
-              document.getElementById("link4").style.color = "rgb(255, 99, 132)";
-            }
-
-            function mouseOut(){
-              document.getElementById("link1").style.color = "black";
-              document.getElementById("link2").style.color = "black";
-              document.getElementById("link3").style.color = "black";
-              document.getElementById("link4").style.color = "black";
-            }
-
-          </script>
-        </div>
-        <div style="height: 8px;"></div>
         <h2>Scoreboard</h2>
         <div class="descript">
           Click the model name that you want to analysis in Scoreboard, and enjoy the observation below !
@@ -822,7 +784,7 @@
           data: [[otherDatas[2][1]+0.02, otherDatas[2][1]-0.02]],
         },
         {
-          label: 'Our',
+          label: this.model.modelName,
           backgroundColor: 'rgb(60, 99, 132)',
           borderColor: 'rgb(60, 99, 132)',
           data: [[ourPoint+0.02, ourPoint-0.02]],
