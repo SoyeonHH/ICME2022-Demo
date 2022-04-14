@@ -116,10 +116,10 @@
             <td></td>
           </tr>
           <tr>
-            <td>2 Class</td>
+            <td class="descript" style="font-size: 16px;">Binary Acc</td>
           </tr>
           <tr>
-            <td>7 Class</td>
+            <td class="descript" style="font-size: 16px;">7class Acc</td>
           </tr>
         </table>
       </div>
@@ -667,7 +667,7 @@
 
     this.updatePbarVideo = function(){//Draw Accuracy Bar of the Videos
       var modelAcc = this.model.getVideoAcc()
-      document.getElementById('videoAcc').innerHTML = "<tr id='segName_segAcc'><td></td></tr><tr><td>2 Class</td></tr><tr><td>7 Class</td></tr>"
+      document.getElementById('videoAcc').innerHTML = "<tr id='segName_segAcc'><td></td></tr><tr><td class=\"descript\" style=\"font-size: 16px;\">binary Acc</td></tr><tr><td class=\"descript\" style=\"font-size: 16px;\">7class Acc</td></tr>"
 
       //add progess bar in table #videoAcc
       for(let i = 0; i < modelAcc.length; i++) {
@@ -675,10 +675,12 @@
         var newVidTitle = tblBodyObj.rows[0].insertCell(-1);
         var newVidAcc_2 = tblBodyObj.rows[1].insertCell(-1);
         var newVidAcc_7 = tblBodyObj.rows[2].insertCell(-1);
+        var acc2 = String(modelAcc[i][1]).split('.')[0];
+        var acc7 = String(modelAcc[i][2]).split('.')[0];
 
-        newVidTitle.innerHTML = '<div class="descript" style="margin-bottom: 2px; font-size: 18px; cursor: pointer;" onclick="selectVideo(this)">' + modelAcc[i][0] + '</div>'
-        newVidAcc_2.innerHTML = '<progress value=' + String(modelAcc[i][1]) + ' max="100">'
-        newVidAcc_7.innerHTML = '<progress value=' + String(modelAcc[i][2]) + ' max="100">'
+        newVidTitle.innerHTML = '<div class="descript" style="margin-bottom: 2px; font-size: 18px; cursor: pointer; text-align: center;" onclick="selectVideo(this)">' + modelAcc[i][0] + '</div>'
+        newVidAcc_2.innerHTML = '<div class="descript" style="font-size: 14px; color: #1675ff; text-align: center;"><tr><td>' + String(acc2) + '%</td><td><progress value=' + String(acc2) + ' max="100"></td></tr></div>'
+        newVidAcc_7.innerHTML = '<div class="descript" style="font-size: 14px; color: #1675ff; text-align: center;"><tr><td>' + String(acc7) + '%</td><td><progress value=' + String(acc7) + ' max="100"></td></tr></div>'
       }
     }
 
@@ -769,13 +771,13 @@
           data: [[goldDatas[1][1]+0.02, goldDatas[1][1]-0.02]],
         },{
           label: otherDatas[0][0],
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
+          backgroundColor: 'rgb(60, 99, 132)',
+          borderColor: 'rgb(60, 99, 132)',
           data: [[otherDatas[0][1]+0.02, otherDatas[0][1]-0.02]],
         },{
           label: otherDatas[1][0],
-          backgroundColor: 'rgb(255, 99, 66)',
-          borderColor: 'rgb(255, 99, 66)',
+          backgroundColor: '#207E66',
+          borderColor: '#207E66',
           data: [[otherDatas[1][1]+0.02, otherDatas[1][1]-0.02]],
         },{
           label: otherDatas[2][0],
@@ -785,8 +787,8 @@
         },
         {
           label: this.model.modelName,
-          backgroundColor: 'rgb(60, 99, 132)',
-          borderColor: 'rgb(60, 99, 132)',
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
           data: [[ourPoint+0.02, ourPoint-0.02]],
         }]
       };
@@ -801,13 +803,13 @@
           data: [[goldDatas[0][1]+0.02, goldDatas[0][1]-0.02]],
         },{
           label: otherDatas[3][0],
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
+          backgroundColor: 'rgb(60, 99, 132)',
+          borderColor: 'rgb(60, 99, 132)',
           data: [[otherDatas[3][1]+0.02, otherDatas[3][1]-0.02]],
         },{
           label: this.model.modelName,
-          backgroundColor: 'rgb(60, 99, 132)',
-          borderColor: 'rgb(60, 99, 132)',
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
           data: [[ourPoint+0.02, ourPoint-0.02]],
         }]
       }
@@ -855,9 +857,9 @@
                 drawBorder: false,
                 color: function(context) {
                   if (context.tick.value > 0) {
-                    return '#00ff00';
-                  } else if (context.tick.value < 0) {
                     return '#ff0000';
+                  } else if (context.tick.value < 0) {
+                    return '#003d80';
                   }
                   return '#000000';
                 },
