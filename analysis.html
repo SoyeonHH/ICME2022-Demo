@@ -598,10 +598,11 @@
     //return scores[ModelName, MAE, Corr, Acc-2, Acc-7, F1,]
   }
 
-  function Analysis(model, otherModels=[]) {
+  function Analysis(model, otherModels=[], goldModels=[]) {
 
     this.model = model
     this.otherModels = otherModels
+    this.goldModels = goldModels
     this.canvasList = document.getElementById('canvasList')
     this.vidTable = document.getElementById('videoAcc');
     this.segTable = document.getElementById('segmentAcc');
@@ -781,16 +782,30 @@
         otherDatas.push([this.otherModels[i].modelName, this.otherModels[i].searchSegment(video_id,segment_id)[2]])
       }
 
+      console.log("otherDatas")
+      console.log(otherDatas)
+
+      var goldDatas = [] 
+      for (let i = 0; i < this.goldModels.length; i++){
+        goldDatas.push([this.goldModels[i].modelName, this.goldModels[i].searchSegment(video_id,segment_id)[2]])
+      }
+      console.log("goldDatas")
+      console.log(goldDatas)
 
       //draw chart
       this.plotHolder.innerHtml = ""
       this.plotHolder.innerHtml = "<canvas class='plot' id='scatter0'></canvas>"
       var scatter0 = document.getElementById('scatter0').getContext("2d");
-      var scatter1 = document.getElementById('scatter1').getContext("2d");
+      // var scatter1 = document.getElementById('scatter1').getContext("2d");
 
       var segmentPlot = {
         labels: [''],
         datasets: [{
+          label: 'gold',
+          backgroundColor: 'black',
+          borderColor: 'black',
+          data: [[goldDatas[1][1]+0.02, goldDatas[1][1]-0.02]],
+        },{
           label: otherDatas[0][0],
           backgroundColor: 'rgb(255, 99, 132)',
           borderColor: 'rgb(255, 99, 132)',
@@ -815,32 +830,24 @@
       };
       
       // mosei
-      var segmentPlot1 = {
-        labels: [''],
-        datasets: [{
-          label: otherDatas[3][0],
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
-          data: [[otherDatas[3][1]+0.02, otherDatas[3][1]-0.02]],
-        },{
-          label: 'Our',
-          backgroundColor: 'rgb(60, 99, 132)',
-          borderColor: 'rgb(60, 99, 132)',
-          data: [[ourPoint+0.02, ourPoint-0.02]],
-        }]
-      }
+      // var segmentPlot1 = {
+      //   labels: [''],
+      //   datasets: [{
+      //     label: otherDatas[3][0],
+      //     backgroundColor: 'rgb(255, 99, 132)',
+      //     borderColor: 'rgb(255, 99, 132)',
+      //     data: [[otherDatas[3][1]+0.02, otherDatas[3][1]-0.02]],
+      //   },{
+      //     label: 'Our',
+      //     backgroundColor: 'rgb(60, 99, 132)',
+      //     borderColor: 'rgb(60, 99, 132)',
+      //     data: [[ourPoint+0.02, ourPoint-0.02]],
+      //   }]
+      // }
 
       console.log(segmentPlot["datasets"])
 
-      if(this.model.datasets == "mosi"){
-        this.chart_segment_plot.destroy()
-      }
-      else{
-        this.chart_segment_plot1.destroy()
-      }
-
-
-      // this.chart_segment_plot.destroy()
+      this.chart_segment_plot.destroy()
       this.chart_segment_plot = new Chart(scatter0, {
         type: 'bar',
         data: segmentPlot,
@@ -889,51 +896,51 @@
 
       // mosei
       // this.chart_segment_plot1.destroy()
-      this.chart_segment_plot1 = new Chart(scatter1, {
-        type: 'bar',
-        data: segmentPlot1,
-        options: {
-          responsive: true,
-          maintainAspectRatio: true,
-          indexAxis: 'y',
-          plugins: {
-            legend: {
-              display: true
-            },
-            /*
-            tooltip: {
-              callbacks: {
-                label: ctx => data[ctx.datasetIndex]
-              }
-            }*/
-          },
-          interaction: {
-            mode: 'x',
-          },
-          scales: {
-            y: {
-              stacked: true,
-              grid: {color:'white'},
-            },
-            x: {
-              max: 3,
-              min: -3,
-              grid: {
-                drawBorder: false,
-                color: function(context) {
-                  if (context.tick.value > 0) {
-                    return '#00ff00';
-                  } else if (context.tick.value < 0) {
-                    return '#ff0000';
-                  }
-                  return '#000000';
-                },
-              },
+      // this.chart_segment_plot1 = new Chart(scatter1, {
+      //   type: 'bar',
+      //   data: segmentPlot1,
+      //   options: {
+      //     responsive: true,
+      //     maintainAspectRatio: true,
+      //     indexAxis: 'y',
+      //     plugins: {
+      //       legend: {
+      //         display: true
+      //       },
+      //       /*
+      //       tooltip: {
+      //         callbacks: {
+      //           label: ctx => data[ctx.datasetIndex]
+      //         }
+      //       }*/
+      //     },
+      //     interaction: {
+      //       mode: 'x',
+      //     },
+      //     scales: {
+      //       y: {
+      //         stacked: true,
+      //         grid: {color:'white'},
+      //       },
+      //       x: {
+      //         max: 3,
+      //         min: -3,
+      //         grid: {
+      //           drawBorder: false,
+      //           color: function(context) {
+      //             if (context.tick.value > 0) {
+      //               return '#00ff00';
+      //             } else if (context.tick.value < 0) {
+      //               return '#ff0000';
+      //             }
+      //             return '#000000';
+      //           },
+      //         },
 
-            }
-          }
-        }
-      });
+      //       }
+      //     }
+      //   }
+      // });
 
     }
 
@@ -980,13 +987,15 @@
   var ourModel = new Model("OUR","notDonghoon",ourTestResult)
   var analysisTest = new Analysis()
 
+  // Construct Gold model list
+  let goldModelList = [null, null];
+
   let xmlhttprequest0 = new XMLHttpRequest();
   xmlhttprequest0.open('GET', 'http://210.107.197.59:80/csv?name=gold&dataset=mosei');
   xmlhttprequest0.onreadystatechange = function() {
     if(this.readyState == 4) {
       let jsonParsed = JSON.parse(xmlhttprequest0.responseText)
-      //console.log(jsonParsed)
-      //console.log(jsonToResult(jsonParsed,true))
+      goldModelList[0] = (new Model("Gold","mosei",jsonToResult(jsonParsed,true)))
       globalGold_mosei = jsonToResult(jsonParsed,true)
     }
   }
@@ -997,11 +1006,13 @@
   xmlhttprequest1.onreadystatechange = function() {
     if(this.readyState == 4) {
       let jsonParsed = JSON.parse(xmlhttprequest1.responseText)
-      //console.log(jsonToResult(jsonParsed,true))
-      globalGold_mosi = jsonToResult(jsonParsed,true)
+      goldModelList[1] = (new Model("Gold","mosi",jsonToResult(jsonParsed,true)))
+      globalGold_mosi = jsonToResult(jsonParsed,true);
     }
   }
   xmlhttprequest1.send();
+
+  analysisTest.goldModels = goldModelList
 
 
   let xmlhttprequest = new XMLHttpRequest();
