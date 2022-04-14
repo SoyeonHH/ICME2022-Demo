@@ -128,7 +128,7 @@
 }
 
 #mosei-table table tr td:first-child, #mosi-table table tr td:first-child {
-  width: 40% !important;
+  width: 30% !important;
   padding-top: 4px;
   padding-bottom: 4px;
 }

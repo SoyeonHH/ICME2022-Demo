@@ -208,8 +208,8 @@
     </div>
 
 
-    <div id = "MAG_BERT_TEXT" type='text' src="./predict/MAG-BERT_mosi_result">
-    <div id = "MISA_TEXT" type='text' src="./predict/MISA_mosi_result">
+    <div id = "MAG_BERT_TEXT" type='text' src="./predict/MAG">
+    <div id = "MISA_TEXT" type='text' src="./predict/MISA">
     <script type="text/javascript" src="./script/csv.js"></script>
     <script type="text/javascript" src="./script/scoreboard.js"></script>
     <script type="text/javascript" src="./script/chart.js-3.7.1/package/dist/chart.js"></script>
@@ -1022,7 +1022,7 @@
 
 
   let xmlhttprequest = new XMLHttpRequest();
-  xmlhttprequest.open('GET', 'http://210.107.197.59:80/csv?name=MAG-BERT_mosi_result&dataset=mosi');
+  xmlhttprequest.open('GET', 'http://210.107.197.59:80/csv?name=MAG&dataset=mosi');
   xmlhttprequest.onreadystatechange = function() {
     if(this.readyState == 4) {
       var jsonParsed = JSON.parse(xmlhttprequest.responseText)
@@ -1051,7 +1051,7 @@
   let otherModelList = [null, null, null, null];
 
   let xmlhttprequest2 = new XMLHttpRequest();
-  xmlhttprequest2.open('GET', 'http://210.107.197.59:80/csv?name=MAG-BERT_mosi_result&dataset=mosi');
+  xmlhttprequest2.open('GET', 'http://210.107.197.59:80/csv?name=MAG&dataset=mosi');
   xmlhttprequest2.onreadystatechange = function(){
     if(this.readyState == 4){
       var jsonParsed = JSON.parse(xmlhttprequest2.responseText)
@@ -1061,7 +1061,7 @@
   xmlhttprequest2.send();
 
   let xmlhttprequest3 = new XMLHttpRequest();
-  xmlhttprequest3.open('GET', 'http://210.107.197.59:80/csv?name=MISA_mosi_result&dataset=mosi');
+  xmlhttprequest3.open('GET', 'http://210.107.197.59:80/csv?name=MISA&dataset=mosi');
   xmlhttprequest3.onreadystatechange = function(){
     if(this.readyState == 4){
       var jsonParsed = JSON.parse(xmlhttprequest3.responseText)
@@ -1071,7 +1071,7 @@
   xmlhttprequest3.send();
 
   let xmlhttprequest4 = new XMLHttpRequest();
-  xmlhttprequest4.open('GET', 'http://210.107.197.59:80/csv?name=MMIM_mosi_result&dataset=mosi');
+  xmlhttprequest4.open('GET', 'http://210.107.197.59:80/csv?name=MMIM&dataset=mosi');
   xmlhttprequest4.onreadystatechange = function(){
     if(this.readyState == 4){
       var jsonParsed = JSON.parse(xmlhttprequest4.responseText)
@@ -1081,7 +1081,7 @@
   xmlhttprequest4.send();
 
   let xmlhttprequest5 = new XMLHttpRequest();
-  xmlhttprequest5.open('GET', 'http://210.107.197.59:80/csv?name=MAG-BERT_mosei_result&dataset=mosei');
+  xmlhttprequest5.open('GET', 'http://210.107.197.59:80/csv?name=MAG&dataset=mosei');
   xmlhttprequest5.onreadystatechange = function(){
     if(this.readyState == 4){
       var jsonParsed = JSON.parse(xmlhttprequest5.responseText)
