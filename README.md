@@ -32,3 +32,14 @@ $ forever stop 0
 ```
 
 You can find more information about forever package in the below link:<br>https://www.npmjs.com/package/forever
+
+
+## Chart.js
+We use [chart.js-3.7.1](https://www.chartjs.org/docs/latest/getting-started/installation.html) for models distribution representation referring to [https://github.com/chartjs/Chart.js](https://github.com/chartjs/Chart.js)
+
+
+
+## Contacts
+* Soyeon Hong: sodus1102@ajou.ac.kr
+* Jeonghoon Kim: kkk26hy@ajou.ac.kr
+* Donghoon Lee: oss002@ajou.ac.kr
