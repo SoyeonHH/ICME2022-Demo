@@ -37,6 +37,15 @@ You can find more information about forever package in the below link:<br>https:
 ## Chart.js
 We use [chart.js-3.7.1](https://www.chartjs.org/docs/latest/getting-started/installation.html) for models distribution representation referring to [https://github.com/chartjs/Chart.js](https://github.com/chartjs/Chart.js)
 
+## Usage
+
+### Download datasets
+
+You can download the [raw datasets](http://immortal.multicomp.cs.cmu.edu/raw_datasets/) and [preprocessed csd format datasets](http://immortal.multicomp.cs.cmu.edu/raw_datasets/processed_data/) of CMU-MOSI and CMU-MOSEI.
+
+If you want to process these data on high-level aligned computational sequences, please see the github page [https://github.com/A2Zadeh/CMU-MultimodalSDK](https://github.com/A2Zadeh/CMU-MultimodalSDK)
+
+Also, you can download pkl files that are used in our demo model predictions in hear.
 
 
 ## Contacts
