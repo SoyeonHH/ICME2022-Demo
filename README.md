@@ -33,9 +33,17 @@ $ forever stop 0
 
 You can find more information about forever package in the below link:<br>https://www.npmjs.com/package/forever
 
+---
+
 
 ## Chart.js
 We use [chart.js-3.7.1](https://www.chartjs.org/docs/latest/getting-started/installation.html) for models distribution representation referring to [https://github.com/chartjs/Chart.js](https://github.com/chartjs/Chart.js)
+
+![pie_chart](/image/pie_chart.png)
+
+
+
+---
 
 ## Usage
 
@@ -45,7 +53,19 @@ You can download the [raw datasets](http://immortal.multicomp.cs.cmu.edu/raw_dat
 
 If you want to process these data on high-level aligned computational sequences, please see the github page [https://github.com/A2Zadeh/CMU-MultimodalSDK](https://github.com/A2Zadeh/CMU-MultimodalSDK)
 
-Also, you can download pkl files that are used in our demo model predictions in hear.
+Also, you can download pkl files that are used in our demo model predictions in [hear](https://drive.google.com/drive/folders/1IBwWNH0XjPnZWaAlP1U2tIJH6Rb3noMI).
+
+### Multimodal Sentiment Analysis Tasks
+
+In DeMuSA, three MSA research models are used. You can reference the detail usage of prediction models in each Github page and papers.
+
+* [MAG: Integrating Multimodal Information in Large Pretrained Transformers](https://github.com/SoyeonHH/ICME2022-Demo/tree/main/src/MAG) ([paper](https://aclanthology.org/2020.acl-main.214.pdf), [Github](https://github.com/WasifurRahman/BERT_multimodal_transformer))
+
+* [MISA: Modality-Invariant and -Specific Representations for Multimodal Sentiment Analysis](https://github.com/SoyeonHH/ICME2022-Demo/tree/main/src/MISA) ([paper](https://arxiv.org/pdf/2005.03545.pdf), [Github](https://github.com/declare-lab/MISA))
+
+* Multimodal-Infomax: Improving Multimodal Fusion with Hierarchical Mutual Information Maximization for Multimodal Sentiment Analysis ([paper](https://arxiv.org/pdf/2109.00412.pdf), [Github](https://github.com/declare-lab/Multimodal-Infomax))
+
+---
 
 
 ## Contacts
