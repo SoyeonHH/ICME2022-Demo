@@ -34,7 +34,7 @@ module.exports = () => {
     filename: function(req, file, callback) {
       let extension = path.extname(file.originalname);
       let basename = path.basename(file.originalname, extension);
-      callback(null, basename + "-" + Date.now() + extension);
+      callback(null, `${basename}-${Date.now()}${extension}`);
     }
   });
   var upload = multer({
@@ -145,10 +145,22 @@ module.exports = () => {
     }
   });
 
+  var dateContainList = [5,6,8,9,10,11,12,14,15,17,18];
+
   router.post('/', upload.single('file'), (req, res) => {
     var name = req.query.name;
     var dataset = req.query.dataset;
-    var newFileName = `${name}_${Date.now()}.csv`;
+    var nowISODate = new Date().toISOString();
+    var dateTime = '';
+    dateContainList.map((e) => {
+      if(nowISODate[e] == 'T') {
+        dateTime = dateTime + '-';
+      }
+      else {
+        dateTime = dateTime + nowISODate[e];
+      }
+    });
+    var newFileName = `${name}_${dateTime}.csv`;
     fs.renameSync(req.file.path, `${req.file.destination}/${dataset}/${newFileName}`);
     res.json({
       'filename': newFileName

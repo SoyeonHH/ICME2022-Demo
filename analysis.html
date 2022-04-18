@@ -7,12 +7,14 @@
   </head>
   <body>
     <div class="header">
-      <div class="header-leading">
+      <a href="http://210.107.197.59/analyzer"><div class="header-leading">
         DeMuSA
+      </div></a>
+      <div class="header-action">
+        <a href="http://210.107.197.59/analyzer"><div class="header-item analysis selected">Analyzer</div></a>
+        <a href="http://210.107.197.59/explorer"><div class="header-item view">Data Explorer</div></a>
+        <div class="header-github"><a href="https://github.com/SoyeonHH/ICME2022-Demo"><img src="./image/github.png" style="filter: invert(100%);"/></a></div>
       </div>
-      <div class="header-github"><a href="https://github.com/SoyeonHH/ICME2022-Demo"><img src="./image/github.png" style="filter: invert(100%);"/></a></div>
-      <div class="header-item analysis selected">Analyzer</div>
-      <a href="/"><div class="header-item view">Data Explorer</div></a>
     </div>
 
     <div class="section">
@@ -41,12 +43,18 @@
           </table>
           <div id="upload-description">
             <img src="./image/upload_file_example2.png" />
-            <div class="descript" style="color: #878787">
-              → Select a csv file with the above columns
-            </div>
+          </div>
+          <div class="descript" style="color: #878787; text-align: center;">
+            Input your predict result file that has above csv format !</a>
+          </div>
+          <div class="descript" style="color: #878787; text-align: center;">
+            If you want to test using an example random result file, please download the file <a id="link1" href="./data/example_mosi.csv" style="font-family: Anek Tamil; color:#1675ff;" download>example_mosi.csv</a> or <a id="link1" href="./data/example_mosei.csv" style="font-family: Anek Tamil; color:#1675ff;" download>example_mosei.csv</a>
+          </div>
+          <div class="descript" style="color: #878787; text-align: center;">
+            If you need datasets for training or testing models, please see the page of <a href="https://github.com/A2Zadeh/CMU-MultimodalSDK" style="font-family: Anek Tamil; color:#1675ff;">https://github.com/A2Zadeh/CMU-MultimodalSDK</a>
           </div>
         </div>
-        <div style="height: 8px;"></div>
+        <div style="height: 24px;"></div>
         <h2>Scoreboard</h2>
         <div class="descript">
           Click the model name that you want to analysis in Scoreboard, and enjoy the observation below !
@@ -93,9 +101,17 @@
         <div class="descript">
           You can compare the distributions between gold dataset classes and model prediction result classes !
         </div>
+        <div class="grid-container">
+          <h3 style="text-align: center; margin: 20px;">Gold Binary</h3>
+          <h3 style="text-align: center; margin: 20px;">Predicted Binary</h3>
+          <h3 style="text-align: center; margin: 20px;">Gold 7-Class</h3>
+          <h3 style="text-align: center; margin: 20px;">Predicted 7-Class</h3>
+        </div>
         <div id="canvasList">
           <div class='canvasHolder'><canvas class="graph" id='graph_class_2'></canvas></div>
+          <div class='canvasHolder'><canvas class="graph" id='graph_class_2_pred'></canvas></div>
           <div class='canvasHolder'><canvas class="graph" id='graph_class_7'></canvas></div>
+          <div class='canvasHolder'><canvas class="graph" id='graph_class_7_pred'></canvas></div>
         </div>
       </div>
       <div id="p-barVideos">
@@ -108,16 +124,22 @@
             <td></td>
           </tr>
           <tr>
-            <td>2 Class</td>
+            <td class="descript" style="font-size: 16px;">Binary Acc</td>
           </tr>
           <tr>
-            <td>7 Class</td>
+            <td class="descript" style="font-size: 16px;">7class Acc</td>
           </tr>
         </table>
       </div>
+      <div id="plotComparison">
+        <h2>Utterance-level Comparison</h2>
+        <div id="segmentVidName" class="descript">no video selected</div>
+        <div class="selectWrapper analysis-selectWrapper" id="selectWrapper"></div>
+      </div>
+
+
       <div id="p-barSengment">
         <h2>Segment Hit</h2>
-        <div id="segmentVidName" class="descript">no video selected</div>
         <table id="segmentAcc">
           <tr id="segName_segAcc">
             <td></td>
@@ -131,8 +153,9 @@
         </table>
       </div>
       <div id="plotSegment">
-        <h2>Plot Segment</h2>
-        <div id=plotHolder>
+        <div style="height: 40px;"></div>
+        <div class="descript" style="font-size: 24px; text-align: center; color: #878787;">↓ Return Sentiment Intensity Plot Results below ↓</div>
+        <div id=plotHolder style="margin: 32px; margin-right: auto; margin-left: auto;">
           <canvas class='plot' id='scatter0'></canvas>
         </div>
       </div>
@@ -156,11 +179,12 @@
     </div>
 
 
-    <div id = "MAG_BERT_TEXT" type='text' src="./predict/MAG-BERT_mosi_result">
-    <div id = "MISA_TEXT" type='text' src="./predict/MISA_mosi_result">
+    <div id = "MAG_BERT_TEXT" type='text' src="./predict/MAG">
+    <div id = "MISA_TEXT" type='text' src="./predict/MISA">
     <script type="text/javascript" src="./script/csv.js"></script>
     <script type="text/javascript" src="./script/scoreboard.js"></script>
     <script type="text/javascript" src="./script/chart.js-3.7.1/package/dist/chart.js"></script>
+    <script type="text/javascript" src="./script/canvasjs-3.6.1/canvasjs.min.js"></script>
     <script>
   const labels2class = [
     'Negative',
@@ -188,7 +212,6 @@
       }
     },
   };
-
 
   function jsonToResult(jsonFile, goldYes=false) {
     var returnResult = []
@@ -547,111 +570,143 @@
     //return scores[ModelName, MAE, Corr, Acc-2, Acc-7, F1,]
   }
 
-  function Analysis(model, otherModels=[]) {
+  function Analysis(model, otherModels=[], goldModels=[]) {
 
     this.model = model
     this.otherModels = otherModels
+    this.goldModels = goldModels
     this.canvasList = document.getElementById('canvasList')
     this.vidTable = document.getElementById('videoAcc');
     this.segTable = document.getElementById('segmentAcc');
     this.plotHolder = document.getElementById('plotHolder');
     this.chart_binary_distribution = new Chart()
     this.chart_7class_distribution = new Chart()
+    this.chart_binary_distribution_pred = new Chart()
+    this.chart_7class_distribution_pred = new Chart()
     this.chart_segment_plot = new Chart()
+    this.chart_segment_plot1 = new Chart()
     this.currentVideo = 0
     this.currentClip = 0
 
     this.updateGraph = function(){
-      //create class accuracy bar-graph
-      var analysisDataset2;
-      var analysisDataset7;
 
       if(this.model) {//our model is uploaded
         var ourData = this.model.getClassPop()
         console.log(this.model.modelName + " is being drawn")
-
-        analysisDataset2 = {
-          labels: labels2class,
-          datasets: [{
-            label: 'Gold',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: ourData[0][0],
-          },
-          {
-            label: 'Our',
-            backgroundColor: 'rgb(122, 99, 132)',
-            borderColor: 'rgb(122, 99, 132)',
-            data: ourData[0][1],
-          }]
-        };
-
-        analysisDataset7 = {
-          labels: labels7class,
-          datasets: [{
-            label: 'Gold',
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: ourData[1][0],
-          },
-          {
-            label: 'Our',
-            backgroundColor: 'rgb(122, 99, 132)',
-            borderColor: 'rgb(122, 99, 132)',
-            data: ourData[1][1],
-          }]
-        };
       }
 
       this.canvasList.innerHtml = ""
-      this.canvasList.innerHtml = "<div class='canvasHolder'><canvas class='graph' id='graph_class_2'></canvas></div><div class='canvasHolder'><canvas class='graph' id='graph_class_7'></canvas></div>"
+      this.canvasList.innerHtml = "<div class='canvasHolder'><canvas class='graph' id='graph_class_2'></canvas></div><div class='canvasHolder'><canvas class='graph' id='graph_class_2_pred'></canvas></div><div class='canvasHolder'><canvas class='graph' id='graph_class_7'></canvas></div><div class='canvasHolder'><canvas class='graph' id='graph_class_7_pred'></canvas></div>"
 
       //clear canvas before new drawing
       var graph2 = document.getElementById('graph_class_2').getContext("2d");
+      var graph2_pred = document.getElementById('graph_class_2_pred').getContext("2d");
       var graph7 = document.getElementById('graph_class_7').getContext("2d");
+      var graph7_pred = document.getElementById('graph_class_7_pred').getContext("2d");
 
-      //draw chart with new chart instance
       this.chart_binary_distribution.destroy()
       this.chart_binary_distribution = new Chart(graph2, {
-        type: 'bar',
-        data: analysisDataset2,
-        options: {
-          responsive: true,
-          maintainAspectRatio: true,
-          scales: {
-            y: {
-              beginAtZero: true,
-              //suggestedMax: 100
+        type: 'pie',
+        data: {
+          labels: labels2class,
+          datasets: [{
+            label: 'Gold',
+            data: ourData[0][0],
+            backgroundColor: ['#1675ff', '#f66384'],
+          }],
+          options:{
+            responsive: true,
+            plugins:{
+              legend: {
+                position: 'bottom',
+              },
+              title: {
+                display: true,
+                text: 'Gold',
+              }
             }
           }
-        },
         }
-      );
+      });
+
+      this.chart_binary_distribution_pred.destroy()
+      this.chart_binary_distribution_pred = new Chart(graph2_pred, {
+        type: 'pie',
+        data: {
+          labels: labels2class,
+          datasets: [{
+            label: 'Gold',
+            data: ourData[0][1],
+            backgroundColor: ['#1675ff', '#f66384'],
+          }],
+          options:{
+            responsive: true,
+            plugins:{
+              legend: {
+                position: 'bottom',
+              },
+              title: {
+                display: true,
+                text: 'Gold',
+              }
+            }
+          }
+        }
+      });
 
       this.chart_7class_distribution.destroy()
       this.chart_7class_distribution = new Chart(graph7, {
-        type: 'bar',
-        data: analysisDataset7,
-        options: {
-          responsive: true,
-          maintainAspectRatio: true,
-          scales: {
-            y: {
-              beginAtZero: true,
-              //suggestedMax: 100
+        type: 'pie',
+        data: {
+          labels: labels7class,
+          datasets: [{
+            data: ourData[1][0],
+            backgroundColor: ['#0C3BAA', '#36a2eb', '#4bc0c0', '#A03CAE', '#f66384', '#f99f40', '#fccd56'],
+          }],
+          options:{
+            responsive: true,
+            plugins:{
+              legend: {
+                position: 'top',
+              },
+              title:{
+                display: true,
+                text: 'Gold',
+              }
             }
           }
-        },
         }
-      );
+      });
 
-
+      this.chart_7class_distribution_pred.destroy()
+      this.chart_7class_distribution_pred = new Chart(graph7_pred, {
+        type: 'pie',
+        data: {
+          labels: labels7class,
+          datasets: [{
+            data: ourData[1][1],
+            backgroundColor: ['#0C3BAA', '#36a2eb', '#4bc0c0', '#A03CAE', '#f66384', '#f99f40', '#fccd56'],
+          }],
+          options:{
+            responsive: true,
+            plugins:{
+              legend: {
+                position: 'top',
+              },
+              title:{
+                display: true,
+                text: 'Gold',
+              }
+            }
+          }
+        }
+      });
     }
 
 
     this.updatePbarVideo = function(){//Draw Accuracy Bar of the Videos
       var modelAcc = this.model.getVideoAcc()
-      document.getElementById('videoAcc').innerHTML = "<tr id='segName_segAcc'><td></td></tr><tr><td>2 Class</td></tr><tr><td>7 Class</td></tr>"
+      document.getElementById('videoAcc').innerHTML = "<tr id='segName_segAcc'><td></td></tr><tr><td class=\"descript\" style=\"font-size: 16px;\">binary Acc</td></tr><tr><td class=\"descript\" style=\"font-size: 16px;\">7class Acc</td></tr>"
 
       //add progess bar in table #videoAcc
       for(let i = 0; i < modelAcc.length; i++) {
@@ -659,10 +714,12 @@
         var newVidTitle = tblBodyObj.rows[0].insertCell(-1);
         var newVidAcc_2 = tblBodyObj.rows[1].insertCell(-1);
         var newVidAcc_7 = tblBodyObj.rows[2].insertCell(-1);
+        var acc2 = String(modelAcc[i][1]).split('.')[0];
+        var acc7 = String(modelAcc[i][2]).split('.')[0];
 
-        newVidTitle.innerHTML = '<div class="descript" style="margin-bottom: 2px; font-size: 18px; cursor: pointer;" onclick="selectVideo(this)">' + modelAcc[i][0] + '</div>'
-        newVidAcc_2.innerHTML = '<progress value=' + String(modelAcc[i][1]) + ' max="100">'
-        newVidAcc_7.innerHTML = '<progress value=' + String(modelAcc[i][2]) + ' max="100">'
+        newVidTitle.innerHTML = '<div class="descript" style="margin-bottom: 2px; font-size: 18px; cursor: pointer; text-align: center;" onclick="selectVideo(this)">' + modelAcc[i][0] + '</div>'
+        newVidAcc_2.innerHTML = '<div class="descript" style="font-size: 14px; color: #1675ff; text-align: center;"><tr><td>' + String(acc2) + '%</td><td><progress value=' + String(acc2) + ' max="100"></td></tr></div>'
+        newVidAcc_7.innerHTML = '<div class="descript" style="font-size: 14px; color: #1675ff; text-align: center;"><tr><td>' + String(acc7) + '%</td><td><progress value=' + String(acc7) + ' max="100"></td></tr></div>'
       }
     }
 
@@ -676,19 +733,37 @@
 
       //process this.result via video
       var segHitMap = this.model.getSegmentAcc(video_id)
-      console.log(segHitMap)
 
-
+      var segNumberList = document.getElementById('selectWrapper');
+      segNumberList.innerHTML = '';
       for(let i = 0; i < segHitMap[0].length; i++) {
         var tblBodyObj = this.segTable.tBodies[0];
         var newSegTitle = tblBodyObj.rows[0].insertCell(-1);
         var newSegAcc_2 = tblBodyObj.rows[1].insertCell(-1);
         var newSegAcc_7 = tblBodyObj.rows[2].insertCell(-1);
 
+
+        let tempSegment = document.createElement('div');
+        tempSegment.innerText = String(i);
+        tempSegment.className = `selectItem item${i}`;
+        tempSegment.addEventListener('click', function() {
+          selectSegment(this);
+          let prev = document.querySelectorAll('.selectWrapper .selectItem.clicked');
+          for(var j=0; prev[j]; j++) {
+            prev[j].classList.remove('clicked');
+          }
+          let next = document.querySelectorAll(`.selectWrapper .selectItem.item${i}`);
+          for(var j=0; next[j]; j++) {
+            next[j].classList.add('clicked');
+          }
+        });
+        segNumberList.appendChild(tempSegment);
+
         newSegTitle.innerHTML = "<div class='segmentName' onclick=selectSegment(this)>"+ String(i)+"</div>"
         newSegAcc_2.innerHTML = '<progress value=' + String(segHitMap[0][i]*100) + ' max="100">'
         newSegAcc_7.innerHTML = '<progress value=' + String(segHitMap[1][i]*100) + ' max="100">'
       }
+      segNumberList.firstChild.click();
     }
 
     this.updateScatterSegment = function(video_id, segment_id) {
@@ -711,40 +786,82 @@
         otherDatas.push([this.otherModels[i].modelName, this.otherModels[i].searchSegment(video_id,segment_id)[2]])
       }
 
+      console.log("otherDatas")
+      console.log(otherDatas)
+
+      var goldDatas = [] 
+      for (let i = 0; i < this.goldModels.length; i++){
+        goldDatas.push([this.goldModels[i].modelName, this.goldModels[i].searchSegment(video_id,segment_id)[2]])
+      }
+      console.log("goldDatas")
+      console.log(goldDatas)
+
       //draw chart
       this.plotHolder.innerHtml = ""
       this.plotHolder.innerHtml = "<canvas class='plot' id='scatter0'></canvas>"
       var scatter0 = document.getElementById('scatter0').getContext("2d");
 
-      var segmentPlot = {
+      var segmentPlot_mosi = {
         labels: [''],
         datasets: [{
           label: 'Gold',
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
-          data: [[-2+0.02, -2-0.02]],
+          backgroundColor: 'black',
+          borderColor: 'black',
+          data: [[goldDatas[1][1]+0.02, goldDatas[1][1]-0.02]],
         },{
-          label: 'Gold0',
-          backgroundColor: 'rgb(255, 99, 66)',
-          borderColor: 'rgb(255, 99, 66)',
-          data: [[0+0.02, 0-0.02]],
-        },{
-          label: 'Gold1',
-          backgroundColor: 'rgb(120, 50, 132)',
-          borderColor: 'rgb(120, 50, 132)',
-          data: [[1+0.02, 1-0.02]],
-        },
-        {
-          label: 'Our',
+          label: otherDatas[0][0],
           backgroundColor: 'rgb(60, 99, 132)',
           borderColor: 'rgb(60, 99, 132)',
+          data: [[otherDatas[0][1]+0.02, otherDatas[0][1]-0.02]],
+        },{
+          label: otherDatas[1][0],
+          backgroundColor: '#207E66',
+          borderColor: '#207E66',
+          data: [[otherDatas[1][1]+0.02, otherDatas[1][1]-0.02]],
+        },{
+          label: otherDatas[2][0],
+          backgroundColor: 'rgb(120, 50, 132)',
+          borderColor: 'rgb(120, 50, 132)',
+          data: [[otherDatas[2][1]+0.02, otherDatas[2][1]-0.02]],
+        },
+        {
+          label: this.model.modelName,
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
           data: [[ourPoint+0.02, ourPoint-0.02]],
         }]
       };
+      
+      // mosei
+      var segmentPlot_mosei = {
+        labels: [''],
+        datasets: [{
+          label: 'Gold',
+          backgroundColor: 'black',
+          borderColor: 'black',
+          data: [[goldDatas[0][1]+0.02, goldDatas[0][1]-0.02]],
+        },{
+          label: otherDatas[3][0],
+          backgroundColor: 'rgb(60, 99, 132)',
+          borderColor: 'rgb(60, 99, 132)',
+          data: [[otherDatas[3][1]+0.02, otherDatas[3][1]-0.02]],
+        },{
+          label: this.model.modelName,
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
+          data: [[ourPoint+0.02, ourPoint-0.02]],
+        }]
+      }
+
+      if(this.model.datasetType == "mosi"){
+        var segmentPlot = segmentPlot_mosi
+      } else{
+        var segmentPlot = segmentPlot_mosei
+      }
 
       console.log(segmentPlot["datasets"])
 
-
+      // mosi
       this.chart_segment_plot.destroy()
       this.chart_segment_plot = new Chart(scatter0, {
         type: 'bar',
@@ -779,9 +896,9 @@
                 drawBorder: false,
                 color: function(context) {
                   if (context.tick.value > 0) {
-                    return '#00ff00';
-                  } else if (context.tick.value < 0) {
                     return '#ff0000';
+                  } else if (context.tick.value < 0) {
+                    return '#003d80';
                   }
                   return '#000000';
                 },
@@ -791,6 +908,54 @@
           }
         }
       });
+
+      // mosei
+      // this.chart_segment_plot1.destroy()
+      // this.chart_segment_plot1 = new Chart(scatter1, {
+      //   type: 'bar',
+      //   data: segmentPlot1,
+      //   options: {
+      //     responsive: true,
+      //     maintainAspectRatio: true,
+      //     indexAxis: 'y',
+      //     plugins: {
+      //       legend: {
+      //         display: true
+      //       },
+      //       /*
+      //       tooltip: {
+      //         callbacks: {
+      //           label: ctx => data[ctx.datasetIndex]
+      //         }
+      //       }*/
+      //     },
+      //     interaction: {
+      //       mode: 'x',
+      //     },
+      //     scales: {
+      //       y: {
+      //         stacked: true,
+      //         grid: {color:'white'},
+      //       },
+      //       x: {
+      //         max: 3,
+      //         min: -3,
+      //         grid: {
+      //           drawBorder: false,
+      //           color: function(context) {
+      //             if (context.tick.value > 0) {
+      //               return '#00ff00';
+      //             } else if (context.tick.value < 0) {
+      //               return '#ff0000';
+      //             }
+      //             return '#000000';
+      //           },
+      //         },
+
+      //       }
+      //     }
+      //   }
+      // });
 
     }
 
@@ -810,90 +975,6 @@
 
     }
   }
- /*
-  function Comparison(goldModels, ourModels, modelList) {
-    this.goldModels = goldModels
-    this.ourModels = ourModels
-    this.models = modelList
-    this.compTable = document.getElementById('compTable')
-
-    this.updateTop = function() {
-      for(let i = 0; i < this.goldModels.length; i++) {
-        var lastRow = this.compTable.rows.length;
-        // if there's no header row in the table, then iteration = lastRow + 1
-        var iteration = lastRow;
-        var row = this.compTable.insertRow(lastRow);
-
-        var scores = this.goldModels[i].getScores()
-
-        var cell_model = row.insertCell(0);
-        cell_model.innerHTML = '<div class="compTop">' + this.goldModels[i].modelName + '</div>'
-        var cell_MAE = row.insertCell(1);
-        cell_MAE.innerHTML = '<div class="compTop">' + String(scores[0]) + '</div>'
-        var cell_Corr = row.insertCell(2);
-        cell_Corr.innerHTML = '<div class="compTop">' + String(scores[1]) + '</div>'
-        var cell_Acc2  = row.insertCell(3);
-        cell_Acc2.innerHTML = '<div class="compTop">' + String(scores[2]) + '</div>'
-        var cell_Acc7 = row.insertCell(4);
-        cell_Acc7.innerHTML = '<div class="compTop">' + String(scores[3]) + '</div>'
-        var cell_F1 = row.insertCell(5);
-        cell_F1.innerHTML = '<div class="compTop">' + String(scores[4]) + '</div>'
-      }
-
-      for(let i = 0; i < this.ourModels.length; i++) {
-        var lastRow = this.compTable.rows.length;
-        // if there's no header row in the table, then iteration = lastRow + 1
-        var iteration = lastRow;
-        var row = this.compTable.insertRow(lastRow);
-
-        var scores = this.ourModels[i].getScores()
-
-        var cell_model = row.insertCell(0);
-        cell_model.innerHTML = '<div class="compOur">'+ this.ourModels[i].modelName + '</div>'
-        var cell_MAE = row.insertCell(1);
-        cell_MAE.innerHTML = '<div class="compOur">' + String(scores[0]) + '</div>'
-        var cell_Corr = row.insertCell(2);
-        cell_Corr.innerHTML = '<div class="compOur">' + String(scores[1]) + '</div>'
-        var cell_Acc2  = row.insertCell(3);
-        cell_Acc2.innerHTML = '<div class="compOur">' + String(scores[2]) + '</div>'
-        var cell_Acc7 = row.insertCell(4);
-        cell_Acc7.innerHTML = '<div class="compOur">' + String(scores[3]) + '</div>'
-        var cell_F1 = row.insertCell(5);
-        cell_F1.innerHTML = '<div class="compOur">' + String(scores[4]) + '</div>'
-      }
-    }
-
-    this.updateList = function(){
-      this.models.sort()
-      for(let i = 0; i < this.models.length; i++) {
-        var lastRow = this.compTable.rows.length;
-        // if there's no header row in the table, then iteration = lastRow + 1
-        var iteration = lastRow;
-        var row = this.compTable.insertRow(lastRow);
-
-        var scores = this.models[i].getScores()
-
-        var cell_model = row.insertCell(0);
-        cell_model.innerHTML = this.models[i].modelName
-        var cell_MAE = row.insertCell(1);
-        cell_MAE.innerHTML = String(scores[1])
-        var cell_Corr = row.insertCell(2);
-        cell_Corr.innerHTML = String(scores[2])
-        var cell_Acc2  = row.insertCell(3);
-        cell_Acc2.innerHTML = String(scores[3])
-        var cell_Acc7 = row.insertCell(4);
-        cell_Acc7.innerHTML = String(scores[4])
-        var cell_F1 = row.insertCell(5);
-        cell_F1.innerHTML = String(scores[5])
-      }
-    }
-
-    this.drawCompTable = function() {
-      this.updateTop()
-      this.updateList()
-    }//use this to draw Comparison table
-  }
- */
 
   var goldTestResult = [["abcd",0,"text1",-0.5,'negative','slightly negative',-0.4,"negative",'slightly negative']
                        ,["abcd",1,"text1",-1.5,'negative','negative',-0.3,"negative",'slightly negative']
@@ -919,21 +1000,17 @@
 
   var goldModel = new Model("GOLD", "donghoon", goldTestResult)
   var ourModel = new Model("OUR","notDonghoon",ourTestResult)
-  //var analysis = new Analysis(goldModel)
   var analysisTest = new Analysis()
-  //analysis.updateGraph()
-  //analysis.updatePbarVideo()
-  //analysis.updatePbarSegment('abcd')
 
-
+  // Construct Gold model list
+  let goldModelList = [null, null];
 
   let xmlhttprequest0 = new XMLHttpRequest();
   xmlhttprequest0.open('GET', 'http://210.107.197.59:80/csv?name=gold&dataset=mosei');
   xmlhttprequest0.onreadystatechange = function() {
     if(this.readyState == 4) {
       let jsonParsed = JSON.parse(xmlhttprequest0.responseText)
-      //console.log(jsonParsed)
-      //console.log(jsonToResult(jsonParsed,true))
+      goldModelList[0] = (new Model("Gold","mosei",jsonToResult(jsonParsed,true)))
       globalGold_mosei = jsonToResult(jsonParsed,true)
     }
   }
@@ -944,21 +1021,23 @@
   xmlhttprequest1.onreadystatechange = function() {
     if(this.readyState == 4) {
       let jsonParsed = JSON.parse(xmlhttprequest1.responseText)
-      //console.log(jsonToResult(jsonParsed,true))
-      globalGold_mosi = jsonToResult(jsonParsed,true)
+      goldModelList[1] = (new Model("Gold","mosi",jsonToResult(jsonParsed,true)))
+      globalGold_mosi = jsonToResult(jsonParsed,true);
     }
   }
   xmlhttprequest1.send();
 
+  analysisTest.goldModels = goldModelList
+
 
   let xmlhttprequest = new XMLHttpRequest();
-  xmlhttprequest.open('GET', 'http://210.107.197.59:80/csv?name=MAG-BERT_mosi_result&dataset=mosi');
+  xmlhttprequest.open('GET', 'http://210.107.197.59:80/csv?name=MAG&dataset=mosi');
   xmlhttprequest.onreadystatechange = function() {
     if(this.readyState == 4) {
       var jsonParsed = JSON.parse(xmlhttprequest.responseText)
       console.log(jsonToResult(jsonParsed,false))
 
-      var modelTest01 = new Model("newTest","mosi",jsonToResult(jsonParsed,false))
+      var modelTest01 = new Model("-","mosi",jsonToResult(jsonParsed,false))
       console.log(modelTest01.getScores())
       //console.log(modelTest01.getClassPop())
       console.log(modelTest01.getVideoAcc())
@@ -976,6 +1055,53 @@
     }
   }
   xmlhttprequest.send();
+
+  // Construct other model list
+  let otherModelList = [null, null, null, null];
+
+  let xmlhttprequest2 = new XMLHttpRequest();
+  xmlhttprequest2.open('GET', 'http://210.107.197.59:80/csv?name=MAG&dataset=mosi');
+  xmlhttprequest2.onreadystatechange = function(){
+    if(this.readyState == 4){
+      var jsonParsed = JSON.parse(xmlhttprequest2.responseText)
+      otherModelList[0] = new Model("MAG","mosi",jsonToResult(jsonParsed,false));
+    }
+  }
+  xmlhttprequest2.send();
+
+  let xmlhttprequest3 = new XMLHttpRequest();
+  xmlhttprequest3.open('GET', 'http://210.107.197.59:80/csv?name=MISA&dataset=mosi');
+  xmlhttprequest3.onreadystatechange = function(){
+    if(this.readyState == 4){
+      var jsonParsed = JSON.parse(xmlhttprequest3.responseText)
+      otherModelList[1] = (new Model("MISA","mosi",jsonToResult(jsonParsed,false)));
+    }
+  }
+  xmlhttprequest3.send();
+
+  let xmlhttprequest4 = new XMLHttpRequest();
+  xmlhttprequest4.open('GET', 'http://210.107.197.59:80/csv?name=MMIM&dataset=mosi');
+  xmlhttprequest4.onreadystatechange = function(){
+    if(this.readyState == 4){
+      var jsonParsed = JSON.parse(xmlhttprequest4.responseText)
+      otherModelList[2] = (new Model("MMIM","mosi",jsonToResult(jsonParsed,false)));
+    }
+  }
+  xmlhttprequest4.send();
+
+  let xmlhttprequest5 = new XMLHttpRequest();
+  xmlhttprequest5.open('GET', 'http://210.107.197.59:80/csv?name=MAG&dataset=mosei');
+  xmlhttprequest5.onreadystatechange = function(){
+    if(this.readyState == 4){
+      var jsonParsed = JSON.parse(xmlhttprequest5.responseText)
+      otherModelList[3] = (new Model("MAG","mosei",jsonToResult(jsonParsed,false)));
+    }
+  }
+  xmlhttprequest5.send();
+
+  // otherModels = [[model_name, model_dataset, model_file], [model_name, model_dataset, model_file]]
+  analysisTest.otherModels = otherModelList
+
 
   //interaction
   function uploadResult() {
@@ -1008,6 +1134,7 @@
 
   function selectModel(model_name, model_dataset, model_file) {//after selecting a model, draw distribution chart, video accuracy table,
     analysisTest.model = new Model(model_name, model_dataset ,jsonToResult(model_file))
+    console.log(analysisTest.model.modelName)
     analysisTest.updateGraph()
     analysisTest.updatePbarVideo()
     analysisTest.updatePbarSegment()  //reset
