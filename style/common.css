@@ -39,7 +39,7 @@ a {
   text-decoration: none;
 }
 
-table, th, td {
+.table-explorer, .th-explorer, .td-explorer {
   border: 1px solid black;
   margin-left: auto;
   margin-right: auto;
