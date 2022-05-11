@@ -8,7 +8,7 @@
   <body>
     <div class="header">
       <a href="http://210.107.197.59/analyzer"><div class="header-leading">
-        DeMuSA
+        DEMUSA
       </div></a>
       <div class="header-action">
         <a href="http://210.107.197.59/analyzer"><div class="header-item analysis">Analyzer</div></a>
@@ -18,11 +18,38 @@
     </div>
     <div class="section">
       <h1>Data Explorer</h1>
-      <div style="margin-top: 12px; font-weight: 500; font-size: 20px;">
-        CMU-MOSI is multimodal corpus of sentiment intensity and subjectivity analysis in online opinion videos.<br/>If you want to observe MOSI in detail, please select video and clip id. 
+      <div class="descript" style="margin-top: 12px; font-weight: 500; font-size: 20px;">
+        CMU-MOSI is multimodal corpus of sentiment intensity and subjectivity analysis in online opinion videos.<br/>You can view the utterance-level composition of MOSI for each modalities, such as text script, audio, and video clip player.
+      </div>
+      <div style="text-align:center; margin-top: 40px; margin-bottom: 40px;">
+        <div class="descript" style="text-align: center; font-size: 16px; font-weight:bolder">Comparison Statistics of CMU-MOSI and CMU-MOSEI.</div>
+        <table style="width:50%; text-align: center;">
+          <tr>
+            <th></th>
+            <th># Seg</th>
+            <th># Speakers</th>
+            <th>Modality</th>
+            <th>Total Length<br/>(hh:mm:ss)</th>
+          </tr>
+          <tr>
+            <td>MOSI</td>
+            <td>2,199</td>
+            <td>98</td>
+            <td>{v, a, t}</td>
+            <td>02:36:17</td>
+          </tr>
+          <tr>
+            <td>MOSEI</td>
+            <td>23,453</td>
+            <td>1,000</td>
+            <td>{v, a, t}</td>
+            <td>65:53:36</td>
+          </tr>
+        </table>
       </div>
       <div id="workspace">
         <h2>Data Selection</h2>
+        <div class="descript">If you want to observe MOSI in detail, please select video and clip id. </div>
       </div>
 
       <div id="result">
