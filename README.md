@@ -49,11 +49,14 @@ We use [chart.js-3.7.1](https://www.chartjs.org/docs/latest/getting-started/inst
 
 ### Download datasets
 
-You can download the [raw datasets](http://immortal.multicomp.cs.cmu.edu/raw_datasets/) and [preprocessed csd format datasets](http://immortal.multicomp.cs.cmu.edu/raw_datasets/processed_data/) of CMU-MOSI and CMU-MOSEI.
+![Dataset_Statistics](https://github.com/SoyeonHH/ICME2022-Demo/blob/main/image/Dataset_Statistics.png)
 
-If you want to process these data on high-level aligned computational sequences, please see the github page [https://github.com/A2Zadeh/CMU-MultimodalSDK](https://github.com/A2Zadeh/CMU-MultimodalSDK)
+* You can download the [raw datasets](http://immortal.multicomp.cs.cmu.edu/raw_datasets/) and [preprocessed csd format datasets](http://immortal.multicomp.cs.cmu.edu/raw_datasets/processed_data/) of CMU-MOSI and CMU-MOSEI.
 
-Also, you can download pkl files that are used in our demo model predictions in [hear](https://drive.google.com/drive/folders/1IBwWNH0XjPnZWaAlP1U2tIJH6Rb3noMI).
+* If you want to process these data on high-level aligned computational sequences, please see the github page [https://github.com/A2Zadeh/CMU-MultimodalSDK](https://github.com/A2Zadeh/CMU-MultimodalSDK)
+
+* Also, you can download pkl files that are used in our demo model predictions in [hear](https://drive.google.com/drive/folders/1IBwWNH0XjPnZWaAlP1U2tIJH6Rb3noMI).
+
 
 ### Multimodal Sentiment Analysis Tasks
 
@@ -63,7 +66,7 @@ In DeMuSA, three MSA research models are used. You can reference the detail usag
 
 * [MISA: Modality-Invariant and -Specific Representations for Multimodal Sentiment Analysis](https://github.com/SoyeonHH/ICME2022-Demo/tree/main/src/MISA) ([paper](https://arxiv.org/pdf/2005.03545.pdf), [Github](https://github.com/declare-lab/MISA))
 
-* Multimodal-Infomax: Improving Multimodal Fusion with Hierarchical Mutual Information Maximization for Multimodal Sentiment Analysis ([paper](https://arxiv.org/pdf/2109.00412.pdf), [Github](https://github.com/declare-lab/Multimodal-Infomax))
+* [Multimodal-Infomax: Improving Multimodal Fusion with Hierarchical Mutual Information Maximization for Multimodal Sentiment Analysis](https://github.com/SoyeonHH/ICME2022-Demo/tree/main/src/MMIM) ([paper](https://arxiv.org/pdf/2109.00412.pdf), [Github](https://github.com/declare-lab/Multimodal-Infomax))
 
 ---
 
