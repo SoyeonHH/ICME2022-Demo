@@ -47,7 +47,8 @@ function clickClipListener(name) {
 // set Data Observation text
 function setText(text) {
   var textView = document.querySelectorAll('#textView')[0];
-  textView.innerText = text;
+  let text_lower = text.toLowerCase();
+  textView.innerText = text_lower;
 }
 
 // set Data Observation audio & video
