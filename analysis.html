@@ -102,10 +102,10 @@
           You can compare the distributions between gold dataset classes and model prediction result classes !
         </div>
         <div class="grid-container">
-          <h3 style="text-align: center; margin: 20px;">Gold Binary</h3>
-          <h3 style="text-align: center; margin: 20px;">Predicted Binary</h3>
-          <h3 style="text-align: center; margin: 20px;">Gold 7-Class</h3>
-          <h3 style="text-align: center; margin: 20px;">Predicted 7-Class</h3>
+          <h3 style="text-align: center; margin: 20px;">Binary Gold</h3>
+          <h3 style="text-align: center; margin: 20px;">Binary Ours</h3>
+          <h3 style="text-align: center; margin: 20px;">7-Class Gold</h3>
+          <h3 style="text-align: center; margin: 20px;">7-Class Ours</h3>
         </div>
         <div id="canvasList">
           <div class='canvasHolder'><canvas class="graph" id='graph_class_2'></canvas></div>
@@ -825,7 +825,7 @@
           data: [[otherDatas[2][1]+0.02, otherDatas[2][1]-0.02]],
         },
         {
-          label: this.model.modelName,
+          label: 'ours',
           backgroundColor: 'rgb(255, 99, 132)',
           borderColor: 'rgb(255, 99, 132)',
           data: [[ourPoint+0.02, ourPoint-0.02]],
@@ -846,7 +846,7 @@
           borderColor: 'rgb(60, 99, 132)',
           data: [[otherDatas[3][1]+0.02, otherDatas[3][1]-0.02]],
         },{
-          label: this.model.modelName,
+          label: 'ours',
           backgroundColor: 'rgb(255, 99, 132)',
           borderColor: 'rgb(255, 99, 132)',
           data: [[ourPoint+0.02, ourPoint-0.02]],
