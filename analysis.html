@@ -131,6 +131,12 @@
           </tr>
         </table>
       </div>
+      // TODO: Return total model's confidence for each sample.
+      // Implemented by p-bar
+      // Column: sample_id, Row: Model name.
+      <div id="p-barConfidence">
+        <div class="descript">How confident are the models ?</div>
+      </div>
       <div id="plotComparison">
         <h2>Utterance-level Comparison</h2>
         <div id="segmentVidName" class="descript">no video selected</div>
@@ -764,6 +770,11 @@
         newSegAcc_7.innerHTML = '<progress value=' + String(segHitMap[1][i]*100) + ' max="100">'
       }
       segNumberList.firstChild.click();
+    }
+
+    // TODO: Implement below
+    this.updatePbarConfidence = function(video_id, segment_id) {
+
     }
 
     this.updateScatterSegment = function(video_id, segment_id) {
